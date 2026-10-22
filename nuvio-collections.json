@@ -1,0 +1,1530 @@
+[
+ {
+  "id": "de6d8f48-a885-5dc4-bd00-fa846b834abb",
+  "title": "Streaming Services",
+  "backdropImageUrl": null,
+  "pinToTop": true,
+  "focusGlowEnabled": true,
+  "viewMode": "ROWS",
+  "showAllTab": true,
+  "folders": [
+   {
+    "id": "3a37f678-00cd-5fb3-a157-91be159064ff",
+    "title": "Netflix",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/netflix.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 213,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766",
+       "releaseDateGte": "2012-01-01"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 100,
+       "withWatchProviders": "8|1796",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 50,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "8|1796",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 25,
+       "withWatchProviders": "8|1796",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 15,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "8|1796",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 1000,
+       "withWatchProviders": "8|1796",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 300,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "8|1796",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "4d061759-fd0f-54b1-98e0-492132941b7d",
+    "title": "Prime Video",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/prime-video.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 1024,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766",
+       "releaseDateGte": "2012-01-01"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 100,
+       "withWatchProviders": "9|2100",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 50,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "9|2100",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 25,
+       "withWatchProviders": "9|2100",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 15,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "9|2100",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 1000,
+       "withWatchProviders": "9|2100",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 300,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "9|2100",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "cf6d754a-154b-54b8-8d71-65cb27a009fc",
+    "title": "Disney+",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/disney-plus.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 2739,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766",
+       "releaseDateGte": "2012-01-01"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 100,
+       "withWatchProviders": "337",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 50,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "337",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 25,
+       "withWatchProviders": "337",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 15,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "337",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 1000,
+       "withWatchProviders": "337",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 300,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "337",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "efe9dc4d-b0f6-54e0-bb22-c1b9ecdc152e",
+    "title": "Apple TV+",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/apple-tv.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 2552,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766",
+       "releaseDateGte": "2012-01-01"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "350|2243",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "350|2243",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "350|2243",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "350|2243",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "350|2243",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "350|2243",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "c34ea148-40ed-5e01-8567-00c86e36cea6",
+    "title": "HBO Max",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/hbo-max.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 49,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "1899|1825",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "1899|1825",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "1899|1825",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "1899|1825",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "1899|1825",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "1899|1825",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "ababf52a-759a-58c2-a303-49121dd3f8e1",
+    "title": "Hulu",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/hulu.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 453,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766",
+       "releaseDateGte": "2012-01-01"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "15",
+       "watchRegion": "US"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "15",
+       "watchRegion": "US"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "15",
+       "watchRegion": "US"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "15",
+       "watchRegion": "US"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "15",
+       "watchRegion": "US"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "15",
+       "watchRegion": "US"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "f9597ee0-14af-5840-bcde-93708fbabceb",
+    "title": "NOW",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/now.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "39|591",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "39|591",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "39|591",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "39|591",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "39|591",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "39|591",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "8d74f476-f4a4-54bb-b22c-6f56b448faa7",
+    "title": "Paramount+",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/paramount-plus.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 4330,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766",
+       "releaseDateGte": "2012-01-01"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "531|2303|2304|582|1853",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "531|2303|2304|582|1853",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "531|2303|2304|582|1853",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "531|2303|2304|582|1853",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "531|2303|2304|582|1853",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "531|2303|2304|582|1853",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "3b050abb-89c0-5d50-9e8b-18b3d9cd28ca",
+    "title": "BBC iPlayer",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/bbc-iplayer.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Originals",
+      "mediaType": "tv",
+      "filters": {
+       "withNetworks": "4|332|3",
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "38",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "38",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "38",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "38",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "38",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "38",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "35bae5da-809a-5e3b-ad44-c37be7a27713",
+    "title": "ITVX",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/itvx.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 9,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "41|2300|598",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "41|2300|598",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "41|2300|598",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "41|2300|598",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "41|2300|598",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "41|2300|598",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "5d3773db-85ec-5197-bad3-ea905533da7b",
+    "title": "Channel 4",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/channel-4.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 26,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "103|2311",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "103|2311",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "103|2311",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "103|2311",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "103|2311",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "103|2311",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "9dea9683-8fd6-509c-95e3-a2aa0dba3e4b",
+    "title": "Channel 5",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/channel-5.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "333",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "333",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "333",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "333",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "333",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "333",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "c47631a6-b994-531f-98b8-790fb7fb16ad",
+    "title": "Crunchyroll",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/crunchyroll.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 1112,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766",
+       "releaseDateGte": "2012-01-01"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "283|1968",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "283|1968",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "283|1968",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "283|1968",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "283|1968",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "283|1968",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "2aa90d76-3a59-5406-a729-f7ff34416209",
+    "title": "Shudder",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/shudder.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Originals",
+      "tmdbId": 2949,
+      "mediaType": "tv",
+      "filters": {
+       "withoutGenres": "10763|10767|10766",
+       "releaseDateGte": "2012-01-01"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "99|204",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "99|204",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "99|204",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "99|204",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "99|204",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 80,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "99|204",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "42a8bae0-c134-564e-95dd-4d014a93f953",
+    "title": "MUBI",
+    "coverImageUrl": "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/covers/streaming-services/mubi.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Movies",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30,
+       "withWatchProviders": "11|201",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Movies",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withWatchProviders": "11|201",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Movies",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withWatchProviders": "11|201",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "07b6c3de-12d4-55d2-938b-a459d78ff3c4",
+    "title": "Discovery+",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/discovery-plus.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "524|584",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 3,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "524|584",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 25,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "524|584",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "4510f241-7f16-53c8-b3ec-8a61c5124589",
+    "title": "WOW",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/wow-presents-plus.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Popular Series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 5,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "546",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New Series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 3,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "546",
+       "watchRegion": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top Rated Series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 25,
+       "withoutGenres": "10763|10767|10766",
+       "withWatchProviders": "546",
+       "watchRegion": "GB"
+      }
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   }
+  ]
+ }
+]
