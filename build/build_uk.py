@@ -210,6 +210,10 @@ def fetch(url):
 # Nuvio only takes fixed release floors, so Trending is set at build time: rebuild every month or two.
 def since(days): return (date.today() - timedelta(days=days)).isoformat()
 
+def a_to_z(rows):
+    """Genres cards read A to Z (Adam, 29 Oct)."""
+    return sorted(rows, key=lambda s: s["title"].casefold())
+
 def modern_collection(slug_, title, spec):
     """spec: (folder title, sources[, hero sources]). Every folder gets our tile and title logo; hero sources stand
     in for rows heroes() can't read (add-on rows) when picking the folder's backdrop."""
@@ -253,8 +257,8 @@ def movies():
             film("Top rated family films", "vote_average.desc", voteCountGte=2000, withGenres="10751",
                  withoutGenres="16"),
             film("Top rated documentaries", "vote_average.desc", voteCountGte=400, withGenres="99")]),
-        ("Genres", [film(t, "popularity.desc", voteCountGte=100, withGenres=g, withKeywords=k)
-                    for t, g, k in MOVIE_GENRES]),
+        ("Genres", a_to_z([film(t, "popularity.desc", voteCountGte=100, withGenres=g, withKeywords=k)
+                           for t, g, k in MOVIE_GENRES])),
         ("Decades", decades(m, 1950, 1000, withoutKeywords=MOVIE_SAFE)),
         ("Collections", [film("Marvel Cinematic Universe", "primary_release_date.desc", voteCountGte=200,
                               withKeywords="180547", withoutKeywords=f"{MOVIE_SAFE}|{SHORT_FILM}"),
@@ -280,8 +284,8 @@ def tv_shows():
             discover("Top rated comedies", t, "vote_average.desc", voteCountGte=1000, withGenres="35", **but("16")),
             discover("Top rated animated series", t, "vote_average.desc", voteCountGte=500, withGenres="16", **na),
             discover("Top rated documentaries", t, "vote_average.desc", voteCountGte=150, withGenres="99", **na)]),
-        ("Genres", [discover(n, t, "popularity.desc", voteCountGte=fl[0] if fl else 50, withGenres=g, withKeywords=k,
-                             **na) for n, g, k, *fl in TV_GENRES]),
+        ("Genres", a_to_z([discover(n, t, "popularity.desc", voteCountGte=fl[0] if fl else 50, withGenres=g,
+                                    withKeywords=k, **na) for n, g, k, *fl in TV_GENRES])),
         # 300 votes keeps fan-vote titles off the top; the 1960s and 1970s have too few series at 300. The anime
         # keyword stays out: anime would top the older decades
         ("Decades", decades(t, 1960, 300, older=(1970, 100), **na)),
@@ -315,7 +319,7 @@ def anime(pack):
         # 6496, football 13042; slice of life 9914; psychological 272553 and psychological thriller 12565; dark
         # fantasy 177895; supernatural 6152; horror 315058 and j-horror 325319; magical girl 292887, magical girls
         # 358020, magical girl ensemble 382274
-        ("Genres", [row("Action and adventure", "tv", ",10759", withoutGenres="10762"),
+        ("Genres", a_to_z([row("Action and adventure", "tv", ",10759", withoutGenres="10762"),
                     sub("Isekai", "237451"), sub("Martial arts", "779"), sub("Mecha", "10046|10891"),
                     sub("Samurai", "1462"), sub("Sports", "6075|1480|5605|6496|13042"),
                     row("Comedy", "tv", ",35", withoutGenres="10762"),
@@ -327,7 +331,7 @@ def anime(pack):
                     sub("Magical girl", "292887|358020|382274"), row("Kids", "tv", ",10762"),
                     row("Action films", "movie", ",28"), row("Adventure films", "movie", ",12"),
                     row("Fantasy films", "movie", ",14"), row("Sci-fi films", "movie", ",878"),
-                    row("Romance films", "movie", ",10749"), row("Family films", "movie", ",10751")]),
+                    row("Romance films", "movie", ",10749"), row("Family films", "movie", ",10751")])),
     ]
     if MAL_FOLDERS:
         # newest first, as in Movies and TV Shows; the hero comes from TMDB's best loved anime before 2000

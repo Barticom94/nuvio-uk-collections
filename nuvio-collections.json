@@ -2093,18 +2093,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Superhero",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 100,
-       "withKeywords": "9715"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Adventure",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
@@ -2112,6 +2100,18 @@
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "12"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Animation",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
+       "voteCountGte": 100,
+       "withGenres": "16"
       }
      },
      {
@@ -2129,13 +2129,25 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Romantic comedy",
+      "title": "Crime",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
-       "withGenres": "10749,35"
+       "withGenres": "80"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Documentary",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
+       "voteCountGte": 100,
+       "withGenres": "99"
       }
      },
      {
@@ -2153,49 +2165,25 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Sports",
+      "title": "Family",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
-       "withKeywords": "6075"
+       "withGenres": "10751"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Thriller",
+      "title": "Fantasy",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
-       "withGenres": "53"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Psychological thriller",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 100,
-       "withKeywords": "12565"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Crime",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 100,
-       "withGenres": "80"
+       "withGenres": "14"
       }
      },
      {
@@ -2213,6 +2201,18 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
+      "title": "History",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
+       "voteCountGte": 100,
+       "withGenres": "36"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
       "title": "Horror",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
@@ -2220,6 +2220,78 @@
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "27"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Music and concerts",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
+       "voteCountGte": 100,
+       "withGenres": "10402"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Musical",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
+       "voteCountGte": 100,
+       "withKeywords": "4344"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Mystery",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
+       "voteCountGte": 100,
+       "withGenres": "9648"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Psychological thriller",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
+       "voteCountGte": 100,
+       "withKeywords": "12565"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Romance",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
+       "voteCountGte": 100,
+       "withGenres": "10749"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Romantic comedy",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
+       "voteCountGte": 100,
+       "withGenres": "10749,35"
       }
      },
      {
@@ -2249,85 +2321,37 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Fantasy",
+      "title": "Sports",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
-       "withGenres": "14"
+       "withKeywords": "6075"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Romance",
+      "title": "Superhero",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
-       "withGenres": "10749"
+       "withKeywords": "9715"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Mystery",
+      "title": "Thriller",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
-       "withGenres": "9648"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Animation",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 100,
-       "withGenres": "16"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Family",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 100,
-       "withGenres": "10751"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Documentary",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 100,
-       "withGenres": "99"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "History",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 100,
-       "withGenres": "36"
+       "withGenres": "53"
       }
      },
      {
@@ -2352,30 +2376,6 @@
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "37"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Music and concerts",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 100,
-       "withGenres": "10402"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Musical",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 100,
-       "withKeywords": "4344"
       }
      }
     ],
@@ -2904,233 +2904,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Drama",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withGenres": "18",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Period drama",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "15060|195013|192772",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Medical drama",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "208788|11612",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Legal drama",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "222517|33519|214780",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Teen drama",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "193400",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Comedy",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withGenres": "35",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Sitcom",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "193171",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Crime",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withGenres": "80",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Police procedural",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "268067",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "True crime",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "33722",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Mystery",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withGenres": "9648",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Murder mystery",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "207046|12570",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Action and adventure",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "10759",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Superhero",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "9715",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Sci-fi and fantasy",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withGenres": "10765",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Supernatural",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "6152",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Horror",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "315058",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Anthology",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 50,
-       "withKeywords": "9706",
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
       }
@@ -3151,12 +2930,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Family",
+      "title": "Anthology",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
-       "withGenres": "10751",
+       "withKeywords": "9706",
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
       }
@@ -3164,12 +2943,25 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Kids",
+      "title": "Comedy",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
-       "withGenres": "10762",
+       "withGenres": "35",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Crime",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "80",
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
       }
@@ -3190,12 +2982,220 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
+      "title": "Drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "18",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Family",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "10751",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Horror",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "315058",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Kids",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "10762",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Legal drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "222517|33519|214780",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Medical drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "208788|11612",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Murder mystery",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "207046|12570",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Mystery",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "9648",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Period drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "15060|195013|192772",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Police procedural",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "268067",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
       "title": "Reality",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "10764",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sci-fi and fantasy",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "10765",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sitcom",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "193171",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Superhero",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "9715",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Supernatural",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "6152",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Teen drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "193400",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "True crime",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "33722",
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
       }
@@ -3227,7 +3227,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/A4NwkQXTXElE5iAsne5RpvS8R2Z.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/tv-shows-genres.png"
    },
@@ -3520,6 +3520,113 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
+      "title": "Action films",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,28",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Adventure films",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,12",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Comedy",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,35",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withoutGenres": "10762"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Dark fantasy",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withKeywords": "177895"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,18",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Family films",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,10751",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Fantasy films",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,14",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Horror",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withKeywords": "315058|325319"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
       "title": "Isekai",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
@@ -3529,6 +3636,33 @@
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "237451"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Kids",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,10762",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Magical girl",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withKeywords": "292887|358020|382274"
       }
      },
      {
@@ -3562,103 +3696,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Samurai",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withKeywords": "1462"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Sports",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withKeywords": "6075|1480|5605|6496|13042"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Comedy",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16,35",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withoutGenres": "10762"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Romantic comedy",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16,35",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withKeywords": "9840"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Slice of life",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withKeywords": "9914"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Drama",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16,18",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Romance",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withKeywords": "9840"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Mystery",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
@@ -3686,21 +3723,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Sci-fi and fantasy",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16,10765",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withoutGenres": "10762"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Dark fantasy",
+      "title": "Romance",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -3708,114 +3731,7 @@
        "withGenres": "16",
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withKeywords": "177895"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Supernatural",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withKeywords": "6152"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Horror",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withKeywords": "315058|325319"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Magical girl",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "withKeywords": "292887|358020|382274"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Kids",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16,10762",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Action films",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16,28",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Adventure films",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16,12",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Fantasy films",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16,14",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Sci-fi films",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16,878",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
+       "withKeywords": "9840"
       }
      },
      {
@@ -3834,14 +3750,98 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Family films",
+      "title": "Romantic comedy",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,35",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withKeywords": "9840"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Samurai",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withKeywords": "1462"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sci-fi and fantasy",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,10765",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withoutGenres": "10762"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sci-fi films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
-       "withGenres": "16,10751",
+       "withGenres": "16,878",
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Slice of life",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withKeywords": "9914"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sports",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withKeywords": "6075|1480|5605|6496|13042"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Supernatural",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
+       "withKeywords": "6152"
       }
      }
     ],
