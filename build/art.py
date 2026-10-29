@@ -73,15 +73,16 @@ def tile(name, hue):
 
 def logo(name):
     w, h = LOGO
-    # One line when it fits at 96 px or more, else two at the largest size that fits
-    f, lines = (fit(name, w - 30, range(114, 95, -2), 1) or fit(name, w - 30, range(114, 65, -4), 2)
+    # One line when it fits at 96 px or more, else two at 86 px at most, so a two line logo doesn't outweigh a short
+    # one; a 24 px margin keeps the soft shadow inside the canvas
+    f, lines = (fit(name, w - 48, range(114, 95, -2), 1) or fit(name, w - 48, range(86, 65, -4), 2)
                 or sys.exit(f"art: logo {name!r} does not fit"))
     step = round(f.size * 1.02)
     cap = f.getbbox("H", anchor="ls")[1] * -1  # cap height, so every logo sits on the same baseline grid
     y = (h - cap - step * (len(lines) - 1)) / 2 + cap
     text = Image.new("L", LOGO, 0)
     for i, line in enumerate(lines):
-        ImageDraw.Draw(text).text((15, y + i * step), line, font=f, fill=255, anchor="ls")
+        ImageDraw.Draw(text).text((24, y + i * step), line, font=f, fill=255, anchor="ls")
     # Two shadows: a soft drop shadow that darkens a bright backdrop under the words and a tight one that edges them
     soft = ImageChops.offset(text, 0, 5).filter(ImageFilter.GaussianBlur(11)).point(lambda v: min(255, v * 2) * 150 // 255)
     edge = text.filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(1.5)).point(lambda v: v * 190 // 255)

@@ -8,13 +8,13 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
     then "Only on" rows that leave out titles also on the other UK services, then New and "Best only on" rows.
     Hulu has no UK service, so its tile only has its originals. The Netflix tile's Top 10 and Most Popular rows
     come from the UK Extras add-on.
-  - **Movies**: Start here (new, trending and top rated films plus the critics' picks), Genres, More genres, Decades,
-    four franchise folders (superhero and fantasy, sci-fi and horror, action and crime, family), three mood folders
-    (crime and suspense; action, sci-fi and monsters; feel-good and true stories), Directors, World directors,
-    Hollywood, animation and indie studios, Asian cinema and World cinema.
+  - **Movies**: Start here (new, trending and top rated films, British films and the critics' picks), Genres, More
+    genres, Decades, four franchise folders (superhero and fantasy, sci-fi and horror, action and crime, family),
+    three mood folders (crime and suspense; action, sci-fi and monsters; comedy, feel-good and true stories),
+    Directors, World directors, Hollywood, animation and indie studios, Asian cinema and World cinema.
   - **TV Shows**: Start here (new, trending, top rated, trending British series and fan favourites), Genres, Decades,
     Drama networks and Comedy, kids and factual networks.
-  - **Anime**: Start here (new, trending and top rated series and films), Genres, Themes (isekai, shounen, mecha,
+  - **Anime**: Start here (new, trending and top rated series and films), Genres, Themes (isekai, shonen, mecha,
     sports, school, slice of life, iyashikei, psychological, magical girl) and Decades (below).
   - **Live TV**: one folder per section of Sky's guide, in Sky's order: Entertainment, Films, Sport, News,
     Documentaries, Kids, Music and Lifestyle. Each is one catalogue of the UK Extras add-on: its free channels
@@ -59,9 +59,10 @@ python build/art.py --sheet
 Both scripts take the TMDB v3 key from `TMDB_API_KEY`, or with `--key-json` from the `tmdbApiKey` field of a JSON
 file, and never print it. `build_uk.py` needs it to pick each folder's hero backdrop: the best known title among the
 first rows that isn't rated 18 (horror only where a folder has nothing else) and has a backdrop with no text on it,
-never the same title twice in a collection. It then renders the tiles and logos with `build/art.py` (Pillow).
-`art.py --sheet` also writes `build/contact-sheet.png`, every Modern folder's tile and logo over dark, bright and its
-own backdrop, for review; it isn't committed.
+never the same title or film series twice in a collection (`HERO_ROW` and `HERO_SKIP` steer the few picks that came
+out a poor fit). It then renders the tiles and logos with `build/art.py` (Pillow). `art.py --sheet` also writes
+`build/contact-sheet.png`, every Modern folder's tile and logo over dark, bright and its own backdrop, for review; it
+isn't committed.
 
 `check.py` reads the files with the same rules as Nuvio's importer, calls every TMDB row, checks add-on rows against
 their add-on's manifest (`--manifest ID=PATH` for one not yet published), checks that Live TV has every section in

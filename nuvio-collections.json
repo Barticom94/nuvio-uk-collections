@@ -1522,7 +1522,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lA3MKdT3QOrYGe5dg7Uzuceu8zZ.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/crunchyroll.png"
    },
@@ -1639,7 +1639,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/a7cv3UnvDpXCXWjgCrVCMOa0BD5.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4W7yDLoI0qliQXBWBwR5PImI2VL.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/shudder.png"
    },
@@ -1779,7 +1779,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/yyOMIYaHB1xDSULKvT0djOwP4qc.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/9I7aHbHlXwsQais5wBcccWnboTx.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/discovery-plus.png"
    },
@@ -1918,7 +1918,18 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "All-Time Greats",
+      "title": "British films",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 100,
+       "withOriginCountry": "GB",
+       "withOriginalLanguage": "en"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "All-time greats",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1929,7 +1940,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Modern Classics",
+      "title": "Modern classics",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1941,7 +1952,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Hidden Gems",
+      "title": "Hidden gems",
       "mediaType": "movie",
       "sortBy": "vote_count.asc",
       "filters": {
@@ -1953,7 +1964,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best of This Year",
+      "title": "Best of this year",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1975,7 +1986,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Animated Masterpieces",
+      "title": "Animated masterpieces",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -2307,7 +2318,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/5bzPWQ2dFUl2aZKkp7ILJVVkRed.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
    },
@@ -2386,7 +2397,7 @@
       "mediaType": "movie"
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/86IbFy98QjRIqg6WanKYb9tXNbJ.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/nNmJRkg8wWnRmzQDe2FwKbPIsJV.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/superhero-and-fantasy-franchises.png"
    },
@@ -2734,7 +2745,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/7Wev9JMo6R5XAfz2KDvXb7oPMmy.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4HWAQu28e2yaWrtupFPGFkdNU7V.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/crime-and-suspense.png"
    },
@@ -2874,9 +2885,9 @@
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/action-sci-fi-and-monsters.png"
    },
    {
-    "id": "5f8af476-84f3-5b78-9fd3-a03c54e96d01",
-    "title": "Feel-good and true stories",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-feel-good-and-true-stories.webp",
+    "id": "fa9e5b7d-9fce-5ebd-a834-3fbbb5cb1596",
+    "title": "Comedy, feel-good and true stories",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-comedy-feel-good-and-true-stories.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
     "coverEmoji": null,
@@ -2996,7 +3007,7 @@
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/sCzcYW9h55WcesOqA12cgEr9Exw.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/feel-good-and-true-stories.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/comedy-feel-good-and-true-stories.png"
    },
    {
     "id": "01e2b671-4975-5e04-bf2a-fb1b59809d9f",
@@ -3319,7 +3330,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/Ar7QuJ7sJEiC0oP3I8fKBKIQD9u.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/hollywood-studios.png"
    },
@@ -3546,7 +3557,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/55vkNtb83bSwbdWrQTVZTGLBcLx.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/qvZ91FwMq6O47VViAr8vZNQz3WI.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/asian-cinema.png"
    },
@@ -3560,17 +3571,6 @@
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "British",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 100,
-       "withOriginCountry": "GB",
-       "withOriginalLanguage": "en"
-      }
-     },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
@@ -3663,7 +3663,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/bfh9Z3Ghz4FOJAfLOAhmc3ccnHU.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/q6OGlZ1KMEb14AC8KbPCxyNOal6.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/world-cinema.png"
    }
@@ -3696,7 +3696,8 @@
       "sortBy": "first_air_date.desc",
       "filters": {
        "voteCountGte": 10,
-       "withoutGenres": "10763|10767|10766"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      },
      {
@@ -3706,8 +3707,9 @@
       "mediaType": "tv",
       "filters": {
        "voteCountGte": 20,
+       "releaseDateGte": "2024-10-29",
        "withoutGenres": "10763|10767|10766",
-       "releaseDateGte": "2024-10-29"
+       "withoutKeywords": "210024"
       }
      },
      {
@@ -3915,7 +3917,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/A4NwkQXTXElE5iAsne5RpvS8R2Z.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/genres.png"
    },
@@ -4026,7 +4028,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/jIArNHIekrCSVgdMbKPAXpPY03Y.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
    },
@@ -4278,7 +4280,7 @@
        "voteCountGte": 5,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
@@ -4291,7 +4293,7 @@
        "voteCountGte": 10,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
@@ -4304,7 +4306,7 @@
        "releaseDateGte": "2024-10-29",
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
@@ -4317,7 +4319,7 @@
        "releaseDateGte": "2024-10-29",
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
@@ -4330,7 +4332,7 @@
        "voteCountGte": 500,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
@@ -4343,7 +4345,7 @@
        "voteCountGte": 500,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      }
     ],
@@ -4364,76 +4366,76 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Action and adventure",
+      "title": "Action and adventure series",
       "mediaType": "tv",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,10759",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withoutGenres": "10762"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Comedy",
+      "title": "Comedy series",
       "mediaType": "tv",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,35",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withoutGenres": "10762"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Drama",
+      "title": "Drama series",
       "mediaType": "tv",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,18",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Romance",
+      "title": "Romance series",
       "mediaType": "tv",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "9840"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Mystery",
+      "title": "Mystery series",
       "mediaType": "tv",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,9648",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Kids",
+      "title": "Kids series",
       "mediaType": "tv",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,10762",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
@@ -4445,7 +4447,7 @@
        "voteCountGte": 20,
        "withGenres": "16,28",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
@@ -4457,7 +4459,7 @@
        "voteCountGte": 20,
        "withGenres": "16,14",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      },
      {
@@ -4469,7 +4471,7 @@
        "voteCountGte": 20,
        "withGenres": "16,10751",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
      }
     ],
@@ -4496,20 +4498,20 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "237451"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Shounen",
+      "title": "Shonen",
       "mediaType": "tv",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "207826"
       }
      },
@@ -4522,7 +4524,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "10046|10891"
       }
      },
@@ -4535,7 +4537,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "6075|1480|5605|6496|13042"
       }
      },
@@ -4548,7 +4550,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "6270|10873|190116"
       }
      },
@@ -4561,7 +4563,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "9914"
       }
      },
@@ -4574,7 +4576,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "291483"
       }
      },
@@ -4587,7 +4589,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "272553|12565"
       }
      },
@@ -4600,7 +4602,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withKeywords": "292887|358020|382274"
       }
      }
@@ -4650,7 +4652,7 @@
       "catalogId": "mal.80sDecade"
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/v38qp4bySLTXYu3MF8r5GD51FN3.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
    }
