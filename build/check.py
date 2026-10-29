@@ -602,7 +602,8 @@ def main(argv):
     head = [f"Checked {date.today()} against TMDB live. Rows: {len(results)} TMDB, thin (<{THIN}): {thin}, "
             f"failures: {len(fails)}, warnings: {len(warns)}", ""]
     with open(os.path.join(HERE, "report.txt"), "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n".join(head + ["FAIL " + x for x in fails] + ["WARN " + x for x in warns] + [""] + report) + "\n")
+        text = "\n".join(head + ["FAIL " + x for x in fails] + ["WARN " + x for x in warns] + [""] + report) + "\n"
+        f.write(re.sub("[\u2013\u2014]", "-", text))  # TMDB titles can carry dashes; the repo has none
     print(head[0])
     for x in fails: print("FAIL", x)
     for x in warns[:40]: print("WARN", x)

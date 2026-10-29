@@ -80,9 +80,15 @@ AIOM_PACK = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/public
 MAL_FOLDERS = True
 # Anime keywords left out of every Anime row (TMDB keyword ids): hentai, hentai adaptation, ecchi, etchi, erotica,
 # harem, reverse harem, nudity, sexual content, panty shot, erotic, erotic comedy, sex comedy, softcore, lolicon,
-# huge breasts, large breasts. TMDB's adult flag only covers outright porn, and link A reaches family profiles.
+# huge breasts, large breasts, rape, sexual abuse, public sex. TMDB's adult flag only covers outright porn, and link A
+# reaches family profiles.
 ANIME_SAFE = ("198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|"
-              "256466|302868|170827|155477|332173|345266|366001")
+              "256466|302868|170827|155477|332173|345266|366001|570|739|11512")
+# Film keywords left out of every Movies row, for the same reason: pornography, porn industry, softcore, unsimulated
+# sex, erotic movie, bdsm (9 Songs, Rocco, Room in Rome and Fifty Shades topped the Music, Documentary, Romance and
+# Psychological thriller rows). The MCU row also leaves out short films (the I Am Groot shorts and the specials).
+MOVIE_SAFE = "445|18321|155477|282903|190370|158713"
+SHORT_FILM = "263548"
 
 # Genre rows: (row, TMDB genre ids, keyword ids[, vote floor]). Every TMDB genre of the type (not TV Movie; on TV not
 # News, Talk or Soap), each followed by its sub-genres: a TMDB keyword, or two genres together for romantic comedy.
@@ -95,7 +101,7 @@ MOVIE_GENRES = [
     ("Horror", "27", None), ("Sci-fi", "878", None), ("Space", None, "9882|3801"), ("Fantasy", "14", None),
     ("Romance", "10749", None), ("Mystery", "9648", None), ("Animation", "16", None), ("Family", "10751", None),
     ("Documentary", "99", None), ("History", "36", None), ("War", "10752", None), ("Western", "37", None),
-    ("Music", "10402", None), ("Musical", None, "4344")]
+    ("Music and concerts", "10402", None), ("Musical", None, "4344")]
 # TV: period drama 15060, costume drama 195013, historical drama 192772; medical drama 208788 and hospital 11612; legal
 # drama 222517, courtroom 33519, courtroom drama 214780; teen drama 193400; sitcom 193171; police procedural 268067;
 # true crime 33722; murder mystery 207046 and whodunit 12570; superhero 9715; supernatural 6152; horror 315058 (TV has
@@ -209,15 +215,17 @@ def modern_collection(slug_, title, spec):
     in for rows heroes() can't read (add-on rows) when picking the folder's backdrop."""
     folders = []
     for t, sources, *hint in spec:
-        f = folder(fid(slug_, t), t, sources, cover=tile_url(slug_, t), logo=logo_url(t, slug_))
+        # the tile already shows the card's name, so Nuvio's label under it stays off
+        f = folder(fid(slug_, t), t, sources, cover=tile_url(slug_, t), hide_title=True, logo=logo_url(t, slug_))
         if hint: f["_hero"] = hint[0]
         folders.append(f)
     return collection(slug_, title, folders, **MODERN)
 
-def decades(media, first, floor, **f):
+def decades(media, first, floor, older=None, **f):
     """One row per decade, newest first: best rated above a vote floor (popularity there follows the season, such as
-    horror in October)."""
-    return [discover(f"{y}s", media, "vote_average.desc", voteCountGte=floor, releaseDateGte=f"{y}-01-01",
+    horror in October); older = (decade, floor) lowers the floor for that decade and the ones before it."""
+    def fl(y): return older[1] if older and y <= older[0] else floor
+    return [discover(f"{y}s", media, "vote_average.desc", voteCountGte=fl(y), releaseDateGte=f"{y}-01-01",
                      releaseDateLte=f"{y + 9}-12-31", **f) for y in range(2020, first - 1, -10)]
 
 def film_series(title, tmdb_id):
@@ -226,33 +234,35 @@ def film_series(title, tmdb_id):
 
 def movies():
     m = "movie"
+    def film(title, sort, **f): return discover(title, m, sort, **{"withoutKeywords": MOVIE_SAFE, **f})
     # out on a UK service or store
     digital = dict(withWatchProviders="|".join(dict.fromkeys(gb_pool() + GB_STORES.split("|"))), watchRegion="GB")
     gb = dict(withOriginCountry="GB")
     return modern_collection("movies", "Movies", [
         ("New and Trending", [
-            discover("New films", m, "primary_release_date.desc", voteCountGte=25, **digital),
-            discover("Trending films", m, "popularity.desc", voteCountGte=20, releaseDateGte=since(180)),
-            discover("Trending British films", m, "popularity.desc", voteCountGte=20, releaseDateGte=since(365), **gb),
-            discover("New British films", m, "primary_release_date.desc", voteCountGte=25, **digital, **gb),
-            discover("Trending family films", m, "popularity.desc", voteCountGte=20, withGenres="10751",
-                     releaseDateGte=since(365))]),
+            film("New films", "primary_release_date.desc", voteCountGte=25, **digital),
+            film("Trending films", "popularity.desc", voteCountGte=20, releaseDateGte=since(180)),
+            film("Trending British films", "popularity.desc", voteCountGte=20, releaseDateGte=since(365), **gb),
+            film("New British films", "primary_release_date.desc", voteCountGte=25, **digital, **gb),
+            film("Trending family films", "popularity.desc", voteCountGte=20, withGenres="10751",
+                 releaseDateGte=since(365))]),
         ("Top Rated", [
-            discover("Top rated films", m, "vote_average.desc", voteCountGte=3000, withoutGenres=NO_FILLER),
-            discover("Top rated new films", m, "vote_average.desc", voteCountGte=500, releaseDateGte=since(365),
-                     withoutGenres=NO_FILLER),
-            discover("Top rated recent films", m, "vote_average.desc", voteCountGte=2000, releaseDateGte=since(5 * 365),
-                     withoutGenres=NO_FILLER),
-            discover("Top rated British films", m, "vote_average.desc", voteCountGte=1000, withoutGenres=NO_FILLER, **gb),
-            discover("Top rated animated films", m, "vote_average.desc", voteCountGte=2000, withGenres="16"),
-            discover("Top rated family films", m, "vote_average.desc", voteCountGte=2000, withGenres="10751",
-                     withoutGenres="16"),
-            discover("Top rated documentaries", m, "vote_average.desc", voteCountGte=400, withGenres="99")]),
-        ("Genres", [discover(t, m, "popularity.desc", voteCountGte=100, withGenres=g, withKeywords=k)
+            film("Top rated films", "vote_average.desc", voteCountGte=3000, withoutGenres=NO_FILLER),
+            film("Top rated of the past year", "vote_average.desc", voteCountGte=500, releaseDateGte=since(365),
+                 withoutGenres=NO_FILLER),
+            film("Top rated of the past five years", "vote_average.desc", voteCountGte=2000,
+                 releaseDateGte=since(5 * 365), withoutGenres=NO_FILLER),
+            film("Top rated British films", "vote_average.desc", voteCountGte=1000, withoutGenres=NO_FILLER, **gb),
+            film("Top rated animated films", "vote_average.desc", voteCountGte=2000, withGenres="16"),
+            film("Top rated family films", "vote_average.desc", voteCountGte=2000, withGenres="10751",
+                 withoutGenres="16"),
+            film("Top rated documentaries", "vote_average.desc", voteCountGte=400, withGenres="99")]),
+        ("Genres", [film(t, "popularity.desc", voteCountGte=100, withGenres=g, withKeywords=k)
                     for t, g, k in MOVIE_GENRES]),
-        ("Decades", decades(m, 1950, 1000)),
-        ("Collections", [discover("Marvel Cinematic Universe", m, "primary_release_date.desc", voteCountGte=200,
-                                  withKeywords="180547"), *(film_series(t, i) for t, i in FRANCHISES)]),
+        ("Decades", decades(m, 1950, 1000, withoutKeywords=MOVIE_SAFE)),
+        ("Collections", [film("Marvel Cinematic Universe", "primary_release_date.desc", voteCountGte=200,
+                              withKeywords="180547", withoutKeywords=f"{MOVIE_SAFE}|{SHORT_FILM}"),
+                         *(film_series(t, i) for t, i in FRANCHISES)]),
     ])
 
 def tv_shows():
@@ -281,7 +291,9 @@ def tv_shows():
             discover("Top rated documentaries", t, "vote_average.desc", voteCountGte=150, withGenres="99", **na)]),
         ("Genres", [discover(n, t, "popularity.desc", voteCountGte=fl[0] if fl else 50, withGenres=g, withKeywords=k,
                              **na) for n, g, k, *fl in TV_GENRES]),
-        ("Decades", decades(t, 1960, 100, **na)),  # anime would top the older decades
+        # 300 votes keeps fan-vote titles off the top; the 1960s and 1970s have too few series at 300. The anime
+        # keyword stays out: anime would top the older decades
+        ("Decades", decades(t, 1960, 300, older=(1970, 100), **na)),
     ])
 
 def anime(pack):
@@ -312,16 +324,16 @@ def anime(pack):
         # 6496, football 13042; slice of life 9914; psychological 272553 and psychological thriller 12565; dark
         # fantasy 177895; supernatural 6152; horror 315058 and j-horror 325319; magical girl 292887, magical girls
         # 358020, magical girl ensemble 382274
-        ("Genres", [row("Action and adventure series", "tv", ",10759", withoutGenres="10762"),
+        ("Genres", [row("Action and adventure", "tv", ",10759", withoutGenres="10762"),
                     sub("Isekai", "237451"), sub("Martial arts", "779"), sub("Mecha", "10046|10891"),
                     sub("Samurai", "1462"), sub("Sports", "6075|1480|5605|6496|13042"),
-                    row("Comedy series", "tv", ",35", withoutGenres="10762"),
+                    row("Comedy", "tv", ",35", withoutGenres="10762"),
                     row("Romantic comedy", "tv", ",35", withKeywords="9840"), sub("Slice of life", "9914"),
-                    row("Drama series", "tv", ",18"), row("Romance series", "tv", withKeywords="9840"),
-                    row("Mystery series", "tv", ",9648"), sub("Psychological", "272553|12565"),
-                    row("Sci-fi and fantasy series", "tv", ",10765", withoutGenres="10762"),
+                    row("Drama", "tv", ",18"), row("Romance", "tv", withKeywords="9840"),
+                    row("Mystery", "tv", ",9648"), sub("Psychological", "272553|12565"),
+                    row("Sci-fi and fantasy", "tv", ",10765", withoutGenres="10762"),
                     sub("Dark fantasy", "177895"), sub("Supernatural", "6152"), sub("Horror", "315058|325319"),
-                    sub("Magical girl", "292887|358020|382274"), row("Kids series", "tv", ",10762"),
+                    sub("Magical girl", "292887|358020|382274"), row("Kids", "tv", ",10762"),
                     row("Action films", "movie", ",28"), row("Adventure films", "movie", ",12"),
                     row("Fantasy films", "movie", ",14"), row("Sci-fi films", "movie", ",878"),
                     row("Romance films", "movie", ",10749"), row("Family films", "movie", ",10751")]),

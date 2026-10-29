@@ -1933,7 +1933,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -1942,6 +1942,7 @@
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 25,
        "withWatchProviders": "8|1796|9|2100|337|350|2243|1899|1825|39|591|531|2303|2304|582|1853|38|41|2300|598|103|2311|333|283|1968|99|204|11|201|524|584|546|2|10|35|130|192",
        "watchRegion": "GB"
@@ -1954,6 +1955,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 20,
        "releaseDateGte": "2026-05-02"
       }
@@ -1965,6 +1967,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 20,
        "releaseDateGte": "2025-10-29",
        "withOriginCountry": "GB"
@@ -1977,6 +1980,7 @@
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 25,
        "withWatchProviders": "8|1796|9|2100|337|350|2243|1899|1825|39|591|531|2303|2304|582|1853|38|41|2300|598|103|2311|333|283|1968|99|204|11|201|524|584|546|2|10|35|130|192",
        "watchRegion": "GB",
@@ -1990,6 +1994,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 20,
        "withGenres": "10751",
        "releaseDateGte": "2025-10-29"
@@ -2008,7 +2013,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -2017,6 +2022,7 @@
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 3000,
        "withoutGenres": "99|10402|10770"
       }
@@ -2024,10 +2030,11 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Top rated new films",
+      "title": "Top rated of the past year",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 500,
        "releaseDateGte": "2025-10-29",
        "withoutGenres": "99|10402|10770"
@@ -2036,10 +2043,11 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Top rated recent films",
+      "title": "Top rated of the past five years",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 2000,
        "releaseDateGte": "2021-10-30",
        "withoutGenres": "99|10402|10770"
@@ -2052,6 +2060,7 @@
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 1000,
        "withoutGenres": "99|10402|10770",
        "withOriginCountry": "GB"
@@ -2064,6 +2073,7 @@
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 2000,
        "withGenres": "16"
       }
@@ -2075,6 +2085,7 @@
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 2000,
        "withGenres": "10751",
        "withoutGenres": "16"
@@ -2087,6 +2098,7 @@
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 400,
        "withGenres": "99"
       }
@@ -2104,7 +2116,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -2113,6 +2125,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "28"
       }
@@ -2124,6 +2137,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withKeywords": "9715"
       }
@@ -2135,6 +2149,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "12"
       }
@@ -2146,6 +2161,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "35"
       }
@@ -2157,6 +2173,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "10749,35"
       }
@@ -2168,6 +2185,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "18"
       }
@@ -2179,6 +2197,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withKeywords": "6075"
       }
@@ -2190,6 +2209,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "53"
       }
@@ -2201,6 +2221,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withKeywords": "12565"
       }
@@ -2212,6 +2233,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "80"
       }
@@ -2223,6 +2245,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withKeywords": "10051|191845"
       }
@@ -2234,6 +2257,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "27"
       }
@@ -2245,6 +2269,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "878"
       }
@@ -2256,6 +2281,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withKeywords": "9882|3801"
       }
@@ -2267,6 +2293,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "14"
       }
@@ -2278,6 +2305,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "10749"
       }
@@ -2289,6 +2317,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "9648"
       }
@@ -2300,6 +2329,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "16"
       }
@@ -2311,6 +2341,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "10751"
       }
@@ -2322,6 +2353,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "99"
       }
@@ -2333,6 +2365,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "36"
       }
@@ -2344,6 +2377,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "10752"
       }
@@ -2355,6 +2389,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "37"
       }
@@ -2362,10 +2397,11 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Music",
+      "title": "Music and concerts",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withGenres": "10402"
       }
@@ -2377,6 +2413,7 @@
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 100,
        "withKeywords": "4344"
       }
@@ -2394,7 +2431,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -2405,7 +2442,8 @@
       "filters": {
        "voteCountGte": 1000,
        "releaseDateGte": "2020-01-01",
-       "releaseDateLte": "2029-12-31"
+       "releaseDateLte": "2029-12-31",
+       "withoutKeywords": "445|18321|155477|282903|190370|158713"
       }
      },
      {
@@ -2417,7 +2455,8 @@
       "filters": {
        "voteCountGte": 1000,
        "releaseDateGte": "2010-01-01",
-       "releaseDateLte": "2019-12-31"
+       "releaseDateLte": "2019-12-31",
+       "withoutKeywords": "445|18321|155477|282903|190370|158713"
       }
      },
      {
@@ -2429,7 +2468,8 @@
       "filters": {
        "voteCountGte": 1000,
        "releaseDateGte": "2000-01-01",
-       "releaseDateLte": "2009-12-31"
+       "releaseDateLte": "2009-12-31",
+       "withoutKeywords": "445|18321|155477|282903|190370|158713"
       }
      },
      {
@@ -2441,7 +2481,8 @@
       "filters": {
        "voteCountGte": 1000,
        "releaseDateGte": "1990-01-01",
-       "releaseDateLte": "1999-12-31"
+       "releaseDateLte": "1999-12-31",
+       "withoutKeywords": "445|18321|155477|282903|190370|158713"
       }
      },
      {
@@ -2453,7 +2494,8 @@
       "filters": {
        "voteCountGte": 1000,
        "releaseDateGte": "1980-01-01",
-       "releaseDateLte": "1989-12-31"
+       "releaseDateLte": "1989-12-31",
+       "withoutKeywords": "445|18321|155477|282903|190370|158713"
       }
      },
      {
@@ -2465,7 +2507,8 @@
       "filters": {
        "voteCountGte": 1000,
        "releaseDateGte": "1970-01-01",
-       "releaseDateLte": "1979-12-31"
+       "releaseDateLte": "1979-12-31",
+       "withoutKeywords": "445|18321|155477|282903|190370|158713"
       }
      },
      {
@@ -2477,7 +2520,8 @@
       "filters": {
        "voteCountGte": 1000,
        "releaseDateGte": "1960-01-01",
-       "releaseDateLte": "1969-12-31"
+       "releaseDateLte": "1969-12-31",
+       "withoutKeywords": "445|18321|155477|282903|190370|158713"
       }
      },
      {
@@ -2489,7 +2533,8 @@
       "filters": {
        "voteCountGte": 1000,
        "releaseDateGte": "1950-01-01",
-       "releaseDateLte": "1959-12-31"
+       "releaseDateLte": "1959-12-31",
+       "withoutKeywords": "445|18321|155477|282903|190370|158713"
       }
      }
     ],
@@ -2505,7 +2550,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -2514,6 +2559,7 @@
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
+       "withoutKeywords": "445|18321|155477|282903|190370|158713|263548",
        "voteCountGte": 200,
        "withKeywords": "180547"
       }
@@ -2711,7 +2757,7 @@
       "sortBy": "original"
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-collections.png"
    }
@@ -2734,7 +2780,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -2815,7 +2861,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -2933,7 +2979,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -3273,7 +3319,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -3282,7 +3328,7 @@
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
-       "voteCountGte": 100,
+       "voteCountGte": 300,
        "releaseDateGte": "2020-01-01",
        "releaseDateLte": "2029-12-31",
        "withoutGenres": "10763|10767|10766",
@@ -3296,7 +3342,7 @@
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
-       "voteCountGte": 100,
+       "voteCountGte": 300,
        "releaseDateGte": "2010-01-01",
        "releaseDateLte": "2019-12-31",
        "withoutGenres": "10763|10767|10766",
@@ -3310,7 +3356,7 @@
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
-       "voteCountGte": 100,
+       "voteCountGte": 300,
        "releaseDateGte": "2000-01-01",
        "releaseDateLte": "2009-12-31",
        "withoutGenres": "10763|10767|10766",
@@ -3324,7 +3370,7 @@
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
-       "voteCountGte": 100,
+       "voteCountGte": 300,
        "releaseDateGte": "1990-01-01",
        "releaseDateLte": "1999-12-31",
        "withoutGenres": "10763|10767|10766",
@@ -3338,7 +3384,7 @@
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
-       "voteCountGte": 100,
+       "voteCountGte": 300,
        "releaseDateGte": "1980-01-01",
        "releaseDateLte": "1989-12-31",
        "withoutGenres": "10763|10767|10766",
@@ -3374,7 +3420,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/tMRdEsMg9MyXAkcufK9YJEeIaNW.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/jIArNHIekrCSVgdMbKPAXpPY03Y.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/tv-shows-decades.png"
    }
@@ -3397,7 +3443,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -3409,7 +3455,7 @@
        "voteCountGte": 5,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3422,7 +3468,7 @@
        "voteCountGte": 10,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3435,7 +3481,7 @@
        "voteCountGte": 10,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "releaseDateGte": "2024-10-29"
       }
      },
@@ -3449,7 +3495,7 @@
        "voteCountGte": 10,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "releaseDateGte": "2024-10-29"
       }
      }
@@ -3466,7 +3512,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
@@ -3478,7 +3524,7 @@
        "voteCountGte": 500,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3491,7 +3537,7 @@
        "voteCountGte": 500,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3504,7 +3550,7 @@
        "voteCountGte": 50,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "releaseDateGte": "2024-10-29"
       }
      },
@@ -3518,7 +3564,7 @@
        "voteCountGte": 50,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "releaseDateGte": "2023-10-30"
       }
      }
@@ -3535,19 +3581,19 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Action and adventure series",
+      "title": "Action and adventure",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,10759",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withoutGenres": "10762"
       }
      },
@@ -3561,7 +3607,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "237451"
       }
      },
@@ -3575,7 +3621,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "779"
       }
      },
@@ -3589,7 +3635,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "10046|10891"
       }
      },
@@ -3603,7 +3649,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "1462"
       }
      },
@@ -3617,21 +3663,21 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "6075|1480|5605|6496|13042"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Comedy series",
+      "title": "Comedy",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,35",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withoutGenres": "10762"
       }
      },
@@ -3645,7 +3691,7 @@
        "voteCountGte": 20,
        "withGenres": "16,35",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "9840"
       }
      },
@@ -3659,48 +3705,48 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "9914"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Drama series",
+      "title": "Drama",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,18",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Romance series",
+      "title": "Romance",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "9840"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Mystery series",
+      "title": "Mystery",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,9648",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3713,21 +3759,21 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "272553|12565"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Sci-fi and fantasy series",
+      "title": "Sci-fi and fantasy",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,10765",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withoutGenres": "10762"
       }
      },
@@ -3741,7 +3787,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "177895"
       }
      },
@@ -3755,7 +3801,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "6152"
       }
      },
@@ -3769,7 +3815,7 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "315058|325319"
       }
      },
@@ -3783,21 +3829,21 @@
        "voteCountGte": 20,
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
        "withKeywords": "292887|358020|382274"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Kids series",
+      "title": "Kids",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,10762",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3810,7 +3856,7 @@
        "voteCountGte": 20,
        "withGenres": "16,28",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3823,7 +3869,7 @@
        "voteCountGte": 20,
        "withGenres": "16,12",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3836,7 +3882,7 @@
        "voteCountGte": 20,
        "withGenres": "16,14",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3849,7 +3895,7 @@
        "voteCountGte": 20,
        "withGenres": "16,878",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3862,7 +3908,7 @@
        "voteCountGte": 20,
        "withGenres": "16,10749",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      },
      {
@@ -3875,7 +3921,7 @@
        "voteCountGte": 20,
        "withGenres": "16,10751",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512"
       }
      }
     ],
@@ -3891,7 +3937,7 @@
     "focusGifEnabled": false,
     "coverEmoji": null,
     "tileShape": "LANDSCAPE",
-    "hideTitle": false,
+    "hideTitle": true,
     "sources": [
      {
       "provider": "addon",

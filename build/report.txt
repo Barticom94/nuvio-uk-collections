@@ -95,7 +95,7 @@ nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Trending o
 nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Best originals | 50 | ok | Taskmaster; Black Mirror; The Storyteller
 nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Original films | 231 | ok | Poor Things; Sacrifice; The Zone of Interest
 nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Exclusive films | 173 | ok | Knives Out; Raiders of the Lost Ark; Everything Everywhere All at Once | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Exclusive series | 178 | ok | Magnum P.I.; Ally McBeal; The West Wing | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Exclusive series | 180 | ok | Magnum P.I.; Ally McBeal; The West Wing | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - New films | 319 | ok | Bowie: The Final Act; 1000 Men and Me: The Bonnie Blue Story; Bob Trevino Likes It
 nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - New series | 518 | ok | It Gets Worse; Pierre; Hit Point
 nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Best exclusive films | 100 | ok | Radical; For Sama; Raiders of the Lost Ark | exclusion spot-check 5/5 clean
@@ -115,7 +115,7 @@ nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Exclus
 nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - New films | 163 | ok | Detective Conan: The Counterfeit Case of Ultra 30; Assassination Classroom the Movie: Our Time; That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea
 nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - New series | 1619 | ok | Dragon Ball Super: Beerus; The Vermilion Mask; Firefly Wedding
 nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Best exclusive films | 37 | ok | Attack on Titan: THE LAST ATTACK; Chainsaw Man - The Movie: Reze Arc; The Quintessential Quintuplets Movie | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Best exclusive series | 375 | ok | Go for It, Nakamura-kun!!; Takopi's Original Sin; Berserk: The Golden Age Arc – Memorial Edition | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Best exclusive series | 375 | ok | Go for It, Nakamura-kun!!; Takopi's Original Sin; Berserk: The Golden Age Arc - Memorial Edition | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Shudder / Shudder - Trending originals | 12 | THIN | The Terror: Devil in Silver; Creepshow; The Boulet Brothers' Dragula
 nuvio-collections.json | Streaming Services / Shudder / Shudder - Best originals | 12 | THIN | Creepshow; The Dead Lands; Cursed Films
 nuvio-collections.json | Streaming Services / Shudder / Shudder - Exclusive films | 383 | ok | The Cycle; V/H/S/MIXTAPE; The Texas Chain Saw Massacre | exclusion spot-check 5/5 clean
@@ -139,51 +139,51 @@ nuvio-collections.json | Streaming Services / WOW / WOW - Exclusive series | 19 
 nuvio-collections.json | Streaming Services / WOW / WOW - New series | 26 | ok | Drag Race Philippines: Slaysian Royale; RuPaul's Drag Race Global All Stars; Drag Race España All Stars
 nuvio-collections.json | Streaming Services / WOW / WOW - Best exclusive series | 4 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 4/4 clean
 nuvio-collections.json | Movies / New and Trending / New films | 20001 | ok | Surviving Hurricane Otis; Ali G: Who Iz I?; Masterplan
-nuvio-collections.json | Movies / New and Trending / Trending films | 328 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
-nuvio-collections.json | Movies / New and Trending / Trending British films | 80 | ok | Fall 2: Deadpoint; The Odyssey; Pinocchio: Unstrung
-nuvio-collections.json | Movies / New and Trending / New British films | 3548 | ok | The Cycle; Sense and Sensibility; Oasis: Don't Look Back in Anger
+nuvio-collections.json | Movies / New and Trending / Trending films | 327 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
+nuvio-collections.json | Movies / New and Trending / Trending British films | 79 | ok | Fall 2: Deadpoint; The Odyssey; Pinocchio: Unstrung
+nuvio-collections.json | Movies / New and Trending / New British films | 3525 | ok | The Cycle; Sense and Sensibility; Oasis: Don't Look Back in Anger
 nuvio-collections.json | Movies / New and Trending / Trending family films | 52 | ok | Forgotten Island; Toy Story 5; Moana
-nuvio-collections.json | Movies / Top Rated / Top rated films | 1926 | ok | The Shawshank Redemption; The Godfather; Project Hail Mary
-nuvio-collections.json | Movies / Top Rated / Top rated new films | 108 | ok | Avatar Aang: The Last Airbender; Swapped; Facing El Chapo
-nuvio-collections.json | Movies / Top Rated / Top rated recent films | 264 | ok | Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Project Hail Mary
-nuvio-collections.json | Movies / Top Rated / Top rated British films | 465 | ok | Inception; The Pianist; Hacksaw Ridge
+nuvio-collections.json | Movies / Top Rated / Top rated films | 1912 | ok | The Shawshank Redemption; The Godfather; Project Hail Mary
+nuvio-collections.json | Movies / Top Rated / Top rated of the past year | 108 | ok | Avatar Aang: The Last Airbender; Swapped; Facing El Chapo
+nuvio-collections.json | Movies / Top Rated / Top rated of the past five years | 262 | ok | Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Project Hail Mary
+nuvio-collections.json | Movies / Top Rated / Top rated British films | 463 | ok | Inception; The Pianist; Hacksaw Ridge
 nuvio-collections.json | Movies / Top Rated / Top rated animated films | 268 | ok | Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Spirited Away
 nuvio-collections.json | Movies / Top Rated / Top rated family films | 147 | ok | It's a Wonderful Life; Wonder; Hachi: A Dog's Tale
-nuvio-collections.json | Movies / Top Rated / Top rated documentaries | 112 | ok | David Attenborough: A Life on Our Planet; Selena Gomez: My Mind & Me; Stop Making Sense
-nuvio-collections.json | Movies / Genres / Action | 4585 | ok | Hope; Spider-Man: Brand New Day; The Odyssey
-nuvio-collections.json | Movies / Genres / Superhero | 385 | ok | Spider-Man: Brand New Day; Avengers: Endgame; Avengers: Infinity War
-nuvio-collections.json | Movies / Genres / Adventure | 2996 | ok | Spider-Man: Brand New Day; The Odyssey; Matchbox the Movie
-nuvio-collections.json | Movies / Genres / Comedy | 8462 | ok | Buddy; Matchbox the Movie; Practical Magic 2
-nuvio-collections.json | Movies / Genres / Romantic comedy | 1963 | ok | Practical Magic 2; Forrest Gump; The Invite
-nuvio-collections.json | Movies / Genres / Drama | 10470 | ok | Animals; Digger; Interstellar
+nuvio-collections.json | Movies / Top Rated / Top rated documentaries | 111 | ok | David Attenborough: A Life on Our Planet; Selena Gomez: My Mind & Me; Stop Making Sense
+nuvio-collections.json | Movies / Genres / Action | 4584 | ok | Hope; Spider-Man: Brand New Day; The Odyssey
+nuvio-collections.json | Movies / Genres / Superhero | 384 | ok | Spider-Man: Brand New Day; Avengers: Endgame; Avengers: Infinity War
+nuvio-collections.json | Movies / Genres / Adventure | 2993 | ok | Spider-Man: Brand New Day; The Odyssey; Wildwood
+nuvio-collections.json | Movies / Genres / Comedy | 8421 | ok | Buddy; Matchbox the Movie; Forgotten Island
+nuvio-collections.json | Movies / Genres / Romantic comedy | 1951 | ok | Practical Magic 2; Forrest Gump; Spanglish
+nuvio-collections.json | Movies / Genres / Drama | 10387 | ok | Animals; Digger; Interstellar
 nuvio-collections.json | Movies / Genres / Sports | 377 | ok | F1; GOAT; Challengers
-nuvio-collections.json | Movies / Genres / Thriller | 5580 | ok | Fall 2: Deadpoint; Clayface; Insidious: Out of the Further
-nuvio-collections.json | Movies / Genres / Psychological thriller | 160 | ok | Verity; The Housemaid; Primetime
-nuvio-collections.json | Movies / Genres / Crime | 3380 | ok | Animals; The Shawshank Redemption; Inception
+nuvio-collections.json | Movies / Genres / Thriller | 5551 | ok | Fall 2: Deadpoint; Clayface; Verity
+nuvio-collections.json | Movies / Genres / Psychological thriller | 156 | ok | Verity; The Housemaid; Primetime
+nuvio-collections.json | Movies / Genres / Crime | 3359 | ok | Animals; The Shawshank Redemption; Inception
 nuvio-collections.json | Movies / Genres / Heist | 180 | ok | Inception; Die Hard; The Bad Guys 2
-nuvio-collections.json | Movies / Genres / Horror | 3632 | ok | Clayface; Buddy; Insidious: Out of the Further
-nuvio-collections.json | Movies / Genres / Sci-fi | 2350 | ok | Hope; Spider-Man: Brand New Day; Clayface
+nuvio-collections.json | Movies / Genres / Horror | 3611 | ok | Clayface; Buddy; Insidious: Out of the Further
+nuvio-collections.json | Movies / Genres / Sci-fi | 2348 | ok | Hope; Spider-Man: Brand New Day; Clayface
 nuvio-collections.json | Movies / Genres / Space | 186 | ok | Project Hail Mary; Avengers: Endgame; Interstellar
-nuvio-collections.json | Movies / Genres / Fantasy | 2243 | ok | The Odyssey; Buddy; Pinocchio: Unstrung
-nuvio-collections.json | Movies / Genres / Romance | 3818 | ok | Practical Magic 2; Love of Your Life; Corpse Bride
-nuvio-collections.json | Movies / Genres / Mystery | 1944 | ok | Hope; Verity; Pinocchio: Unstrung
+nuvio-collections.json | Movies / Genres / Fantasy | 2238 | ok | The Odyssey; Buddy; Pinocchio: Unstrung
+nuvio-collections.json | Movies / Genres / Romance | 3774 | ok | Practical Magic 2; Love of Your Life; Corpse Bride
+nuvio-collections.json | Movies / Genres / Mystery | 1936 | ok | Hope; Verity; Pinocchio: Unstrung
 nuvio-collections.json | Movies / Genres / Animation | 1957 | ok | Wildwood; Forgotten Island; Coco
-nuvio-collections.json | Movies / Genres / Family | 2215 | ok | The Dog Stars; Forgotten Island; Coco
-nuvio-collections.json | Movies / Genres / Documentary | 712 | ok | Jackass: Best and Last; The Remarkable Life of Ibelin; NAZA
-nuvio-collections.json | Movies / Genres / History | 1115 | ok | Oppenheimer; Tenzing; The Uprising
-nuvio-collections.json | Movies / Genres / War | 759 | ok | LA BOLA NEGRA; Oppenheimer; Fury
+nuvio-collections.json | Movies / Genres / Family | 2214 | ok | Forgotten Island; Coco; The Nightmare Before Christmas
+nuvio-collections.json | Movies / Genres / Documentary | 704 | ok | Jackass: Best and Last; The Remarkable Life of Ibelin; NAZA
+nuvio-collections.json | Movies / Genres / History | 1111 | ok | Oppenheimer; Tenzing; The Uprising
+nuvio-collections.json | Movies / Genres / War | 758 | ok | LA BOLA NEGRA; Oppenheimer; Fury
 nuvio-collections.json | Movies / Genres / Western | 403 | ok | No Country for Old Men; Django Unchained; The Good, the Bad and the Ugly
-nuvio-collections.json | Movies / Genres / Music | 726 | ok | Coco; Tuner; Trolls World Tour
-nuvio-collections.json | Movies / Genres / Musical | 472 | ok | The Nightmare Before Christmas; Moana; Corpse Bride
-nuvio-collections.json | Movies / Decades / 2020s | 756 | ok | Avatar Aang: The Last Airbender; Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle
-nuvio-collections.json | Movies / Decades / 2010s | 1852 | ok | Interstellar; Your Name.; Parasite
-nuvio-collections.json | Movies / Decades / 2000s | 1226 | ok | The Dark Knight; Spirited Away; The Lord of the Rings: The Return of the King
-nuvio-collections.json | Movies / Decades / 1990s | 598 | ok | The Shawshank Redemption; Schindler's List; The Green Mile
-nuvio-collections.json | Movies / Decades / 1980s | 304 | ok | Grave of the Fireflies; Cinema Paradiso; The Empire Strikes Back
-nuvio-collections.json | Movies / Decades / 1970s | 126 | ok | The Godfather; The Godfather Part II; One Flew Over the Cuckoo's Nest
+nuvio-collections.json | Movies / Genres / Music and concerts | 724 | ok | Coco; Tuner; Trolls World Tour
+nuvio-collections.json | Movies / Genres / Musical | 471 | ok | The Nightmare Before Christmas; Moana; Corpse Bride
+nuvio-collections.json | Movies / Decades / 2020s | 749 | ok | Avatar Aang: The Last Airbender; Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle
+nuvio-collections.json | Movies / Decades / 2010s | 1841 | ok | Interstellar; Your Name.; Parasite
+nuvio-collections.json | Movies / Decades / 2000s | 1221 | ok | The Dark Knight; Spirited Away; The Lord of the Rings: The Return of the King
+nuvio-collections.json | Movies / Decades / 1990s | 592 | ok | The Shawshank Redemption; Schindler's List; The Green Mile
+nuvio-collections.json | Movies / Decades / 1980s | 302 | ok | Grave of the Fireflies; Cinema Paradiso; The Empire Strikes Back
+nuvio-collections.json | Movies / Decades / 1970s | 124 | ok | The Godfather; The Godfather Part II; One Flew Over the Cuckoo's Nest
 nuvio-collections.json | Movies / Decades / 1960s | 72 | ok | Harakiri; The Good, the Bad and the Ugly; Psycho
 nuvio-collections.json | Movies / Decades / 1950s | 53 | ok | 12 Angry Men; Seven Samurai; Rear Window
-nuvio-collections.json | Movies / Collections / Marvel Cinematic Universe | 54 | ok | Spider-Man: Brand New Day; The Punisher: One Last Kill; The Fantastic 4: First Steps
+nuvio-collections.json | Movies / Collections / Marvel Cinematic Universe | 39 | ok | Spider-Man: Brand New Day; The Punisher: One Last Kill; The Fantastic 4: First Steps
 nuvio-collections.json | Movies / Collections / Star Wars | 9 | ok | Star Wars; The Empire Strikes Back; Return of the Jedi
 nuvio-collections.json | Movies / Collections / Harry Potter | 8 | ok | Harry Potter and the Philosopher's Stone; Harry Potter and the Chamber of Secrets; Harry Potter and the Goblet of Fire
 nuvio-collections.json | Movies / Collections / The Lord of the Rings | 3 | ok | The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Two Towers; The Lord of the Rings: The Return of the King
@@ -246,43 +246,43 @@ nuvio-collections.json | TV Shows / Genres / Documentary | 347 | ok | Mayday; NO
 nuvio-collections.json | TV Shows / Genres / Reality | 192 | ok | Running Man; Raw; Jeopardy!
 nuvio-collections.json | TV Shows / Genres / War and politics | 170 | ok | Lioness; Vikings; Homeland
 nuvio-collections.json | TV Shows / Genres / Western | 89 | ok | Yellowstone; Westworld; Bonanza
-nuvio-collections.json | TV Shows / Decades / 2020s | 1294 | ok | The Loyal Pin; Regular Show: The Lost Tapes; Teach You a Lesson
-nuvio-collections.json | TV Shows / Decades / 2010s | 1346 | ok | The Chosen; Reply 1988; Chernobyl
-nuvio-collections.json | TV Shows / Decades / 2000s | 488 | ok | Breaking Bad; Avatar: The Last Airbender; Los simuladores
-nuvio-collections.json | TV Shows / Decades / 1990s | 230 | ok | The Sopranos; Batman: The Animated Series; Les Contes de la rue Broca
-nuvio-collections.json | TV Shows / Decades / 1980s | 130 | ok | Cosmos: A Personal Voyage; Das Boot; Robotech
+nuvio-collections.json | TV Shows / Decades / 2020s | 494 | ok | Teach You a Lesson; Dutton Ranch; Off Campus
+nuvio-collections.json | TV Shows / Decades / 2010s | 615 | ok | The Chosen; Chernobyl; Better Call Saul
+nuvio-collections.json | TV Shows / Decades / 2000s | 235 | ok | Breaking Bad; Avatar: The Last Airbender; Planet Earth
+nuvio-collections.json | TV Shows / Decades / 1990s | 111 | ok | The Sopranos; Batman: The Animated Series; Friends
+nuvio-collections.json | TV Shows / Decades / 1980s | 46 | ok | Cosmos: A Personal Voyage; Robotech; Star Trek: The Next Generation
 nuvio-collections.json | TV Shows / Decades / 1970s | 64 | ok | The World at War; Once Upon a Time… Man; Fawlty Towers
 nuvio-collections.json | TV Shows / Decades / 1960s | 42 | ok | Monty Python's Flying Circus; Well, Just You Wait!; Star Trek
-nuvio-collections.json | Anime / New and Trending / New series | 2933 | ok | Dragon Ball Super: Beerus; The Vermilion Mask; Firefly Wedding
-nuvio-collections.json | Anime / New and Trending / New films | 1485 | ok | Detective Conan: The Counterfeit Case of Ultra 30; THE RIBBON HERO; Chiikawa the Movie: The Secret of the Mermaid Island
+nuvio-collections.json | Anime / New and Trending / New series | 2926 | ok | Dragon Ball Super: Beerus; The Vermilion Mask; Firefly Wedding
+nuvio-collections.json | Anime / New and Trending / New films | 1481 | ok | Detective Conan: The Counterfeit Case of Ultra 30; THE RIBBON HERO; Chiikawa the Movie: The Secret of the Mermaid Island
 nuvio-collections.json | Anime / New and Trending / Trending series | 221 | ok | Dragon Ball Super: Beerus; Scum of the Brave; The Beginning After the End
 nuvio-collections.json | Anime / New and Trending / Trending films | 42 | ok | Demon Slayer: Kimetsu no Yaiba Infinity Castle; Chainsaw Man - The Movie: Reze Arc; Doraemon the Movie: New Nobita and the Castle of the Undersea Devil
-nuvio-collections.json | Anime / Top Rated / Top rated series | 132 | ok | Frieren: Beyond Journey's End; One Piece; Fullmetal Alchemist: Brotherhood
-nuvio-collections.json | Anime / Top Rated / Top rated films | 138 | ok | Demon Slayer: Kimetsu no Yaiba Infinity Castle; Chainsaw Man - The Movie: Reze Arc; Spirited Away
+nuvio-collections.json | Anime / Top Rated / Top rated series | 128 | ok | Frieren: Beyond Journey's End; One Piece; Fullmetal Alchemist: Brotherhood
+nuvio-collections.json | Anime / Top Rated / Top rated films | 136 | ok | Demon Slayer: Kimetsu no Yaiba Infinity Castle; Chainsaw Man - The Movie: Reze Arc; Spirited Away
 nuvio-collections.json | Anime / Top Rated / Top rated new series | 48 | ok | Dragon Ball Super: Beerus; Go for It, Nakamura-kun!!; Chainsaw Man - The Compilation
 nuvio-collections.json | Anime / Top Rated / Top rated new films | 31 | ok | Demon Slayer: Kimetsu no Yaiba Infinity Castle; Miss Kobayashi's Dragon Maid: A lonely dragon wants to be loved; Attack on Titan: THE LAST ATTACK
-nuvio-collections.json | Anime / Genres / Action and adventure series | 717 | ok | Bleach; Pokémon; Dragon Ball Super: Beerus
-nuvio-collections.json | Anime / Genres / Isekai | 107 | ok | Re:ZERO -Starting Life in Another World-; Sword Art Online; Ascendance of a Bookworm
+nuvio-collections.json | Anime / Genres / Action and adventure | 711 | ok | Bleach; Pokémon; Dragon Ball Super: Beerus
+nuvio-collections.json | Anime / Genres / Isekai | 106 | ok | Re:ZERO -Starting Life in Another World-; Sword Art Online; Ascendance of a Bookworm
 nuvio-collections.json | Anime / Genres / Martial arts | 54 | ok | Dragon Ball Super: Beerus; Naruto; Dragon Ball Z
 nuvio-collections.json | Anime / Genres / Mecha | 97 | ok | Code Geass: Lelouch of the Rebellion; Mobile Suit Gundam SEED; Aquarion
 nuvio-collections.json | Anime / Genres / Samurai | 32 | ok | Lupin the 3rd; Rurouni Kenshin; Rurouni Kenshin
 nuvio-collections.json | Anime / Genres / Sports | 65 | ok | Ace of the Diamond; March Comes In Like a Lion; Inazuma Eleven
-nuvio-collections.json | Anime / Genres / Comedy series | 615 | ok | Chibi Maruko-chan; Detective Conan; Crayon Shin-chan
+nuvio-collections.json | Anime / Genres / Comedy | 614 | ok | Chibi Maruko-chan; Detective Conan; Crayon Shin-chan
 nuvio-collections.json | Anime / Genres / Romantic comedy | 200 | ok | Monogatari; Sailor Moon; Urusei Yatsura
 nuvio-collections.json | Anime / Genres / Slice of life | 362 | ok | Doraemon; Chibi Maruko-chan; Chihayafuru
-nuvio-collections.json | Anime / Genres / Drama series | 537 | ok | The Apothecary Diaries; Vivy -Fluorite Eye's Song-; Chihayafuru
-nuvio-collections.json | Anime / Genres / Romance series | 330 | ok | Chihayafuru; Monogatari; Sailor Moon
-nuvio-collections.json | Anime / Genres / Mystery series | 181 | ok | The Apothecary Diaries; Detective Conan; Re:ZERO -Starting Life in Another World-
-nuvio-collections.json | Anime / Genres / Psychological | 100 | ok | Tokyo Ghoul; Classroom of the Elite; Death Note
-nuvio-collections.json | Anime / Genres / Sci-fi and fantasy series | 828 | ok | Bleach; Pokémon; Dragon Ball Super: Beerus
-nuvio-collections.json | Anime / Genres / Dark fantasy | 55 | ok | JUJUTSU KAISEN; Tokyo Ghoul; Attack on Titan
-nuvio-collections.json | Anime / Genres / Supernatural | 237 | ok | Bleach; JUJUTSU KAISEN; Re:ZERO -Starting Life in Another World-
-nuvio-collections.json | Anime / Genres / Horror | 68 | ok | JoJo's Bizarre Adventure; Tokyo Ghoul; Death Note
+nuvio-collections.json | Anime / Genres / Drama | 536 | ok | The Apothecary Diaries; Vivy -Fluorite Eye's Song-; Chihayafuru
+nuvio-collections.json | Anime / Genres / Romance | 330 | ok | Chihayafuru; Monogatari; Sailor Moon
+nuvio-collections.json | Anime / Genres / Mystery | 180 | ok | The Apothecary Diaries; Detective Conan; Re:ZERO -Starting Life in Another World-
+nuvio-collections.json | Anime / Genres / Psychological | 99 | ok | Tokyo Ghoul; Classroom of the Elite; Death Note
+nuvio-collections.json | Anime / Genres / Sci-fi and fantasy | 824 | ok | Bleach; Pokémon; Dragon Ball Super: Beerus
+nuvio-collections.json | Anime / Genres / Dark fantasy | 53 | ok | JUJUTSU KAISEN; Tokyo Ghoul; Attack on Titan
+nuvio-collections.json | Anime / Genres / Supernatural | 236 | ok | Bleach; JUJUTSU KAISEN; Re:ZERO -Starting Life in Another World-
+nuvio-collections.json | Anime / Genres / Horror | 66 | ok | JoJo's Bizarre Adventure; Tokyo Ghoul; Death Note
 nuvio-collections.json | Anime / Genres / Magical girl | 29 | ok | Sailor Moon; Magical DoReMi; Cardcaptor Sakura
-nuvio-collections.json | Anime / Genres / Kids series | 63 | ok | Doraemon; Ninja Boy Rantaro; Doraemon
-nuvio-collections.json | Anime / Genres / Action films | 502 | ok | Demon Slayer: Kimetsu no Yaiba Infinity Castle; Chainsaw Man - The Movie: Reze Arc; Ghost in the Shell
-nuvio-collections.json | Anime / Genres / Adventure films | 349 | ok | Howl's Moving Castle; Princess Mononoke; Warriors of the Wind
-nuvio-collections.json | Anime / Genres / Fantasy films | 414 | ok | Spirited Away; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Howl's Moving Castle
+nuvio-collections.json | Anime / Genres / Kids | 63 | ok | Doraemon; Ninja Boy Rantaro; Doraemon
+nuvio-collections.json | Anime / Genres / Action films | 500 | ok | Demon Slayer: Kimetsu no Yaiba Infinity Castle; Chainsaw Man - The Movie: Reze Arc; Ghost in the Shell
+nuvio-collections.json | Anime / Genres / Adventure films | 348 | ok | Howl's Moving Castle; Princess Mononoke; Warriors of the Wind
+nuvio-collections.json | Anime / Genres / Fantasy films | 412 | ok | Spirited Away; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Howl's Moving Castle
 nuvio-collections.json | Anime / Genres / Sci-fi films | 364 | ok | Ghost in the Shell; Akira; Cosmic Princess Kaguya!
 nuvio-collections.json | Anime / Genres / Romance films | 107 | ok | Your Name.; Chainsaw Man - The Movie: Reze Arc; A Silent Voice: The Movie
 nuvio-collections.json | Anime / Genres / Family films | 158 | ok | Spirited Away; My Neighbor Totoro; Kiki's Delivery Service

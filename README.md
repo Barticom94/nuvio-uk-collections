@@ -9,8 +9,8 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
     then New and Best exclusive rows.
     Hulu has no UK service, so its tile only has its originals. The Netflix tile's Top 10 and Most Popular rows
     come from the UK Extras add-on.
-  - **Movies**: New and Trending (new, trending, British and family films), Top Rated (all time, new, recent,
-    British, animated, family, documentaries), Genres (TMDB's film genres but TV Movie, each followed by its
+  - **Movies**: New and Trending (new, trending, British and family films), Top Rated (all time, the past year, the
+    past five years, British, animated, family, documentaries), Genres (TMDB's film genres but TV Movie, each followed by its
     sub-genres: superhero, romantic comedy, sports, psychological thriller, heist, space, musical), Decades (1950s to
     2020s) and Collections (the MCU and 24 film series, from Star Wars and James Bond to Paddington and Wallace &
     Gromit).
@@ -24,7 +24,9 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
   - Live TV moved out of Nuvio to TiviMate on 29 Oct (Nuvio has no guide grid). UK Extras' channel catalogues stay
     in the add-on for that.
 - `covers/` holds the landscape tiles for the UK services, `covers/tiles/` our illustrated tiles for the cards of
-  Movies, TV Shows and Anime, and `covers/logos/` the title logos (one per service, one per card).
+  Movies, TV Shows and Anime, and `covers/logos/` the title logos (one per service, one per card). The art of the
+  cards before 29 Oct (Start Here, Themes, Moods, Directors, Studios, Networks and the rest) stays for profiles that
+  haven't imported the new file yet; delete it once they all have.
 
 Streaming Services, Movies, TV Shows and Anime follow the home layout ("Follow home"). On the Modern home, focusing a
 folder's tile shows its hero: a backdrop from one of its titles under the folder's title logo. Opening it gives a page
@@ -33,11 +35,12 @@ opens, so each folder holds 3 to 25 rows (Hulu has its 2).
 
 Every row of Movies, TV Shows and Anime is written out in `build/build_uk.py` (TMDB genre, keyword and collection ids,
 checked 29 Oct). Rows sorted by rating all have a vote floor. TV Shows leaves out TMDB's anime keyword, as anime has
-its own collection.
+its own collection. Every Movies row leaves out TMDB's pornography, porn industry, softcore, unsimulated sex, erotic
+movie and bdsm keywords, and the MCU row its short films and specials.
 
 Every TMDB row runs on Nuvio's own TMDB access, so it needs no catalogue add-on. Availability comes from TMDB's
 watch-provider data (sourced from JustWatch). Anime is Japanese-language animation, and every Anime row leaves out
-TMDB's hentai, ecchi, erotica, harem, nudity and fan-service keywords. Without UK Extras installed, the Netflix
+TMDB's hentai, ecchi, erotica, harem, nudity, fan-service and sexual violence keywords. Without UK Extras installed, the Netflix
 page's Top 10 and Most Popular rows stay as loading placeholders.
 
 Anime Decades uses the Decade catalogues that AIOMetadata adds when you import its Anime Essentials design
@@ -67,9 +70,9 @@ committed.
 The card art is our own illustration, drawn in `build/art.py` as SVG and rendered by headless Edge (or Chrome, with
 `EDGE=path`; muted, in a throwaway profile) to WebP tiles and PNG logos; the same build gives the same files. Each type
 has a look of its own: Movies is cinema (velvet red, brass, film strip), TV Shows broadcast (petrol blue, scan lines,
-a CRT set, test-card bars) and Anime manga pop (bright skies, ink outlines, halftone, speed lines). Each card has a
+test-card bars) and Anime manga pop (bright skies, ink outlines, halftone, speed lines). Each card has a
 motif: New and Trending rises, Top Rated has a star, Genres a mosaic of genre glyphs, Decades the decades and
-Collections a box set of film cans and a reel. The glyphs are drawn there too, so no icon set is needed. The
+Collections a box set and a reel. The glyphs are drawn there too, so no icon set is needed. The
 services' logos are their names in white, drawn with Pillow.
 
 `check.py` reads the files with the same rules as Nuvio's importer, calls every TMDB row, checks add-on rows against

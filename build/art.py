@@ -7,11 +7,12 @@
 build_uk.py runs it after writing the file. Two kinds of art, all our own:
 - The cards of Movies, TV Shows and Anime: illustrated tiles and title logos drawn here as SVG and rendered to PNG by
   headless Edge (or Chrome: EDGE=path picks the browser), then saved as WebP (tiles) or PNG (logos). Each type has its
-  own look: Movies is cinema (velvet red, brass, film strip), TV Shows is broadcast (petrol blue, scan lines, a CRT
-  set, test-card bars), Anime is manga pop (bright skies, ink outlines, halftone, speed lines). Each card has its own
-  motif: New and Trending rises (a film strip arrow, a flame on screen, a flame), Top Rated a star (in a laurel, on
-  screen, a sparkle), Genres a mosaic of genre glyphs (tiles, a video wall, manga panels), Decades the decades (a film
-  strip, a channel dial, a timeline) and Collections a box set of film cans and a reel. The glyphs are drawn here too.
+  own look: Movies is cinema (velvet red, brass, film strip), TV Shows is broadcast (petrol blue, scan lines,
+  test-card bars), Anime is manga pop (bright skies, ink outlines, halftone, speed lines). Each card has its own
+  motif: New and Trending rises (a film strip arrow, a transmitter's signal with an on-air flame, a flame), Top Rated
+  a star (in a laurel, on a CRT set, a rosette), Genres a mosaic of genre glyphs (tiles, a video wall, manga panels),
+  Decades the decades (a film strip, a TV set per decade, a timeline) and Collections a box set and a reel. The
+  glyphs are drawn here too.
 - Streaming Services' title logos: the service name in white with a soft shadow (Pillow); its tiles are the services'
   covers.
 Logos sit on a transparent canvas with the aspect of the hero's logo slot (ModernHomeHero: 100dp high, up to 220dp
@@ -114,7 +115,6 @@ GLYPHS = {
     "robot": '<rect x="5" y="8" width="14" height="11" rx="2.5"/><path d="M12 8V5.2M3 12v3.5M21 12v3.5M9.5 16h5"/>'
              '<circle cx="12" cy="4.2" r="1.1"/><circle cx="9.5" cy="12.6" r="1.2"/><circle cx="14.5" cy="12.6" r="1.2"/>',
     "ball": '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5v17M6 6c2.6 2.6 2.6 9.4 0 12M18 6c-2.6 2.6-2.6 9.4 0 12"/>',
-    "sparkle": '<path d="M12 2.5c.9 5 2.6 7.6 9.5 9.5-6.9 1.9-8.6 4.5-9.5 9.5-.9-5-2.6-7.6-9.5-9.5 6.9-1.9 8.6-4.5 9.5-9.5z"/>',
 }
 
 def glyph(name, x, y, size, color, width=2, under=None):
@@ -186,8 +186,8 @@ DEFS = """
 # --- backgrounds ---
 
 MOVIE_HUES = {"New and Trending": ("#b3203a", "#5e0d1e", "#23060c"), "Top Rated": ("#9c1838", "#4f0a22", "#1c040e"),
-              "Genres": ("#b92a2a", "#5e1114", "#22070a"), "Decades": ("#9a2a1c", "#4f120c", "#1e0806"),
-              "Collections": ("#a01f4a", "#520d29", "#1f0511")}
+              "Genres": ("#bd1f45", "#5f0c22", "#22050c"), "Decades": ("#93173a", "#4d0a1f", "#1d040b"),
+              "Collections": ("#a01f4a", "#520d29", "#1f0511")}  # crimson to burgundy, hues 340 to 355
 
 def movies_bg(card, spot=(700, 250)):
     hi, mid, deep = MOVIE_HUES[card]
@@ -210,8 +210,8 @@ def movies_bg(card, spot=(700, 250)):
 <polygon points="{spot[0] - 70},-10 {spot[0] + 70},-10 {spot[0] + 300},560 {spot[0] - 300},560" fill="url(#beam)" filter="url(#blur24)"/>
 <rect width="960" height="540" fill="url(#floor)"/>"""
 
-TV_HUES = {"New and Trending": ("#0c3a4f", "#06192a"), "Top Rated": ("#13324f", "#070f24"),
-           "Genres": ("#0b4146", "#041a1f"), "Decades": ("#163d4a", "#08161f")}
+TV_HUES = {"New and Trending": ("#16607c", "#0a2c42"), "Top Rated": ("#1e5280", "#0c1f42"),
+           "Genres": ("#136a6e", "#073135"), "Decades": ("#235f72", "#0e2b39")}
 
 def tv_bg(card, glow=(720, 260)):
     top, bottom = TV_HUES[card]
@@ -221,8 +221,8 @@ def tv_bg(card, glow=(720, 260)):
 <defs><linearGradient id="bg" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="{top}"/>
   <stop offset="1" stop-color="{bottom}"/></linearGradient>
 <radialGradient id="screenlight" cx="{glow[0] / 960:.2f}" cy="{glow[1] / 540:.2f}" r=".55">
-  <stop offset="0" stop-color="{AQUA}" stop-opacity=".30"/><stop offset="1" stop-color="{AQUA}" stop-opacity="0"/></radialGradient>
-<pattern id="scan" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="2" fill="#000" opacity=".22"/></pattern>
+  <stop offset="0" stop-color="{AQUA}" stop-opacity=".42"/><stop offset="1" stop-color="{AQUA}" stop-opacity="0"/></radialGradient>
+<pattern id="scan" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="2" fill="#000" opacity=".12"/></pattern>
 <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset=".5" stop-color="#000" stop-opacity="0"/>
   <stop offset="1" stop-color="#000" stop-opacity=".5"/></linearGradient></defs>
 <rect width="960" height="540" fill="url(#bg)"/>
@@ -231,7 +231,7 @@ def tv_bg(card, glow=(720, 260)):
 <rect width="960" height="540" fill="url(#scan)"/>
 {bars}"""
 
-ANIME_SKY = {"New and Trending": ("#3a1c8c", "#c23f97", "#ff8a63"), "Top Rated": ("#100a38", "#2f2183", "#5a3ab8"),
+ANIME_SKY = {"New and Trending": ("#ff8a2a", "#ff4040", "#c3124d"), "Top Rated": ("#100a38", "#2f2183", "#5a3ab8"),
              "Genres": ("#1f6fe8", "#3d9cff", "#8bd6ff"), "Decades": ("#0f9f97", "#25c4ad", "#8ee8cc")}
 
 def anime_bg(card, tone_at=(860, 90)):
@@ -267,8 +267,7 @@ def movies_rising():
   <path d="{path}" fill="none" stroke="#2b0a10" stroke-width="52"/>
   <path d="{path}" fill="none" stroke="#ffd26a" stroke-width="44" stroke-dasharray="58 9" opacity=".95"/>
   <polygon points="{at(96, 0)} {at(-6, 74)} {at(-6, -74)}" fill="url(#gold)" stroke="#8a5512" stroke-width="3" stroke-linejoin="round"/>
-</g>
-{sparkle(770, 120, 26, IVORY)}{sparkle(940, 290, 16, "#ffd977")}{sparkle(690, 250, 12, "#ffd977")}{sparkle(935, 66, 10, IVORY)}"""
+</g>"""
 
 def laurel(cx, cy, R, n=11):
     out = []
@@ -290,14 +289,13 @@ def laurel(cx, cy, R, n=11):
     return "".join(out)
 
 def movies_top():
-    cx, cy = 730, 262
+    cx, cy = 762, 250
     return f"""
 <circle cx="{cx}" cy="{cy}" r="200" fill="#ffcf73" opacity=".22" filter="url(#blur24)"/>
-<g filter="url(#drop)">{laurel(cx, cy, 178)}
-  <polygon points="{star(cx, cy - 6, 118, 50)}" fill="url(#gold)" stroke="#8a5512" stroke-width="4" stroke-linejoin="round"/>
-  <polygon points="{star(cx - 8, cy - 18, 70, 30)}" fill="#fff6d6" opacity=".35"/>
-</g>
-{sparkle(540, 120, 18, IVORY)}{sparkle(930, 110, 14, "#ffd977")}{sparkle(910, 420, 20, IVORY)}"""
+<g filter="url(#drop)">{laurel(cx, cy, 168)}
+  <polygon points="{star(cx, cy - 6, 112, 48)}" fill="url(#gold)" stroke="#8a5512" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="{star(cx - 8, cy - 18, 66, 28)}" fill="#fff6d6" opacity=".35"/>
+</g>"""
 
 def movies_genres():
     names = ["bolt", "heart", "ghost", "rocket", "mask", "magnifier", "crown", "note", "cactus", "house", "eye", "hourglass"]
@@ -339,21 +337,31 @@ def reel(cx, cy, r):
             f'<circle cx="{cx}" cy="{cy}" r="{r * .9:.1f}" fill="none" stroke="#8a5512" stroke-width="2" opacity=".6"/>{holes}'
             f'<circle cx="{cx}" cy="{cy}" r="{r * .14:.1f}" fill="#2a0712"/><circle cx="{cx}" cy="{cy}" r="{r * .06:.1f}" fill="#f6d590"/>')
 
-def can(cx, cy, rx, ry, depth, band):
-    """A film can lying flat: the side (with a coloured band) under its gold lid."""
-    return (f'<path d="M{cx - rx} {cy}v{depth}a{rx} {ry} 0 0 0 {2 * rx} 0v{-depth}z" fill="#8c5a17"/>'
-            f'<path d="M{cx - rx} {cy + depth * .35:.1f}a{rx} {ry} 0 0 0 {2 * rx} 0" fill="none" stroke="{band}" stroke-width="{depth * .3:.1f}"/>'
-            f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="url(#gold)" stroke="#8a5512" stroke-width="3"/>'
-            f'<ellipse cx="{cx}" cy="{cy}" rx="{rx * .62:.1f}" ry="{ry * .62:.1f}" fill="none" stroke="#8a5512" stroke-width="2" opacity=".7"/>')
-
 def movies_collections():
+    """A box set: five numbered cases in a brass-edged slipcase seen from its open side, a reel behind it."""
+    x0, y0, x1, y1, wall, dx, dy = 618, 136, 850, 380, 12, 54, -28  # the open face, and the depth the box recedes by
+    n, gap = 5, 3
+    sw = (x1 - x0 - 2 * wall - (n - 1) * gap) / n
+    spines = []
+    for k in range(n):
+        x, top, h = x0 + wall + k * (sw + gap), y0 + wall + 6, y1 - y0 - 2 * wall - 6
+        spines.append(f'<rect x="{x:.1f}" y="{top}" width="{sw:.1f}" height="{h}" rx="3" fill="{["#6a0f28", "#561024"][k % 2]}"/>'
+                      f'<rect x="{x:.1f}" y="{top + 16}" width="{sw:.1f}" height="7" fill="url(#goldh)"/>'
+                      f'<rect x="{x:.1f}" y="{top + h - 23}" width="{sw:.1f}" height="7" fill="url(#goldh)"/>'
+                      f'<rect x="{x + 8:.1f}" y="{top + 34}" width="{sw - 16:.1f}" height="3" fill="#f1c35a" opacity=".55"/>'
+                      f'<text x="{x + sw / 2:.1f}" y="{top + h / 2 + 14:.1f}" text-anchor="middle" font-family="Outfit" '
+                      f'font-weight="800" font-size="40" fill="url(#gold)">{k + 1}</text>')
+    edge = 'stroke="url(#gold)" stroke-width="4" stroke-linejoin="round"'
     return f"""
-<circle cx="790" cy="250" r="250" fill="#ffb86b" opacity=".18" filter="url(#blur24)"/>
-<g filter="url(#drop)">
-  {reel(830, 178, 124)}
-  {can(790, 392, 150, 38, 42, "#c2364f")}{can(802, 330, 142, 36, 40, "#3a0a14")}{can(784, 270, 134, 34, 38, "#c2364f")}
-</g>
-{sparkle(620, 150, 16, IVORY)}{sparkle(940, 380, 14, "#ffd977")}"""
+<circle cx="760" cy="230" r="260" fill="#ffb86b" opacity=".18" filter="url(#blur24)"/>
+<g filter="url(#drop)">{reel(806, 116, 104)}</g>
+<g transform="rotate(-3 734 258)" filter="url(#drop)">
+  <polygon points="{x0},{y0} {x0 + dx},{y0 + dy} {x1 + dx},{y0 + dy} {x1},{y0}" fill="#7a5214" {edge}/>
+  <polygon points="{x1},{y0} {x1 + dx},{y0 + dy} {x1 + dx},{y1 + dy} {x1},{y1}" fill="#3d0815" {edge}/>
+  <rect x="{x0}" y="{y0}" width="{x1 - x0}" height="{y1 - y0}" rx="6" fill="#2a0710" {edge}/>
+  <rect x="{x0 + wall}" y="{y0 + wall}" width="{x1 - x0 - 2 * wall}" height="{y1 - y0 - 2 * wall}" fill="#12030a"/>
+  {"".join(spines)}
+</g>"""
 
 def crt(cx, cy, sw, sh, content, tilt=0, cid="scr"):
     """A retro TV set: a screen sw x sh centred on (cx, cy), a knob panel on the right, antenna and feet."""
@@ -380,102 +388,149 @@ def crt(cx, cy, sw, sh, content, tilt=0, cid="scr"):
 </g></g>"""
 
 def tv_trending():
-    cx, cy = 662, 262
-    screen = (f'<circle cx="{cx}" cy="{cy + 30}" r="110" fill="{CORAL}" opacity=".45" filter="url(#blur24)"/>'
-              + flame(cx, cy + 4, .5, (CORAL, AMBER, "#fff4d0")))
-    return f'<circle cx="{cx}" cy="{cy}" r="260" fill="{CORAL}" opacity=".12" filter="url(#blur24)"/>' + crt(cx, cy, 270, 200, screen)
+    """A transmitter mast sending rising signal arcs, with a flame in an on-air bug."""
+    cx, top, base, beacon = 742, 236, 528, 176
+    lv = [top + (base - top) * k / 6 for k in range(7)]
+    def half(y): return 12 + (y - top) / (base - top) * 92  # the mast's half width at height y
+    legs = f'M{cx - half(base):.0f} {base}L{cx - 12} {top}M{cx + half(base):.0f} {base}L{cx + 12} {top}'
+    braces = "".join(f'M{cx - half(y0):.1f} {y0:.1f}L{cx + half(y1):.1f} {y1:.1f}M{cx + half(y0):.1f} {y0:.1f}L{cx - half(y1):.1f} {y1:.1f}'
+                     for y0, y1 in zip(lv, lv[1:]))
+    rungs = "".join(f'<line x1="{cx - half(y):.1f}" y1="{y:.1f}" x2="{cx + half(y):.1f}" y2="{y:.1f}" stroke="{CORAL if k % 2 else "#dfe8ef"}"/>'
+                    for k, y in enumerate(lv[1:-1]))
+    def arc(r): return (f'M{cx + r * math.cos(math.radians(-152)):.1f} {beacon + r * math.sin(math.radians(-152)):.1f}'
+                        f'A{r} {r} 0 0 1 {cx + r * math.cos(math.radians(-28)):.1f} {beacon + r * math.sin(math.radians(-28)):.1f}')
+    arcs = "".join(f'<path d="{arc(r)}" fill="none" stroke="{AQUA}" stroke-width="{w}" stroke-linecap="round" opacity="{o}"/>'
+                   for r, w, o in ((50, 13, 1), (92, 12, .85), (134, 11, .65), (172, 10, .45)))
+    return f"""
+<circle cx="{cx}" cy="{beacon}" r="230" fill="{AQUA}" opacity=".14" filter="url(#blur24)"/>
+<g filter="url(#drop)">
+  <g fill="none" stroke="#9fb3c4" stroke-width="5" stroke-linecap="round"><path d="{braces}"/></g>
+  <g stroke-width="7" stroke-linecap="round">{rungs}</g>
+  <path d="{legs}" fill="none" stroke="#dfe8ef" stroke-width="9" stroke-linecap="round"/>
+  <path d="M{cx} {top}V{beacon + 12}" stroke="#dfe8ef" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="{cx}" cy="{beacon}" r="15" fill="{CORAL}" filter="url(#glow)"/>
+  {arcs}
+</g>
+<g filter="url(#drop)">
+  <rect x="818" y="356" width="108" height="108" rx="24" fill="#0a1017" stroke="{CORAL}" stroke-width="5"/>
+  <circle cx="872" cy="414" r="40" fill="{CORAL}" opacity=".35" filter="url(#blur24)"/>
+  {flame(872, 408, .26, (CORAL, AMBER, "#fff4d0"))}
+</g>"""
 
 def tv_top():
-    cx, cy = 662, 262
-    small = "".join(f'<polygon points="{star(cx - 72 + k * 36, cy + 70, 14, 6)}" fill="{AMBER if k < 4 else "#3b6f78"}"/>' for k in range(5))
-    screen = (f'<circle cx="{cx}" cy="{cy - 18}" r="100" fill="{AMBER}" opacity=".4" filter="url(#blur24)"/>'
-              f'<polygon points="{star(cx, cy - 18, 76, 31)}" fill="{AMBER}" stroke="#fff1c2" stroke-width="4" stroke-linejoin="round"/>{small}')
-    return (f'<circle cx="{cx}" cy="{cy}" r="260" fill="{AMBER}" opacity=".10" filter="url(#blur24)"/>' + crt(cx, cy, 270, 200, screen, tilt=-4)
-            + sparkle(905, 110, 18, "#fff1c2") + sparkle(500, 150, 12, AQUA))
+    cx, cy = 714, 236
+    small = "".join(f'<polygon points="{star(cx - 72 + k * 36, cy + 66, 14, 6)}" fill="{AMBER if k < 4 else "#3b6f78"}"/>' for k in range(5))
+    screen = (f'<circle cx="{cx}" cy="{cy - 18}" r="100" fill="{AMBER}" opacity=".45" filter="url(#blur24)"/>'
+              f'<polygon points="{star(cx, cy - 20, 72, 29)}" fill="{AMBER}" stroke="#fff1c2" stroke-width="4" stroke-linejoin="round"/>{small}')
+    return (f'<circle cx="{cx}" cy="{cy}" r="260" fill="{AMBER}" opacity=".12" filter="url(#blur24)"/>'
+            + crt(cx, cy, 256, 190, screen, tilt=-4))
 
 def tv_genres():
     names = ["couch", "cross", "scales", "ghost", "fingerprint", None, "rocket", "mask", "camera", "shield", "house", "heart"]
+    lit = {1: CORAL, 6: AMBER, 8: AQUA}  # screens lit in one colour, their glyph dark
     cells = []
     for i, g in enumerate(names):
         r, c = divmod(i, 4)
         x, y = 462 + c * 128, 58 + r * 104
         cells.append(f'<rect x="{x}" y="{y}" width="118" height="94" rx="14" fill="#0a1017"/>'
-                     f'<rect x="{x + 6}" y="{y + 6}" width="106" height="82" rx="10" fill="url(#wallg)"/>')
+                     f'<rect x="{x + 6}" y="{y + 6}" width="106" height="82" rx="10" fill="{lit.get(i, "url(#wallg)")}"/>')
         if g is None:  # one screen shows the test card
             cells.append("".join(f'<rect x="{x + 6 + k * 106 / 7:.1f}" y="{y + 6}" width="{106 / 7 + .5:.1f}" height="82" fill="{col}"/>'
                                  for k, col in enumerate(BARS)))
         else:
-            cells.append(glyph(g, x + 59, y + 47, 54, [AQUA, CREAM, CORAL][i % 3], 2.2))
+            cells.append(glyph(g, x + 59, y + 47, 70, "#0a1017" if i in lit else [AQUA, CREAM, CORAL][i % 3], 2.8))
+        cells.append(f'<rect x="{x + 6}" y="{y + 6}" width="106" height="82" rx="10" fill="url(#scan)"/>')  # scan lines on screen
     return f"""
-<defs><radialGradient id="wallg" cx=".5" cy=".45" r=".75"><stop offset="0" stop-color="#145f6b"/><stop offset="1" stop-color="#041820"/></radialGradient></defs>
-<circle cx="700" cy="230" r="280" fill="{AQUA}" opacity=".12" filter="url(#blur24)"/>
-<g filter="url(#drop)">{"".join(cells)}</g>
-<rect x="455" y="50" width="520" height="330" fill="url(#scan)"/>"""
+<defs><radialGradient id="wallg" cx=".5" cy=".45" r=".75"><stop offset="0" stop-color="#1b7480"/><stop offset="1" stop-color="#06222b"/></radialGradient></defs>
+<circle cx="700" cy="230" r="280" fill="{AQUA}" opacity=".16" filter="url(#blur24)"/>
+<g filter="url(#drop)">{"".join(cells)}</g>"""
+
+# The TV set by decade: body width and height, screen inset, corner radius, body colour, what it stands on
+TV_SETS = {"60s": (100, 118, 14, 18, "#7a4a26", "legs"), "70s": (92, 106, 12, 16, "#a0672f", "ears"),
+           "80s": (100, 102, 10, 10, "#55626f", "knobs"), "90s": (94, 100, 9, 14, "#2a333e", "foot"),
+           "00s": (110, 84, 8, 8, "#b4bfca", "pedestal"), "10s": (116, 80, 5, 4, "#151b22", "stand"),
+           "20s": (124, 80, 3, 3, "#0c1015", "feet")}
+LIFT = {"legs": 24, "ears": 6, "knobs": 6, "foot": 8, "pedestal": 26, "stand": 26, "feet": 10}
+
+def tv_set(x, base, era, lit):
+    """The TV of an era standing on the line y = base from x, its decade on screen; returns (svg, width)."""
+    w, h, inset, rx, body, stand = TV_SETS[era]
+    lift = LIFT[stand]
+    y = base - lift - h
+    sx, sy, swd, sht = x + inset, y + inset, w - 2 * inset - (24 if stand == "knobs" else 0), h - 2 * inset
+    out = []
+    if stand == "legs":
+        out.append(f'<path d="M{x + 16} {y + h}l-8 {lift}M{x + w - 16} {y + h}l8 {lift}" stroke="#4a2c16" stroke-width="7" stroke-linecap="round"/>')
+    if stand == "ears":
+        out.append(f'<path d="M{x + w / 2} {y + 2}l-30 -52M{x + w / 2} {y + 2}l26 -56" stroke="#c9d3dc" stroke-width="4" stroke-linecap="round"/>'
+                   f'<rect x="{x + 18}" y="{y + h}" width="12" height="{lift}" fill="#3b2412"/>'
+                   f'<rect x="{x + w - 30}" y="{y + h}" width="12" height="{lift}" fill="#3b2412"/>')
+    if stand in ("knobs", "foot", "feet"):
+        out.append(f'<rect x="{x + 14}" y="{y + h}" width="{w - 28}" height="{lift}" rx="3" fill="#0d1218"/>')
+    if stand in ("pedestal", "stand"):
+        nw = 14 if stand == "stand" else 26
+        out.append(f'<rect x="{x + w / 2 - nw / 2}" y="{y + h}" width="{nw}" height="{lift - 6}" fill="#7d8894"/>'
+                   f'<rect x="{x + w / 2 - 36}" y="{base - 7}" width="72" height="7" rx="3" fill="#7d8894"/>')
+    out.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{body}" stroke="#0a1017" stroke-width="3"/>')
+    if stand == "knobs":
+        out.append(f'<circle cx="{x + w - 17}" cy="{y + 26}" r="7" fill="{CREAM}"/><circle cx="{x + w - 17}" cy="{y + 50}" r="5" fill="{CREAM}"/>')
+    out.append(f'<rect x="{sx}" y="{sy}" width="{swd}" height="{sht}" rx="{max(2, rx - inset / 2)}" fill="{AMBER if lit else "url(#setg)"}"/>'
+               f'<text x="{sx + swd / 2}" y="{sy + sht / 2 + 11}" text-anchor="middle" font-family="Outfit" font-weight="800" '
+               f'font-size="34" fill="{"#0a1017" if lit else "#e9fbf8"}">{era}</text>')
+    return "".join(out), w
 
 def tv_decades():
-    cx, cy, R = 720, 262, 200
-    labels = ["60s", "70s", "80s", "90s", "00s", "10s", "20s"]
-    ticks, texts = [], []
-    for k in range(43):
-        a = math.radians(150 + k * 240 / 42)
-        r0 = R - 22 if k % 7 == 0 else R - 12
-        ticks.append(f'<line x1="{cx + r0 * math.cos(a):.1f}" y1="{cy + r0 * math.sin(a):.1f}" x2="{cx + (R - 4) * math.cos(a):.1f}" '
-                     f'y2="{cy + (R - 4) * math.sin(a):.1f}"/>')
-    for i, lab in enumerate(labels):
-        a = math.radians(150 + i * 40)
-        x, y = cx + (R - 54) * math.cos(a), cy + (R - 54) * math.sin(a)
-        texts.append(f'<text x="{x:.1f}" y="{y + 12:.1f}" text-anchor="middle" font-family="Outfit" font-weight="800" font-size="34" '
-                     f'fill="{CORAL if lab == "80s" else "#1d2a36"}">{lab}</text>')
-    pa = math.radians(150 + 2 * 40)
-    ridges = "".join(f'<line x1="{cx + 64 * math.cos(math.radians(d)):.1f}" y1="{cy + 64 * math.sin(math.radians(d)):.1f}" '
-                     f'x2="{cx + 84 * math.cos(math.radians(d)):.1f}" y2="{cy + 84 * math.sin(math.radians(d)):.1f}"/>' for d in range(0, 360, 15))
+    """The TV set through the decades, 60s to 20s, on a timeline, the 80s one lit."""
+    x, base, gap, sets, dots = 58, 334, 17, [], []
+    for era in TV_SETS:
+        svg, w = tv_set(x, base, era, era == "80s")
+        sets.append(svg)
+        dots.append(f'<circle cx="{x + w / 2}" cy="{base + 18}" r="7" fill="{CORAL if era == "80s" else AQUA}"/>')
+        x += w + gap
     return f"""
-<defs><radialGradient id="face" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#fbf6ea"/><stop offset="1" stop-color="#cfc3a8"/></radialGradient>
-<radialGradient id="knob" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#3a4b5c"/><stop offset="1" stop-color="#0e151d"/></radialGradient></defs>
-<circle cx="{cx}" cy="{cy}" r="290" fill="{AQUA}" opacity=".12" filter="url(#blur24)"/>
-<g filter="url(#drop)">
-  <circle cx="{cx}" cy="{cy}" r="{R + 18}" fill="#121a24" stroke="#3e5163" stroke-width="3"/>
-  <circle cx="{cx}" cy="{cy}" r="{R}" fill="url(#face)"/>
-  <g stroke="#1d2a36" stroke-width="4" stroke-linecap="round">{"".join(ticks)}</g>{"".join(texts)}
-  <circle cx="{cx}" cy="{cy}" r="88" fill="url(#knob)" stroke="#55697c" stroke-width="3"/>
-  <g stroke="#55697c" stroke-width="5" stroke-linecap="round">{ridges}</g>
-  <circle cx="{cx}" cy="{cy}" r="58" fill="#1a2532"/>
-  <line x1="{cx + 20 * math.cos(pa):.1f}" y1="{cy + 20 * math.sin(pa):.1f}" x2="{cx + 116 * math.cos(pa):.1f}" y2="{cy + 116 * math.sin(pa):.1f}"
-        stroke="{CORAL}" stroke-width="12" stroke-linecap="round"/>
-  <circle cx="{cx}" cy="{cy}" r="14" fill="{CORAL}"/>
-</g>"""
+<defs><radialGradient id="setg" cx=".5" cy=".45" r=".75"><stop offset="0" stop-color="#1b7480"/><stop offset="1" stop-color="#06222b"/></radialGradient></defs>
+<ellipse cx="480" cy="250" rx="460" ry="170" fill="{AQUA}" opacity=".12" filter="url(#blur24)"/>
+<line x1="40" y1="{base + 18}" x2="{x}" y2="{base + 18}" stroke="#9fb3c4" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+{"".join(dots)}
+<g filter="url(#drop)">{"".join(sets)}</g>"""
 
 def anime_trending():
     cx, cy = 715, 262
     return f"""
-{speed_lines(11, 34, (470, 40, 960, 560), -78, (90, 260), "#fff", .55)}
-<circle cx="{cx}" cy="{cy + 40}" r="190" fill="{YELLOW}" opacity=".35" filter="url(#blur24)"/>
+{speed_lines(11, 30, (580, 40, 960, 560), -78, (90, 260), "#fff", .55)}
+<circle cx="{cx}" cy="{cy + 40}" r="190" fill="#fff3b0" opacity=".45" filter="url(#blur24)"/>
 <g transform="translate(10,12)">{flame(cx, cy, 1.08, (PINK,), (INK, 9))}</g>
-{flame(cx, cy, 1.08, ("#ff6f61", "#ffa63d", YELLOW), (INK, 9))}
+{flame(cx, cy, 1.08, (YELLOW, "#fff1b0", "#ffffff"), (INK, 9))}
 <path d="M{cx - 50} {cy + 60}q-12 -60 24 -110" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".7"/>
-{sparkle(520, 130, 30, "#fff", INK, 5)}{sparkle(905, 150, 22, YELLOW, INK, 5)}{sparkle(880, 420, 16, "#fff", INK, 4)}"""
+{sparkle(905, 150, 24, "#fff", INK, 5)}"""
 
 def anime_top():
-    cx, cy = 720, 255
+    cx, cy = 728, 236
     rnd = random.Random(7)
-    dots = "".join(f'<circle cx="{rnd.uniform(420, 960):.0f}" cy="{rnd.uniform(0, 520):.0f}" r="{rnd.uniform(1.5, 3.5):.1f}" fill="#fff" '
-                   f'opacity="{rnd.uniform(.4, .9):.2f}"/>' for _ in range(60))
+    pts = [(rnd.uniform(420, 960), rnd.uniform(0, 520), rnd.uniform(1.5, 3.5), rnd.uniform(.4, .9)) for _ in range(60)]
+    dots = "".join(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{r:.1f}" fill="#fff" opacity="{o:.2f}"/>'
+                   for x, y, r, o in pts if x > 630 or y < 360)  # none by the title
+    ink = f'stroke="{INK}" stroke-width="9" stroke-linejoin="round"'
+    def tail(x0, x1, y1):  # a ribbon tail with a notched end
+        return (f'<polygon points="{x0 - 26},{cy + 70} {x0 + 26},{cy + 70} {x1 + 30},{y1} {x1},{y1 - 26} {x1 - 30},{y1}" '
+                f'fill="{CYAN}" {ink}/>')
     return f"""
 {dots}
-{speed_lines(5, 10, (380, 360, 640, 520), -28, (120, 240), "#fff", .5, (3, 6))}
+{speed_lines(5, 10, (620, 400, 800, 530), -28, (120, 240), "#fff", .5, (3, 6))}
 <circle cx="{cx}" cy="{cy}" r="200" fill="{YELLOW}" opacity=".30" filter="url(#blur24)"/>
+{tail(cx - 34, cx - 80, 488)}{tail(cx + 34, cx + 74, 498)}
 <circle cx="{cx}" cy="{cy}" r="150" fill="none" stroke="#fff" stroke-width="5" stroke-dasharray="4 18" stroke-linecap="round" opacity=".7"/>
-<g transform="translate(9,11)">{sparkle(cx, cy, 175, PINK, INK, 9, .14)}</g>
-{sparkle(cx, cy, 175, YELLOW, INK, 9, .14)}
-{sparkle(cx - 18, cy - 22, 70, "#fff7c9", None, 0, .14)}
-{sparkle(535, 120, 34, "#fff", INK, 5)}{sparkle(905, 100, 26, CYAN, INK, 5)}{sparkle(900, 410, 22, "#fff", INK, 4)}{sparkle(560, 400, 14, YELLOW, INK, 4)}"""
+<polygon points="{star(cx + 10, cy + 12, 160, 72)}" fill="{PINK}" {ink}/>
+<polygon points="{star(cx, cy, 160, 72)}" fill="{YELLOW}" {ink}/>
+<polygon points="{star(cx - 10, cy - 14, 70, 31)}" fill="#fff7c9"/>
+{sparkle(905, 96, 26, CYAN, INK, 5)}"""
 
 def anime_genres():
     # a manga page: six panels with slanted gutters, each with a halftone tint and an ink-outlined glyph
     panels = [((470, 40), (690, 40), (676, 220), (470, 220), PINK, "sword"),
               ((706, 40), (940, 40), (940, 200), (692, 220), YELLOW, "robot"),
               ((470, 236), (610, 236), (600, 400), (470, 400), CYAN, "heart"),
-              ((626, 236), (940, 216), (940, 380), (616, 400), "#ffffff", "sparkle"),
+              ((626, 236), (940, 216), (940, 380), (616, 400), "#ffffff", "magnifier"),
               ((470, 416), (720, 416), (712, 560), (470, 560), "#b9a4ff", "ghost"),
               ((736, 416), (940, 396), (940, 560), (728, 560), "#ff9b5e", "ball")]
     out = []
@@ -504,11 +559,11 @@ def anime_decades():
                      f'<text x="{x}" y="{y + 15}" text-anchor="middle" font-family="Outfit" font-weight="800" font-size="42" '
                      f'fill="{INK}">{lab}</text>' for (x, y), lab, col in zip(pts, labels, cols))
     return f"""
-{speed_lines(3, 26, (420, 100, 960, 560), -40, (100, 260), "#fff", .45)}
+{speed_lines(3, 24, (560, 100, 960, 560), -40, (100, 260), "#fff", .45)}
 <polyline points="{line}" fill="none" stroke="{INK}" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="{line}" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 18"/>
 {badges}
-{sparkle(935, 270, 22, YELLOW, INK, 4)}{sparkle(660, 150, 18, "#fff", INK, 4)}{sparkle(560, 290, 14, PINK, INK, 4)}"""
+{sparkle(935, 270, 22, YELLOW, INK, 4)}{sparkle(660, 150, 18, "#fff", INK, 4)}"""
 
 # (type, card): (motif, where the background's light sits)
 MOTIFS = {
@@ -531,43 +586,48 @@ BACKGROUNDS = {"movies": movies_bg, "tv": tv_bg, "anime": anime_bg}
 
 # --- the small type label and the card's name ---
 
+LABEL_SIZE = {"movies": 40, "tv": 40, "anime": 35}  # read from the sofa on a row-size tile
+
 def label_svg(style, x, y, scale=1.0, pill=False):
     """The type label with its top-left at (x, y); pill sets Movies' and TV's on a dark pill (for logos, which land on
     bright backdrops too)."""
-    text, size, track = LABEL[style], round(30 * scale), 7 * scale
-    tw = font(size, 700).getlength(text) + track * (len(text) - 1)
+    text, size, track = LABEL[style], round(LABEL_SIZE[style] * scale), 5 * scale
+    tw = font(size, 800).getlength(text) + track * (len(text) - 1)
     base = y + size * .86
-    t = f'font-family="Outfit" font-size="{size}" letter-spacing="{track:.1f}"'
+    t = f'font-family="Outfit" font-size="{size}" font-weight="800" letter-spacing="{track:.1f}"'
     def under(width, colour):
         h = size + 18 * scale
         return (f'<rect x="{x - 16 * scale:.1f}" y="{y - 9 * scale:.1f}" width="{width + 32 * scale:.1f}" height="{h:.1f}" '
                 f'rx="{h / 2:.1f}" fill="{colour}" fill-opacity=".72"/>') if pill else ""
-    if style == "movies":  # brass lettering and a rule
-        return (under(tw + 88 * scale, "#1c0508") + f'<text x="{x}" y="{base:.1f}" {t} font-weight="700" fill="url(#goldh)">{text}</text>'
-                f'<rect x="{x + tw + 18 * scale:.1f}" y="{base - size * .38:.1f}" width="{70 * scale:.1f}" height="{4 * scale:.1f}" rx="2" fill="url(#goldh)"/>')
+    if style == "movies":  # brass lettering, and a rule on the tiles
+        rule = "" if pill else (f'<rect x="{x + tw + 18 * scale:.1f}" y="{base - size * .38:.1f}" width="{70 * scale:.1f}" '
+                                f'height="{5 * scale:.1f}" rx="2" fill="url(#goldh)"/>')
+        return under(tw, "#1c0508") + f'<text x="{x}" y="{base:.1f}" {t} fill="url(#goldh)">{text}</text>' + rule
     if style == "tv":  # an on-air light
-        r = 10 * scale
+        r = 11 * scale
         return (under(2 * r + 14 * scale + tw, "#04111f") + f'<circle cx="{x + r:.1f}" cy="{base - size * .36:.1f}" r="{r:.1f}" fill="{CORAL}" filter="url(#glow)"/>'
-                f'<text x="{x + 2 * r + 14 * scale:.1f}" y="{base:.1f}" {t} font-weight="700" fill="{AQUA}">{text}</text>')
+                f'<text x="{x + 2 * r + 14 * scale:.1f}" y="{base:.1f}" {t} fill="{AQUA}">{text}</text>')
     pad, h = 18 * scale, size * 1.55  # a sticker
     w, rx = tw + 2 * pad, 10 * scale
     return (f'<g transform="rotate(-5 {x} {y + h})"><rect x="{x + 5 * scale:.1f}" y="{y + 5 * scale:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{rx:.1f}" fill="{INK}"/>'
             f'<rect x="{x}" y="{y}" width="{w:.1f}" height="{h:.1f}" rx="{rx:.1f}" fill="{YELLOW}" stroke="{INK}" stroke-width="{5 * scale:.1f}"/>'
-            f'<text x="{x + pad:.1f}" y="{y + h / 2 + size * .36:.1f}" {t} font-weight="800" fill="{INK}">{text}</text></g>')
+            f'<text x="{x + pad:.1f}" y="{y + h / 2 + size * .36:.1f}" {t} fill="{INK}">{text}</text></g>')
 
-def label_height(style, scale=1.0): return 30 * scale * (1.55 if style == "anime" else 1)
+def label_height(style, scale=1.0): return LABEL_SIZE[style] * scale * (1.55 if style == "anime" else 1)
 
 def name_svg(style, lines, x, y0, step, size):
-    """The card's name, first baseline at y0: ivory (Movies) or white, Anime's in ink with a pink offset copy."""
+    """The card's name, first baseline at y0: ivory (Movies) or white with a dark edge, Anime's in ink with a pink
+    offset copy."""
     def texts(attrs, dx=0.0, dy=0.0):
         return "".join(f'<text x="{x + dx:.1f}" y="{y0 + i * step + dy:.1f}" font-family="Outfit" font-weight="800" '
                        f'font-size="{size}" {attrs}>{esc(line)}</text>' for i, line in enumerate(lines))
+    def edge(colour, width): return f'stroke="{colour}" stroke-width="{width}" stroke-linejoin="round" paint-order="stroke"'
     if style == "anime":
-        ink = f'stroke="{INK}" stroke-width="{max(8, round(size * .13))}" stroke-linejoin="round" paint-order="stroke"'
+        ink = edge(INK, max(8, round(size * .13)))
         shadow = texts(f'fill="{PINK}" {ink}', size * .06, size * .07)
         return f'<g filter="url(#textshadow)">{shadow}</g>' + texts(f'fill="#fff" {ink}')
-    fill = IVORY if style == "movies" else "#ffffff"
-    return f'<g filter="url(#textshadow)">{texts(f"fill=\"{fill}\"")}</g>'
+    fill, dark = (IVORY, "#2a0710") if style == "movies" else ("#ffffff", "#04111f")
+    return f'<g filter="url(#textshadow)">{texts(f"fill=\"{fill}\" " + edge(dark, round(size * .065)))}</g>'
 
 def tile_svg(ctitle, card):
     style = STYLE[ctitle]
@@ -581,11 +641,14 @@ def tile_svg(ctitle, card):
 def logo_svg(ctitle, card):
     style = STYLE[ctitle]
     w, h = LOGO
-    # One line when it fits at 96 px or more, else two at 86 px at most (as the service logos), under the type label
-    f, lines = (fit(card, w - 60, range(112, 95, -2), 1, 800) or fit(card, w - 60, range(86, 65, -4), 2, 800)
+    # One line when it fits at 96 px or more, else two at 86 px at most (78 under Anime's taller sticker), under the
+    # type label
+    f, lines = (fit(card, w - 60, range(112, 95, -2), 1, 800)
+                or fit(card, w - 60, range(78 if style == "anime" else 86, 65, -4), 2, 800)
                 or sys.exit(f"art: logo {card!r} does not fit"))
     cap, gap, scale = -f.getbbox("H", anchor="ls")[1], 22, .95
-    top = (h - (label_height(style, scale) + gap + cap + f.size * (len(lines) - 1))) / 2
+    # centred on the cap heights, 10 px higher for the descenders and the shadow under the last line
+    top = (h - (label_height(style, scale) + gap + cap + f.size * (len(lines) - 1))) / 2 - 10
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}"><defs>{DEFS}</defs>'
             f'{label_svg(style, 28 if style == "anime" else 42, top, scale, pill=True)}'
             f'{name_svg(style, lines, 24, top + label_height(style, scale) + gap + cap, f.size, f.size)}</svg>')
