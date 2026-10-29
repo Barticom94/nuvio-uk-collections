@@ -7,7 +7,7 @@ The TMDB v3 key comes from TMDB_API_KEY, or with --key-json from the tmdbApiKey 
 Add-on rows are checked against their add-on's manifest (catalogue id, type and genre option); --manifest points
 one at a local build before it is published. AIOMetadata's manifest needs a config, so its MAL rows are checked
 against its catalogue list at v3.8.3 and the live MAL genre list on ElfHosted instead.
-Collections that open as pages of rows (ROWS, FOLLOW_LAYOUT) must keep every row's Nuvio key distinct, hold 4 to 15
+Collections that open as pages of rows (ROWS, FOLLOW_LAYOUT) must keep every row's Nuvio key distinct, hold 3 to 25
 rows per folder and, for FOLLOW_LAYOUT, have the All tab off and a hero backdrop, title logo and tile on every folder.
 Every tile, logo and backdrop must load as an image; our own art that isn't on GitHub yet (a branch not pushed) only
 warns when the file in this checkout is an image.
@@ -37,7 +37,7 @@ MAL_GENRES = "https://aiometadata.elfhosted.com/api/mal/discover/reference"  # J
 MAL_LEFT_OUT = {"Hentai", "Erotica", "Ecchi", "Harem", "Reverse Harem", "Magical Sex Shift"}  # never a MAL row
 VALID_SHAPES = {"POSTER", "LANDSCAPE", "SQUARE", "poster", "wide", "square"}
 SHAPES = {"POSTER", "LANDSCAPE", "SQUARE"}  # what we write: the importer's other spellings are legacy
-ROWS_MIN, ROWS_MAX = 4, 15  # a page of rows loads every row at once and rebuilds after each one arrives
+ROWS_MIN, ROWS_MAX = 3, 25  # a page of rows loads every row at once and rebuilds after each one arrives
 # The nuvio.tv website's import (its function U) keeps only these sorts and swaps any other, or none, for its own
 # default (newest first on series), so every TMDB row has to name one; lists and collections never popularity.desc
 SITE_SORTS = {"original", "popularity.desc", "vote_average.desc", "primary_release_date.desc", "first_air_date.desc"}
@@ -269,8 +269,11 @@ def site_sort_problem(s):
     """None when the nuvio.tv website keeps this raw source's sort as it is, else what's wrong."""
     if not isinstance(s, dict) or s.get("provider") != "tmdb": return None
     sort, t = str(s.get("sortBy") or "").strip(), str(s.get("tmdbSourceType") or "").upper()
-    if sort in SITE_SORTS and not (t in ("LIST", "COLLECTION") and sort == "popularity.desc"): return None
-    return f"sort {sort or 'missing'}, which the nuvio.tv website replaces"
+    if sort not in SITE_SORTS or (t in ("LIST", "COLLECTION") and sort == "popularity.desc"):
+        return f"sort {sort or 'missing'}, which the nuvio.tv website replaces"
+    if sort == "vote_average.desc" and t == "DISCOVER" and not (s.get("filters") or {}).get("voteCountGte"):
+        return "best rated with no vote floor: a title with one 10/10 vote tops it"
+    return None
 
 def selftest():
     good = '[{"id":"c","title":"C","folders":[{"id":"f","title":"F","sources":[{"addonId":"a","type":"tv","catalogId":"x"}]}]}]'
@@ -294,6 +297,8 @@ def selftest():
     assert site_sort_problem(tmdb) is None and site_sort_problem(dict(tmdb, sortBy=None))
     assert site_sort_problem(dict(tmdb, sortBy="vote_count.desc"))
     assert site_sort_problem(dict(tmdb, tmdbSourceType="COLLECTION")) and not site_sort_problem(dict(tmdb, tmdbSourceType="COLLECTION", sortBy="original"))
+    assert site_sort_problem(dict(tmdb, sortBy="vote_average.desc"))
+    assert not site_sort_problem(dict(tmdb, sortBy="vote_average.desc", filters={"voteCountGte": 100}))
     # Row identity: the filters' hash as the JVM computes it (checked with Java 17 on 29 Oct, same field order)
     assert _jhash("abc") == 96354
     flt = {"withGenres": "16", "releaseDateGte": "2024-01-01", "voteAverageGte": 7.7, "voteCountGte": 20,
@@ -310,7 +315,8 @@ def selftest():
     assert layout_problems(page("FOLLOW_LAYOUT", four[:3] + [tm("new title", voteCountGte=0)]))[0], "only the title differs"
     assert layout_problems(page("FOLLOW_LAYOUT", four, all_tab=True))[0]
     assert layout_problems(page("FOLLOW_LAYOUT", four, hero=None))[0]
-    assert layout_problems(page("ROWS", four[:3]))[0] and not layout_problems(page("TABBED_GRID", four[:3]))[0]
+    assert layout_problems(page("ROWS", four[:2]))[0] and not layout_problems(page("TABBED_GRID", four[:2]))[0]
+    assert not layout_problems(page("ROWS", four[:3]))[0]
     assert layout_problems(page("TABBED_GRID", four, shape="wide"))[0]
     mal = [{"addonId": AIOM, "type": "anime", "catalogId": "mal.genres", "genre": g} for g in ("Action", "Drama", "Comedy", "Sports")]
     assert layout_problems(page("FOLLOW_LAYOUT", mal))[0], "genres of one catalogue are one row"

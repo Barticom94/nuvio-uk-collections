@@ -9,27 +9,31 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
     then New and Best exclusive rows.
     Hulu has no UK service, so its tile only has its originals. The Netflix tile's Top 10 and Most Popular rows
     come from the UK Extras add-on.
-  - **Movies**: Start here (new, trending and top rated films, British films and the critics' picks), Genres, More
-    genres, Decades, four franchise folders (superhero and fantasy, sci-fi and horror, action and crime, family),
-    three mood folders (crime and suspense; action, sci-fi and monsters; comedy, feel-good and true stories),
-    Directors, World directors, Hollywood, animation and indie studios, Asian cinema and World cinema.
-  - **TV Shows**: Start here (new, trending and top rated series and trending British series), Genres, Decades,
-    Drama networks and Comedy, kids and factual networks.
-  - **Anime**: Start here (new, trending and top rated series and films), Genres, Themes (isekai, shonen, mecha,
-    sports, school, slice of life, iyashikei, psychological, magical girl) and Decades (below).
+  - **Movies**: New and Trending (new, trending, British and family films), Top Rated (all time, new, recent,
+    British, animated, family, documentaries), Genres (TMDB's film genres but TV Movie, each followed by its
+    sub-genres: superhero, romantic comedy, sports, psychological thriller, heist, space, musical), Decades (1950s to
+    2020s) and Collections (the MCU and 24 film series, from Star Wars and James Bond to Paddington and Wallace &
+    Gromit).
+  - **TV Shows**: New and Trending (new, trending and British series, trending documentaries), Top Rated (all time,
+    new, British, miniseries, crime, comedies, animated, documentaries), Genres (TMDB's TV genres but News, Talk and
+    Soap, with period, medical, legal and teen drama, sitcom, police procedural, true crime, murder mystery,
+    superhero, supernatural, horror and anthology) and Decades (1960s to 2020s).
+  - **Anime**: New and Trending (new and trending series and films), Top Rated (all time and new, series and films),
+    Genres (TMDB genre rows for series, with isekai, martial arts, mecha, samurai, sports, romantic comedy, slice of
+    life, psychological, dark fantasy, supernatural, horror and magical girl, then film genres) and Decades (below).
   - Live TV moved out of Nuvio to TiviMate on 29 Oct (Nuvio has no guide grid). UK Extras' channel catalogues stay
     in the add-on for that.
-- `covers/` holds the landscape tiles for the UK services, `covers/tiles/` our tiles for every other folder and
-  `covers/logos/` the title logos.
+- `covers/` holds the landscape tiles for the UK services, `covers/tiles/` our illustrated tiles for the cards of
+  Movies, TV Shows and Anime, and `covers/logos/` the title logos (one per service, one per card).
 
 Streaming Services, Movies, TV Shows and Anime follow the home layout ("Follow home"). On the Modern home, focusing a
 folder's tile shows its hero: a backdrop from one of its titles under the folder's title logo. Opening it gives a page
 of rows under the same kind of hero, one row per source, with no tabs and no All row. Every row loads when the page
-opens, so each folder holds 4 to 15 rows (Hulu has its 2).
+opens, so each folder holds 3 to 25 rows (Hulu has its 2).
 
-The browse folders in Movies and TV Shows take one row per entry from
-[mali-king/nuvio-collections](https://github.com/mali-king/nuvio-collections) (v2), without the US and Indian entries.
-Where a franchise has several film series, its row holds the first one (Harry Potter for the Wizarding World).
+Every row of Movies, TV Shows and Anime is written out in `build/build_uk.py` (TMDB genre, keyword and collection ids,
+checked 29 Oct). Rows sorted by rating all have a vote floor. TV Shows leaves out TMDB's anime keyword, as anime has
+its own collection.
 
 Every TMDB row runs on Nuvio's own TMDB access, so it needs no catalogue add-on. Availability comes from TMDB's
 watch-provider data (sourced from JustWatch). Anime is Japanese-language animation, and every Anime row leaves out
@@ -42,7 +46,7 @@ AIOMetadata, its five rows stay as loading placeholders; with AIOMetadata but no
 the first 25 titles only. AIOMetadata only hides MAL's adult (Rx) titles when MAL safe mode (sfw) is on, so turn it
 on in every AIOMetadata config a profile uses. `MAL_FOLDERS = False` in `build/build_uk.py` takes the folder out.
 MAL's genre catalogue can't be used for rows (its genres share one catalogue id, and a page of rows shows them as one
-row), so Anime's genres and themes are TMDB rows.
+row), so Anime's genres are TMDB rows.
 
 ## Rebuild
 
@@ -56,18 +60,26 @@ Both scripts take the TMDB v3 key from `TMDB_API_KEY`, or with `--key-json` from
 file, and never print it. `build_uk.py` needs it to pick each folder's hero backdrop: the best known title among the
 first rows that isn't rated 18 (horror only where a folder has nothing else) and has a backdrop with no text on it,
 never the same title or film series twice in a collection (`HERO_ROW` and `HERO_SKIP` steer the few picks that came
-out a poor fit). It then renders the tiles and logos with `build/art.py` (Pillow). `art.py --sheet` also writes
-`build/contact-sheet.png`, every Modern folder's tile and logo over dark, bright and its own backdrop, for review; it
-isn't committed.
+out a poor fit). It then renders the tiles and logos with `build/art.py`. `art.py --sheet` also writes
+`build/contact-sheet.png`, every card's tile and logo over dark, bright and its own backdrop, for review; it isn't
+committed.
+
+The card art is our own illustration, drawn in `build/art.py` as SVG and rendered by headless Edge (or Chrome, with
+`EDGE=path`; muted, in a throwaway profile) to WebP tiles and PNG logos; the same build gives the same files. Each type
+has a look of its own: Movies is cinema (velvet red, brass, film strip), TV Shows broadcast (petrol blue, scan lines,
+a CRT set, test-card bars) and Anime manga pop (bright skies, ink outlines, halftone, speed lines). Each card has a
+motif: New and Trending rises, Top Rated has a star, Genres a mosaic of genre glyphs, Decades the decades and
+Collections a box set of film cans and a reel. The glyphs are drawn there too, so no icon set is needed. The
+services' logos are their names in white, drawn with Pillow.
 
 `check.py` reads the files with the same rules as Nuvio's importer, calls every TMDB row, checks add-on rows against
 their add-on's manifest (`--manifest ID=PATH` for one not yet published), checks that no other file reuses a link A
 collection id, and writes the result counts to
 `build/report.txt`. For pages of rows it checks that no two rows in a folder share Nuvio's row key (rows that do
-collapse into one), the 4 to 15 rows, the All tab and that every folder has its backdrop, logo and tile, and that every
+collapse into one), the 3 to 25 rows, the All tab and that every folder has its backdrop, logo and tile, and that every
 image loads. It also fails any TMDB row whose sort the nuvio.tv website would swap on upload: the website keeps only
 popularity, rating, newest first and (for lists and collections) the original order, and puts newest first on any
-series row with another sort or none, so every row names one of those. The Trending rows use fixed date floors set
+series row with another sort or none, so every row names one of those. A row sorted by rating needs a vote floor. The Trending rows use fixed date floors set
 at build time, so rebuild every month or two.
 Nuvio keeps its own copy of a collection at import and doesn't refresh it from the URL, so a rebuild only reaches a
 profile after you import the file again there. Trending and New series go by first air date, so a new season of an

@@ -1926,9 +1926,9 @@
   "showAllTab": false,
   "folders": [
    {
-    "id": "59b971f3-1990-5925-a067-80c96b3f1247",
-    "title": "Start here",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-start-here.webp",
+    "id": "1a0adac2-f729-570c-ade3-9f97c732c242",
+    "title": "New and Trending",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-new-and-trending.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
     "coverEmoji": null,
@@ -1961,6 +1961,58 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
+      "title": "Trending British films",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "releaseDateGte": "2025-10-29",
+       "withOriginCountry": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New British films",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "voteCountGte": 25,
+       "withWatchProviders": "8|1796|9|2100|337|350|2243|1899|1825|39|591|531|2303|2304|582|1853|38|41|2300|598|103|2311|333|283|1968|99|204|11|201|524|584|546|2|10|35|130|192",
+       "watchRegion": "GB",
+       "withOriginCountry": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Trending family films",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "10751",
+       "releaseDateGte": "2025-10-29"
+      }
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-new-and-trending.png"
+   },
+   {
+    "id": "1435c6d5-0a64-5574-9a3c-bb7ab3650ba6",
+    "title": "Top Rated",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-top-rated.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
       "title": "Top rated films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
@@ -1972,75 +2024,77 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "British films",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 100,
-       "withOriginCountry": "GB",
-       "withOriginalLanguage": "en"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "All-time greats",
+      "title": "Top rated new films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
-       "voteCountGte": 12000,
+       "voteCountGte": 500,
+       "releaseDateGte": "2025-10-29",
        "withoutGenres": "99|10402|10770"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Modern classics",
+      "title": "Top rated recent films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
-       "voteCountGte": 4000,
-       "releaseDateGte": "2010-01-01",
+       "voteCountGte": 2000,
+       "releaseDateGte": "2021-10-30",
        "withoutGenres": "99|10402|10770"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best of this year",
+      "title": "Top rated British films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
-       "voteCountGte": 250,
-       "releaseDateGte": "2026-01-01"
+       "voteCountGte": 1000,
+       "withoutGenres": "99|10402|10770",
+       "withOriginCountry": "GB"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Documentaries",
+      "title": "Top rated animated films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
-       "withGenres": "99",
-       "voteCountGte": 400
+       "voteCountGte": 2000,
+       "withGenres": "16"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Animated masterpieces",
+      "title": "Top rated family films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
-       "withGenres": "16",
-       "voteCountGte": 2000
+       "voteCountGte": 2000,
+       "withGenres": "10751",
+       "withoutGenres": "16"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top rated documentaries",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 400,
+       "withGenres": "99"
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/start-here.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-top-rated.png"
    },
    {
     "id": "658125c0-2e01-5a85-aa60-77e7fb6ea78b",
@@ -2057,229 +2111,280 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Action",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "28"
-      },
-      "sortBy": "popularity.desc"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Superhero",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 100,
+       "withKeywords": "9715"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Adventure",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "12"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Comedy",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "35"
-      },
-      "sortBy": "popularity.desc"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Romantic comedy",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 100,
+       "withGenres": "10749,35"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Drama",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "18"
-      },
-      "sortBy": "popularity.desc"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sports",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 100,
+       "withKeywords": "6075"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Thriller",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "53"
-      },
-      "sortBy": "popularity.desc"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Psychological thriller",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 100,
+       "withKeywords": "12565"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Crime",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "80"
-      },
-      "sortBy": "popularity.desc"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Heist",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 100,
+       "withKeywords": "10051|191845"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Horror",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "27"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Sci-Fi",
+      "title": "Sci-fi",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "878"
-      },
-      "sortBy": "popularity.desc"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Space",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 100,
+       "withKeywords": "9882|3801"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Fantasy",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "14"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Romance",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "10749"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Mystery",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "9648"
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/genres.png"
-   },
-   {
-    "id": "c18bade3-247e-517f-8a9a-50874aeec9f1",
-    "title": "More genres",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-more-genres.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
+      }
+     },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Animation",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "16"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Family",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "10751"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Kids",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 100,
-       "withGenres": "10751,16"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Documentary",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "99"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "History",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "36"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "War",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "10752"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Western",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "37"
-      },
-      "sortBy": "popularity.desc"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Music",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withGenres": "10402"
-      },
-      "sortBy": "popularity.desc"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Musical",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 100,
+       "withKeywords": "4344"
+      }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/g7CHF8gTLGooTbP4GznIGwaqAGL.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/more-genres.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-genres.png"
    },
    {
     "id": "4208875e-dfce-5d91-ac2b-9d9f78b28ebc",
@@ -2390,12 +2495,12 @@
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/5bzPWQ2dFUl2aZKkp7ILJVVkRed.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-decades.png"
    },
    {
-    "id": "f18aaf95-b80d-5a54-91d3-76c20de2300a",
-    "title": "Superhero and fantasy franchises",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-superhero-and-fantasy-franchises.webp",
+    "id": "2cbd7abb-37a7-5f71-995b-1305060063ec",
+    "title": "Collections",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-collections.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
     "coverEmoji": null,
@@ -2407,36 +2512,17 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Marvel Cinematic Universe",
       "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withKeywords": "180547",
-       "voteCountGte": 200
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "DC Universe",
-      "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
-       "withKeywords": "229266|312528",
-       "voteCountGte": 200
+       "voteCountGte": 200,
+       "withKeywords": "180547"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "Spider-Man",
-      "tmdbId": 556,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "X-Men",
-      "tmdbId": 748,
+      "title": "Star Wars",
+      "tmdbId": 10,
       "mediaType": "movie",
       "sortBy": "original"
      },
@@ -2459,63 +2545,16 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "Pirates of the Caribbean",
-      "tmdbId": 295,
+      "title": "James Bond",
+      "tmdbId": 645,
       "mediaType": "movie",
       "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "The Hunger Games",
-      "tmdbId": 131635,
-      "mediaType": "movie",
-      "sortBy": "original"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/nNmJRkg8wWnRmzQDe2FwKbPIsJV.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/superhero-and-fantasy-franchises.png"
-   },
-   {
-    "id": "f5a39e4b-5401-59b1-9a22-cc897acfa5b2",
-    "title": "Sci-fi and horror franchises",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-sci-fi-and-horror-franchises.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Star Wars",
-      "tmdbId": 10,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Dune",
-      "tmdbId": 726871,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Avatar",
-      "tmdbId": 87096,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Matrix",
-      "tmdbId": 2344,
+      "title": "Mission: Impossible",
+      "tmdbId": 87359,
       "mediaType": "movie",
       "sortBy": "original"
      },
@@ -2529,90 +2568,9 @@
      },
      {
       "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "MonsterVerse",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withKeywords": "380322"
-      }
-     },
-     {
-      "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "Alien",
-      "tmdbId": 8091,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Terminator",
-      "tmdbId": 528,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Planet of the Apes",
-      "tmdbId": 173710,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Back to the Future",
-      "tmdbId": 264,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Mad Max",
-      "tmdbId": 8945,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Conjuring",
-      "tmdbId": 313086,
-      "mediaType": "movie",
-      "sortBy": "original"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/sci-fi-and-horror-franchises.png"
-   },
-   {
-    "id": "40f28221-2d7f-5ee3-b83d-052eb9c50ab6",
-    "title": "Action and crime franchises",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-action-and-crime-franchises.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "James Bond",
-      "tmdbId": 645,
-      "mediaType": "movie",
-      "sortBy": "original"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Mission: Impossible",
-      "tmdbId": 87359,
+      "title": "The Dark Knight trilogy",
+      "tmdbId": 263,
       "mediaType": "movie",
       "sortBy": "original"
      },
@@ -2643,6 +2601,46 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
+      "title": "Kingsman",
+      "tmdbId": 391860,
+      "mediaType": "movie",
+      "sortBy": "original"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "The Hunger Games",
+      "tmdbId": 131635,
+      "mediaType": "movie",
+      "sortBy": "original"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "The Matrix",
+      "tmdbId": 2344,
+      "mediaType": "movie",
+      "sortBy": "original"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Avatar",
+      "tmdbId": 87096,
+      "mediaType": "movie",
+      "sortBy": "original"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Pirates of the Caribbean",
+      "tmdbId": 295,
+      "mediaType": "movie",
+      "sortBy": "original"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
       "title": "Indiana Jones",
       "tmdbId": 84,
       "mediaType": "movie",
@@ -2651,8 +2649,8 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "Rocky",
-      "tmdbId": 1575,
+      "title": "Back to the Future",
+      "tmdbId": 264,
       "mediaType": "movie",
       "sortBy": "original"
      },
@@ -2663,22 +2661,7 @@
       "tmdbId": 230,
       "mediaType": "movie",
       "sortBy": "original"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/klJMCIblHLFwCuGjKz7tyOpekIC.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/action-and-crime-franchises.png"
-   },
-   {
-    "id": "348c036f-f644-5469-81e7-b76b4cb3e175",
-    "title": "Family franchises",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-family-franchises.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
+     },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
@@ -2714,1131 +2697,23 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "Kung Fu Panda",
-      "tmdbId": 77816,
+      "title": "Paddington",
+      "tmdbId": 488924,
+      "mediaType": "movie",
+      "sortBy": "original"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Wallace & Gromit",
+      "tmdbId": 529,
       "mediaType": "movie",
       "sortBy": "original"
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/family-franchises.png"
-   },
-   {
-    "id": "ea4c6d1c-f980-526b-afa6-2e4e505d86f2",
-    "title": "Crime and suspense",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-crime-and-suspense.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Mind-Benders",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "362567|326438|10854|157171",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Heists",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "10051|15363|191845",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Spies",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "470",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Serial Killers",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "10714",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Whodunits",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "12570|207046|703",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Revenge",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "9748",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Mafia & Gangsters",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "10391|3149",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Courtroom",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "33519|222517|214780",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Political Thrillers",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "209817|10410",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Neo-Noir",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "207268|9807",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Survival",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "10349",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4HWAQu28e2yaWrtupFPGFkdNU7V.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/crime-and-suspense.png"
-   },
-   {
-    "id": "5e385f7b-1889-5bff-a0a4-e67c34ad0624",
-    "title": "Action, sci-fi and monsters",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-action-sci-fi-and-monsters.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Superheroes",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "9715",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Martial Arts",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "779|780|184656",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Space",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "9882|161176|3801",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Time Travel",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "4379",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Dystopia",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "4565|4458",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Cyberpunk & AI",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "12190|310",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Isekai",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "237451",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Video Game Adaptations",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "41645",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Disaster",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "10617|5096",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Zombies",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "12377",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Monsters & Kaiju",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "161791|1299|11100",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Vampires",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "3133",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/action-sci-fi-and-monsters.png"
-   },
-   {
-    "id": "fa9e5b7d-9fce-5ebd-a834-3fbbb5cb1596",
-    "title": "Comedy, feel-good and true stories",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-comedy-feel-good-and-true-stories.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "True Stories",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "9672",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Coming of Age",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "10683",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Sports",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "6075|209476|13042|6496",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Road Trips",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "7312",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Musicals",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "4344",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Feel-Good",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "383896|275276",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Christmas",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "207317",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Dark Comedy",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "10123",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Satire",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "8201",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Stand-Up Comedy",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "9716",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Nature & Wildlife",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "221355|9902",
-       "voteCountGte": 100
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/sCzcYW9h55WcesOqA12cgEr9Exw.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/comedy-feel-good-and-true-stories.png"
-   },
-   {
-    "id": "01e2b671-4975-5e04-bf2a-fb1b59809d9f",
-    "title": "Directors",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-directors.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Christopher Nolan",
-      "tmdbId": 525,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Denis Villeneuve",
-      "tmdbId": 137427,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Quentin Tarantino",
-      "tmdbId": 138,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Martin Scorsese",
-      "tmdbId": 1032,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Steven Spielberg",
-      "tmdbId": 488,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "David Fincher",
-      "tmdbId": 7467,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Stanley Kubrick",
-      "tmdbId": 240,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Ridley Scott",
-      "tmdbId": 578,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "James Cameron",
-      "tmdbId": 2710,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Wes Anderson",
-      "tmdbId": 5655,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Greta Gerwig",
-      "tmdbId": 45400,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Paul Thomas Anderson",
-      "tmdbId": 4762,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Jordan Peele",
-      "tmdbId": 291263,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Alfred Hitchcock",
-      "tmdbId": 2636,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/directors.png"
-   },
-   {
-    "id": "c214fee9-3c03-5955-a494-c9c2fa2b565d",
-    "title": "World directors",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-world-directors.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Bong Joon Ho",
-      "tmdbId": 21684,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Park Chan-wook",
-      "tmdbId": 10099,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Hayao Miyazaki",
-      "tmdbId": 608,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Guillermo del Toro",
-      "tmdbId": 10828,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Akira Kurosawa",
-      "tmdbId": 5026,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Wong Kar-wai",
-      "tmdbId": 12453,
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/world-directors.png"
-   },
-   {
-    "id": "c25e3e4f-a42d-552b-8c18-140202e75224",
-    "title": "Hollywood studios",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-hollywood-studios.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Marvel Studios",
-      "tmdbId": 420,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Lucasfilm",
-      "tmdbId": 1,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Walt Disney Pictures",
-      "tmdbId": 2,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "DC",
-      "mediaType": "movie",
-      "filters": {
-       "withCompanies": "9993|184898|128064",
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Warner Bros.",
-      "tmdbId": 174,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Universal",
-      "tmdbId": 33,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Paramount",
-      "tmdbId": 4,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "20th Century",
-      "mediaType": "movie",
-      "filters": {
-       "withCompanies": "127928|25",
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Sony Pictures",
-      "mediaType": "movie",
-      "filters": {
-       "withCompanies": "5|2251",
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Legendary",
-      "tmdbId": 923,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Amblin",
-      "tmdbId": 56,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Lionsgate",
-      "tmdbId": 1632,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/Ar7QuJ7sJEiC0oP3I8fKBKIQD9u.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/hollywood-studios.png"
-   },
-   {
-    "id": "2eb14249-c541-5277-9f16-2c0650eedbed",
-    "title": "Animation studios",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-animation-studios.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Pixar",
-      "tmdbId": 3,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Walt Disney Animation",
-      "tmdbId": 6125,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "DreamWorks Animation",
-      "tmdbId": 521,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Illumination",
-      "tmdbId": 6704,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Studio Ghibli",
-      "tmdbId": 10342,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "LAIKA",
-      "tmdbId": 11537,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Aardman",
-      "tmdbId": 297,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/jJKZaTBNenlFclQyjrnvzkRmvWE.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/animation-studios.png"
-   },
-   {
-    "id": "c924b3ef-371f-5cdc-bf8e-6706ba5b55ad",
-    "title": "Indie and world studios",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-indie-and-world-studios.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "A24",
-      "tmdbId": 41077,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "NEON",
-      "tmdbId": 90733,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Blumhouse",
-      "tmdbId": 3172,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Searchlight",
-      "mediaType": "movie",
-      "filters": {
-       "withCompanies": "127929|43",
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Toho",
-      "tmdbId": 882,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/indie-and-world-studios.png"
-   },
-   {
-    "id": "340edb3e-4160-5f8f-a4ca-618b82b25e9b",
-    "title": "Asian cinema",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-asian-cinema.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Korean",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 100,
-       "withOriginalLanguage": "ko"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Japanese",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginalLanguage": "ja",
-       "withoutGenres": "16"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Anime",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 100,
-       "withOriginalLanguage": "ja",
-       "withGenres": "16"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Chinese",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginalLanguage": "zh|cn"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Thai",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 10,
-       "withOriginalLanguage": "th"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Filipino",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 10,
-       "withOriginalLanguage": "tl"
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/qvZ91FwMq6O47VViAr8vZNQz3WI.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/asian-cinema.png"
-   },
-   {
-    "id": "48eb304e-0aa6-5fcb-a6dd-c53bc142d219",
-    "title": "World cinema",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-world-cinema.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "French",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginalLanguage": "fr"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Spanish",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginalLanguage": "es",
-       "withOriginCountry": "ES"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Italian",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginalLanguage": "it"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "German",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginalLanguage": "de"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Nordic",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginalLanguage": "sv|da|no|fi|is"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Turkish",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginalLanguage": "tr"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Latin American",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginCountry": "MX|AR|CO|CL|BR|PE"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Arabic",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 10,
-       "withOriginalLanguage": "ar"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "African",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 10,
-       "withOriginCountry": "NG|KE|ZA|GH|SN|ET|TZ|UG|CM|CI"
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/q6OGlZ1KMEb14AC8KbPCxyNOal6.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/world-cinema.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-collections.png"
    }
   ]
  },
@@ -3852,9 +2727,9 @@
   "showAllTab": false,
   "folders": [
    {
-    "id": "2a42a6f2-78b3-5984-9931-d71ec430b527",
-    "title": "Start here",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-start-here.webp",
+    "id": "f8055043-cef5-53f2-a184-2d0fbc32ca3e",
+    "title": "New and Trending",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-new-and-trending.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
     "coverEmoji": null,
@@ -3889,6 +2764,62 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
+      "title": "Trending British series",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "releaseDateGte": "2024-10-29",
+       "withoutGenres": "10763|10767|10766|10764",
+       "withoutKeywords": "210024",
+       "withOriginCountry": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "New British series",
+      "mediaType": "tv",
+      "sortBy": "first_air_date.desc",
+      "filters": {
+       "voteCountGte": 15,
+       "withoutGenres": "10763|10767|10766|10764",
+       "withoutKeywords": "210024",
+       "withOriginCountry": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Trending documentaries",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 10,
+       "withGenres": "99",
+       "releaseDateGte": "2024-10-29",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/tv-shows-new-and-trending.png"
+   },
+   {
+    "id": "d6893747-b152-5018-8e32-03fa10c64cf6",
+    "title": "Top Rated",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-top-rated.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
       "title": "Top rated series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
@@ -3901,20 +2832,98 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending British series",
+      "title": "Top rated new series",
       "mediaType": "tv",
-      "sortBy": "popularity.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
-       "voteCountGte": 10,
-       "withOriginCountry": "GB",
-       "withoutGenres": "10763|10767|10766|10764",
-       "releaseDateGte": "2024-10-29"
+       "voteCountGte": 300,
+       "releaseDateGte": "2024-10-29",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top rated British series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 200,
+       "withoutGenres": "10763|10767|10766|10764|99",
+       "withoutKeywords": "210024",
+       "withOriginCountry": "GB"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top rated miniseries",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 300,
+       "withKeywords": "11162",
+       "withoutGenres": "10763|10767|10766|99",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top rated crime series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 500,
+       "withGenres": "80",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top rated comedies",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 1000,
+       "withGenres": "35",
+       "withoutGenres": "10763|10767|10766|16",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top rated animated series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 500,
+       "withGenres": "16",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top rated documentaries",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 150,
+       "withGenres": "99",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/start-here.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/tv-shows-top-rated.png"
    },
    {
     "id": "c9d869f8-9ce1-5178-9b5b-cc7256f79074",
@@ -3929,175 +2938,332 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Action & Adventure",
+      "title": "Drama",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
-       "withGenres": "10759",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withGenres": "18",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Period drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "15060|195013|192772",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Medical drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "208788|11612",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Legal drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "222517|33519|214780",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Teen drama",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "193400",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Comedy",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "35",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Drama",
+      "title": "Sitcom",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
-       "withGenres": "18",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Thriller",
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 50,
-       "withGenres": "80|9648",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withKeywords": "193171",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Crime",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "80",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Sci-Fi & Fantasy",
+      "title": "Police procedural",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
-       "withGenres": "10765",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withKeywords": "268067",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "True crime",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "33722",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Mystery",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "9648",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Murder mystery",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "207046|12570",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Action and adventure",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "10759",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Superhero",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "9715",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sci-fi and fantasy",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "10765",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Supernatural",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "6152",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Horror",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "315058",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Anthology",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withKeywords": "9706",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Animation",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "16",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Family",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "10751",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Kids",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "10762",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Documentary",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "99",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "History & War",
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 50,
-       "withGenres": "10768",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Western",
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 50,
-       "withGenres": "37",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "Reality",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withGenres": "10764",
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "War and politics",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "10768",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Western",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "37",
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/A4NwkQXTXElE5iAsne5RpvS8R2Z.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/genres.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/tv-shows-genres.png"
    },
    {
     "id": "a15086fd-9ee2-571e-a7d2-da21090486bb",
@@ -4206,259 +3372,11 @@
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
       }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "1950s",
-      "mediaType": "tv",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "voteCountGte": 100,
-       "releaseDateGte": "1950-01-01",
-       "releaseDateLte": "1959-12-31",
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
-      }
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/tMRdEsMg9MyXAkcufK9YJEeIaNW.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
-   },
-   {
-    "id": "c08fe475-3200-5103-afd1-f1c651bfb7e6",
-    "title": "Drama networks",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-drama-networks.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "HBO",
-      "tmdbId": 49,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "FX",
-      "tmdbId": 88,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "AMC",
-      "tmdbId": 174,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "Showtime",
-      "tmdbId": 67,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "BBC",
-      "mediaType": "tv",
-      "filters": {
-       "withNetworks": "4|332|3",
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "Channel 4",
-      "tmdbId": 26,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "ITV",
-      "tmdbId": 9,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "tvN",
-      "tmdbId": 866,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "JTBC",
-      "tmdbId": 885,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/drama-networks.png"
-   },
-   {
-    "id": "677c7b25-e3d4-5476-9780-8590cd57ca67",
-    "title": "Comedy, kids and factual networks",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-comedy-kids-and-factual-networks.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "Comedy Central",
-      "tmdbId": 47,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "Adult Swim",
-      "tmdbId": 80,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "Cartoon Network",
-      "tmdbId": 56,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "Nickelodeon",
-      "tmdbId": 13,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "Disney Channel",
-      "tmdbId": 54,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "National Geographic",
-      "tmdbId": 43,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "Discovery",
-      "tmdbId": 64,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "History",
-      "tmdbId": 65,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      },
-      "sortBy": "popularity.desc"
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/comedy-kids-and-factual-networks.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/tv-shows-decades.png"
    }
   ]
  },
@@ -4472,9 +3390,9 @@
   "showAllTab": false,
   "folders": [
    {
-    "id": "5014f66b-7332-58c5-bd3d-6881256a84bd",
-    "title": "Start here",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/anime-start-here.webp",
+    "id": "0d49798d-bf24-599b-a80d-54cdaf067c52",
+    "title": "New and Trending",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/anime-new-and-trending.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
     "coverEmoji": null,
@@ -4515,10 +3433,10 @@
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 10,
-       "releaseDateGte": "2024-10-29",
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "releaseDateGte": "2024-10-29"
       }
      },
      {
@@ -4529,12 +3447,27 @@
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 10,
-       "releaseDateGte": "2024-10-29",
        "withGenres": "16",
        "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "releaseDateGte": "2024-10-29"
       }
-     },
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/blSthAPRbEOJBowdxppeQqNPRh9.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/anime-new-and-trending.png"
+   },
+   {
+    "id": "6b23f873-2b98-5246-9b7d-627fedc07b95",
+    "title": "Top Rated",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/anime-top-rated.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
@@ -4560,11 +3493,39 @@
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top rated new series",
+      "mediaType": "tv",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "releaseDateGte": "2024-10-29"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Top rated new films",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 50,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "releaseDateGte": "2023-10-30"
+      }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/blSthAPRbEOJBowdxppeQqNPRh9.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/rqbCbjB19amtOtFQbb3K2lgm2zv.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/start-here.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/anime-top-rated.png"
    },
    {
     "id": "4cfd228f-bc57-5776-ad33-a0ecf40a7686",
@@ -4593,6 +3554,76 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
+      "title": "Isekai",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "237451"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Martial arts",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "779"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Mecha",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "10046|10891"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Samurai",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "1462"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sports",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "6075|1480|5605|6496|13042"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
       "title": "Comedy series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
@@ -4602,6 +3633,34 @@
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
        "withoutGenres": "10762"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Romantic comedy",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,35",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "9840"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Slice of life",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "9914"
       }
      },
      {
@@ -4647,6 +3706,90 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
+      "title": "Psychological",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "272553|12565"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sci-fi and fantasy series",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,10765",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withoutGenres": "10762"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Dark fantasy",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "177895"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Supernatural",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "6152"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Horror",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "315058|325319"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Magical girl",
+      "mediaType": "tv",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
+       "withKeywords": "292887|358020|382274"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
       "title": "Kids series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
@@ -4673,12 +3816,51 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
+      "title": "Adventure films",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,12",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
       "title": "Fantasy films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,14",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sci-fi films",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,878",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Romance films",
+      "mediaType": "movie",
+      "sortBy": "popularity.desc",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,10749",
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001"
       }
@@ -4699,148 +3881,7 @@
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/z0YhJvomqedHF85bplUJEotkN5l.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/genres.png"
-   },
-   {
-    "id": "d4ffc126-2613-57e7-b056-1cff62f1396e",
-    "title": "Themes",
-    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/anime-themes.webp",
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": null,
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Isekai",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
-       "withKeywords": "237451"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Shonen",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
-       "withKeywords": "207826"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Mecha",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
-       "withKeywords": "10046|10891"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Sports",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
-       "withKeywords": "6075|1480|5605|6496|13042"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "School",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
-       "withKeywords": "6270|10873|190116"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Slice of life",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
-       "withKeywords": "9914"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Iyashikei (healing)",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
-       "withKeywords": "291483"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Psychological",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
-       "withKeywords": "272553|12565"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Magical girl",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 20,
-       "withGenres": "16",
-       "withOriginalLanguage": "ja",
-       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001",
-       "withKeywords": "292887|358020|382274"
-      }
-     }
-    ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/wJi7fRmHw0wRMldUY28sSzXpp4G.jpg",
-    "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/themes.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/anime-genres.png"
    },
    {
     "id": "a1879669-80cd-5db6-bd46-bc8b2be4a6b8",
@@ -4885,7 +3926,7 @@
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/anime-decades.png"
    }
   ]
  }
