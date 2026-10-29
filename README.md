@@ -49,8 +49,8 @@ row), so Anime's genres and themes are TMDB rows.
 ## Rebuild
 
 ```sh
-python build/build_uk.py --key-json PATH [F1_FILE]
-python build/check.py nuvio-collections.json --key-json PATH [F1_FILE]
+python build/build_uk.py --key-json PATH
+python build/check.py nuvio-collections.json --key-json PATH
 python build/art.py --sheet
 ```
 
