@@ -1,9 +1,12 @@
 """Checks collection files the way Nuvio reads them, then calls every TMDB row live.
 
-  python build/check.py FILE.json [FILE.json ...] [--only TITLE] [--key-json PATH]
+  python build/check.py FILE.json [FILE.json ...] [--only TITLE] [--key-json PATH] [--manifest ADDON_ID=PATH_OR_URL]
 
 The TMDB v3 key comes from TMDB_API_KEY, or with --key-json from the tmdbApiKey field of that JSON file
 (nothing else in it is read out). It stays in memory: never printed, logged or written.
+Add-on rows are checked against their add-on's manifest (catalogue id, type and genre option); --manifest points
+one at a local build before it is published. AIOMetadata's manifest needs a config, so its MAL rows are checked
+against its catalogue list at v3.8.3 and the live MAL genre list on ElfHosted instead.
 Writes build/report.txt (result counts per row) and exits 1 on any failure.
 
 Parser rules mirror NuvioTV dev (d14832e, 28 Oct 2026): CollectionsDataStore.validateCollectionsJson and
@@ -16,8 +19,22 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 THIN = 20
 SPOT = 5  # titles per exclusion row checked against GB watch providers
 UKX = "com.barticom94.ukextras"
-ADULT = re.compile(r"hentai|sukebei|xxx|porn|nsfw|adult(?![ -]swim)|after hours|knaben|hent:", re.I)
+UKS = "com.barticom94.uksport"
+TVVOO = "org.stremio.vavoo.clean"
+MEDIAFUSION = "stremio.addons.mediafusion|elfhostedtrb"
+AIOM = "aio-metadata"
+# Every file here is public. "Adult Cast" (a MAL theme) and Adult Swim are not adult content.
+ADULT = re.compile(r"hentai|erotica|ecchi|sukebei|xxx|porn|nsfw|\badult(?![ -]swim| cast)|after hours|knaben|hent:", re.I)
 LINK_A_BANNED = re.compile(r"vavoo|tvvoo|mediafusion|uksport|uk-sport", re.I)
+LINK_A_TITLES = ["Streaming Services", "Movies", "TV Shows", "Anime"]
+LIVE_TITLE = "Live TV"  # one collection id and title across the Live TV files, so a profile holds one
+ALLOWED_ADDONS = {"nuvio-collections.json": {UKX, AIOM}, "nuvio-live-free.json": {UKX},
+                  "nuvio-live.json": {UKX, UKS, TVVOO}, "nuvio-live-adam.json": {UKX, UKS, TVVOO, MEDIAFUSION}}
+MANIFESTS = {UKX: "https://barticom94.github.io/uk-extras/manifest.json",
+             UKS: "https://uk-sport.adamharley94.workers.dev/manifest.json"}
+AIOM_TYPES = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/addon/static/catalog-types.json"
+MAL_GENRES = "https://aiometadata.elfhosted.com/api/mal/discover/reference"  # Jikan's list, which the manifest uses
+MAL_LEFT_OUT = {"Hentai", "Erotica", "Ecchi", "Harem", "Reverse Harem", "Magical Sex Shift"}  # as in build_uk.py
 VALID_SHAPES = {"POSTER", "LANDSCAPE", "SQUARE", "poster", "wide", "square"}
 TMDB_TYPES = {"LIST", "COLLECTION", "COMPANY", "NETWORK", "DISCOVER", "PERSON", "DIRECTOR"}
 TRAKT_SORTS = {"rank", "added", "title", "released", "runtime", "popularity", "percentage", "votes"}
@@ -201,6 +218,11 @@ def selftest():
     dropped = '[{"id":"c","title":"C","folders":[{"id":"f","title":"F","sources":[{"provider":"tmdb","tmdbSourceType":"TRENDING"}]}]}]'
     assert parse(dropped)[0]["folders"][0]["dropped"] == 1
     assert not validate('[{"id":"c","title":"C","folders":[{"id":"f","title":"F","sources":[{"provider":"trakt","traktListId":"9"}]}]}]')[0]
+    assert ADULT.search("Ecchi") and ADULT.search("adult") and not ADULT.search("Adult Cast") and not ADULT.search("Adult Swim")
+    cats = {AIOM: {("anime", "mal.genres"): {"Action", "Hentai"}}}
+    mal = {"provider": "addon", "addonId": AIOM, "type": "anime", "catalogId": "mal.genres_anime", "genre": "Action"}
+    assert addon_problem(cats, mal) is None and addon_problem(cats, dict(mal, genre="Hentai"))
+    assert addon_problem(cats, dict(mal, genre="Actoin")) and addon_problem(cats, dict(mal, type="series"))
     print("selftest ok")
 
 
@@ -321,12 +343,50 @@ def head_ok(url):
     except Exception:
         return False
 
+def get_json(src):
+    if not src.startswith("https://"):
+        with open(src, encoding="utf-8") as f: return json.load(f)
+    with urllib.request.urlopen(urllib.request.Request(src, headers={"User-Agent": "nuvio-uk-check"}), timeout=30) as r:
+        return json.load(r)
+
+def addon_catalogues(argv, warns):
+    """{addon id: {(type, catalogue id): genre options}} for the add-ons we can see; an unreadable one only warns."""
+    srcs = dict(MANIFESTS)
+    for i, a in enumerate(argv):
+        if a == "--manifest":
+            k, _, v = argv[i + 1].partition("=")
+            srcs[k] = v
+    out = {}
+    for addon_id, src in srcs.items():
+        try:
+            out[addon_id] = {(c["type"], c["id"]): {o for e in c.get("extra", []) if e["name"] == "genre" for o in e.get("options") or []}
+                             for c in get_json(src)["catalogs"]}
+        except Exception as e:
+            warns.append(f"{addon_id}: manifest not read from {src} ({e}), its rows are unchecked")
+    try:
+        genres = {g["name"] for g in get_json(MAL_GENRES)["genres"]}
+        out[AIOM] = {("anime", "mal." + k): genres for k in get_json(AIOM_TYPES)["mal"]}
+    except Exception as e:
+        warns.append(f"{AIOM}: MAL catalogue or genre list not read ({e}), its rows are unchecked")
+    return out
+
+def addon_problem(cats, s):
+    """None when the row matches its add-on's catalogue (and genre option), else what is wrong."""
+    known = cats.get(s["addonId"])
+    if known is None: return None
+    cid = re.sub(r"_anime$", "", s["catalogId"]) if s["addonId"] == AIOM else s["catalogId"]  # displayType suffix
+    if (s["type"], cid) not in known: return f"no {s['type']} catalogue {s['catalogId']}"
+    if s["genre"] and s["genre"] not in known[(s["type"], cid)]: return f"genre {s['genre']!r} is not an option"
+    if s["addonId"] == AIOM and s["genre"] in MAL_LEFT_OUT: return f"genre {s['genre']} must stay out"
+    return None
+
 def main(argv):
-    files = [a for i, a in enumerate(argv) if not a.startswith("--") and (i == 0 or argv[i - 1] not in ("--only", "--key-json"))]
+    files = [a for i, a in enumerate(argv) if not a.startswith("--") and (i == 0 or argv[i - 1] not in ("--only", "--key-json", "--manifest"))]
     only = argv[argv.index("--only") + 1] if "--only" in argv else None
     tmdb = Tmdb(load_key(argv))
     today = date.today().isoformat()
-    fails, warns, report, jobs, covers = [], [], [], [], set()
+    fails, warns, report, jobs, covers, live_ids = [], [], [], [], set(), set()
+    cats = addon_catalogues(argv, warns)
 
     for path in files:
         text = open(path, encoding="utf-8").read()
@@ -347,12 +407,17 @@ def main(argv):
                 if f["coverImageUrl"]: covers.add(f["coverImageUrl"])
         for s in strings(raw):
             if "—" in s or "–" in s: fails.append(f"{name}: dash in {s!r}")
+            if ADULT.search(s): fails.append(f"{name}: adult text {s!r}")
         addon_ids = sorted({s["addonId"] for c in cols for f in c["folders"] for s in f["sources"] if s["provider"] == "addon"})
         print(f"  add-on ids used: {addon_ids or 'none'}")
-        if name == "nuvio-collections.json":  # link A: every profile, public
-            if set(addon_ids) - {UKX}: fails.append(f"{name}: link A uses other add-ons {set(addon_ids) - {UKX}}")
+        if set(addon_ids) - ALLOWED_ADDONS.get(name, set(addon_ids)):
+            fails.append(f"{name}: uses add-ons it must not {set(addon_ids) - ALLOWED_ADDONS[name]}")
+        if name == "nuvio-collections.json":  # link A: every profile
+            if [c["title"] for c in cols] != LINK_A_TITLES: fails.append(f"{name}: collections are {[c['title'] for c in cols]}")
             for s in strings(raw):
-                if ADULT.search(s) or LINK_A_BANNED.search(s): fails.append(f"{name}: banned text {s!r}")
+                if LINK_A_BANNED.search(s): fails.append(f"{name}: banned text {s!r}")
+        if name.startswith("nuvio-live"):
+            live_ids |= {(c["id"], c["title"]) for c in cols}
         for c in cols:
             if only and c["title"] != only and not any(f["title"] == only for f in c["folders"]): continue
             for f in c["folders"]:
@@ -360,8 +425,12 @@ def main(argv):
                 for s in f["sources"]:
                     where = f"{c['title']} / {f['title']} / {s.get('title') or s.get('catalogId')}"
                     if s["provider"] != "tmdb":
+                        problem = addon_problem(cats, s) if s["provider"] == "addon" else None
+                        if problem: fails.append(f"{name}: {where}: {problem}")
+                        seen = s["provider"] == "addon" and s["addonId"] in cats
                         report.append(f"{name} | {where} | {s['provider']} {s.get('addonId') or s.get('traktListId')}"
-                                      f" {s.get('catalogId', '')} {s.get('genre') or ''} | not checked here")
+                                      f" {s.get('catalogId', '')} {s.get('genre') or ''} | "
+                                      + ("catalogue checked" if seen and not problem else problem or "not checked here"))
                         continue
                     if s["sourceType"] == "NETWORK" and s["filters"].get("withNetworks"):
                         warns.append(f"{where}: NETWORK row ignores withNetworks")
@@ -379,6 +448,8 @@ def main(argv):
                 spot.append((title, bool(gb & own), sorted(gb & banned)))
         return name, where, total, items, spot, s["sourceType"] in ("DISCOVER", "COMPANY", "NETWORK")
 
+    if live_ids and (len(live_ids) != 1 or next(iter(live_ids))[1] != LIVE_TITLE):
+        fails.append(f"Live TV files must share one collection id and the title {LIVE_TITLE!r}: {sorted(live_ids)}")
     print(f"calling TMDB for {len(jobs)} rows")
     results = []
     with cf.ThreadPoolExecutor(8) as ex:

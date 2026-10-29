@@ -1,12 +1,16 @@
 """Builds the Nuvio UK collections (import format as in mali-king/nuvio-collections).
 
-  python build/build_uk.py   writes nuvio-collections.json (link A, every profile)
-                             and nuvio-live.json (link B, profiles with the live-TV add-ons)
+  python build/build_uk.py   writes nuvio-collections.json (link A, every profile: Streaming Services,
+                             Movies, TV Shows, Anime) and three Live TV files with one collection id, so a
+                             profile imports exactly one: nuvio-live-free.json (no live add-ons),
+                             nuvio-live.json (TvVoo and UK Sport) and nuvio-live-adam.json (plus F1 Replays)
 
-Link A pulls nine browse collections from mali-king's pack at its v2 tag, so the build needs network.
+Movies and TV Shows reuse mali-king's pack at its v2 tag; Anime's genre and decade tabs come from
+AIOMetadata's Anime Essentials pack at v3.8.3 and stay out until MAL_FOLDERS is on (see there).
+Both packs are fetched, so the build needs network.
 Check the output with build/check.py before publishing.
 """
-import json, os, urllib.request, uuid
+import json, os, re, urllib.request, uuid
 from datetime import date, timedelta
 
 NS = uuid.UUID('6f1c2a4e-0b7d-4c1e-9a55-3d2f7e8b9c10')
@@ -48,23 +52,38 @@ SERVICES = [
 UKX = "com.barticom94.ukextras"    # UK Extras add-on (GitHub Pages), every profile
 UKS = "com.barticom94.uksport"     # UK Sport add-on (Worker), live-TV profiles only
 TVVOO = "org.stremio.vavoo.clean"  # third-party live-TV add-on, live-TV profiles only
+MEDIAFUSION = "stremio.addons.mediafusion|elfhostedtrb"  # Adam's profile only (F1 Replays)
 NETFLIX_EXTRAS = [("series", "ukx.netflix-top10-shows"), ("movie", "ukx.netflix-top10-films"), ("movie", "ukx.netflix-popular")]
 
-# mali-king v2 pack: collections and folders left out of link A (US and Indian content)
-MK_DROP_COLLECTIONS = {"Streaming Services", "Indian Streaming", "Indian Cinema", "Indian Universes"}
+# AIOMetadata's configured manifest id is its package.json name (getManifest.ts: id = buildInfo.name; the
+# configure app's FALLBACK_ADDON_ID and Nuvio's own tests use the same). The bare /manifest.json says
+# com.aio.metadata, but that is the unconfigured stub nobody installs.
+AIOM = "aio-metadata"
+# A pack import adds these catalogues without a displayType, so the manifest ids stay unsuffixed. Editing one in
+# AIOMetadata's catalogue dialog writes displayType and the manifest id becomes "<id>_anime": set "_anime" then.
+AIOM_ID_SUFFIX = ""
+AIOM_PACK = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/public/featured/anime-essentials.json"
+# Off until MAL safe mode (sfw) is on in EVERY AIOMetadata config a profile uses. With it off, AIOMetadata doesn't
+# ask Jikan to filter, so the genre and decade tabs (School among them) list Rx hentai. Both of Adam's configs had
+# sfw false on 29 Oct. Turn this on only once both are confirmed on, then rebuild and run check.py.
+MAL_FOLDERS = False
+# Hentai, Erotica and Ecchi are MAL's adult genres. Harem, Reverse Harem and Magical Sex Shift go too: link A reaches
+# family profiles, and Jikan's sfw filter only removes Rx titles, not R+ fan service.
+MAL_LEFT_OUT = {"Hentai", "Erotica", "Ecchi", "Harem", "Reverse Harem", "Magical Sex Shift"}
+
+# mali-king v2 pack: entries left out of link A (US and Indian content)
 MK_DROP_FOLDERS = {
     "Directors": {"S. S. Rajamouli", "Mani Ratnam", "Sanjay Leela Bhansali", "Rajkumar Hirani", "Anurag Kashyap",
                   "Zoya Akhtar", "Lokesh Kanagaraj", "Satyajit Ray"},
     "Studios": {"Yash Raj Films", "Dharma Productions", "Red Chillies", "Hombale Films", "Mythri Movie Makers"},
     "Networks": {"NBC", "ABC", "CBS", "FOX", "The CW"},  # US broadcast networks with no UK channel
 }
-
-# Picks: public Trakt lists as (row title, numeric Trakt list id, "MOVIE" or "TV"). The collection is
-# left out while this is empty; add lists only after checking their ids and last-updated dates.
-PICKS = []
+# Franchises whose first film source is only part of them: the tab says what it holds.
+FRANCHISE_TAB = {"Wizarding World": "Harry Potter", "Middle-earth": "The Lord of the Rings",
+                 "Alien & Predator": "Alien", "Rocky & Creed": "Rocky", "The Conjuring Universe": "The Conjuring"}
 
 FILMS_FLOOR = {"NOW": 20, "MUBI": 20}  # Sky and MUBI make few films; at 50 votes these rows drop under 20 titles
-
+GB_STORES = "2|10|35|130|192"  # Apple TV Store, Amazon Video, Rakuten TV, Sky Store, YouTube (rent and buy)
 
 
 def discover(title, media, sort, **filters):
@@ -78,10 +97,11 @@ def addon(addon_id, type_, catalog_id, genre=None):
     if genre: s["genre"] = genre
     return s
 
+def gb_pool(): return [p for s in SERVICES if s[1] == "GB" for p in s[2].split("|")]
+
 def gb_exclusions(own_providers):
     mine = set(own_providers.split("|"))
-    pool = [p for s in SERVICES if s[1] == "GB" for p in s[2].split("|")]
-    return "|".join(dict.fromkeys(p for p in pool if p not in mine))
+    return "|".join(dict.fromkeys(p for p in gb_pool() if p not in mine))
 
 def tile_sources(title, region, providers, floor, nets, since, films, movies, series):
     f = FLOORS[floor]
@@ -124,56 +144,112 @@ def fid(slug, title): return str(uuid.uuid5(NS, f"folder:{slug}:{title}"))
 def streaming_services():
     folders = [folder(str(uuid.uuid5(NS, "folder:" + s[0])), s[0], tile_sources(*s[:9]), cover=s[9], hide_title=True)
                for s in SERVICES]
-    return collection("streaming-services-uk", "Streaming Services", folders, pin=True)
+    # Not pinned: Nuvio puts pinned collections above every other home row, and this one sits third.
+    return collection("streaming-services-uk", "Streaming Services", folders)
 
-def mali_king_browse():
-    with urllib.request.urlopen(MK_TAG + "nuvio-collections.json", timeout=60) as r:
-        pack = json.load(r)
-    titles = {c["title"] for c in pack}
-    missing = (MK_DROP_COLLECTIONS | set(MK_DROP_FOLDERS)) - titles
-    assert not missing, f"pack changed, not found: {missing}"
-    out = []
-    for c in pack:
-        if c["title"] in MK_DROP_COLLECTIONS: continue
-        drop = MK_DROP_FOLDERS.get(c["title"], set())
-        assert drop <= {f["title"] for f in c["folders"]}, f"pack changed in {c['title']}"
-        # Unpinned, so each profile can order or hide these rows on home (pinned rows always sit on top).
-        out.append(dict(c, pinToTop=False, folders=[f for f in c["folders"] if f["title"] not in drop]))
-    return out
+def fetch(url):
+    with urllib.request.urlopen(url, timeout=60) as r:
+        return json.load(r)
 
-def trending():
-    # Nuvio only takes fixed release floors, so these are set at build time: rebuild every month or two.
-    def since(days): return (date.today() - timedelta(days=days)).isoformat()
-    rows = [
-        discover("Trending Films", "movie", None, voteCountGte=20, releaseDateGte=since(180)),
-        discover("Trending Series", "tv", None, voteCountGte=20, withoutGenres=NOISE_TV, releaseDateGte=since(730)),
-        discover("Trending Anime", "tv", None, voteCountGte=10, withGenres="16", withOriginalLanguage="ja", releaseDateGte=since(730)),
+# Nuvio only takes fixed release floors, so Trending is set at build time: rebuild every month or two.
+def since(days): return (date.today() - timedelta(days=days)).isoformat()
+
+def pack_tabs(mk, title, media, drop=frozenset()):
+    """One source (one tab) per mali-king pack entry: the entry's first `media` row, named after the entry.
+    Entries with identical rows share a tab (TMDB's TV genres pair up, such as Action and Adventure)."""
+    entries = {f["title"]: f for f in mk[title]["folders"]}
+    assert drop <= set(entries), f"pack changed in {title}"
+    tabs, seen, skipped = [], {}, []
+    for name, f in entries.items():
+        if name in drop: continue
+        s = next((s for s in f["sources"] if s["mediaType"] == media), None)
+        if s is None:
+            skipped.append(name)
+            continue
+        key = json.dumps({k: v for k, v in s.items() if k != "title"}, sort_keys=True)
+        if key in seen:
+            seen[key]["title"] += " & " + name
+            continue
+        seen[key] = dict(s, title=FRANCHISE_TAB.get(name, name))
+        tabs.append(seen[key])
+    if skipped: print(f"  {title}: no {media} row, left out: {', '.join(skipped)}")
+    return tabs
+
+def grid_collection(slug, title, spec):
+    """spec: (folder title, emoji or cover URL, sources). Every folder opens as one grid per tab (a paged grid when
+    it has one source), and the All tab is off: merging dozens of genres or channels into one grid helps nobody."""
+    folders = [folder(fid(slug, t), t, s, **({"cover": c} if c.startswith("https://") else {"emoji": c}))
+               for t, c, s in spec]
+    return collection(slug, title, folders, view="TABBED_GRID", all_tab=False)
+
+def movies(mk):
+    m = "movie"
+    gb_digital = "|".join(dict.fromkeys(gb_pool() + GB_STORES.split("|")))  # on a UK service or store = out digitally
+    return grid_collection("movies", "Movies", [
+        ("New", "🆕", [discover("New films", m, "primary_release_date.desc", voteCountGte=25,
+                                withWatchProviders=gb_digital, watchRegion="GB")]),
+        ("Trending", "🔥", [discover("Trending films", m, None, voteCountGte=20, releaseDateGte=since(180))]),
+        # No documentaries, concert films or TV films, as in the pack's Critics' Picks
+        ("Top rated", "⭐", [discover("Top rated films", m, "vote_average.desc", voteCountGte=3000, withoutGenres="99|10402|10770")]),
+        ("By Genre", "🎭", pack_tabs(mk, "Genres", m)),
+        ("By Decade", "📅", pack_tabs(mk, "Decades", m)),
+        ("Collections", "🎞️", pack_tabs(mk, "Franchises & Universes", m)),
+        ("Moods", "🌗", pack_tabs(mk, "Moods & Themes", m)),
+        ("Directors", "🎬", pack_tabs(mk, "Directors", m, MK_DROP_FOLDERS["Directors"])),
+        ("Studios", "🏛️", pack_tabs(mk, "Studios", m, MK_DROP_FOLDERS["Studios"])),
+        ("World Cinema", "🌍", pack_tabs(mk, "World Cinema", m)),
+        ("Critics' picks", "🏆", pack_tabs(mk, "Critics' Picks", m)),
+    ])
+
+def tv_shows(mk):
+    t = "tv"
+    return grid_collection("tv-shows", "TV Shows", [
+        ("New", "🆕", [discover("New series", t, "first_air_date.desc", voteCountGte=10, withoutGenres=NOISE_TV)]),
+        ("Trending", "🔥", [discover("Trending series", t, None, voteCountGte=20, withoutGenres=NOISE_TV, releaseDateGte=since(730))]),
+        # 1500 votes keeps new hype shows off the top; keyword 210024 (anime) leaves anime to the Anime collection
+        ("Top rated", "⭐", [discover("Top rated series", t, "vote_average.desc", voteCountGte=1500, withoutGenres=NOISE_TV,
+                                      withoutKeywords="210024")]),
+        ("By Genre", "🎭", pack_tabs(mk, "Genres", t)),
+        ("By Decade", "📅", pack_tabs(mk, "Decades", t)),
+        ("Networks", "📡", pack_tabs(mk, "Networks", t, MK_DROP_FOLDERS["Networks"])),
+    ])
+
+def anime(pack):
+    """New, Trending and Top rated run on Nuvio's own TMDB access (Japanese-language animation). By Genre and
+    By Decade use the MAL catalogues AIOMetadata adds when the Anime Essentials pack is imported."""
+    widgets = {w["title"]: w["dataSource"]["payload"]["items"] for w in pack["widgets"] if w["type"] == "collection.row"}
+    def order(item):  # the pack numbers its cards: 1 to 21 genres, 22 to 73 themes, 74 to 78 demographics
+        n = int(re.search(r"/(\d+)-[^/]*$", item["imageURL"]).group(1))
+        return (0 if n < 22 else 2 if n < 74 else 1, n)
+    genres = [i["dataSources"][0]["payload"]["genre"] for i in sorted(widgets["Anime by Genre"], key=order)]
+    assert MAL_LEFT_OUT <= set(genres) and len(genres) == 78, "Anime Essentials pack changed"
+    decades = [i["dataSources"][0]["payload"]["aiometadata"]["catalog"]["id"] for i in widgets["Anime by Decade"]]
+    assert decades == ["mal.80sDecade", "mal.90sDecade", "mal.00sDecade", "mal.10sDecade", "mal.20sDecade"], decades
+    a = dict(withGenres="16", withOriginalLanguage="ja")
+    def mal(catalog_id, genre=None): return addon(AIOM, "anime", catalog_id + AIOM_ID_SUFFIX, genre)
+    spec = [
+        ("New", "🆕", [discover("Series", "tv", "first_air_date.desc", voteCountGte=5, **a),
+                       discover("Films", "movie", "primary_release_date.desc", voteCountGte=10, **a)]),
+        ("Trending", "🔥", [discover("Series", "tv", None, voteCountGte=10, releaseDateGte=since(730), **a),
+                            discover("Films", "movie", None, voteCountGte=10, releaseDateGte=since(730), **a)]),
+        ("Top rated", "⭐", [discover("Series", "tv", "vote_average.desc", voteCountGte=500, **a),
+                             discover("Films", "movie", "vote_average.desc", voteCountGte=500, **a)]),
     ]
-    return collection("trending", "Trending", [folder(fid("trending", "Trending now"), "Trending now", rows, emoji="🔥")])
+    if MAL_FOLDERS:
+        spec += [("By Genre", "🎭", [mal("mal.genres", g) for g in genres if g not in MAL_LEFT_OUT]),
+                 ("By Decade", "📅", [mal(d) for d in reversed(decades)])]  # newest first, as in Movies and TV Shows
+    return grid_collection("anime", "Anime", spec)
 
-def picks():
-    rows = [{"provider": "trakt", "title": t, "traktListId": i, "mediaType": m, "sortBy": "rank", "sortHow": "asc"}
-            for t, i, m in PICKS]
-    return collection("picks", "Picks", [folder(fid("picks", "Picks"), "Picks", rows, emoji="⭐")])
+# Live TV folders. An add-on source has no title in Nuvio, so each tab reads "<catalogue name> · <genre>".
+SPORT = ("Sport", "⚽", [addon(UKS, "tv", "uks.sport")])
+LIVE_CHANNELS = ("Live channels", "📺", [addon(TVVOO, "tv", "vavoo_tv_uk", g) for g in ("News", "Kids", "Movies", "Documentary", None)])
+FREE_CHANNELS = ("Free channels", "📡", [addon(UKX, "tv", "ukx.free", g) for g in
+                                         ("News", "Entertainment", "Movies", "Kids", "Sport", "Documentary", "Music", "Lifestyle", None)])
+F1_REPLAYS = ("F1 Replays", "🏁", [addon(MEDIAFUSION, "series", "formula_racing")])
 
-FREE_GENRES = [(None, "All channels", "📺"), ("News", "News", "📰"), ("Entertainment", "Entertainment", "🎭"),
-               ("Movies", "Films", "🎬"), ("Kids", "Kids", "🧸"), ("Sport", "Sport", "⚽"),
-               ("Documentary", "Documentaries", "🌍"), ("Music", "Music", "🎵"), ("Lifestyle", "Lifestyle", "🏡")]
-
-def free_tv():
-    folders = [folder(fid("free-tv", t), t, [addon(UKX, "tv", "ukx.free", g)], emoji=e) for g, t, e in FREE_GENRES]
-    return collection("free-tv", "Free TV", folders, view="TABBED_GRID", all_tab=False)
-
-LIVE_FOLDERS = [("Sport", addon(UKS, "tv", "uks.sport"), "⚽"),
-                ("News", addon(TVVOO, "tv", "vavoo_tv_uk", "News"), "📰"),
-                ("Kids", addon(TVVOO, "tv", "vavoo_tv_uk", "Kids"), "🧸"),
-                ("Films", addon(TVVOO, "tv", "vavoo_tv_uk", "Movies"), "🎬"),
-                ("Documentaries", addon(TVVOO, "tv", "vavoo_tv_uk", "Documentary"), "🌍"),
-                ("All channels", addon(TVVOO, "tv", "vavoo_tv_uk"), "📺")]
-
-def live():
-    folders = [folder(fid("live", t), t, [s], emoji=e) for t, s, e in LIVE_FOLDERS]
-    return collection("live", "Live", folders, view="TABBED_GRID", all_tab=False)
+def live_tv(*spec):
+    # One id in all three files (the old Live id), so importing another file replaces the profile's copy.
+    return grid_collection("live", "Live TV", spec)
 
 
 def write(name, data):
@@ -186,8 +262,8 @@ def write(name, data):
           f"{os.path.getsize(path)} bytes")
 
 if __name__ == "__main__":
-    link_a = [streaming_services(), *mali_king_browse(), trending()]
-    if PICKS: link_a.append(picks())
-    link_a.append(free_tv())
-    write("nuvio-collections.json", link_a)
-    write("nuvio-live.json", [live()])
+    mk = {c["title"]: c for c in fetch(MK_TAG + "nuvio-collections.json")}
+    write("nuvio-collections.json", [streaming_services(), movies(mk), tv_shows(mk), anime(fetch(AIOM_PACK))])
+    write("nuvio-live-free.json", [live_tv(FREE_CHANNELS)])
+    write("nuvio-live.json", [live_tv(SPORT, LIVE_CHANNELS, FREE_CHANNELS)])
+    write("nuvio-live-adam.json", [live_tv(SPORT, LIVE_CHANNELS, FREE_CHANNELS, F1_REPLAYS)])

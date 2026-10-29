@@ -1,24 +1,49 @@
-Checked 2026-10-29 against TMDB live. Rows: 776 TMDB, thin (<20): 52, failures: 0, warnings: 0
+Checked 2026-10-29 against TMDB live. Rows: 338 TMDB, thin (<20): 20, failures: 0, warnings: 0
 
 
-nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-shows | addon com.barticom94.ukextras ukx.netflix-top10-shows  | not checked here
-nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-films | addon com.barticom94.ukextras ukx.netflix-top10-films  | not checked here
-nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-popular | addon com.barticom94.ukextras ukx.netflix-popular  | not checked here
-nuvio-collections.json | Free TV / All channels / ukx.free | addon com.barticom94.ukextras ukx.free  | not checked here
-nuvio-collections.json | Free TV / News / ukx.free | addon com.barticom94.ukextras ukx.free News | not checked here
-nuvio-collections.json | Free TV / Entertainment / ukx.free | addon com.barticom94.ukextras ukx.free Entertainment | not checked here
-nuvio-collections.json | Free TV / Films / ukx.free | addon com.barticom94.ukextras ukx.free Movies | not checked here
-nuvio-collections.json | Free TV / Kids / ukx.free | addon com.barticom94.ukextras ukx.free Kids | not checked here
-nuvio-collections.json | Free TV / Sport / ukx.free | addon com.barticom94.ukextras ukx.free Sport | not checked here
-nuvio-collections.json | Free TV / Documentaries / ukx.free | addon com.barticom94.ukextras ukx.free Documentary | not checked here
-nuvio-collections.json | Free TV / Music / ukx.free | addon com.barticom94.ukextras ukx.free Music | not checked here
-nuvio-collections.json | Free TV / Lifestyle / ukx.free | addon com.barticom94.ukextras ukx.free Lifestyle | not checked here
-nuvio-live.json | Live / Sport / uks.sport | addon com.barticom94.uksport uks.sport  | not checked here
-nuvio-live.json | Live / News / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk News | not checked here
-nuvio-live.json | Live / Kids / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Kids | not checked here
-nuvio-live.json | Live / Films / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Movies | not checked here
-nuvio-live.json | Live / Documentaries / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Documentary | not checked here
-nuvio-live.json | Live / All channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk  | not checked here
+nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-shows | addon com.barticom94.ukextras ukx.netflix-top10-shows  | catalogue checked
+nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-films | addon com.barticom94.ukextras ukx.netflix-top10-films  | catalogue checked
+nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-popular | addon com.barticom94.ukextras ukx.netflix-popular  | catalogue checked
+nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free News | catalogue checked
+nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Entertainment | catalogue checked
+nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Movies | catalogue checked
+nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Kids | catalogue checked
+nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Sport | catalogue checked
+nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Documentary | catalogue checked
+nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Music | catalogue checked
+nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Lifestyle | catalogue checked
+nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free  | catalogue checked
+nuvio-live.json | Live TV / Sport / uks.sport | addon com.barticom94.uksport uks.sport  | catalogue checked
+nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk News | not checked here
+nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Kids | not checked here
+nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Movies | not checked here
+nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Documentary | not checked here
+nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk  | not checked here
+nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free News | catalogue checked
+nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Entertainment | catalogue checked
+nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Movies | catalogue checked
+nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Kids | catalogue checked
+nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Sport | catalogue checked
+nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Documentary | catalogue checked
+nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Music | catalogue checked
+nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Lifestyle | catalogue checked
+nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free  | catalogue checked
+nuvio-live-adam.json | Live TV / Sport / uks.sport | addon com.barticom94.uksport uks.sport  | catalogue checked
+nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk News | not checked here
+nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Kids | not checked here
+nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Movies | not checked here
+nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Documentary | not checked here
+nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk  | not checked here
+nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free News | catalogue checked
+nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Entertainment | catalogue checked
+nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Movies | catalogue checked
+nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Kids | catalogue checked
+nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Sport | catalogue checked
+nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Documentary | catalogue checked
+nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Music | catalogue checked
+nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Lifestyle | catalogue checked
+nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free  | catalogue checked
+nuvio-live-adam.json | Live TV / F1 Replays / formula_racing | addon stremio.addons.mediafusion|elfhostedtrb formula_racing  | not checked here
 nuvio-collections.json | Streaming Services / Netflix / Biggest Originals | 1643 | ok | Stranger Things; Money Heist; Squid Game
 nuvio-collections.json | Streaming Services / Netflix / Trending Originals | 1643 | ok | The Crown; MINDHUNTER; Lupin
 nuvio-collections.json | Streaming Services / Netflix / Only on Netflix: Films | 1756 | ok | Animals; Dune: Part Two; Spirited Away | exclusion spot-check 5/5 clean
@@ -146,652 +171,214 @@ nuvio-collections.json | Streaming Services / WOW / Trending Originals | 17 | TH
 nuvio-collections.json | Streaming Services / WOW / Only on WOW: Series | 19 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / WOW / New on WOW: Series | 26 | ok | Drag Race Philippines: Slaysian Royale; RuPaul's Drag Race Global All Stars; Drag Race España All Stars
 nuvio-collections.json | Streaming Services / WOW / Best only on WOW: Series | 4 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 4/4 clean
-nuvio-collections.json | Genres / Action / Popular Movies | 4585 | ok | Hope; Spider-Man: Brand New Day; The Odyssey
-nuvio-collections.json | Genres / Action / Popular Series | 1704 | ok | Person of Interest; Magnum P.I.; Wakfu
-nuvio-collections.json | Genres / Action / New Movies | 8984 | ok | The Awakening; Masterplan; Street Fighter
-nuvio-collections.json | Genres / Action / New Series | 2970 | ok | Love in Disguise; Treasure Island; Dragon Ball Super: Beerus
-nuvio-collections.json | Genres / Action / Top Rated Movies | 1367 | ok | Avatar Aang: The Last Airbender; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Chainsaw Man - The Movie: Reze Arc
-nuvio-collections.json | Genres / Action / Top Rated Series | 578 | ok | Dragon Ball Super: Beerus; Teach You a Lesson; The Chosen
-nuvio-collections.json | Genres / Adventure / Popular Movies | 2996 | ok | Spider-Man: Brand New Day; The Odyssey; Matchbox the Movie
-nuvio-collections.json | Genres / Adventure / Popular Series | 1704 | ok | Person of Interest; Magnum P.I.; Wakfu
-nuvio-collections.json | Genres / Adventure / New Movies | 5392 | ok | Wildwood; Matchbox the Movie; Heart of the Beast
-nuvio-collections.json | Genres / Adventure / New Series | 2970 | ok | Love in Disguise; Treasure Island; Dragon Ball Super: Beerus
-nuvio-collections.json | Genres / Adventure / Top Rated Movies | 1049 | ok | Avatar Aang: The Last Airbender; Swapped; Project Hail Mary
-nuvio-collections.json | Genres / Adventure / Top Rated Series | 578 | ok | Dragon Ball Super: Beerus; Teach You a Lesson; The Chosen
-nuvio-collections.json | Genres / Comedy / Popular Movies | 8462 | ok | Buddy; Matchbox the Movie; Practical Magic 2
-nuvio-collections.json | Genres / Comedy / Popular Series | 2410 | ok | Friends; The Simpsons; Wakfu
-nuvio-collections.json | Genres / Comedy / New Movies | 20001 | ok | Ali G: Who Iz I?; The Storm; Therapy Done Right
-nuvio-collections.json | Genres / Comedy / New Series | 5244 | ok | Phony; Love in Disguise; Take Charge of My Heart
-nuvio-collections.json | Genres / Comedy / Top Rated Movies | 1643 | ok | Dilwale Dulhania Le Jayenge; Parasite; Pulp Fiction
-nuvio-collections.json | Genres / Comedy / Top Rated Series | 628 | ok | Teach You a Lesson; No One Will Miss Us; One Piece
-nuvio-collections.json | Genres / Drama / Popular Movies | 10466 | ok | Verity; Animals; Digger
-nuvio-collections.json | Genres / Drama / Popular Series | 3897 | ok | Grey's Anatomy; Law & Order: Special Victims Unit; Criminal Minds
-nuvio-collections.json | Genres / Drama / New Movies | 20001 | ok | Surviving Hurricane Otis; The Storm; Je so’ pazzo
-nuvio-collections.json | Genres / Drama / New Series | 7840 | ok | Phony; Love in Disguise; Crystal Lake
-nuvio-collections.json | Genres / Drama / Top Rated Movies | 2009 | ok | The Shawshank Redemption; The Godfather; Michael
-nuvio-collections.json | Genres / Drama / Top Rated Series | 1122 | ok | Teach You a Lesson; Dutton Ranch; Breaking Bad
-nuvio-collections.json | Genres / Thriller / Popular Movies | 5580 | ok | Fall 2: Deadpoint; Clayface; Insidious: Out of the Further
-nuvio-collections.json | Genres / Thriller / Popular Series | 1901 | ok | Law & Order: Special Victims Unit; Criminal Minds; Supernatural
-nuvio-collections.json | Genres / Thriller / New Movies | 11247 | ok | The Awakening; Clayface; Masterplan
-nuvio-collections.json | Genres / Thriller / New Series | 3609 | ok | Phony; Love in Disguise; Crystal Lake
-nuvio-collections.json | Genres / Thriller / Top Rated Movies | 1443 | ok | The Dark Knight; Parasite; Pulp Fiction
-nuvio-collections.json | Genres / Thriller / Top Rated Series | 542 | ok | Breaking Bad; Better Call Saul; The Sopranos
-nuvio-collections.json | Genres / Crime / Popular Movies | 3378 | ok | Animals; The Shawshank Redemption; Inception
-nuvio-collections.json | Genres / Crime / Popular Series | 1261 | ok | Law & Order: Special Victims Unit; Criminal Minds; Person of Interest
-nuvio-collections.json | Genres / Crime / New Movies | 7002 | ok | Minotaur; Animals; UNABOMBER
-nuvio-collections.json | Genres / Crime / New Series | 2457 | ok | Love in Disguise; Doctor X: Mafia in White; Inside the Circle
-nuvio-collections.json | Genres / Crime / Top Rated Movies | 822 | ok | The Shawshank Redemption; The Godfather; The Godfather Part II
-nuvio-collections.json | Genres / Crime / Top Rated Series | 339 | ok | Breaking Bad; Better Call Saul; The Sopranos
-nuvio-collections.json | Genres / Horror / Popular Movies | 3632 | ok | Clayface; Insidious: Out of the Further; Buddy
-nuvio-collections.json | Genres / Horror / New Movies | 8428 | ok | The Awakening; Clayface; V/H/S/MIXTAPE
-nuvio-collections.json | Genres / Horror / Top Rated Movies | 745 | ok | Psycho; Colony; The Shining
-nuvio-collections.json | Genres / Sci-Fi / Popular Movies | 2349 | ok | Hope; Spider-Man: Brand New Day; Clayface
-nuvio-collections.json | Genres / Sci-Fi / Popular Series | 1929 | ok | Supernatural; Person of Interest; Medium
-nuvio-collections.json | Genres / Sci-Fi / New Movies | 4615 | ok | Clayface; Shaun the Sheep: The Beast of Mossy Bottom; Resident Evil
-nuvio-collections.json | Genres / Sci-Fi / New Series | 3253 | ok | VisionQuest; Dragon Ball Super: Beerus; Take Charge of My Heart
-nuvio-collections.json | Genres / Sci-Fi / Top Rated Movies | 772 | ok | Project Hail Mary; Interstellar; Spider-Man: Brand New Day
-nuvio-collections.json | Genres / Sci-Fi / Top Rated Series | 699 | ok | Dragon Ball Super: Beerus; Frieren: Beyond Journey's End; Avatar: The Last Airbender
-nuvio-collections.json | Genres / Fantasy / Popular Movies | 2242 | ok | The Odyssey; Buddy; Pinocchio: Unstrung
-nuvio-collections.json | Genres / Fantasy / Popular Series | 1929 | ok | Supernatural; Person of Interest; Medium
-nuvio-collections.json | Genres / Fantasy / New Movies | 4326 | ok | The Awakening; Wildwood; Street Fighter
-nuvio-collections.json | Genres / Fantasy / New Series | 3253 | ok | VisionQuest; Dragon Ball Super: Beerus; Take Charge of My Heart
-nuvio-collections.json | Genres / Fantasy / Top Rated Movies | 663 | ok | Avatar Aang: The Last Airbender; Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle
-nuvio-collections.json | Genres / Fantasy / Top Rated Series | 699 | ok | Dragon Ball Super: Beerus; Frieren: Beyond Journey's End; Avatar: The Last Airbender
-nuvio-collections.json | Genres / Romance / Popular Movies | 3817 | ok | Practical Magic 2; Love of Your Life; Corpse Bride
-nuvio-collections.json | Genres / Romance / New Movies | 9243 | ok | Les Misérables; Love of Your Life; Doing Life
-nuvio-collections.json | Genres / Romance / Top Rated Movies | 754 | ok | Chainsaw Man - The Movie: Reze Arc; Dilwale Dulhania Le Jayenge; Your Name.
-nuvio-collections.json | Genres / Mystery / Popular Movies | 1944 | ok | Hope; Pinocchio: Unstrung; Verity
-nuvio-collections.json | Genres / Mystery / Popular Series | 1083 | ok | Law & Order: Special Victims Unit; Criminal Minds; Supernatural
-nuvio-collections.json | Genres / Mystery / New Movies | 4041 | ok | Verity; The Last Kiss; The Secret Woman
-nuvio-collections.json | Genres / Mystery / New Series | 1957 | ok | Phony; Crystal Lake; The Trap
-nuvio-collections.json | Genres / Mystery / Top Rated Movies | 492 | ok | Psycho; High and Low; Se7en
-nuvio-collections.json | Genres / Mystery / Top Rated Series | 338 | ok | The Apothecary Diaries; Gravity Falls; Death Note
-nuvio-collections.json | Genres / Animation / Popular Movies | 1956 | ok | Forgotten Island; The Nightmare Before Christmas; Coco
-nuvio-collections.json | Genres / Animation / Popular Series | 1791 | ok | The Simpsons; Wakfu; Family Guy
-nuvio-collections.json | Genres / Animation / New Movies | 4687 | ok | Wildwood; Iron Boy; Shaun the Sheep: The Beast of Mossy Bottom
-nuvio-collections.json | Genres / Animation / New Series | 3613 | ok | Dragon Ball Super: Beerus; Firefly Wedding; Avatar: Seven Havens
-nuvio-collections.json | Genres / Animation / Top Rated Movies | 467 | ok | Avatar Aang: The Last Airbender; Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle
-nuvio-collections.json | Genres / Animation / Top Rated Series | 488 | ok | Dragon Ball Super: Beerus; Frieren: Beyond Journey's End; Avatar: The Last Airbender
-nuvio-collections.json | Genres / Family / Popular Movies | 2215 | ok | The Dog Stars; Forgotten Island; The Nightmare Before Christmas
-nuvio-collections.json | Genres / Family / Popular Series | 527 | ok | Moesha; Doraemon; Teen Titans Go!
-nuvio-collections.json | Genres / Family / New Movies | 4561 | ok | Iron Boy; Forgotten Island; Clash of the Thundermans
-nuvio-collections.json | Genres / Family / New Series | 1131 | ok | Avatar: Seven Havens; LEGO ONE PIECE; My Brilliant Career
-nuvio-collections.json | Genres / Family / Top Rated Movies | 615 | ok | Swapped; Spirited Away; The Wild Robot
-nuvio-collections.json | Genres / Family / Top Rated Series | 164 | ok | The Chosen; The Owl House; Anne with an E
-nuvio-collections.json | Genres / Kids / Popular Movies | 1095 | ok | Forgotten Island; The Nightmare Before Christmas; Coco
-nuvio-collections.json | Genres / Kids / Popular Series | 435 | ok | Doraemon; PAW Patrol; Miraculous: Tales of Ladybug & Cat Noir
-nuvio-collections.json | Genres / Kids / New Movies | 1940 | ok | Iron Boy; Forgotten Island; LEGO Star Wars: The Mandalorian
-nuvio-collections.json | Genres / Kids / New Series | 896 | ok | Digimon Beatbreak; Winx Club: The Magic is Back; My Melody & Kuromi
-nuvio-collections.json | Genres / Kids / Top Rated Movies | 347 | ok | Swapped; Spirited Away; The Wild Robot
-nuvio-collections.json | Genres / Kids / Top Rated Series | 119 | ok | 31 Minutes; The Spectacular Spider-Man; Wizards of Waverly Place
-nuvio-collections.json | Genres / Documentary / Popular Movies | 712 | ok | Jackass: Best and Last; NAZA; The Remarkable Life of Ibelin
-nuvio-collections.json | Genres / Documentary / Popular Series | 347 | ok | Mayday; NOVA; Ancient Aliens
-nuvio-collections.json | Genres / Documentary / New Movies | 3367 | ok | You Can See Everything; Schumacher ’94 – The Birth of a Legend; The Widower: 'Til Death Do Us Part
-nuvio-collections.json | Genres / Documentary / New Series | 1195 | ok | Death of the Pastor's Wife; MOURINHO; The Idaho Murders: College Nightmare
-nuvio-collections.json | Genres / Documentary / Top Rated Movies | 31 | ok | One Direction: This Is Us; Senna; Free Solo
-nuvio-collections.json | Genres / Documentary / Top Rated Series | 44 | ok | Cosmos: A Personal Voyage; Planet Earth; Planet Earth II
-nuvio-collections.json | Genres / History / Popular Movies | 1115 | ok | Tenzing; Oppenheimer; The Uprising
-nuvio-collections.json | Genres / History / Popular Series | 192 | ok | Lioness; Vikings; Homeland
-nuvio-collections.json | Genres / History / New Movies | 2454 | ok | Les Misérables; Tenzing; A Man of His Time
-nuvio-collections.json | Genres / History / New Series | 391 | ok | Jaadugar: A Witch in Mongolia; Star City; Secret Service
-nuvio-collections.json | Genres / History / Top Rated Movies | 237 | ok | Schindler's List; Harakiri; Saving Private Ryan
-nuvio-collections.json | Genres / History / Top Rated Series | 38 | ok | Band of Brothers; Vinland Saga; Scarlet Heart: Ryeo
-nuvio-collections.json | Genres / War / Popular Movies | 759 | ok | LA BOLA NEGRA; Oppenheimer; Fury
-nuvio-collections.json | Genres / War / Popular Series | 192 | ok | Lioness; Vikings; Homeland
-nuvio-collections.json | Genres / War / New Movies | 1796 | ok | The Awakening; NAZA; LA BOLA NEGRA
-nuvio-collections.json | Genres / War / New Series | 391 | ok | Jaadugar: A Witch in Mongolia; Star City; Secret Service
-nuvio-collections.json | Genres / War / Top Rated Movies | 146 | ok | Schindler's List; Grave of the Fireflies; The Pianist
-nuvio-collections.json | Genres / War / Top Rated Series | 38 | ok | Band of Brothers; Vinland Saga; Scarlet Heart: Ryeo
-nuvio-collections.json | Genres / Western / Popular Movies | 403 | ok | Django Unchained; No Country for Old Men; The Good, the Bad and the Ugly
-nuvio-collections.json | Genres / Western / Popular Series | 52 | ok | Yellowstone; Westworld; Bonanza
-nuvio-collections.json | Genres / Western / New Movies | 1001 | ok | The Isolate Thief; Oscar Shaw; Thieves Highway
-nuvio-collections.json | Genres / Western / New Series | 103 | ok | Little House on the Prairie; Dutton Ranch; Lucky Luke
-nuvio-collections.json | Genres / Western / Top Rated Movies | 71 | ok | The Good, the Bad and the Ugly; Once Upon a Time in the West; Django Unchained
-nuvio-collections.json | Genres / Western / Top Rated Series | 21 | ok | Dutton Ranch; Cowboy Bebop; 1883
-nuvio-collections.json | Genres / Music / Popular Movies | 726 | ok | Coco; Trolls World Tour; Tuner
-nuvio-collections.json | Genres / Music / New Movies | 2055 | ok | Je so’ pazzo; V/H/S/MIXTAPE; Oasis: Don't Look Back in Anger
-nuvio-collections.json | Genres / Music / Top Rated Movies | 105 | ok | Michael; Whiplash; Clouds
-nuvio-collections.json | Genres / Reality / Popular Series | 192 | ok | Running Man; Raw; Survivor
-nuvio-collections.json | Genres / Reality / New Series | 743 | ok | Wonka's The Golden Ticket; Physical 100: Mexico; Physical 100: Italy
-nuvio-collections.json | Genres / Reality / Top Rated Series | 19 | THIN | Run BTS!; Clarkson's Farm; BTS In the SOOP
-nuvio-collections.json | Franchises & Universes / Marvel Cinematic Universe / Films | 54 | ok | Iron Man; The Incredible Hulk; Iron Man 2
-nuvio-collections.json | Franchises & Universes / Marvel Cinematic Universe / Series | 36 | ok | Marvel's Agents of S.H.I.E.L.D.; Marvel's Agent Carter; Marvel's Daredevil
-nuvio-collections.json | Franchises & Universes / Star Wars / Skywalker Saga | 9 | ok | Star Wars; The Empire Strikes Back; Return of the Jedi
-nuvio-collections.json | Franchises & Universes / Star Wars / All Films | 14 | THIN | Star Wars; The Star Wars Holiday Special; The Empire Strikes Back
-nuvio-collections.json | Franchises & Universes / Star Wars / Series | 20 | ok | Star Wars: Droids; The Young Indiana Jones Chronicles; Star Wars: Clone Wars
-nuvio-collections.json | Franchises & Universes / Wizarding World / Harry Potter | 8 | ok | Harry Potter and the Philosopher's Stone; Harry Potter and the Chamber of Secrets; Harry Potter and the Goblet of Fire
-nuvio-collections.json | Franchises & Universes / Wizarding World / Fantastic Beasts | 3 | ok | Fantastic Beasts and Where to Find Them; Fantastic Beasts: The Secrets of Dumbledore; Fantastic Beasts: The Crimes of Grindelwald
-nuvio-collections.json | Franchises & Universes / Middle-earth / The Lord of the Rings | 3 | ok | The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Two Towers; The Lord of the Rings: The Return of the King
-nuvio-collections.json | Franchises & Universes / Middle-earth / The Hobbit | 3 | ok | The Hobbit: An Unexpected Journey; The Hobbit: The Desolation of Smaug; The Hobbit: The Battle of the Five Armies
-nuvio-collections.json | Franchises & Universes / DC Universe / Films | 19 | THIN | Clayface; Supergirl; Superman
-nuvio-collections.json | Franchises & Universes / DC Universe / The Dark Knight Trilogy | 3 | ok | The Dark Knight; The Dark Knight Rises; Batman Begins
-nuvio-collections.json | Franchises & Universes / DC Universe / Series | 3 | THIN | Lanterns; Peacemaker; Creature Commandos
-nuvio-collections.json | Franchises & Universes / James Bond / 007 | 27 | ok | Live and Let Die; Dr. No; From Russia with Love
-nuvio-collections.json | Franchises & Universes / Mission: Impossible / Mission: Impossible | 8 | ok | Mission: Impossible; Mission: Impossible II; Mission: Impossible III
-nuvio-collections.json | Franchises & Universes / Fast & Furious / Fast & Furious | 12 | ok | 2 Fast 2 Furious; The Fast and the Furious: Tokyo Drift; The Fast and the Furious
-nuvio-collections.json | Franchises & Universes / John Wick / John Wick | 4 | ok | John Wick; John Wick: Chapter 2; John Wick: Chapter 3 - Parabellum
-nuvio-collections.json | Franchises & Universes / Jurassic Park / Jurassic Park & World | 8 | ok | Jurassic Park; The Lost World: Jurassic Park; Jurassic Park III
-nuvio-collections.json | Franchises & Universes / Spider-Man / Spider-Man | 3 | ok | Spider-Man; Spider-Man 2; Spider-Man 3
-nuvio-collections.json | Franchises & Universes / Spider-Man / MCU | 4 | ok | Spider-Man: Homecoming; Spider-Man: Far From Home; Spider-Man: No Way Home
-nuvio-collections.json | Franchises & Universes / Spider-Man / Spider-Verse | 3 | ok | Spider-Man: Into the Spider-Verse; Spider-Man: Across the Spider-Verse; Spider-Man: Beyond the Spider-Verse
-nuvio-collections.json | Franchises & Universes / X-Men / X-Men | 7 | ok | X-Men; X2; X-Men: The Last Stand
-nuvio-collections.json | Franchises & Universes / X-Men / Deadpool | 3 | ok | Deadpool; Deadpool 2; Deadpool & Wolverine
-nuvio-collections.json | Franchises & Universes / X-Men / Wolverine | 3 | ok | X-Men Origins: Wolverine; The Wolverine; Logan
-nuvio-collections.json | Franchises & Universes / MonsterVerse / Films | 6 | THIN | Godzilla; Kong: Skull Island; Godzilla: King of the Monsters
-nuvio-collections.json | Franchises & Universes / Dune / Dune | 3 | ok | Dune; Dune: Part Two; Dune: Part Three
-nuvio-collections.json | Franchises & Universes / Avatar / Avatar | 5 | ok | Avatar: Fire and Ash; Avatar; Avatar: The Way of Water
-nuvio-collections.json | Franchises & Universes / The Matrix / The Matrix | 4 | ok | The Matrix; The Matrix Reloaded; The Matrix Revolutions
-nuvio-collections.json | Franchises & Universes / Alien & Predator / Alien | 4 | ok | Alien; Aliens; Alien³
-nuvio-collections.json | Franchises & Universes / Alien & Predator / Predator | 6 | ok | Predator; Predator 2; Predators
-nuvio-collections.json | Franchises & Universes / Pirates of the Caribbean / Pirates | 5 | ok | Pirates of the Caribbean: The Curse of the Black Pearl; Pirates of the Caribbean: Dead Man's Chest; Pirates of the Caribbean: At World's End
-nuvio-collections.json | Franchises & Universes / The Hunger Games / The Hunger Games | 4 | ok | The Hunger Games: Mockingjay - Part 1; The Hunger Games: Mockingjay - Part 2; The Hunger Games
-nuvio-collections.json | Franchises & Universes / Indiana Jones / Indiana Jones | 5 | ok | Raiders of the Lost Ark; Indiana Jones and the Temple of Doom; Indiana Jones and the Last Crusade
-nuvio-collections.json | Franchises & Universes / The Godfather / The Godfather | 3 | ok | The Godfather; The Godfather Part II; The Godfather Part III
-nuvio-collections.json | Franchises & Universes / Back to the Future / Back to the Future | 3 | ok | Back to the Future; Back to the Future Part II; Back to the Future Part III
-nuvio-collections.json | Franchises & Universes / Planet of the Apes / Reboot | 4 | ok | Rise of the Planet of the Apes; Dawn of the Planet of the Apes; War for the Planet of the Apes
-nuvio-collections.json | Franchises & Universes / Planet of the Apes / Original | 5 | ok | Planet of the Apes; Beneath the Planet of the Apes; Escape from the Planet of the Apes
-nuvio-collections.json | Franchises & Universes / Rocky & Creed / Rocky | 6 | ok | Rocky Balboa; Rocky; Rocky II
-nuvio-collections.json | Franchises & Universes / Rocky & Creed / Creed | 3 | ok | Creed; Creed II; Creed III
-nuvio-collections.json | Franchises & Universes / Mad Max / Mad Max | 6 | ok | Mad Max 2; Mad Max Beyond Thunderdome; Mad Max
-nuvio-collections.json | Franchises & Universes / The Terminator / The Terminator | 6 | ok | The Terminator; Terminator 2: Judgment Day; Terminator 3: Rise of the Machines
-nuvio-collections.json | Franchises & Universes / Bourne / Bourne | 5 | ok | The Bourne Identity; The Bourne Supremacy; The Bourne Ultimatum
-nuvio-collections.json | Franchises & Universes / Toy Story / Toy Story | 5 | ok | Toy Story; Toy Story 2; Toy Story 3
-nuvio-collections.json | Franchises & Universes / Shrek / Shrek | 5 | ok | Shrek; Shrek 2; Shrek the Third
-nuvio-collections.json | Franchises & Universes / Despicable Me / Despicable Me | 4 | ok | Despicable Me; Despicable Me 2; Despicable Me 3
-nuvio-collections.json | Franchises & Universes / Despicable Me / Minions | 3 | ok | Minions; Minions: The Rise of Gru; Minions & Monsters
-nuvio-collections.json | Franchises & Universes / How to Train Your Dragon / Animated | 3 | ok | How to Train Your Dragon; How to Train Your Dragon 2; How to Train Your Dragon: The Hidden World
-nuvio-collections.json | Franchises & Universes / How to Train Your Dragon / Live-Action | 2 | ok | How to Train Your Dragon; How to Train Your Dragon 2
-nuvio-collections.json | Franchises & Universes / Kung Fu Panda / Kung Fu Panda | 4 | ok | Kung Fu Panda; Kung Fu Panda 2; Kung Fu Panda 3
-nuvio-collections.json | Franchises & Universes / The Conjuring Universe / The Conjuring | 4 | ok | The Conjuring; The Conjuring 2; The Conjuring: The Devil Made Me Do It
-nuvio-collections.json | Franchises & Universes / The Conjuring Universe / Annabelle | 3 | ok | Annabelle; Annabelle: Creation; Annabelle Comes Home
-nuvio-collections.json | Franchises & Universes / The Conjuring Universe / The Nun | 2 | ok | The Nun II; The Nun
-nuvio-collections.json | Moods & Themes / Mind-Benders / Popular Movies | 76 | ok | Pulp Fiction; Your Name.; Eternal Sunshine of the Spotless Mind
-nuvio-collections.json | Moods & Themes / Mind-Benders / Popular Series | 14 | THIN | Re:ZERO -Starting Life in Another World-; True Detective; Dark
-nuvio-collections.json | Moods & Themes / Mind-Benders / Top Rated | 42 | ok | Your Name.; Pulp Fiction; Memento
-nuvio-collections.json | Moods & Themes / Mind-Benders / Hidden Gems | 29 | ok | The Criminal Life of Archibaldo de la Cruz; A Day; Superheroes
-nuvio-collections.json | Moods & Themes / Heists / Popular Movies | 252 | ok | Inception; Die Hard; The Usual Suspects
-nuvio-collections.json | Moods & Themes / Heists / Popular Series | 26 | ok | Lupin; Money Heist; Sneaky Pete
-nuvio-collections.json | Moods & Themes / Heists / Top Rated | 133 | ok | Inception; The Usual Suspects; Reservoir Dogs
-nuvio-collections.json | Moods & Themes / Heists / Hidden Gems | 69 | ok | Risqué; Athadu; Crime Wave
-nuvio-collections.json | Moods & Themes / True Stories / Popular Movies | 1013 | ok | Primetime; Tenzing; Oppenheimer
-nuvio-collections.json | Moods & Themes / True Stories / Popular Series | 144 | ok | The Crown; Orange Is the New Black; Monster: The Lizzie Borden Story
-nuvio-collections.json | Moods & Themes / True Stories / Top Rated | 502 | ok | Facing El Chapo; Michael; Schindler's List
-nuvio-collections.json | Moods & Themes / True Stories / Hidden Gems | 501 | ok | Shahid; David Holmes: The Boy Who Lived; The Sky Is Pink
-nuvio-collections.json | Moods & Themes / Superheroes / Popular Movies | 385 | ok | Spider-Man: Brand New Day; Avengers: Endgame; Avengers: Infinity War
-nuvio-collections.json | Moods & Themes / Superheroes / Popular Series | 231 | ok | Kamen Rider; Smallville; The Flash
-nuvio-collections.json | Moods & Themes / Superheroes / Top Rated | 249 | ok | The Dark Knight; Spider-Man: Brand New Day; Spider-Man: Into the Spider-Verse
-nuvio-collections.json | Moods & Themes / Superheroes / Hidden Gems | 136 | ok | Mantra Warrior: The Legend of The Eight Moons; StarDog and TurboCat; Scooby-Doo! and Krypto, Too!
-nuvio-collections.json | Moods & Themes / Space / Popular Movies | 225 | ok | Project Hail Mary; Interstellar; Avengers: Endgame
-nuvio-collections.json | Moods & Themes / Space / Popular Series | 145 | ok | Stargate SG-1; Doctor Who; Star Trek: The Next Generation
-nuvio-collections.json | Moods & Themes / Space / Top Rated | 146 | ok | Project Hail Mary; Interstellar; The Empire Strikes Back
-nuvio-collections.json | Moods & Themes / Space / Hidden Gems | 75 | ok | Unknown: Cosmic Time Machine; Mobile Suit Gundam: Char's Counterattack; U Are the Universe
-nuvio-collections.json | Moods & Themes / Time Travel / Popular Movies | 259 | ok | The End of Oak Street; Interstellar; Avengers: Endgame
-nuvio-collections.json | Moods & Themes / Time Travel / Popular Series | 172 | ok | Doraemon; Doctor Who; Vivy -Fluorite Eye's Song-
-nuvio-collections.json | Moods & Themes / Time Travel / Top Rated | 138 | ok | Interstellar; Your Name.; Back to the Future
-nuvio-collections.json | Moods & Themes / Time Travel / Hidden Gems | 97 | ok | Journey to the Beginning of Time; Monica's Gang in an Adventure in Time; God of Gamblers III: Back to Shanghai
-nuvio-collections.json | Moods & Themes / Dystopia / Popular Movies | 421 | ok | The Dog Stars; Interstellar; Resident Evil: Welcome to Raccoon City
-nuvio-collections.json | Moods & Themes / Dystopia / Popular Series | 154 | ok | The Walking Dead; Cyberpunk: Edgerunners; Adventure Time
-nuvio-collections.json | Moods & Themes / Dystopia / Top Rated | 273 | ok | Interstellar; Fight Club; Neon Genesis Evangelion: The End of Evangelion
-nuvio-collections.json | Moods & Themes / Dystopia / Hidden Gems | 115 | ok | The Hole; Life After People; Kabaneri of the Iron Fortress: The Battle of Unato
-nuvio-collections.json | Moods & Themes / Spies / Popular Movies | 197 | ok | Inception; Hoppers; North by Northwest
-nuvio-collections.json | Moods & Themes / Spies / Popular Series | 73 | ok | Slow Horses; SPY x FAMILY; MacGyver
-nuvio-collections.json | Moods & Themes / Spies / Top Rated | 113 | ok | Inception; Casablanca; Hoppers
-nuvio-collections.json | Moods & Themes / Spies / Hidden Gems | 50 | ok | The Travelling Players; 5 Fingers; Ice Cold in Alex
-nuvio-collections.json | Moods & Themes / Cyberpunk & AI / Popular Movies | 187 | ok | Interstellar; The Matrix; Avengers: Age of Ultron
-nuvio-collections.json | Moods & Themes / Cyberpunk & AI / Popular Series | 95 | ok | Person of Interest; Kamen Rider; Vivy -Fluorite Eye's Song-
-nuvio-collections.json | Moods & Themes / Cyberpunk & AI / Top Rated | 105 | ok | Interstellar; The Matrix; Terminator 2: Judgment Day
-nuvio-collections.json | Moods & Themes / Cyberpunk & AI / Hidden Gems | 59 | ok | The Doll; Psycho-Pass 3: First Inspector; Ghost in the Shell: Stand Alone Complex 2nd GIG - Individual Eleven
-nuvio-collections.json | Moods & Themes / Serial Killers / Popular Movies | 489 | ok | Onslaught; Ice Cream Man; Friday the 13th
-nuvio-collections.json | Moods & Themes / Serial Killers / Popular Series | 132 | ok | MINDHUNTER; Luther; American Horror Story
-nuvio-collections.json | Moods & Themes / Serial Killers / Top Rated | 240 | ok | Psycho; Se7en; The Silence of the Lambs
-nuvio-collections.json | Moods & Themes / Serial Killers / Hidden Gems | 75 | ok | Crazy, Not Insane; Missing You; Dhuruvangal Pathinaaru
-nuvio-collections.json | Moods & Themes / Whodunits / Popular Movies | 436 | ok | Se7en; The Sheep Detectives; Knives Out
-nuvio-collections.json | Moods & Themes / Whodunits / Popular Series | 332 | ok | Law & Order: Special Victims Unit; Luther; Death in Paradise
-nuvio-collections.json | Moods & Themes / Whodunits / Top Rated | 214 | ok | Psycho; Se7en; Rear Window
-nuvio-collections.json | Moods & Themes / Whodunits / Hidden Gems | 125 | ok | Murder, She Baked: A Deadly Recipe; Murder, She Baked: A Chocolate Chip Cookie Mystery; Dhuruvangal Pathinaaru
-nuvio-collections.json | Moods & Themes / Survival / Popular Movies | 263 | ok | Resident Evil; The End of Oak Street; Whalefall
-nuvio-collections.json | Moods & Themes / Survival / Popular Series | 143 | ok | The Walking Dead; Survivor; Squid Game
-nuvio-collections.json | Moods & Themes / Survival / Top Rated | 146 | ok | The Pianist; Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train; The Thing
-nuvio-collections.json | Moods & Themes / Survival / Hidden Gems | 67 | ok | Westward the Women; Made in Abyss: Journey's Dawn; Kabaneri of the Iron Fortress: The Battle of Unato
-nuvio-collections.json | Moods & Themes / Revenge / Popular Movies | 735 | ok | Clayface; Mutiny; Friday the 13th
-nuvio-collections.json | Moods & Themes / Revenge / Popular Series | 178 | ok | Lupin; Cyberpunk: Edgerunners; 24
-nuvio-collections.json | Moods & Themes / Revenge / Top Rated | 327 | ok | The Godfather Part II; Harakiri; Léon: The Professional
-nuvio-collections.json | Moods & Themes / Revenge / Hidden Gems | 177 | ok | Hamlet; Section 375; Bilo the Banker
-nuvio-collections.json | Moods & Themes / Mafia & Gangsters / Popular Movies | 352 | ok | The Godfather; Pulp Fiction; Léon: The Professional
-nuvio-collections.json | Moods & Themes / Mafia & Gangsters / Popular Series | 87 | ok | MobLand; The Sopranos; Peaky Blinders
-nuvio-collections.json | Moods & Themes / Mafia & Gangsters / Top Rated | 155 | ok | The Godfather; The Godfather Part II; Pulp Fiction
-nuvio-collections.json | Moods & Themes / Mafia & Gangsters / Hidden Gems | 143 | ok | Toxic; Satya; Mr. Photographer
-nuvio-collections.json | Moods & Themes / Courtroom / Popular Movies | 98 | ok | Coyote vs. Acme; The Social Reckoning; Good Will Hunting
-nuvio-collections.json | Moods & Themes / Courtroom / Popular Series | 67 | ok | Law & Order: Special Victims Unit; Ally McBeal; Law & Order
-nuvio-collections.json | Moods & Themes / Courtroom / Top Rated | 60 | ok | 12 Angry Men; Witness for the Prosecution; Good Will Hunting
-nuvio-collections.json | Moods & Themes / Courtroom / Hidden Gems | 63 | ok | Shahid; Section 375; Poison
-nuvio-collections.json | Moods & Themes / Political Thrillers / Popular Movies | 202 | ok | Animals; Mutiny; Zootopia
-nuvio-collections.json | Moods & Themes / Political Thrillers / Popular Series | 151 | ok | Reacher; Kamen Rider; Cyberpunk: Edgerunners
-nuvio-collections.json | Moods & Themes / Political Thrillers / Top Rated | 124 | ok | The Lives of Others; Chinatown; V for Vendetta
-nuvio-collections.json | Moods & Themes / Political Thrillers / Hidden Gems | 68 | ok | Assa; Athadu; The Light Bulb Conspiracy
-nuvio-collections.json | Moods & Themes / Martial Arts / Popular Movies | 499 | ok | Street Fighter; Avatar Aang: The Last Airbender; The Matrix
-nuvio-collections.json | Moods & Themes / Martial Arts / Popular Series | 135 | ok | Kamen Rider; Dragon Ball Super: Beerus; Naruto
-nuvio-collections.json | Moods & Themes / Martial Arts / Top Rated | 234 | ok | Avatar Aang: The Last Airbender; Seven Samurai; The Matrix
-nuvio-collections.json | Moods & Themes / Martial Arts / Hidden Gems | 144 | ok | Gintama: The Very Final; Ranma 1/2: Team Ranma vs. the Legendary Phoenix; Yu Yu Hakusho: The Movie - The Golden Seal
-nuvio-collections.json | Moods & Themes / Zombies / Popular Movies | 248 | ok | Resident Evil; Colony; Resident Evil: Welcome to Raccoon City
-nuvio-collections.json | Moods & Themes / Zombies / Popular Series | 41 | ok | The Walking Dead; The Walking Dead: Daryl Dixon; All of Us Are Dead
-nuvio-collections.json | Moods & Themes / Zombies / Top Rated | 113 | ok | Michael Jackson's Thriller; Colony; Train to Busan
-nuvio-collections.json | Moods & Themes / Zombies / Hidden Gems | 42 | ok | Rape Zombie: Lust of the Dead 5; Kabaneri of the Iron Fortress: The Battle of Unato; Black Butler: Book of the Atlantic
-nuvio-collections.json | Moods & Themes / Monsters & Kaiju / Popular Movies | 332 | ok | Clayface; Backrooms; Superman
-nuvio-collections.json | Moods & Themes / Monsters & Kaiju / Popular Series | 113 | ok | Supernatural; Kamen Rider; Stranger Things
-nuvio-collections.json | Moods & Themes / Monsters & Kaiju / Top Rated | 132 | ok | The Legend of Hei; Monsters, Inc.; Young Frankenstein
-nuvio-collections.json | Moods & Themes / Monsters & Kaiju / Hidden Gems | 73 | ok | The Scooby-Doo Project; Digimon Adventure; Tokyo Ghoul: Jack
-nuvio-collections.json | Moods & Themes / Vampires / Popular Movies | 209 | ok | Sinners; Twilight; Hotel Transylvania
-nuvio-collections.json | Moods & Themes / Vampires / Popular Series | 100 | ok | What We Do in the Shadows; The Vampire Diaries; JoJo's Bizarre Adventure
-nuvio-collections.json | Moods & Themes / Vampires / Top Rated | 86 | ok | Vampire Hunter D: Bloodlust; Nosferatu; Let the Right One In
-nuvio-collections.json | Moods & Themes / Vampires / Hidden Gems | 35 | ok | The Carmilla Movie; Vampire Sisters 2: Bats in the Belly; Castle of Blood
-nuvio-collections.json | Moods & Themes / Disaster / Popular Movies | 111 | ok | Your Name.; Greenland 2: Migration; War of the Worlds
-nuvio-collections.json | Moods & Themes / Disaster / Popular Series | 47 | ok | Silo; Mayday; Tokyo Ghoul
-nuvio-collections.json | Moods & Themes / Disaster / Top Rated | 64 | ok | Your Name.; Suzume; Before the Flood
-nuvio-collections.json | Moods & Themes / Disaster / Hidden Gems | 33 | ok | The Bravest; Giovanni's Island; The Challenger Disaster
-nuvio-collections.json | Moods & Themes / Coming of Age / Popular Movies | 434 | ok | Forgotten Island; Harry Potter and the Order of the Phoenix; Moana 2
-nuvio-collections.json | Moods & Themes / Coming of Age / Popular Series | 226 | ok | The Summer I Turned Pretty; Stranger Things; Young Sheldon
-nuvio-collections.json | Moods & Themes / Coming of Age / Top Rated | 204 | ok | Cinema Paradiso; City of God; A Silent Voice: The Movie
-nuvio-collections.json | Moods & Themes / Coming of Age / Hidden Gems | 234 | ok | Bunny Drop; Crayon Shin-chan: The Storm Called: The Adult Empire Strikes Back; Girls Like Girls
-nuvio-collections.json | Moods & Themes / Sports / Popular Movies | 483 | ok | F1; GOAT; Challengers
-nuvio-collections.json | Moods & Themes / Sports / Popular Series | 141 | ok | The Sopranos; Ted Lasso; One Tree Hill
-nuvio-collections.json | Moods & Themes / Sports / Top Rated | 193 | ok | City Lights; The Art of Racing in the Rain; GOAT
-nuvio-collections.json | Moods & Themes / Sports / Hidden Gems | 176 | ok | The Fire Inside; Pocket Hercules: Naim Suleymanoglu; Scooby-Doo! Spooky Games
-nuvio-collections.json | Moods & Themes / Road Trips / Popular Movies | 224 | ok | Harry Potter and the Deathly Hallows: Part 1; Logan; Cars
-nuvio-collections.json | Moods & Themes / Road Trips / Popular Series | 17 | THIN | American Gods; Poker Face; Spice and Wolf: MERCHANT MEETS THE WISE WOLF
-nuvio-collections.json | Moods & Themes / Road Trips / Top Rated | 118 | ok | Green Book; Paris, Texas; Wild Strawberries
-nuvio-collections.json | Moods & Themes / Road Trips / Hidden Gems | 84 | ok | 777 Charlie; Harry and Tonto; Eureka
-nuvio-collections.json | Moods & Themes / Musicals / Popular Movies | 472 | ok | The Nightmare Before Christmas; Moana; Corpse Bride
-nuvio-collections.json | Moods & Themes / Musicals / Popular Series | 41 | ok | Riverdale; Helluva Boss; Glee
-nuvio-collections.json | Moods & Themes / Musicals / Top Rated | 208 | ok | Michael Jackson's Thriller; The Lion King; The Legend of 1900
-nuvio-collections.json | Moods & Themes / Musicals / Hidden Gems | 196 | ok | On the Trail of the Bremen Town Musicians; Le Bal; Possibly in Michigan
-nuvio-collections.json | Moods & Themes / Feel-Good / Popular Movies | 14 | THIN | Forrest Gump; GOAT; The Intouchables
-nuvio-collections.json | Moods & Themes / Feel-Good / Popular Series | 16 | THIN | All Creatures Great & Small; Highway to Heaven; Never Have I Ever
-nuvio-collections.json | Moods & Themes / Feel-Good / Top Rated | 11 | THIN | Forrest Gump; The Intouchables; City Lights
-nuvio-collections.json | Moods & Themes / Feel-Good / Hidden Gems | 9 | THIN | Jules; Love at First Sight; GOAT
-nuvio-collections.json | Moods & Themes / Christmas / Popular Movies | 420 | ok | The Nightmare Before Christmas; Gremlins; Home Alone 2: Lost in New York
-nuvio-collections.json | Moods & Themes / Christmas / Popular Series | 21 | ok | Hawkeye; Amagami SS; The Santa Clauses
-nuvio-collections.json | Moods & Themes / Christmas / Top Rated | 136 | ok | It's a Wonderful Life; Klaus; The Apartment
-nuvio-collections.json | Moods & Themes / Christmas / Hidden Gems | 93 | ok | Grumpy Christmas; It Happened on Fifth Avenue; Placido
-nuvio-collections.json | Moods & Themes / Dark Comedy / Popular Movies | 361 | ok | Buddy; Digger; Bad Apples
-nuvio-collections.json | Moods & Themes / Dark Comedy / Popular Series | 175 | ok | Breaking Bad; Better Call Saul; It's Always Sunny in Philadelphia
-nuvio-collections.json | Moods & Themes / Dark Comedy / Top Rated | 191 | ok | Parasite; Pulp Fiction; Life Is Beautiful
-nuvio-collections.json | Moods & Themes / Dark Comedy / Hidden Gems | 101 | ok | George Carlin: Back in Town; Reflections of a Blender; George Carlin: Complaints & Grievances
-nuvio-collections.json | Moods & Themes / Satire / Popular Movies | 210 | ok | Digger; Bad Apples; Despicable Me
-nuvio-collections.json | Moods & Themes / Satire / Popular Series | 84 | ok | The Simpsons; Family Guy; South Park
-nuvio-collections.json | Moods & Themes / Satire / Top Rated | 99 | ok | The Great Dictator; A Clockwork Orange; Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
-nuvio-collections.json | Moods & Themes / Satire / Hidden Gems | 71 | ok | Hail the Conquering Hero; La trattativa; Why
-nuvio-collections.json | Moods & Themes / Neo-Noir / Popular Movies | 396 | ok | The Dark Knight; The Batman; Training Day
-nuvio-collections.json | Moods & Themes / Neo-Noir / Popular Series | 44 | ok | Dexter; Grimm; Better Call Saul
-nuvio-collections.json | Moods & Themes / Neo-Noir / Top Rated | 182 | ok | The Dark Knight; Pulp Fiction; High and Low
-nuvio-collections.json | Moods & Themes / Neo-Noir / Hidden Gems | 179 | ok | Pokiri; Johnny Gaddaar; Crime Wave
-nuvio-collections.json | Moods & Themes / Video Game Adaptations / Popular Movies | 129 | ok | Resident Evil; Street Fighter; Resident Evil: Welcome to Raccoon City
-nuvio-collections.json | Moods & Themes / Video Game Adaptations / Popular Series | 110 | ok | Pokémon; Cyberpunk: Edgerunners; Pokémon Horizons
-nuvio-collections.json | Moods & Themes / Video Game Adaptations / Top Rated | 74 | ok | The Super Mario Galaxy Movie; Mortal Kombat Legends: Scorpion's Revenge; Mortal Kombat II
-nuvio-collections.json | Moods & Themes / Video Game Adaptations / Hidden Gems | 34 | ok | Fate/Grand Order the Movie: Divine Realm of the Round Table: Camelot 1 Wandering; Agateram; Console Wars; Fatal Fury: The Motion Picture
-nuvio-collections.json | Moods & Themes / Stand-Up Comedy / Popular Movies | 76 | ok | Chris Rock: Bigger & Blacker; Aziz Ansari: Live at Madison Square Garden; Aziz Ansari: Right Now
-nuvio-collections.json | Moods & Themes / Stand-Up Comedy / Popular Series | 8 | THIN | Louie; Stewart Lee's Comedy Vehicle; I'm Dying Up Here
-nuvio-collections.json | Moods & Themes / Stand-Up Comedy / Hidden Gems | 75 | ok | 8:46; Ricky Gervais Live: Animals; Neal Brennan: 3 Mics
-nuvio-collections.json | Moods & Themes / Nature & Wildlife / Popular Movies | 40 | ok | Spirit: Stallion of the Cimarron; Blended; David Attenborough: A Life on Our Planet
-nuvio-collections.json | Moods & Themes / Nature & Wildlife / Popular Series | 62 | ok | Nature; Natural World; Planet Earth II
-nuvio-collections.json | Moods & Themes / Nature & Wildlife / Top Rated | 11 | THIN | My Octopus Teacher; Koyaanisqatsi; Home
-nuvio-collections.json | Moods & Themes / Nature & Wildlife / Hidden Gems | 32 | ok | Ocean with David Attenborough; Kiss the Ground; A Plastic Ocean
-nuvio-collections.json | Moods & Themes / Isekai / Popular Movies | 18 | THIN | The Chronicles of Narnia: The Lion, the Witch and the Wardrobe; The Chronicles of Narnia: Prince Caspian; The Chronicles of Narnia: The Voyage of the Dawn Treader
-nuvio-collections.json | Moods & Themes / Isekai / Popular Series | 133 | ok | Mushoku Tensei: Jobless Reincarnation; Re:ZERO -Starting Life in Another World-; Sword Art Online
-nuvio-collections.json | Moods & Themes / Isekai / Top Rated | 10 | THIN | KONOSUBA – God's blessing on this wonderful world! Legend of Crimson; A Whisker Away; The Seven Deadly Sins: Prisoners of the Sky
-nuvio-collections.json | Moods & Themes / Isekai / Hidden Gems | 10 | THIN | Miss Kobayashi's Dragon Maid: A lonely dragon wants to be loved; Saga of Tanya the Evil: The Movie; OVERLORD: The Sacred Kingdom
-nuvio-collections.json | Directors / Christopher Nolan / Essentials | 19 | ok | Tarantella; Oppenheimer; Cinema16: British Short Films
-nuvio-collections.json | Directors / Christopher Nolan / Newest | 19 | ok | Tarantella; Oppenheimer; Cinema16: British Short Films
-nuvio-collections.json | Directors / Denis Villeneuve / Essentials | 24 | ok | Polytechnique; Maelström; Incendies
-nuvio-collections.json | Directors / Denis Villeneuve / Newest | 24 | ok | Polytechnique; Maelström; Incendies
-nuvio-collections.json | Directors / Quentin Tarantino / Essentials | 16 | ok | Four Rooms; Grindhouse; Reservoir Dogs
-nuvio-collections.json | Directors / Quentin Tarantino / Newest | 16 | ok | Four Rooms; Grindhouse; Reservoir Dogs
-nuvio-collections.json | Directors / Martin Scorsese / Essentials | 66 | ok | Mean Streets; Casino; The Departed
-nuvio-collections.json | Directors / Martin Scorsese / Newest | 66 | ok | Mean Streets; Casino; The Departed
-nuvio-collections.json | Directors / Steven Spielberg / Essentials | 45 | ok | War of the Worlds; Raiders of the Lost Ark; Indiana Jones and the Temple of Doom
-nuvio-collections.json | Directors / Steven Spielberg / Newest | 45 | ok | War of the Worlds; Raiders of the Lost Ark; Indiana Jones and the Temple of Doom
-nuvio-collections.json | Directors / David Fincher / Essentials | 18 | ok | Se7en; The Game; Zodiac
-nuvio-collections.json | Directors / David Fincher / Newest | 18 | ok | Se7en; The Game; Zodiac
-nuvio-collections.json | Directors / Stanley Kubrick / Essentials | 16 | ok | A Clockwork Orange; The Killing; Paths of Glory
-nuvio-collections.json | Directors / Stanley Kubrick / Newest | 16 | ok | A Clockwork Orange; The Killing; Paths of Glory
-nuvio-collections.json | Directors / Ridley Scott / Essentials | 40 | ok | Blade Runner; Gladiator; Alien
-nuvio-collections.json | Directors / Ridley Scott / Newest | 40 | ok | Blade Runner; Gladiator; Alien
-nuvio-collections.json | Directors / James Cameron / Essentials | 22 | ok | The Terminator; Terminator 2: Judgment Day; Titanic
-nuvio-collections.json | Directors / James Cameron / Newest | 22 | ok | The Terminator; Terminator 2: Judgment Day; Titanic
-nuvio-collections.json | Directors / Bong Joon Ho / Essentials | 19 | ok | The Host; Barking Dogs Never Bite; Mother
-nuvio-collections.json | Directors / Bong Joon Ho / Newest | 19 | ok | The Host; Barking Dogs Never Bite; Mother
-nuvio-collections.json | Directors / Park Chan-wook / Essentials | 27 | ok | Joint Security Area; Lady Vengeance; I'm a Cyborg, But That's OK
-nuvio-collections.json | Directors / Park Chan-wook / Newest | 27 | ok | Joint Security Area; Lady Vengeance; I'm a Cyborg, But That's OK
-nuvio-collections.json | Directors / Hayao Miyazaki / Essentials | 36 | ok | Princess Mononoke; Spirited Away; Warriors of the Wind
-nuvio-collections.json | Directors / Hayao Miyazaki / Newest | 36 | ok | Princess Mononoke; Spirited Away; Warriors of the Wind
-nuvio-collections.json | Directors / Guillermo del Toro / Essentials | 16 | ok | Pan's Labyrinth; The Devil's Backbone; Hellboy
-nuvio-collections.json | Directors / Guillermo del Toro / Newest | 16 | ok | Pan's Labyrinth; The Devil's Backbone; Hellboy
-nuvio-collections.json | Directors / Wes Anderson / Essentials | 23 | ok | The Life Aquatic with Steve Zissou; Fantastic Mr. Fox; Hotel Chevalier
-nuvio-collections.json | Directors / Wes Anderson / Newest | 23 | ok | The Life Aquatic with Steve Zissou; Fantastic Mr. Fox; Hotel Chevalier
-nuvio-collections.json | Directors / Greta Gerwig / Essentials | 6 | ok | Nights and Weekends; Untitled Chronicles of Narnia Film #2; Narnia: The Magician's Nephew
-nuvio-collections.json | Directors / Greta Gerwig / Newest | 6 | ok | Nights and Weekends; Untitled Chronicles of Narnia Film #2; Narnia: The Magician's Nephew
-nuvio-collections.json | Directors / Paul Thomas Anderson / Essentials | 23 | ok | Magnolia; Boogie Nights; Hard Eight
-nuvio-collections.json | Directors / Paul Thomas Anderson / Newest | 23 | ok | Magnolia; Boogie Nights; Hard Eight
-nuvio-collections.json | Directors / Jordan Peele / Essentials | 3 | ok | Get Out; Us; Nope
-nuvio-collections.json | Directors / Jordan Peele / Newest | 3 | ok | Get Out; Us; Nope
-nuvio-collections.json | Directors / Alfred Hitchcock / Essentials | 64 | ok | Rebecca; North by Northwest; The 39 Steps
-nuvio-collections.json | Directors / Alfred Hitchcock / Newest | 64 | ok | Rebecca; North by Northwest; The 39 Steps
-nuvio-collections.json | Directors / Akira Kurosawa / Essentials | 32 | ok | Seven Samurai; The Hidden Fortress; Rashomon
-nuvio-collections.json | Directors / Akira Kurosawa / Newest | 32 | ok | Seven Samurai; The Hidden Fortress; Rashomon
-nuvio-collections.json | Directors / Wong Kar-wai / Essentials | 25 | ok | 2046; In the Mood for Love; My Blueberry Nights
-nuvio-collections.json | Directors / Wong Kar-wai / Newest | 25 | ok | 2046; In the Mood for Love; My Blueberry Nights
-nuvio-collections.json | Studios / Marvel Studios / Popular | 82 | ok | Spider-Man: Brand New Day; Avengers: Endgame; Avengers: Infinity War
-nuvio-collections.json | Studios / Marvel Studios / Latest | 92 | ok | Spidey and the Avengers: Halloween Team-Up!; Spider-Man: Brand New Day; The Punisher: One Last Kill
-nuvio-collections.json | Studios / Marvel Studios / Essentials | 103 | ok | The Avengers; Avengers: Infinity War; Guardians of the Galaxy
-nuvio-collections.json | Studios / Marvel Studios / Top Rated | 69 | ok | Spider-Man: Brand New Day; The Punisher: One Last Kill; Avengers: Endgame
-nuvio-collections.json | Studios / Lucasfilm / Popular | 57 | ok | The Mandalorian and Grogu; Star Wars; Raiders of the Lost Ark
-nuvio-collections.json | Studios / Lucasfilm / Latest | 72 | ok | LEGO Star Wars: The Mandalorian; The Mandalorian and Grogu; Music by John Williams
-nuvio-collections.json | Studios / Lucasfilm / Essentials | 106 | ok | Star Wars; Star Wars: The Force Awakens; The Empire Strikes Back
-nuvio-collections.json | Studios / Lucasfilm / Top Rated | 43 | ok | The Empire Strikes Back; Star Wars; Music by John Williams
-nuvio-collections.json | Studios / Pixar / Popular | 107 | ok | Coco; Toy Story 5; Hoppers
-nuvio-collections.json | Studios / Pixar / Latest | 117 | ok | Toy Story 5; Hoppers; Elio
-nuvio-collections.json | Studios / Pixar / Essentials | 142 | ok | Inside Out; Up; Coco
-nuvio-collections.json | Studios / Pixar / Top Rated | 89 | ok | Toy Story 5; Coco; Piper
-nuvio-collections.json | Studios / Walt Disney Animation / Popular | 46 | ok | Zootopia 2; Zootopia; Moana 2
-nuvio-collections.json | Studios / Walt Disney Animation / Latest | 51 | ok | Zootopia 2; Versa; Moana 2
-nuvio-collections.json | Studios / Walt Disney Animation / Essentials | 73 | ok | Zootopia; Frozen; Big Hero 6
-nuvio-collections.json | Studios / Walt Disney Animation / Top Rated | 36 | ok | Once Upon a Studio; Far from the Tree; Paperman
-nuvio-collections.json | Studios / Walt Disney Pictures / Popular | 248 | ok | Moana; The Chronicles of Narnia: The Lion, the Witch and the Wardrobe; The Lion King
-nuvio-collections.json | Studios / Walt Disney Pictures / Latest | 269 | ok | Moana; Diary of a Wimpy Kid: The Last Straw; TRON: Ares
-nuvio-collections.json | Studios / Walt Disney Pictures / Essentials | 366 | ok | Pirates of the Caribbean: The Curse of the Black Pearl; The Lion King; Pirates of the Caribbean: Dead Man's Chest
-nuvio-collections.json | Studios / Walt Disney Pictures / Top Rated | 222 | ok | Once Upon a Studio; The Lion King; Togo
-nuvio-collections.json | Studios / DreamWorks Animation / Popular | 90 | ok | Forgotten Island; Trolls World Tour; The Wild Robot
-nuvio-collections.json | Studios / DreamWorks Animation / Latest | 98 | ok | Forgotten Island; Gabby's Dollhouse: The Movie; The Bad Guys 2
-nuvio-collections.json | Studios / DreamWorks Animation / Essentials | 134 | ok | Shrek; How to Train Your Dragon; Shrek 2
-nuvio-collections.json | Studios / DreamWorks Animation / Top Rated | 81 | ok | The Wild Robot; Puss in Boots: The Last Wish; How to Train Your Dragon: Homecoming
-nuvio-collections.json | Studios / Illumination / Popular | 39 | ok | Minions & Monsters; The Super Mario Galaxy Movie; The Super Mario Bros. Movie
-nuvio-collections.json | Studios / Illumination / Latest | 49 | ok | Minions & Monsters; The Super Mario Galaxy Movie; Sing: Thriller
-nuvio-collections.json | Studios / Illumination / Essentials | 65 | ok | Despicable Me; Despicable Me 2; Minions
-nuvio-collections.json | Studios / Illumination / Top Rated | 28 | ok | The Super Mario Galaxy Movie; Sing 2; The Super Mario Bros. Movie
-nuvio-collections.json | Studios / Studio Ghibli / Popular | 31 | ok | Spirited Away; Howl's Moving Castle; My Neighbor Totoro
-nuvio-collections.json | Studios / Studio Ghibli / Latest | 36 | ok | The Boy and the Heron; Zen - Grogu and Dust Bunnies; Earwig and the Witch
-nuvio-collections.json | Studios / Studio Ghibli / Essentials | 82 | ok | Spirited Away; Howl's Moving Castle; Princess Mononoke
-nuvio-collections.json | Studios / Studio Ghibli / Top Rated | 27 | ok | Spirited Away; Grave of the Fireflies; Howl's Moving Castle
-nuvio-collections.json | Studios / DC / Popular | 56 | ok | Clayface; Supergirl; The Batman
-nuvio-collections.json | Studios / DC / Latest | 62 | ok | Clayface; Supergirl; Krypto Saves the Day!: School Bus Scuffle
-nuvio-collections.json | Studios / DC / Essentials | 85 | ok | Joker; Suicide Squad; Wonder Woman
-nuvio-collections.json | Studios / DC / Top Rated | 48 | ok | Joker; Zack Snyder's Justice League; Constantine: City of Demons - The Movie
-nuvio-collections.json | Studios / Warner Bros. / Popular | 1039 | ok | Practical Magic 2; The End of Oak Street; Coyote vs. Acme
-nuvio-collections.json | Studios / Warner Bros. / Latest | 1674 | ok | Digger; Practical Magic 2; Coyote vs. Acme
-nuvio-collections.json | Studios / Warner Bros. / Essentials | 3131 | ok | Inception; The Dark Knight; Harry Potter and the Philosopher's Stone
-nuvio-collections.json | Studios / Warner Bros. / Top Rated | 674 | ok | The Dark Knight; GoodFellas; Inception
-nuvio-collections.json | Studios / Universal / Popular | 977 | ok | The Odyssey; War of the Worlds; Disclosure Day
-nuvio-collections.json | Studios / Universal / Latest | 1189 | ok | One Night Only; Soulm8te; The Odyssey
-nuvio-collections.json | Studios / Universal / Essentials | 2731 | ok | Inglourious Basterds; Back to the Future; Jurassic World
-nuvio-collections.json | Studios / Universal / Top Rated | 766 | ok | The Phantom of the Opera at the Royal Albert Hall; Back to the Future; Gladiator
-nuvio-collections.json | Studios / Paramount / Popular | 863 | ok | Heart of the Beast; Avatar Aang: The Last Airbender; Top Gun: Maverick
-nuvio-collections.json | Studios / Paramount / Latest | 1275 | ok | Heart of the Beast; Avatar Aang: The Last Airbender; Jackass: Best and Last
-nuvio-collections.json | Studios / Paramount / Essentials | 2945 | ok | Forrest Gump; Titanic; Shutter Island
-nuvio-collections.json | Studios / Paramount / Top Rated | 614 | ok | Avatar Aang: The Last Airbender; The Godfather; The Godfather Part II
-nuvio-collections.json | Studios / 20th Century / Popular | 802 | ok | The Dog Stars; Whalefall; Avatar: Fire and Ash
-nuvio-collections.json | Studios / 20th Century / Latest | 1077 | ok | Whalefall; The Dog Stars; The Devil Wears Prada 2
-nuvio-collections.json | Studios / 20th Century / Essentials | 1734 | ok | Avatar; Deadpool; Fight Club
-nuvio-collections.json | Studios / 20th Century / Top Rated | 570 | ok | Fight Club; All About Eve; Ford v Ferrari
-nuvio-collections.json | Studios / Sony Pictures / Popular | 803 | ok | Spider-Man: Brand New Day; Resident Evil; Spider-Man: No Way Home
-nuvio-collections.json | Studios / Sony Pictures / Latest | 1183 | ok | The Social Reckoning; Resident Evil; Spider-Man: Brand New Day
-nuvio-collections.json | Studios / Sony Pictures / Essentials | 3036 | ok | Django Unchained; Spider-Man: Homecoming; Spider-Man: No Way Home
-nuvio-collections.json | Studios / Sony Pictures / Top Rated | 564 | ok | Spider-Man: Brand New Day; Spider-Man: Into the Spider-Verse; Spider-Man: Across the Spider-Verse
-nuvio-collections.json | Studios / Legendary / Popular | 72 | ok | Street Fighter; Digger; Interstellar
-nuvio-collections.json | Studios / Legendary / Latest | 72 | ok | Street Fighter; Digger; Enola Holmes 3
-nuvio-collections.json | Studios / Legendary / Essentials | 90 | ok | Interstellar; Inception; The Dark Knight
-nuvio-collections.json | Studios / Legendary / Top Rated | 71 | ok | The Dark Knight; Interstellar; Inception
-nuvio-collections.json | Studios / A24 / Popular | 82 | ok | You Can See Everything; Onslaught; Backrooms
-nuvio-collections.json | Studios / A24 / Latest | 98 | ok | You Can See Everything; Primetime; Onslaught
-nuvio-collections.json | Studios / A24 / Essentials | 174 | ok | Everything Everywhere All at Once; Moonlight; The Lighthouse
-nuvio-collections.json | Studios / A24 / Top Rated | 66 | ok | The Whale; Everything Everywhere All at Once; Past Lives
-nuvio-collections.json | Studios / NEON / Popular | 11 | THIN | Her Private Hell; Infinity Pool; I Love Boosters
-nuvio-collections.json | Studios / NEON / Latest | 14 | THIN | The Wrong Girls; Her Private Hell; I Love Boosters
-nuvio-collections.json | Studios / NEON / Essentials | 28 | ok | Crimes of the Future; Infinity Pool; Cuckoo
-nuvio-collections.json | Studios / NEON / Top Rated | 9 | THIN | 2073; I Love Boosters; Splitsville
-nuvio-collections.json | Studios / Blumhouse / Popular | 131 | ok | Obsession; Whiplash; Lee Cronin's The Mummy
-nuvio-collections.json | Studios / Blumhouse / Latest | 132 | ok | Soulm8te; Strung; Obsession
-nuvio-collections.json | Studios / Blumhouse / Essentials | 147 | ok | Get Out; Split; Whiplash
-nuvio-collections.json | Studios / Blumhouse / Top Rated | 125 | ok | Whiplash; Obsession; Lee Cronin's The Mummy
-nuvio-collections.json | Studios / Searchlight / Popular | 122 | ok | The Grand Budapest Hotel; Poor Things; Ready or Not: Here I Come
-nuvio-collections.json | Studios / Searchlight / Latest | 127 | ok | Super Troopers 3; Ready or Not: Here I Come; In the Blink of an Eye
-nuvio-collections.json | Studios / Searchlight / Essentials | 172 | ok | The Grand Budapest Hotel; Black Swan; The Shape of Water
-nuvio-collections.json | Studios / Searchlight / Top Rated | 107 | ok | Three Billboards Outside Ebbing, Missouri; My Name Is Khan; The Grand Budapest Hotel
-nuvio-collections.json | Studios / Amblin / Popular | 108 | ok | Disclosure Day; Schindler's List; Back to the Future
-nuvio-collections.json | Studios / Amblin / Latest | 117 | ok | Disclosure Day; Hamnet; The Thursday Murder Club
-nuvio-collections.json | Studios / Amblin / Essentials | 137 | ok | Back to the Future; Jurassic World; Jurassic Park
-nuvio-collections.json | Studios / Amblin / Top Rated | 97 | ok | Schindler's List; Back to the Future; Saving Private Ryan
-nuvio-collections.json | Studios / Lionsgate / Popular | 336 | ok | The Housemaid; Michael; The Hunger Games: Mockingjay - Part 1
-nuvio-collections.json | Studios / Lionsgate / Latest | 364 | ok | The Devil's Mouth; Michael; Beast
-nuvio-collections.json | Studios / Lionsgate / Essentials | 517 | ok | The Hunger Games; The Hunger Games: Catching Fire; The Hunger Games: Mockingjay - Part 1
-nuvio-collections.json | Studios / Lionsgate / Top Rated | 282 | ok | Michael; Wonder; The Unbreakable Boy
-nuvio-collections.json | Studios / LAIKA / Popular | 7 | THIN | Wildwood; Coraline; Corpse Bride
-nuvio-collections.json | Studios / LAIKA / Latest | 8 | THIN | Wildwood; Missing Link; Kubo and the Two Strings
-nuvio-collections.json | Studios / LAIKA / Essentials | 13 | THIN | Corpse Bride; Coraline; Kubo and the Two Strings
-nuvio-collections.json | Studios / LAIKA / Top Rated | 6 | THIN | Coraline; Kubo and the Two Strings; Corpse Bride
-nuvio-collections.json | Studios / Aardman / Popular | 22 | ok | Shaun the Sheep: The Beast of Mossy Bottom; Flushed Away; Wallace & Gromit: The Curse of the Were-Rabbit
-nuvio-collections.json | Studios / Aardman / Latest | 33 | ok | Shaun the Sheep: The Beast of Mossy Bottom; Wallace & Gromit: Vengeance Most Fowl; The Making of Chicken Run: Dawn of the Nugget
-nuvio-collections.json | Studios / Aardman / Essentials | 111 | ok | Chicken Run; Flushed Away; Wallace & Gromit: The Curse of the Were-Rabbit
-nuvio-collections.json | Studios / Aardman / Top Rated | 17 | THIN | The Wrong Trousers; A Close Shave; A Grand Day Out
-nuvio-collections.json | Studios / Toho / Popular | 412 | ok | Your Name.; Howl's Moving Castle; High and Low
-nuvio-collections.json | Studios / Toho / Latest | 680 | ok | Detective Conan: The Counterfeit Case of Ultra 30; Chiikawa the Movie: The Secret of the Mermaid Island; Sheep in the Box
-nuvio-collections.json | Studios / Toho / Essentials | 2180 | ok | Your Name.; Howl's Moving Castle; Pokémon Detective Pikachu
-nuvio-collections.json | Studios / Toho / Top Rated | 236 | ok | JUJUTSU KAISEN: Hidden Inventory / Premature Death - The Movie; Your Name.; Seven Samurai
-nuvio-collections.json | Studios / MAPPA / Popular | 35 | ok | JUJUTSU KAISEN; Fighting Spirit; Chainsaw Man
-nuvio-collections.json | Studios / MAPPA / Latest | 43 | ok | Chainsaw Man - The Compilation; Lazarus; ZENSHU
-nuvio-collections.json | Studios / MAPPA / Essentials | 48 | ok | Attack on Titan; JUJUTSU KAISEN; Chainsaw Man
-nuvio-collections.json | Studios / MAPPA / Top Rated | 25 | ok | Chainsaw Man - The Compilation; Attack on Titan; Fighting Spirit
-nuvio-collections.json | Studios / ufotable / Popular | 5 | THIN | Fate/stay night [Unlimited Blade Works]; Fate/Zero; Demon Slayer: Kimetsu no Yaiba
-nuvio-collections.json | Studios / ufotable / Latest | 8 | THIN | Demon Slayer: Kimetsu no Yaiba; Today's Menu for the Emiya Family; Katsugeki: Touken Ranbu
-nuvio-collections.json | Studios / ufotable / Essentials | 15 | THIN | Demon Slayer: Kimetsu no Yaiba; Fate/Zero; Fate/stay night [Unlimited Blade Works]
-nuvio-collections.json | Studios / ufotable / Top Rated | 4 | THIN | Demon Slayer: Kimetsu no Yaiba; Fate/stay night [Unlimited Blade Works]; Fate/Zero
-nuvio-collections.json | World Cinema / Korean / Popular Movies | 354 | ok | Hope; Colony; Parasite
-nuvio-collections.json | World Cinema / Korean / Popular K-Dramas | 428 | ok | Strong Girl Bong-soon; Hello Monster; Running Man
-nuvio-collections.json | World Cinema / Korean / New Movies | 923 | ok | Hope; Husbands in Action; Wild Sing
-nuvio-collections.json | World Cinema / Korean / New K-Dramas | 999 | ok | Love in Disguise; Doctor X: Mafia in White; Take Charge of My Heart
-nuvio-collections.json | World Cinema / Korean / Top Rated Movies | 34 | ok | Parasite; Oldboy; Colony
-nuvio-collections.json | World Cinema / Korean / Top Rated K-Dramas | 86 | ok | Teach You a Lesson; When Life Gives You Tangerines; Weak Hero
-nuvio-collections.json | World Cinema / Anime / Popular Movies | 459 | ok | Spirited Away; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Your Name.
-nuvio-collections.json | World Cinema / Anime / Popular Anime Series | 1060 | ok | Doraemon; Bleach; Pokémon
-nuvio-collections.json | World Cinema / Anime / New Movies | 997 | ok | THE RIBBON HERO; One Piece Heroines; Assassination Classroom the Movie: Our Time
-nuvio-collections.json | World Cinema / Anime / New Anime Series | 2190 | ok | Dragon Ball Super: Beerus; Firefly Wedding; Star Wars: Visions Presents - The Ninth Jedi
-nuvio-collections.json | World Cinema / Anime / Top Rated Movies | 75 | ok | Demon Slayer: Kimetsu no Yaiba Infinity Castle; Chainsaw Man - The Movie: Reze Arc; Spirited Away
-nuvio-collections.json | World Cinema / Anime / Top Rated Anime Series | 248 | ok | Dragon Ball Super: Beerus; Frieren: Beyond Journey's End; One Piece
-nuvio-collections.json | World Cinema / Japanese / Popular Movies | 1189 | ok | High and Low; Godzilla Minus One; Ikiru
-nuvio-collections.json | World Cinema / Japanese / Popular J-Dramas | 217 | ok | Kamen Rider; AIBOU: Tokyo Detective Duo; Doctor-X: Surgeon Michiko Daimon
-nuvio-collections.json | World Cinema / Japanese / New Movies | 3056 | ok | Look Back; The Samurai and the Prisoner; All of a Sudden
-nuvio-collections.json | World Cinema / Japanese / New J-Dramas | 1262 | ok | Borders; LOST10; Merry Berry Love
-nuvio-collections.json | World Cinema / Japanese / Top Rated Movies | 210 | ok | Harakiri; Drawing Closer; Seven Samurai
-nuvio-collections.json | World Cinema / Japanese / Top Rated J-Dramas | 28 | ok | 1 Litre of Tears; Legal High; Unnatural
-nuvio-collections.json | World Cinema / Chinese / Popular Movies | 1246 | ok | The Shadow's Edge; Kung Fu Soccer; The Furious
-nuvio-collections.json | World Cinema / Chinese / Popular C-Dramas | 312 | ok | Love Between Lines; A Record of a Mortal's Journey to Immortality; Renegade Immortal
-nuvio-collections.json | World Cinema / Chinese / New Movies | 2833 | ok | Renegade Immortal: Battle of the Immortal Slayer; V; Once Upon a Time in the Middle East
-nuvio-collections.json | World Cinema / Chinese / New C-Dramas | 1523 | ok | Where the Mask Ends; The Old Story of Yu Hong; A Prophet
-nuvio-collections.json | World Cinema / Chinese / Top Rated Movies | 230 | ok | The Legend of Hei; The Shadow's Edge; Blades of the Guardians
-nuvio-collections.json | World Cinema / Chinese / Top Rated C-Dramas | 36 | ok | The Long Season; When I Fly Towards You; The Untamed
-nuvio-collections.json | World Cinema / Turkish / Popular Movies | 484 | ok | Miracle in Cell No. 7; Two Worlds One Wish; Yan Yana
-nuvio-collections.json | World Cinema / Turkish / Popular Dizi | 177 | ok | Far Away; Kuruluş Osman; Yalı Çapkını
-nuvio-collections.json | World Cinema / Turkish / New Movies | 990 | ok | The Last Scene; Summer House; Sultana
-nuvio-collections.json | World Cinema / Turkish / New Dizi | 491 | ok | Money Trap; Not a Stranger; Torn Apart
-nuvio-collections.json | World Cinema / Turkish / Top Rated Movies | 25 | ok | Miracle in Cell No. 7; Ayla: The Daughter of War; Paper Lives
-nuvio-collections.json | World Cinema / Turkish / Top Rated Dizi | 41 | ok | As If; Yalı Çapkını; Ezel
-nuvio-collections.json | World Cinema / Spanish / Popular Movies | 1119 | ok | Tad and The Magic Lamp; LA BOLA NEGRA; Drawn Together
-nuvio-collections.json | World Cinema / Spanish / Popular Series | 271 | ok | Elite; Cuéntame cómo pasó; Money Heist
-nuvio-collections.json | World Cinema / Spanish / New Movies | 2675 | ok | LA BOLA NEGRA; Go Team!; Drawn Together
-nuvio-collections.json | World Cinema / Spanish / New Series | 622 | ok | Timbiriche; A Day Like No Other; The Final Problem
-nuvio-collections.json | World Cinema / Spanish / Top Rated Movies | 245 | ok | The Invisible Guest; Strings; The Secret in Their Eyes
-nuvio-collections.json | World Cinema / Spanish / Top Rated Series | 92 | ok | Desafío Champions Sendokai; ¿A qué estás esperando?; Veneno
-nuvio-collections.json | World Cinema / Latin American / Popular Movies | 1762 | ok | Surviving Hurricane Otis; Don't Leave the Kids Alone; Crazy Magical Mexico
-nuvio-collections.json | World Cinema / Latin American / Popular Series | 623 | ok | Rebelde; A Grande Família; Al Fondo Hay Sitio
-nuvio-collections.json | World Cinema / Latin American / New Movies | 4377 | ok | The Awakening; Surviving Hurricane Otis; Therapy Done Right
-nuvio-collections.json | World Cinema / Latin American / New Series | 1180 | ok | Mírame así, el camino de Noa; Inside the Circle; I Would Rather Die
-nuvio-collections.json | World Cinema / Latin American / Top Rated Movies | 239 | ok | The Three Deaths of Marisela Escobedo; Accidental Partners; Facing El Chapo
-nuvio-collections.json | World Cinema / Latin American / Top Rated Series | 261 | ok | The Trial; O Auto da Compadecida; No One Will Miss Us
-nuvio-collections.json | World Cinema / French / Popular Movies | 4427 | ok | Léon: The Professional; Marsupilami; Dracula
-nuvio-collections.json | World Cinema / French / Popular Series | 244 | ok | Wakfu; Lupin; Miraculous: Tales of Ladybug & Cat Noir
-nuvio-collections.json | World Cinema / French / New Movies | 8472 | ok | Karma; La Gradiva; Les Misérables
-nuvio-collections.json | World Cinema / French / New Series | 913 | ok | Paolo; Minimum Security; The Pandemic Prophet
-nuvio-collections.json | World Cinema / French / Top Rated Movies | 1136 | ok | Human; Night and Fog; Léon: The Professional
-nuvio-collections.json | World Cinema / French / Top Rated Series | 70 | ok | Les Contes de la rue Broca; Kaamelott; Apocalypse: The Second World War
-nuvio-collections.json | World Cinema / Italian / Popular Movies | 2494 | ok | The Good, the Bad and the Ugly; Life Is Beautiful; Once Upon a Time in the West
-nuvio-collections.json | World Cinema / Italian / Popular Series | 148 | ok | Camera Café; Father Matteo; Winx Club
-nuvio-collections.json | World Cinema / Italian / New Movies | 4679 | ok | Je so’ pazzo; Zustìssia; The Spiral
-nuvio-collections.json | World Cinema / Italian / New Series | 419 | ok | LOL: Chi ride è fuori - Halloween Special; Minerva Academy; Physical 100: Italy
-nuvio-collections.json | World Cinema / Italian / Top Rated Movies | 642 | ok | The Good, the Bad and the Ugly; Life Is Beautiful; Cinema Paradiso
-nuvio-collections.json | World Cinema / Italian / Top Rated Series | 38 | ok | Boris; Tear Along the Dotted Line; My 2 Cents
-nuvio-collections.json | World Cinema / German / Popular Movies | 1207 | ok | All Quiet on the Western Front; M; Nosferatu
-nuvio-collections.json | World Cinema / German / Popular Series | 153 | ok | Scene of the Crime; The Old Fox; Die Harald Schmidt Show
-nuvio-collections.json | World Cinema / German / New Movies | 3149 | ok | Drive - The Pretenders; Schumacher ’94 – The Birth of a Legend; Das gewisse Etwas
-nuvio-collections.json | World Cinema / German / New Series | 649 | ok | Friends Sex and Games; The Trap; City of Blood
-nuvio-collections.json | World Cinema / German / Top Rated Movies | 191 | ok | Das Boot; Metropolis; M
-nuvio-collections.json | World Cinema / German / Top Rated Series | 46 | ok | Das Boot; Dark; Maxton Hall – The World Between Us
-nuvio-collections.json | World Cinema / Nordic / Popular Movies | 954 | ok | Kraken; The Storm; Sentimental Value
-nuvio-collections.json | World Cinema / Nordic / Popular Nordic Noir | 174 | ok | The Bridge; Wallander; The Sommerdahl Murders
-nuvio-collections.json | World Cinema / Nordic / New Movies | 2523 | ok | The Storm; The Secret Woman; Inside the Trustor Scandal
-nuvio-collections.json | World Cinema / Nordic / New Nordic Noir | 629 | ok | Blood Sacrifice; Until Death Do Us Part; Norway: The Dark Horse
-nuvio-collections.json | World Cinema / Nordic / Top Rated Movies | 186 | ok | The Seventh Seal; Persona; The Hunt
-nuvio-collections.json | World Cinema / Nordic / Top Rated Nordic Noir | 52 | ok | Young Royals; Fanny and Alexander; SKAM
-nuvio-collections.json | World Cinema / British / Popular Movies | 2179 | ok | Fall 2: Deadpoint; The Odyssey; Pinocchio: Unstrung
-nuvio-collections.json | World Cinema / British / Popular Series | 754 | ok | The Crown; Luther; Death in Paradise
-nuvio-collections.json | World Cinema / British / New Movies | 4713 | ok | The Cycle; Sense and Sensibility; Shaun the Sheep: The Beast of Mossy Bottom
-nuvio-collections.json | World Cinema / British / New Series | 1791 | ok | Below; WAR; Kill Jackie
-nuvio-collections.json | World Cinema / British / Top Rated Movies | 479 | ok | Inception; The Pianist; One Direction: This Is Us
-nuvio-collections.json | World Cinema / British / Top Rated Series | 126 | ok | Planet Earth; Planet Earth II; Blue Planet II
-nuvio-collections.json | World Cinema / Thai / Popular Movies | 343 | ok | The Debt Collector; Ong-Bak; My Dearest Assassin
-nuvio-collections.json | World Cinema / Thai / Popular Series | 431 | ok | Pen Tor; Still 2gether; My Daemon
-nuvio-collections.json | World Cinema / Thai / New Movies | 685 | ok | Chompoo: Lost​ &​ Forgotten​; The Debt Collector; Morte Cucina
-nuvio-collections.json | World Cinema / Thai / New Series | 563 | ok | Delusion; The Crow Club; Pls Love
-nuvio-collections.json | World Cinema / Thai / Top Rated Movies | 62 | ok | My Dearest Assassin; How to Make Millions Before Grandma Dies; Uranus 2324
-nuvio-collections.json | World Cinema / Thai / Top Rated Series | 108 | ok | True Love is Delicious; You Maniac; The Loyal Pin
-nuvio-collections.json | World Cinema / Filipino / Popular Movies | 270 | ok | Sugar Baby; Suki; Wonderful Nightmare
-nuvio-collections.json | World Cinema / Filipino / Popular Series | 66 | ok | Pinoy Big Brother; Brothers; Batang Quiapo
-nuvio-collections.json | World Cinema / Filipino / New Movies | 996 | ok | Filipiñana; This, That, and Everything in Between; The Cheating Wife
-nuvio-collections.json | World Cinema / Filipino / New Series | 133 | ok | My Husband Is a Mafia Boss; Hell University; Sereno
-nuvio-collections.json | World Cinema / Filipino / Top Rated Movies | 14 | THIN | Norte, the End of History; Manila in the Claws of Light; Metro Manila
-nuvio-collections.json | World Cinema / Filipino / Top Rated Series | 9 | THIN | The Jewel of Section E; Luv Is; 2 Good 2 Be True
-nuvio-collections.json | World Cinema / Arabic / Popular Movies | 594 | ok | The Voice of Hind Rajab; Capernaum; Crazy Rich, Incredibly Broke
-nuvio-collections.json | World Cinema / Arabic / Popular Series | 173 | ok | El Kebeer Awi; The Game; Bab Al-Hara
-nuvio-collections.json | World Cinema / Arabic / New Movies | 1256 | ok | Crazy Rich, Incredibly Broke; Furies; Love in Slow Motion
-nuvio-collections.json | World Cinema / Arabic / New Series | 329 | ok | The Full Story Drama; Love on Paper; Roses and Jasmine
-nuvio-collections.json | World Cinema / Arabic / Top Rated Movies | 47 | ok | Capernaum; The Voice of Hind Rajab; No Other Land
-nuvio-collections.json | World Cinema / Arabic / Top Rated Series | 9 | THIN | Omar; AlRawabi School for Girls; The Game
-nuvio-collections.json | World Cinema / African / Popular Movies | 243 | ok | Chappie; The Gods Must Be Crazy; David
-nuvio-collections.json | World Cinema / African / Popular Series | 73 | ok | Fatal Seduction; Blood & Water; Shaka Zulu
-nuvio-collections.json | World Cinema / African / New Movies | 461 | ok | Seriously Single Too; Summer's Last Resort; Bride of the Year
-nuvio-collections.json | World Cinema / African / New Series | 93 | ok | Umthetho; Die Kantoor; The Nowhere Man
-nuvio-collections.json | World Cinema / African / Top Rated Movies | 59 | ok | David; My Octopus Teacher; Faith Like Potatoes
-nuvio-collections.json | World Cinema / African / Top Rated Series | 19 | THIN | Shanty Town; King of Boys: The Return of the King; Far from Home
-nuvio-collections.json | Networks / HBO / Popular | 187 | ok | Game of Thrones; The Sopranos; Sesame Street
-nuvio-collections.json | Networks / HBO / Latest | 266 | ok | The Pet Cemetery Murders: A Ghost Story; JAŸ-Z in 8; A Killer Story
-nuvio-collections.json | Networks / HBO / Essentials | 333 | ok | Game of Thrones; Euphoria; Chernobyl
-nuvio-collections.json | Networks / HBO / Top Rated | 93 | ok | Chernobyl; The Sopranos; The Wire
-nuvio-collections.json | Networks / FX / Popular | 65 | ok | What We Do in the Shadows; American Horror Story; It's Always Sunny in Philadelphia
-nuvio-collections.json | Networks / FX / Latest | 76 | ok | The Drop: A Snowfall Saga; The Shards; Love Story
-nuvio-collections.json | Networks / FX / Essentials | 85 | ok | American Horror Story; Fargo; Sons of Anarchy
-nuvio-collections.json | Networks / FX / Top Rated | 37 | ok | Shōgun; Sons of Anarchy; Snowfall
-nuvio-collections.json | Networks / AMC / Popular | 49 | ok | Breaking Bad; The Walking Dead; Better Call Saul
-nuvio-collections.json | Networks / AMC / Latest | 53 | ok | The Vampire Lestat; The Audacity; Talamasca: The Secret Order
-nuvio-collections.json | Networks / AMC / Essentials | 69 | ok | Breaking Bad; The Walking Dead; Better Call Saul
-nuvio-collections.json | Networks / AMC / Top Rated | 25 | ok | Breaking Bad; Better Call Saul; Mad Men
-nuvio-collections.json | Networks / Showtime / Popular | 84 | ok | Shameless; Dexter; Stargate SG-1
-nuvio-collections.json | Networks / Showtime / Latest | 139 | ok | The Curse; Fellow Travelers; Goliath
-nuvio-collections.json | Networks / Showtime / Essentials | 195 | ok | Dexter; Shameless; Homeland
-nuvio-collections.json | Networks / Showtime / Top Rated | 36 | ok | Fellow Travelers; Twin Peaks; Queer as Folk
-nuvio-collections.json | Networks / BBC / Popular | 618 | ok | Luther; Death in Paradise; Doctor Who
-nuvio-collections.json | Networks / BBC / Latest | 1420 | ok | The Reluctant Vampire; The Split Up; Marble Hall Murders
-nuvio-collections.json | Networks / BBC / Essentials | 4783 | ok | Peaky Blinders; Sherlock; Doctor Who
-nuvio-collections.json | Networks / BBC / Top Rated | 107 | ok | Blue Planet II; I Am Not an Animal; Peaky Blinders
-nuvio-collections.json | Networks / Channel 4 / Popular | 141 | ok | Black Mirror; Big Brother; Shameless
-nuvio-collections.json | Networks / Channel 4 / Latest | 368 | ok | Pierre; Free Nelson Mandela; Tip Toe
-nuvio-collections.json | Networks / Channel 4 / Essentials | 1499 | ok | Black Mirror; The End of the F***ing World; The IT Crowd
-nuvio-collections.json | Networks / Channel 4 / Top Rated | 27 | ok | Taskmaster; Black Mirror; The Storyteller
-nuvio-collections.json | Networks / ITV / Popular | 221 | ok | The Bill; Midsomer Murders; Agatha Christie's Poirot
-nuvio-collections.json | Networks / ITV / Latest | 589 | ok | Winter; The Dark; Believe Me
-nuvio-collections.json | Networks / ITV / Essentials | 1843 | ok | Mr. Bean; Downton Abbey; Broadchurch
-nuvio-collections.json | Networks / ITV / Top Rated | 26 | ok | The World at War; Agatha Christie's Poirot; Sherlock Holmes
-nuvio-collections.json | Networks / Adult Swim / Popular | 71 | ok | Rick and Morty; Robot Chicken; Lazarus
-nuvio-collections.json | Networks / Adult Swim / Latest | 101 | ok | GET JIRO; President Curtis; Rooster Fighter
-nuvio-collections.json | Networks / Adult Swim / Essentials | 124 | ok | Rick and Morty; Primal; Final Space
-nuvio-collections.json | Networks / Adult Swim / Top Rated | 18 | THIN | Rick and Morty; Primal; Smiling Friends
-nuvio-collections.json | Networks / Cartoon Network / Popular | 112 | ok | Adventure Time; Teen Titans Go!; Ninjago: Masters of Spinjitzu
-nuvio-collections.json | Networks / Cartoon Network / Latest | 153 | ok | Regular Show: The Lost Tapes; Iyanu; Total Drama Island
-nuvio-collections.json | Networks / Cartoon Network / Essentials | 204 | ok | Adventure Time; Star Wars: The Clone Wars; Regular Show
-nuvio-collections.json | Networks / Cartoon Network / Top Rated | 56 | ok | Regular Show; Over the Garden Wall; The Amazing World of Gumball
-nuvio-collections.json | Networks / Nickelodeon / Popular | 112 | ok | PAW Patrol; Teenage Mutant Ninja Turtles; The Loud House
-nuvio-collections.json | Networks / Nickelodeon / Latest | 200 | ok | Wylde Pak; The Thundermans: Undercover; The Fairly OddParents: A New Wish
-nuvio-collections.json | Networks / Nickelodeon / Essentials | 255 | ok | Avatar: The Last Airbender; SpongeBob SquarePants; The Legend of Korra
-nuvio-collections.json | Networks / Nickelodeon / Top Rated | 45 | ok | Avatar: The Last Airbender; Big Time Rush; Invader ZIM
-nuvio-collections.json | Networks / Disney Channel / Popular | 92 | ok | Phineas and Ferb; Gravity Falls; Kim Possible
-nuvio-collections.json | Networks / Disney Channel / Latest | 134 | ok | Vampirina: Teenage Vampire; Electric Bloom; StuGo
-nuvio-collections.json | Networks / Disney Channel / Essentials | 206 | ok | Gravity Falls; The Owl House; Star vs. the Forces of Evil
-nuvio-collections.json | Networks / Disney Channel / Top Rated | 43 | ok | Wizards Beyond Waverly Place; The Owl House; Gravity Falls
-nuvio-collections.json | Networks / National Geographic / Popular | 35 | ok | Genius; Cosmos; Mars
-nuvio-collections.json | Networks / National Geographic / Latest | 132 | ok | Africa Earth's Wild Home; 9/11: Reunited; Lion
-nuvio-collections.json | Networks / National Geographic / Essentials | 489 | ok | Cosmos; The Story of God with Morgan Freeman; Mars
-nuvio-collections.json | Networks / National Geographic / Top Rated | 4 | THIN | Cosmos; Genius; The Story of God with Morgan Freeman
-nuvio-collections.json | Networks / Discovery / Popular | 39 | ok | Gold Rush; MythBusters; Ghost Adventures
-nuvio-collections.json | Networks / Discovery / Latest | 127 | ok | Expedition Files; In the Eye of the Storm; Alien Encounters: Fact or Fiction
-nuvio-collections.json | Networks / Discovery / Essentials | 440 | ok | MythBusters; Manhunt; Ghost Adventures
-nuvio-collections.json | Networks / Discovery / Top Rated | 6 | THIN | MythBusters; Manhunt; Ghost Adventures
-nuvio-collections.json | Networks / History / Popular | 46 | ok | Ancient Aliens; Pawn Stars; The Curse of Oak Island
-nuvio-collections.json | Networks / History / Latest | 136 | ok | Hazardous History with Henry Winkler; Sitting Bull; Kevin Costner's The West
-nuvio-collections.json | Networks / History / Essentials | 412 | ok | Seven Deadly Sins; Project Blue Book; The Bible
-nuvio-collections.json | Networks / History / Top Rated | 16 | THIN | Project Blue Book; The Men Who Built America; The Universe
-nuvio-collections.json | Networks / Comedy Central / Popular | 41 | ok | South Park; Futurama; Reno 911!
-nuvio-collections.json | Networks / Comedy Central / Latest | 78 | ok | Everybody Still Hates Chris; Digman!; Mike Judge's Beavis and Butt-Head
-nuvio-collections.json | Networks / Comedy Central / Essentials | 156 | ok | South Park; Futurama; Drawn Together
-nuvio-collections.json | Networks / Comedy Central / Top Rated | 12 | THIN | Futurama; South Park; Nathan for You
-nuvio-collections.json | Networks / tvN / Popular | 159 | ok | Chicago Typewriter; Love in Disguise; Hospital Playlist
-nuvio-collections.json | Networks / tvN / Latest | 256 | ok | Love in Disguise; 100 Days of Deception; Four Hands, Two Sonatas
-nuvio-collections.json | Networks / tvN / Essentials | 511 | ok | Guardian: The Lonely and Great God; True Beauty; It's Okay to Not Be Okay
-nuvio-collections.json | Networks / tvN / Top Rated | 47 | ok | Twinkling Watermelon; Reply 1988; Bon Appétit, Your Majesty
-nuvio-collections.json | Networks / JTBC / Popular | 82 | ok | Strong Girl Bong-soon; Men on a Mission; Beyond the Bar
-nuvio-collections.json | Networks / JTBC / Latest | 143 | ok | Final Table; The Apartment Job; Reborn Rookie
-nuvio-collections.json | Networks / JTBC / Essentials | 328 | ok | King the Land; Itaewon Class; BTS In the SOOP
-nuvio-collections.json | Networks / JTBC / Top Rated | 17 | THIN | The Good Bad Mother; Good Boy; Miss Night and Day
-nuvio-collections.json | Critics' Picks / All-Time Greats / Films | 268 | ok | The Shawshank Redemption; The Godfather; The Godfather Part II
-nuvio-collections.json | Critics' Picks / All-Time Greats / Series | 93 | ok | Breaking Bad; Avatar: The Last Airbender; One Piece
-nuvio-collections.json | Critics' Picks / Modern Classics / Films | 763 | ok | Project Hail Mary; Interstellar; Your Name.
-nuvio-collections.json | Critics' Picks / Modern Classics / Series | 273 | ok | Arcane; Chernobyl; Better Call Saul
-nuvio-collections.json | Critics' Picks / Hidden Gems / Films | 598 | ok | Werckmeister Harmonies; Accidental Partners; Lisbela and the Prisoner
-nuvio-collections.json | Critics' Picks / Hidden Gems / Series | 299 | ok | 海尼曼外教艾伦老师精讲; Fanny and Alexander; The Manipulated
-nuvio-collections.json | Critics' Picks / Best of This Year / Films | 133 | ok | Batman: Knightfall Part 1: Knightfall; Avatar Aang: The Last Airbender; Swapped
-nuvio-collections.json | Critics' Picks / Best of This Year / Series | 103 | ok | Dragon Ball Super: Beerus; Regular Show: The Lost Tapes; Teach You a Lesson
-nuvio-collections.json | Critics' Picks / Documentaries / Essential | 112 | ok | David Attenborough: A Life on Our Planet; Selena Gomez: My Mind & Me; Stop Making Sense
-nuvio-collections.json | Critics' Picks / Documentaries / Docuseries | 100 | ok | Cosmos: A Personal Voyage; Planet Earth; Planet Earth II
-nuvio-collections.json | Critics' Picks / Animated Masterpieces / Films | 268 | ok | Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Spirited Away
-nuvio-collections.json | Critics' Picks / Animated Masterpieces / Series | 182 | ok | Frieren: Beyond Journey's End; Avatar: The Last Airbender; One Piece
-nuvio-collections.json | Decades / 2020s / Essentials | 20001 | ok | Spider-Man: No Way Home; Dune; Avatar: The Way of Water
-nuvio-collections.json | Decades / 2020s / Top Rated | 924 | ok | Avatar Aang: The Last Airbender; Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle
-nuvio-collections.json | Decades / 2020s / Series | 20001 | ok | Squid Game; WandaVision; Loki
-nuvio-collections.json | Decades / 2020s / Popular Now | 2652 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
-nuvio-collections.json | Decades / 2010s / Essentials | 20001 | ok | Interstellar; Inception; The Avengers
-nuvio-collections.json | Decades / 2010s / Top Rated | 2134 | ok | Interstellar; Your Name.; Parasite
-nuvio-collections.json | Decades / 2010s / Series | 20001 | ok | Game of Thrones; Stranger Things; Money Heist
-nuvio-collections.json | Decades / 2010s / Popular Now | 5221 | ok | Coco; Interstellar; Avengers: Endgame
-nuvio-collections.json | Decades / 2000s / Essentials | 20001 | ok | The Dark Knight; Avatar; Harry Potter and the Philosopher's Stone
-nuvio-collections.json | Decades / 2000s / Top Rated | 1407 | ok | The Dark Knight; Spirited Away; The Lord of the Rings: The Return of the King
-nuvio-collections.json | Decades / 2000s / Series | 20001 | ok | Breaking Bad; The Big Bang Theory; Grey's Anatomy
-nuvio-collections.json | Decades / 2000s / Popular Now | 3040 | ok | Coraline; The Dark Knight; The Lord of the Rings: The Fellowship of the Ring
-nuvio-collections.json | Decades / 1990s / Essentials | 20001 | ok | Fight Club; The Shawshank Redemption; Pulp Fiction
-nuvio-collections.json | Decades / 1990s / Top Rated | 697 | ok | The Shawshank Redemption; Schindler's List; The Green Mile
-nuvio-collections.json | Decades / 1990s / Series | 11648 | ok | Friends; One Piece; South Park
-nuvio-collections.json | Decades / 1990s / Popular Now | 1620 | ok | The Nightmare Before Christmas; The Shawshank Redemption; The Matrix
-nuvio-collections.json | Decades / 1980s / Essentials | 20001 | ok | Back to the Future; The Shining; The Empire Strikes Back
-nuvio-collections.json | Decades / 1980s / Top Rated | 358 | ok | Grave of the Fireflies; Cinema Paradiso; The Empire Strikes Back
-nuvio-collections.json | Decades / 1980s / Series | 7175 | ok | The Simpsons; Dragon Ball Z; Dragon Ball
-nuvio-collections.json | Decades / 1980s / Popular Now | 1045 | ok | Friday the 13th; Pet Sematary; The Transformers: The Movie
-nuvio-collections.json | Decades / 1970s / Essentials | 20001 | ok | The Godfather; Star Wars; Alien
-nuvio-collections.json | Decades / 1970s / Top Rated | 158 | ok | The Godfather; The Godfather Part II; One Flew Over the Cuckoo's Nest
-nuvio-collections.json | Decades / 1970s / Series | 4681 | ok | El Chavo del Ocho; The Tom and Jerry Show; Little House on the Prairie
-nuvio-collections.json | Decades / 1970s / Popular Now | 554 | ok | The Godfather; Alien; Star Wars
-nuvio-collections.json | Decades / 1960s / Essentials | 20001 | ok | 2001: A Space Odyssey; Psycho; The Good, the Bad and the Ugly
-nuvio-collections.json | Decades / 1960s / Top Rated | 272 | ok | Harakiri; The Good, the Bad and the Ugly; Psycho
-nuvio-collections.json | Decades / 1960s / Series | 2431 | ok | Star Trek; The Flintstones; Scooby-Doo, Where Are You!
-nuvio-collections.json | Decades / 1960s / Popular Now | 406 | ok | 2001: A Space Odyssey; The Good, the Bad and the Ugly; High and Low
-nuvio-collections.json | Decades / 1950s / Essentials | 20001 | ok | 12 Angry Men; Rear Window; Cinderella
-nuvio-collections.json | Decades / 1950s / Top Rated | 175 | ok | 12 Angry Men; Seven Samurai; Rear Window
-nuvio-collections.json | Decades / 1950s / Series | 1089 | ok | The Twilight Zone; Bonanza; Alfred Hitchcock Presents
-nuvio-collections.json | Decades / 1950s / Popular Now | 261 | ok | North by Northwest; 12 Angry Men; Ikiru
-nuvio-collections.json | Trending / Trending now / Trending Films | 325 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
-nuvio-collections.json | Trending / Trending now / Trending Series | 1035 | ok | Love Between Lines; VisionQuest; MobLand
-nuvio-collections.json | Trending / Trending now / Trending Anime | 253 | ok | Dragon Ball Super: Beerus; Scum of the Brave; The Warrior Princess and the Barbaric King
+nuvio-collections.json | Movies / New / New films | 20001 | ok | Surviving Hurricane Otis; Ali G: Who Iz I?; Masterplan
+nuvio-collections.json | Movies / Trending / Trending films | 325 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
+nuvio-collections.json | Movies / Top rated / Top rated films | 1926 | ok | The Shawshank Redemption; The Godfather; Project Hail Mary
+nuvio-collections.json | Movies / By Genre / Action | 4585 | ok | Hope; Spider-Man: Brand New Day; The Odyssey
+nuvio-collections.json | Movies / By Genre / Adventure | 2996 | ok | Spider-Man: Brand New Day; The Odyssey; Matchbox the Movie
+nuvio-collections.json | Movies / By Genre / Comedy | 8462 | ok | Buddy; Matchbox the Movie; Practical Magic 2
+nuvio-collections.json | Movies / By Genre / Drama | 10466 | ok | Verity; Animals; Digger
+nuvio-collections.json | Movies / By Genre / Thriller | 5580 | ok | Fall 2: Deadpoint; Clayface; Insidious: Out of the Further
+nuvio-collections.json | Movies / By Genre / Crime | 3378 | ok | Animals; The Shawshank Redemption; Inception
+nuvio-collections.json | Movies / By Genre / Horror | 3632 | ok | Clayface; Insidious: Out of the Further; Buddy
+nuvio-collections.json | Movies / By Genre / Sci-Fi | 2349 | ok | Hope; Spider-Man: Brand New Day; Clayface
+nuvio-collections.json | Movies / By Genre / Fantasy | 2242 | ok | The Odyssey; Buddy; Pinocchio: Unstrung
+nuvio-collections.json | Movies / By Genre / Romance | 3817 | ok | Practical Magic 2; Love of Your Life; Corpse Bride
+nuvio-collections.json | Movies / By Genre / Mystery | 1944 | ok | Hope; Pinocchio: Unstrung; Verity
+nuvio-collections.json | Movies / By Genre / Animation | 1956 | ok | Forgotten Island; The Nightmare Before Christmas; Coco
+nuvio-collections.json | Movies / By Genre / Family | 2215 | ok | The Dog Stars; Forgotten Island; The Nightmare Before Christmas
+nuvio-collections.json | Movies / By Genre / Kids | 1095 | ok | Forgotten Island; The Nightmare Before Christmas; Coco
+nuvio-collections.json | Movies / By Genre / Documentary | 712 | ok | Jackass: Best and Last; NAZA; The Remarkable Life of Ibelin
+nuvio-collections.json | Movies / By Genre / History | 1115 | ok | Tenzing; Oppenheimer; The Uprising
+nuvio-collections.json | Movies / By Genre / War | 759 | ok | LA BOLA NEGRA; Oppenheimer; Fury
+nuvio-collections.json | Movies / By Genre / Western | 403 | ok | Django Unchained; No Country for Old Men; The Good, the Bad and the Ugly
+nuvio-collections.json | Movies / By Genre / Music | 726 | ok | Coco; Trolls World Tour; Tuner
+nuvio-collections.json | Movies / By Decade / 2020s | 20001 | ok | Spider-Man: No Way Home; Dune; Avatar: The Way of Water
+nuvio-collections.json | Movies / By Decade / 2010s | 20001 | ok | Interstellar; Inception; The Avengers
+nuvio-collections.json | Movies / By Decade / 2000s | 20001 | ok | The Dark Knight; Avatar; Harry Potter and the Philosopher's Stone
+nuvio-collections.json | Movies / By Decade / 1990s | 20001 | ok | Fight Club; The Shawshank Redemption; Pulp Fiction
+nuvio-collections.json | Movies / By Decade / 1980s | 20001 | ok | Back to the Future; The Shining; The Empire Strikes Back
+nuvio-collections.json | Movies / By Decade / 1970s | 20001 | ok | The Godfather; Star Wars; Alien
+nuvio-collections.json | Movies / By Decade / 1960s | 20001 | ok | 2001: A Space Odyssey; Psycho; The Good, the Bad and the Ugly
+nuvio-collections.json | Movies / By Decade / 1950s | 20001 | ok | 12 Angry Men; Rear Window; Cinderella
+nuvio-collections.json | Movies / Collections / Marvel Cinematic Universe | 54 | ok | Iron Man; The Incredible Hulk; Iron Man 2
+nuvio-collections.json | Movies / Collections / Star Wars | 9 | ok | Star Wars; The Empire Strikes Back; Return of the Jedi
+nuvio-collections.json | Movies / Collections / Harry Potter | 8 | ok | Harry Potter and the Philosopher's Stone; Harry Potter and the Chamber of Secrets; Harry Potter and the Goblet of Fire
+nuvio-collections.json | Movies / Collections / The Lord of the Rings | 3 | ok | The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Two Towers; The Lord of the Rings: The Return of the King
+nuvio-collections.json | Movies / Collections / DC Universe | 19 | THIN | Clayface; Supergirl; Superman
+nuvio-collections.json | Movies / Collections / James Bond | 27 | ok | Live and Let Die; Dr. No; From Russia with Love
+nuvio-collections.json | Movies / Collections / Mission: Impossible | 8 | ok | Mission: Impossible; Mission: Impossible II; Mission: Impossible III
+nuvio-collections.json | Movies / Collections / Fast & Furious | 12 | ok | 2 Fast 2 Furious; The Fast and the Furious: Tokyo Drift; The Fast and the Furious
+nuvio-collections.json | Movies / Collections / John Wick | 4 | ok | John Wick; John Wick: Chapter 2; John Wick: Chapter 3 - Parabellum
+nuvio-collections.json | Movies / Collections / Jurassic Park | 8 | ok | Jurassic Park; The Lost World: Jurassic Park; Jurassic Park III
+nuvio-collections.json | Movies / Collections / Spider-Man | 3 | ok | Spider-Man; Spider-Man 2; Spider-Man 3
+nuvio-collections.json | Movies / Collections / X-Men | 7 | ok | X-Men; X2; X-Men: The Last Stand
+nuvio-collections.json | Movies / Collections / MonsterVerse | 6 | THIN | Godzilla; Kong: Skull Island; Godzilla: King of the Monsters
+nuvio-collections.json | Movies / Collections / Dune | 3 | ok | Dune; Dune: Part Two; Dune: Part Three
+nuvio-collections.json | Movies / Collections / Avatar | 5 | ok | Avatar: Fire and Ash; Avatar; Avatar: The Way of Water
+nuvio-collections.json | Movies / Collections / The Matrix | 4 | ok | The Matrix; The Matrix Reloaded; The Matrix Revolutions
+nuvio-collections.json | Movies / Collections / Alien | 4 | ok | Alien; Aliens; Alien³
+nuvio-collections.json | Movies / Collections / Pirates of the Caribbean | 5 | ok | Pirates of the Caribbean: The Curse of the Black Pearl; Pirates of the Caribbean: Dead Man's Chest; Pirates of the Caribbean: At World's End
+nuvio-collections.json | Movies / Collections / The Hunger Games | 4 | ok | The Hunger Games: Mockingjay - Part 1; The Hunger Games: Mockingjay - Part 2; The Hunger Games
+nuvio-collections.json | Movies / Collections / Indiana Jones | 5 | ok | Raiders of the Lost Ark; Indiana Jones and the Temple of Doom; Indiana Jones and the Last Crusade
+nuvio-collections.json | Movies / Collections / The Godfather | 3 | ok | The Godfather; The Godfather Part II; The Godfather Part III
+nuvio-collections.json | Movies / Collections / Back to the Future | 3 | ok | Back to the Future; Back to the Future Part II; Back to the Future Part III
+nuvio-collections.json | Movies / Collections / Planet of the Apes | 4 | ok | Rise of the Planet of the Apes; Dawn of the Planet of the Apes; War for the Planet of the Apes
+nuvio-collections.json | Movies / Collections / Rocky | 6 | ok | Rocky Balboa; Rocky; Rocky II
+nuvio-collections.json | Movies / Collections / Mad Max | 6 | ok | Mad Max 2; Mad Max Beyond Thunderdome; Mad Max
+nuvio-collections.json | Movies / Collections / The Terminator | 6 | ok | The Terminator; Terminator 2: Judgment Day; Terminator 3: Rise of the Machines
+nuvio-collections.json | Movies / Collections / Bourne | 5 | ok | The Bourne Identity; The Bourne Supremacy; The Bourne Ultimatum
+nuvio-collections.json | Movies / Collections / Toy Story | 5 | ok | Toy Story; Toy Story 2; Toy Story 3
+nuvio-collections.json | Movies / Collections / Shrek | 5 | ok | Shrek; Shrek 2; Shrek the Third
+nuvio-collections.json | Movies / Collections / Despicable Me | 4 | ok | Despicable Me; Despicable Me 2; Despicable Me 3
+nuvio-collections.json | Movies / Collections / How to Train Your Dragon | 3 | ok | How to Train Your Dragon; How to Train Your Dragon 2; How to Train Your Dragon: The Hidden World
+nuvio-collections.json | Movies / Collections / Kung Fu Panda | 4 | ok | Kung Fu Panda; Kung Fu Panda 2; Kung Fu Panda 3
+nuvio-collections.json | Movies / Collections / The Conjuring | 4 | ok | The Conjuring; The Conjuring 2; The Conjuring: The Devil Made Me Do It
+nuvio-collections.json | Movies / Moods / Mind-Benders | 76 | ok | Pulp Fiction; Your Name.; Eternal Sunshine of the Spotless Mind
+nuvio-collections.json | Movies / Moods / Heists | 252 | ok | Inception; Die Hard; The Usual Suspects
+nuvio-collections.json | Movies / Moods / True Stories | 1013 | ok | Primetime; Tenzing; Oppenheimer
+nuvio-collections.json | Movies / Moods / Superheroes | 385 | ok | Spider-Man: Brand New Day; Avengers: Endgame; Avengers: Infinity War
+nuvio-collections.json | Movies / Moods / Space | 225 | ok | Project Hail Mary; Interstellar; Avengers: Endgame
+nuvio-collections.json | Movies / Moods / Time Travel | 259 | ok | The End of Oak Street; Interstellar; Avengers: Endgame
+nuvio-collections.json | Movies / Moods / Dystopia | 421 | ok | The Dog Stars; Interstellar; Resident Evil: Welcome to Raccoon City
+nuvio-collections.json | Movies / Moods / Spies | 197 | ok | Inception; Hoppers; North by Northwest
+nuvio-collections.json | Movies / Moods / Cyberpunk & AI | 187 | ok | Interstellar; The Matrix; Avengers: Age of Ultron
+nuvio-collections.json | Movies / Moods / Serial Killers | 489 | ok | Onslaught; Ice Cream Man; Friday the 13th
+nuvio-collections.json | Movies / Moods / Whodunits | 436 | ok | Se7en; The Sheep Detectives; Knives Out
+nuvio-collections.json | Movies / Moods / Survival | 263 | ok | Resident Evil; The End of Oak Street; Whalefall
+nuvio-collections.json | Movies / Moods / Revenge | 735 | ok | Clayface; Mutiny; Friday the 13th
+nuvio-collections.json | Movies / Moods / Mafia & Gangsters | 352 | ok | The Godfather; Pulp Fiction; Léon: The Professional
+nuvio-collections.json | Movies / Moods / Courtroom | 98 | ok | Coyote vs. Acme; The Social Reckoning; Good Will Hunting
+nuvio-collections.json | Movies / Moods / Political Thrillers | 202 | ok | Animals; Mutiny; Zootopia
+nuvio-collections.json | Movies / Moods / Martial Arts | 499 | ok | Street Fighter; Avatar Aang: The Last Airbender; The Matrix
+nuvio-collections.json | Movies / Moods / Zombies | 248 | ok | Resident Evil; Colony; Resident Evil: Welcome to Raccoon City
+nuvio-collections.json | Movies / Moods / Monsters & Kaiju | 332 | ok | Clayface; Backrooms; Superman
+nuvio-collections.json | Movies / Moods / Vampires | 209 | ok | Sinners; Twilight; Hotel Transylvania
+nuvio-collections.json | Movies / Moods / Disaster | 111 | ok | Your Name.; Greenland 2: Migration; War of the Worlds
+nuvio-collections.json | Movies / Moods / Coming of Age | 434 | ok | Forgotten Island; Harry Potter and the Order of the Phoenix; Moana 2
+nuvio-collections.json | Movies / Moods / Sports | 483 | ok | F1; GOAT; Challengers
+nuvio-collections.json | Movies / Moods / Road Trips | 224 | ok | Harry Potter and the Deathly Hallows: Part 1; Logan; Cars
+nuvio-collections.json | Movies / Moods / Musicals | 472 | ok | The Nightmare Before Christmas; Moana; Corpse Bride
+nuvio-collections.json | Movies / Moods / Feel-Good | 14 | THIN | Forrest Gump; GOAT; The Intouchables
+nuvio-collections.json | Movies / Moods / Christmas | 420 | ok | The Nightmare Before Christmas; Gremlins; Home Alone 2: Lost in New York
+nuvio-collections.json | Movies / Moods / Dark Comedy | 361 | ok | Buddy; Digger; Bad Apples
+nuvio-collections.json | Movies / Moods / Satire | 210 | ok | Digger; Bad Apples; Despicable Me
+nuvio-collections.json | Movies / Moods / Neo-Noir | 396 | ok | The Dark Knight; The Batman; Training Day
+nuvio-collections.json | Movies / Moods / Video Game Adaptations | 129 | ok | Resident Evil; Street Fighter; Resident Evil: Welcome to Raccoon City
+nuvio-collections.json | Movies / Moods / Stand-Up Comedy | 76 | ok | Chris Rock: Bigger & Blacker; Aziz Ansari: Live at Madison Square Garden; Aziz Ansari: Right Now
+nuvio-collections.json | Movies / Moods / Nature & Wildlife | 40 | ok | Spirit: Stallion of the Cimarron; Blended; David Attenborough: A Life on Our Planet
+nuvio-collections.json | Movies / Moods / Isekai | 18 | THIN | The Chronicles of Narnia: The Lion, the Witch and the Wardrobe; The Chronicles of Narnia: Prince Caspian; The Chronicles of Narnia: The Voyage of the Dawn Treader
+nuvio-collections.json | Movies / Directors / Christopher Nolan | 19 | ok | Tarantella; Oppenheimer; Cinema16: British Short Films
+nuvio-collections.json | Movies / Directors / Denis Villeneuve | 24 | ok | Polytechnique; Maelström; Incendies
+nuvio-collections.json | Movies / Directors / Quentin Tarantino | 16 | ok | Four Rooms; Grindhouse; Reservoir Dogs
+nuvio-collections.json | Movies / Directors / Martin Scorsese | 66 | ok | Mean Streets; Casino; The Departed
+nuvio-collections.json | Movies / Directors / Steven Spielberg | 45 | ok | War of the Worlds; Raiders of the Lost Ark; Indiana Jones and the Temple of Doom
+nuvio-collections.json | Movies / Directors / David Fincher | 18 | ok | Se7en; The Game; Zodiac
+nuvio-collections.json | Movies / Directors / Stanley Kubrick | 16 | ok | A Clockwork Orange; The Killing; Paths of Glory
+nuvio-collections.json | Movies / Directors / Ridley Scott | 40 | ok | Blade Runner; Gladiator; Alien
+nuvio-collections.json | Movies / Directors / James Cameron | 22 | ok | The Terminator; Terminator 2: Judgment Day; Titanic
+nuvio-collections.json | Movies / Directors / Bong Joon Ho | 19 | ok | The Host; Barking Dogs Never Bite; Mother
+nuvio-collections.json | Movies / Directors / Park Chan-wook | 27 | ok | Joint Security Area; Lady Vengeance; I'm a Cyborg, But That's OK
+nuvio-collections.json | Movies / Directors / Hayao Miyazaki | 36 | ok | Princess Mononoke; Spirited Away; Warriors of the Wind
+nuvio-collections.json | Movies / Directors / Guillermo del Toro | 16 | ok | Pan's Labyrinth; The Devil's Backbone; Hellboy
+nuvio-collections.json | Movies / Directors / Wes Anderson | 23 | ok | The Life Aquatic with Steve Zissou; Fantastic Mr. Fox; Hotel Chevalier
+nuvio-collections.json | Movies / Directors / Greta Gerwig | 6 | ok | Nights and Weekends; Untitled Chronicles of Narnia Film #2; Narnia: The Magician's Nephew
+nuvio-collections.json | Movies / Directors / Paul Thomas Anderson | 23 | ok | Magnolia; Boogie Nights; Hard Eight
+nuvio-collections.json | Movies / Directors / Jordan Peele | 3 | ok | Get Out; Us; Nope
+nuvio-collections.json | Movies / Directors / Alfred Hitchcock | 64 | ok | Rebecca; North by Northwest; The 39 Steps
+nuvio-collections.json | Movies / Directors / Akira Kurosawa | 32 | ok | Seven Samurai; The Hidden Fortress; Rashomon
+nuvio-collections.json | Movies / Directors / Wong Kar-wai | 25 | ok | 2046; In the Mood for Love; My Blueberry Nights
+nuvio-collections.json | Movies / Studios / Marvel Studios | 82 | ok | Spider-Man: Brand New Day; Avengers: Endgame; Avengers: Infinity War
+nuvio-collections.json | Movies / Studios / Lucasfilm | 57 | ok | The Mandalorian and Grogu; Star Wars; Raiders of the Lost Ark
+nuvio-collections.json | Movies / Studios / Pixar | 107 | ok | Coco; Toy Story 5; Hoppers
+nuvio-collections.json | Movies / Studios / Walt Disney Animation | 46 | ok | Zootopia 2; Zootopia; Moana 2
+nuvio-collections.json | Movies / Studios / Walt Disney Pictures | 248 | ok | Moana; The Chronicles of Narnia: The Lion, the Witch and the Wardrobe; The Lion King
+nuvio-collections.json | Movies / Studios / DreamWorks Animation | 90 | ok | Forgotten Island; Trolls World Tour; The Wild Robot
+nuvio-collections.json | Movies / Studios / Illumination | 39 | ok | Minions & Monsters; The Super Mario Galaxy Movie; The Super Mario Bros. Movie
+nuvio-collections.json | Movies / Studios / Studio Ghibli | 31 | ok | Spirited Away; Howl's Moving Castle; My Neighbor Totoro
+nuvio-collections.json | Movies / Studios / DC | 56 | ok | Clayface; Supergirl; The Batman
+nuvio-collections.json | Movies / Studios / Warner Bros. | 1039 | ok | Practical Magic 2; The End of Oak Street; Coyote vs. Acme
+nuvio-collections.json | Movies / Studios / Universal | 977 | ok | The Odyssey; War of the Worlds; Disclosure Day
+nuvio-collections.json | Movies / Studios / Paramount | 863 | ok | Heart of the Beast; Avatar Aang: The Last Airbender; Top Gun: Maverick
+nuvio-collections.json | Movies / Studios / 20th Century | 802 | ok | The Dog Stars; Whalefall; Avatar: Fire and Ash
+nuvio-collections.json | Movies / Studios / Sony Pictures | 803 | ok | Spider-Man: Brand New Day; Resident Evil; Spider-Man: No Way Home
+nuvio-collections.json | Movies / Studios / Legendary | 72 | ok | Street Fighter; Digger; Interstellar
+nuvio-collections.json | Movies / Studios / A24 | 82 | ok | You Can See Everything; Onslaught; Backrooms
+nuvio-collections.json | Movies / Studios / NEON | 11 | THIN | Her Private Hell; Infinity Pool; I Love Boosters
+nuvio-collections.json | Movies / Studios / Blumhouse | 131 | ok | Obsession; Whiplash; Lee Cronin's The Mummy
+nuvio-collections.json | Movies / Studios / Searchlight | 122 | ok | The Grand Budapest Hotel; Poor Things; Ready or Not: Here I Come
+nuvio-collections.json | Movies / Studios / Amblin | 108 | ok | Disclosure Day; Schindler's List; Back to the Future
+nuvio-collections.json | Movies / Studios / Lionsgate | 336 | ok | The Housemaid; Michael; The Hunger Games: Mockingjay - Part 1
+nuvio-collections.json | Movies / Studios / LAIKA | 7 | THIN | Wildwood; Coraline; Corpse Bride
+nuvio-collections.json | Movies / Studios / Aardman | 22 | ok | Shaun the Sheep: The Beast of Mossy Bottom; Flushed Away; Wallace & Gromit: The Curse of the Were-Rabbit
+nuvio-collections.json | Movies / Studios / Toho | 412 | ok | Your Name.; Howl's Moving Castle; High and Low
+nuvio-collections.json | Movies / World Cinema / Korean | 354 | ok | Hope; Colony; Parasite
+nuvio-collections.json | Movies / World Cinema / Anime | 459 | ok | Spirited Away; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Your Name.
+nuvio-collections.json | Movies / World Cinema / Japanese | 1189 | ok | High and Low; Godzilla Minus One; Ikiru
+nuvio-collections.json | Movies / World Cinema / Chinese | 1246 | ok | The Shadow's Edge; Kung Fu Soccer; The Furious
+nuvio-collections.json | Movies / World Cinema / Turkish | 484 | ok | Miracle in Cell No. 7; Two Worlds One Wish; Yan Yana
+nuvio-collections.json | Movies / World Cinema / Spanish | 1119 | ok | Tad and The Magic Lamp; LA BOLA NEGRA; Drawn Together
+nuvio-collections.json | Movies / World Cinema / Latin American | 1762 | ok | Surviving Hurricane Otis; Don't Leave the Kids Alone; Crazy Magical Mexico
+nuvio-collections.json | Movies / World Cinema / French | 4427 | ok | Léon: The Professional; Marsupilami; Dracula
+nuvio-collections.json | Movies / World Cinema / Italian | 2494 | ok | The Good, the Bad and the Ugly; Life Is Beautiful; Once Upon a Time in the West
+nuvio-collections.json | Movies / World Cinema / German | 1207 | ok | All Quiet on the Western Front; M; Nosferatu
+nuvio-collections.json | Movies / World Cinema / Nordic | 954 | ok | Kraken; The Storm; Sentimental Value
+nuvio-collections.json | Movies / World Cinema / British | 2179 | ok | Fall 2: Deadpoint; The Odyssey; Pinocchio: Unstrung
+nuvio-collections.json | Movies / World Cinema / Thai | 343 | ok | The Debt Collector; Ong-Bak; My Dearest Assassin
+nuvio-collections.json | Movies / World Cinema / Filipino | 270 | ok | Sugar Baby; Suki; Wonderful Nightmare
+nuvio-collections.json | Movies / World Cinema / Arabic | 594 | ok | The Voice of Hind Rajab; Capernaum; Crazy Rich, Incredibly Broke
+nuvio-collections.json | Movies / World Cinema / African | 243 | ok | Chappie; The Gods Must Be Crazy; David
+nuvio-collections.json | Movies / Critics' picks / All-Time Greats | 268 | ok | The Shawshank Redemption; The Godfather; The Godfather Part II
+nuvio-collections.json | Movies / Critics' picks / Modern Classics | 763 | ok | Project Hail Mary; Interstellar; Your Name.
+nuvio-collections.json | Movies / Critics' picks / Hidden Gems | 598 | ok | Werckmeister Harmonies; Accidental Partners; Lisbela and the Prisoner
+nuvio-collections.json | Movies / Critics' picks / Best of This Year | 133 | ok | Batman: Knightfall Part 1: Knightfall; Avatar Aang: The Last Airbender; Swapped
+nuvio-collections.json | Movies / Critics' picks / Documentaries | 112 | ok | David Attenborough: A Life on Our Planet; Selena Gomez: My Mind & Me; Stop Making Sense
+nuvio-collections.json | Movies / Critics' picks / Animated Masterpieces | 268 | ok | Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Spirited Away
+nuvio-collections.json | TV Shows / New / New series | 18940 | ok | YAGA; Phony; Love in Disguise
+nuvio-collections.json | TV Shows / Trending / Trending series | 1035 | ok | Love Between Lines; VisionQuest; MobLand
+nuvio-collections.json | TV Shows / Top rated / Top rated series | 324 | ok | Breaking Bad; Avatar: The Last Airbender; Arcane
+nuvio-collections.json | TV Shows / By Genre / Action & Adventure | 1704 | ok | Person of Interest; Magnum P.I.; Wakfu
+nuvio-collections.json | TV Shows / By Genre / Comedy | 2410 | ok | Friends; The Simpsons; Wakfu
+nuvio-collections.json | TV Shows / By Genre / Drama | 3897 | ok | Grey's Anatomy; Law & Order: Special Victims Unit; Criminal Minds
+nuvio-collections.json | TV Shows / By Genre / Thriller | 1901 | ok | Law & Order: Special Victims Unit; Criminal Minds; Supernatural
+nuvio-collections.json | TV Shows / By Genre / Crime | 1261 | ok | Law & Order: Special Victims Unit; Criminal Minds; Person of Interest
+nuvio-collections.json | TV Shows / By Genre / Sci-Fi & Fantasy | 1929 | ok | Supernatural; Person of Interest; Medium
+nuvio-collections.json | TV Shows / By Genre / Mystery | 1083 | ok | Law & Order: Special Victims Unit; Criminal Minds; Supernatural
+nuvio-collections.json | TV Shows / By Genre / Animation | 1791 | ok | The Simpsons; Wakfu; Family Guy
+nuvio-collections.json | TV Shows / By Genre / Family | 527 | ok | Moesha; Doraemon; Teen Titans Go!
+nuvio-collections.json | TV Shows / By Genre / Kids | 435 | ok | Doraemon; PAW Patrol; Miraculous: Tales of Ladybug & Cat Noir
+nuvio-collections.json | TV Shows / By Genre / Documentary | 347 | ok | Mayday; NOVA; Ancient Aliens
+nuvio-collections.json | TV Shows / By Genre / History & War | 192 | ok | Lioness; Vikings; Homeland
+nuvio-collections.json | TV Shows / By Genre / Western | 52 | ok | Yellowstone; Westworld; Bonanza
+nuvio-collections.json | TV Shows / By Genre / Reality | 192 | ok | Running Man; Raw; Survivor
+nuvio-collections.json | TV Shows / By Decade / 2020s | 20001 | ok | Squid Game; WandaVision; Loki
+nuvio-collections.json | TV Shows / By Decade / 2010s | 20001 | ok | Game of Thrones; Stranger Things; Money Heist
+nuvio-collections.json | TV Shows / By Decade / 2000s | 20001 | ok | Breaking Bad; The Big Bang Theory; Grey's Anatomy
+nuvio-collections.json | TV Shows / By Decade / 1990s | 11648 | ok | Friends; One Piece; South Park
+nuvio-collections.json | TV Shows / By Decade / 1980s | 7175 | ok | The Simpsons; Dragon Ball Z; Dragon Ball
+nuvio-collections.json | TV Shows / By Decade / 1970s | 4681 | ok | El Chavo del Ocho; The Tom and Jerry Show; Little House on the Prairie
+nuvio-collections.json | TV Shows / By Decade / 1960s | 2431 | ok | Star Trek; The Flintstones; Scooby-Doo, Where Are You!
+nuvio-collections.json | TV Shows / By Decade / 1950s | 1089 | ok | The Twilight Zone; Bonanza; Alfred Hitchcock Presents
+nuvio-collections.json | TV Shows / Networks / HBO | 187 | ok | Game of Thrones; The Sopranos; Sesame Street
+nuvio-collections.json | TV Shows / Networks / FX | 65 | ok | What We Do in the Shadows; American Horror Story; It's Always Sunny in Philadelphia
+nuvio-collections.json | TV Shows / Networks / AMC | 49 | ok | Breaking Bad; The Walking Dead; Better Call Saul
+nuvio-collections.json | TV Shows / Networks / Showtime | 84 | ok | Shameless; Dexter; Stargate SG-1
+nuvio-collections.json | TV Shows / Networks / BBC | 618 | ok | Luther; Death in Paradise; Doctor Who
+nuvio-collections.json | TV Shows / Networks / Channel 4 | 141 | ok | Black Mirror; Big Brother; Shameless
+nuvio-collections.json | TV Shows / Networks / ITV | 221 | ok | The Bill; Midsomer Murders; Agatha Christie's Poirot
+nuvio-collections.json | TV Shows / Networks / Adult Swim | 71 | ok | Rick and Morty; Robot Chicken; Lazarus
+nuvio-collections.json | TV Shows / Networks / Cartoon Network | 112 | ok | Adventure Time; Teen Titans Go!; Ninjago: Masters of Spinjitzu
+nuvio-collections.json | TV Shows / Networks / Nickelodeon | 112 | ok | PAW Patrol; Teenage Mutant Ninja Turtles; The Loud House
+nuvio-collections.json | TV Shows / Networks / Disney Channel | 92 | ok | Phineas and Ferb; Gravity Falls; Kim Possible
+nuvio-collections.json | TV Shows / Networks / National Geographic | 35 | ok | Genius; Cosmos; Mars
+nuvio-collections.json | TV Shows / Networks / Discovery | 39 | ok | Gold Rush; MythBusters; Ghost Adventures
+nuvio-collections.json | TV Shows / Networks / History | 46 | ok | Ancient Aliens; Pawn Stars; The Curse of Oak Island
+nuvio-collections.json | TV Shows / Networks / Comedy Central | 41 | ok | South Park; Futurama; Reno 911!
+nuvio-collections.json | TV Shows / Networks / tvN | 159 | ok | Chicago Typewriter; Love in Disguise; Hospital Playlist
+nuvio-collections.json | TV Shows / Networks / JTBC | 82 | ok | Strong Girl Bong-soon; Men on a Mission; Beyond the Bar
+nuvio-collections.json | Anime / New / Series | 3456 | ok | Dragon Ball Super: Beerus; The Vermilion Mask; Firefly Wedding
+nuvio-collections.json | Anime / New / Films | 1524 | ok | Detective Conan: The Counterfeit Case of Ultra 30; THE RIBBON HERO; Chiikawa the Movie: The Secret of the Mermaid Island
+nuvio-collections.json | Anime / Trending / Series | 253 | ok | Dragon Ball Super: Beerus; Scum of the Brave; The Warrior Princess and the Barbaric King
+nuvio-collections.json | Anime / Trending / Films | 42 | ok | Demon Slayer: Kimetsu no Yaiba Infinity Castle; Chainsaw Man - The Movie: Reze Arc; Doraemon the Movie: New Nobita and the Castle of the Undersea Devil
+nuvio-collections.json | Anime / Top rated / Series | 159 | ok | Frieren: Beyond Journey's End; One Piece; Fullmetal Alchemist: Brotherhood
+nuvio-collections.json | Anime / Top rated / Films | 138 | ok | Demon Slayer: Kimetsu no Yaiba Infinity Castle; Chainsaw Man - The Movie: Reze Arc; Spirited Away

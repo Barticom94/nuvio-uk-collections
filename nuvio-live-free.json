@@ -1,0 +1,90 @@
+[
+ {
+  "id": "7c32c454-b145-5bbb-b89f-4cbc36cf6767",
+  "title": "Live TV",
+  "backdropImageUrl": null,
+  "pinToTop": false,
+  "focusGlowEnabled": true,
+  "viewMode": "TABBED_GRID",
+  "showAllTab": false,
+  "folders": [
+   {
+    "id": "8a3173d9-8925-5c97-a060-8b9c9a6bad74",
+    "title": "Free channels",
+    "coverImageUrl": null,
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": "📡",
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "tv",
+      "catalogId": "ukx.free",
+      "genre": "News"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "tv",
+      "catalogId": "ukx.free",
+      "genre": "Entertainment"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "tv",
+      "catalogId": "ukx.free",
+      "genre": "Movies"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "tv",
+      "catalogId": "ukx.free",
+      "genre": "Kids"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "tv",
+      "catalogId": "ukx.free",
+      "genre": "Sport"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "tv",
+      "catalogId": "ukx.free",
+      "genre": "Documentary"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "tv",
+      "catalogId": "ukx.free",
+      "genre": "Music"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "tv",
+      "catalogId": "ukx.free",
+      "genre": "Lifestyle"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "tv",
+      "catalogId": "ukx.free"
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   }
+  ]
+ }
+]
