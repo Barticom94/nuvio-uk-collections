@@ -10,133 +10,133 @@ nuvio-collections.json | Anime / Decades / mal.10sDecade | addon aio-metadata ma
 nuvio-collections.json | Anime / Decades / mal.00sDecade | addon aio-metadata mal.00sDecade  | catalogue checked
 nuvio-collections.json | Anime / Decades / mal.90sDecade | addon aio-metadata mal.90sDecade  | catalogue checked
 nuvio-collections.json | Anime / Decades / mal.80sDecade | addon aio-metadata mal.80sDecade  | catalogue checked
-nuvio-collections.json | Streaming Services / Netflix / Trending Originals | 1643 | ok | The Crown; MINDHUNTER; Lupin
-nuvio-collections.json | Streaming Services / Netflix / Best Originals | 319 | ok | Teach You a Lesson; When Life Gives You Tangerines; Arcane
-nuvio-collections.json | Streaming Services / Netflix / Only on Netflix: Films | 1758 | ok | Animals; Dune: Part Two; Spirited Away | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Netflix / Only on Netflix: Series | 1383 | ok | The Crown; Wakfu; MINDHUNTER | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Netflix / New on Netflix: Films | 3354 | ok | Surviving Hurricane Otis; The Storm; Animals
-nuvio-collections.json | Streaming Services / Netflix / New on Netflix: Series | 2546 | ok | Hollywood Arts; TYSON; The Trap
-nuvio-collections.json | Streaming Services / Netflix / Best only on Netflix: Films | 479 | ok | Swapped; Spirited Away; Dilwale Dulhania Le Jayenge | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Netflix / Best only on Netflix: Series | 404 | ok | Teach You a Lesson; Breaking Bad; When Life Gives You Tangerines | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Prime Video / Trending Originals | 363 | ok | The Summer I Turned Pretty; Reacher; The Terminal List
-nuvio-collections.json | Streaming Services / Prime Video / Best Originals | 67 | ok | Off Campus; The Chosen; No One Will Miss Us
-nuvio-collections.json | Streaming Services / Prime Video / Original Films | 127 | ok | Masterplan; Verity; Project Hail Mary
-nuvio-collections.json | Streaming Services / Prime Video / Only on Prime Video: Films | 2872 | ok | Masterplan; Project Hail Mary; War of the Worlds | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Prime Video / Only on Prime Video: Series | 436 | ok | The Summer I Turned Pretty; Reacher; The Terminal List | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Prime Video / New on Prime Video: Films | 7443 | ok | Ali G: Who Iz I?; Masterplan; Love of Your Life
-nuvio-collections.json | Streaming Services / Prime Video / New on Prime Video: Series | 1185 | ok | Love in Disguise; Carrie; I Would Rather Die
-nuvio-collections.json | Streaming Services / Prime Video / Best only on Prime Video: Films | 453 | ok | Project Hail Mary; Schindler's List; Gabriel's Inferno | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Prime Video / Best only on Prime Video: Series | 118 | ok | Off Campus; The Chosen; No One Will Miss Us | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Disney+ / Trending Originals | 277 | ok | What We Do in the Shadows; VisionQuest; American Horror Story
-nuvio-collections.json | Streaming Services / Disney+ / Best Originals | 69 | ok | X-Men '97; Love, Victor; Moving
-nuvio-collections.json | Streaming Services / Disney+ / Original Films | 490 | ok | Spider-Man: Brand New Day; Coco; Toy Story 5
-nuvio-collections.json | Streaming Services / Disney+ / Only on Disney+: Films | 1065 | ok | Coco; The Nightmare Before Christmas; Toy Story 5 | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Disney+ / Only on Disney+: Series | 384 | ok | Grey's Anatomy; Malcolm in the Middle; VisionQuest | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Disney+ / New on Disney+: Films | 1582 | ok | Oasis: Don't Look Back in Anger; LEGO Star Wars: The Mandalorian; Camp Rock 3
-nuvio-collections.json | Streaming Services / Disney+ / New on Disney+: Series | 805 | ok | Phony; VisionQuest; Dragon Ball Super: Beerus
-nuvio-collections.json | Streaming Services / Disney+ / Best only on Disney+: Films | 631 | ok | Your Name.; A Silent Voice: The Movie; The Empire Strikes Back | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Disney+ / Best only on Disney+: Series | 159 | ok | X-Men '97; The Owl House; Gravity Falls | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Apple TV+ / Trending Originals | 170 | ok | Slow Horses; Ted Lasso; Silo
-nuvio-collections.json | Streaming Services / Apple TV+ / Best Originals | 96 | ok | Dickinson; Severance; Ted Lasso
-nuvio-collections.json | Streaming Services / Apple TV+ / Original Films | 18 | THIN | Tenzing; F1; Killers of the Flower Moon
-nuvio-collections.json | Streaming Services / Apple TV+ / Only on Apple TV+: Films | 94 | ok | Matchbox the Movie; Tenzing; F1 | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Apple TV+ / Only on Apple TV+: Series | 147 | ok | Ted Lasso; Silo; For All Mankind | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Apple TV+ / New on Apple TV+: Films | 121 | ok | Tenzing; Matchbox the Movie; The Last First: Winter K2
-nuvio-collections.json | Streaming Services / Apple TV+ / New on Apple TV+: Series | 201 | ok | Brothers; Last Seen; Lucky
-nuvio-collections.json | Streaming Services / Apple TV+ / Best only on Apple TV+: Films | 50 | ok | Selena Gomez: My Mind & Me; Tenzing; Billie Eilish: The World's a Little Blurry | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Apple TV+ / Best only on Apple TV+: Series | 96 | ok | Dickinson; Severance; Ted Lasso | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / HBO Max / Trending Originals | 377 | ok | Game of Thrones; The Sopranos; Sesame Street
-nuvio-collections.json | Streaming Services / HBO Max / Best Originals | 172 | ok | The Pitt; Chernobyl; The Sopranos
-nuvio-collections.json | Streaming Services / HBO Max / Original Films | 89 | ok | Gia; Mountainhead; Ricochet
-nuvio-collections.json | Streaming Services / HBO Max / Only on HBO Max: Films | 172 | ok | Backrooms; The Lord of the Rings: The Fellowship of the Ring; The Matrix | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / HBO Max / Only on HBO Max: Series | 233 | ok | Friends; Game of Thrones; Adventure Time | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / HBO Max / New on HBO Max: Films | 695 | ok | Band of Brothers: Legacy; Euphoria: A Look Back; Supergirl
-nuvio-collections.json | Streaming Services / HBO Max / New on HBO Max: Series | 512 | ok | The Pet Cemetery Murders: A Ghost Story; GET JIRO; Paolo
-nuvio-collections.json | Streaming Services / HBO Max / Best only on HBO Max: Films | 92 | ok | The Lord of the Rings: The Return of the King; The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Two Towers | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / HBO Max / Best only on HBO Max: Series | 130 | ok | Regular Show: The Lost Tapes; Adventure Time: Fionna and Cake; Primal | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Hulu / Trending Originals | 189 | ok | The Handmaid's Tale; WWE Main Event; The Bear
-nuvio-collections.json | Streaming Services / Hulu / Best Originals | 92 | ok | Love, Victor; The Kardashians; Shōgun
-nuvio-collections.json | Streaming Services / NOW / Trending Originals | 122 | ok | WAR; The Day of the Jackal; Strike Back
-nuvio-collections.json | Streaming Services / NOW / Best Originals | 36 | ok | Brassic; The Day of the Jackal; Long Way Round
-nuvio-collections.json | Streaming Services / NOW / Original Films | 27 | ok | Fuze; Lee; The Amazing Maurice
-nuvio-collections.json | Streaming Services / NOW / Only on NOW: Films | 591 | ok | The Fix; Friday the 13th; One Last Shot | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / NOW / Only on NOW: Series | 96 | ok | FROM; Crystal Lake; Stargate Atlantis | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / NOW / New on NOW: Films | 1332 | ok | One Last Shot; The Fix; The Odyssey: The Making of an Epic
-nuvio-collections.json | Streaming Services / NOW / New on NOW: Series | 271 | ok | Crystal Lake; WAR; Possession
-nuvio-collections.json | Streaming Services / NOW / Best only on NOW: Films | 417 | ok | GoodFellas; The Shadow's Edge; Ennio | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / NOW / Best only on NOW: Series | 57 | ok | Chernobyl; Heated Rivalry; Crystal Lake | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Paramount+ / Trending Originals | 79 | ok | MobLand; Tulsa King; Lioness
-nuvio-collections.json | Streaming Services / Paramount+ / Best Originals | 46 | ok | Dutton Ranch; Avatar: Seven Havens; Among Us
-nuvio-collections.json | Streaming Services / Paramount+ / Only on Paramount+: Films | 254 | ok | Avatar Aang: The Last Airbender; Top Gun: Maverick; The Godfather | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Paramount+ / Only on Paramount+: Series | 158 | ok | MobLand; CSI: Crime Scene Investigation; Star Trek: The Next Generation | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Paramount+ / New on Paramount+: Films | 478 | ok | Clash of the Thundermans; Avatar Aang: The Last Airbender; Black Box
-nuvio-collections.json | Streaming Services / Paramount+ / New on Paramount+: Series | 327 | ok | Treasure Island; Avatar: Seven Havens; Eternally Yours
-nuvio-collections.json | Streaming Services / Paramount+ / Best only on Paramount+: Films | 175 | ok | Avatar Aang: The Last Airbender; The Godfather; The Godfather Part II | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Paramount+ / Best only on Paramount+: Series | 96 | ok | Dutton Ranch; Avatar: Seven Havens; Among Us | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / BBC iPlayer / Trending Originals | 964 | ok | Luther; Death in Paradise; Doctor Who
-nuvio-collections.json | Streaming Services / BBC iPlayer / Best Originals | 203 | ok | Blue Planet II; I Am Not an Animal; Planet Earth III
-nuvio-collections.json | Streaming Services / BBC iPlayer / Original Films | 234 | ok | The Iron Claw; Peaky Blinders: The Immortal Man; Aftersun
-nuvio-collections.json | Streaming Services / BBC iPlayer / Only on BBC iPlayer: Films | 167 | ok | Longlegs; The Departed; The Nice Guys | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / BBC iPlayer / Only on BBC iPlayer: Series | 223 | ok | Luther; Death in Paradise; Doctor Who | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / BBC iPlayer / New on BBC iPlayer: Films | 323 | ok | André Is an Idiot; Wild London; The Librarians
-nuvio-collections.json | Streaming Services / BBC iPlayer / New on BBC iPlayer: Series | 596 | ok | The Reluctant Vampire; The Split Up; Marble Hall Murders
-nuvio-collections.json | Streaming Services / BBC iPlayer / Best only on BBC iPlayer: Films | 90 | ok | The Departed; The Seventh Seal; Vertigo | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / BBC iPlayer / Best only on BBC iPlayer: Series | 69 | ok | Blue Planet II; Planet Earth III; Pokémon Horizons | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / ITVX / Trending Originals | 389 | ok | The Bill; Midsomer Murders; Agatha Christie's Poirot
-nuvio-collections.json | Streaming Services / ITVX / Best Originals | 69 | ok | The World at War; Doc Martin; Agatha Christie's Poirot
-nuvio-collections.json | Streaming Services / ITVX / Only on ITVX: Films | 191 | ok | Coraline; Kill Bill: Vol. 2; Kill Bill: Vol. 1 | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / ITVX / Only on ITVX: Series | 232 | ok | Baywatch; Midsomer Murders; Big Brother | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / ITVX / New on ITVX: Films | 419 | ok | My Sister's Bones; Dragonfly; The Golden Spurtle
-nuvio-collections.json | Streaming Services / ITVX / New on ITVX: Series | 623 | ok | Winter; The Blame; The Dark
-nuvio-collections.json | Streaming Services / ITVX / Best only on ITVX: Films | 91 | ok | Casino; Kill Bill: Vol. 1; Coraline | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / ITVX / Best only on ITVX: Series | 87 | ok | Doc Martin; Sherlock Holmes; Endeavour | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Channel 4 / Trending Originals | 237 | ok | Big Brother; Black Mirror; Shameless
-nuvio-collections.json | Streaming Services / Channel 4 / Best Originals | 50 | ok | Taskmaster; Black Mirror; The Storyteller
-nuvio-collections.json | Streaming Services / Channel 4 / Original Films | 231 | ok | Poor Things; Sacrifice; The Zone of Interest
-nuvio-collections.json | Streaming Services / Channel 4 / Only on Channel 4: Films | 173 | ok | Knives Out; Raiders of the Lost Ark; Everything Everywhere All at Once | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Channel 4 / Only on Channel 4: Series | 178 | ok | Magnum P.I.; Ally McBeal; The West Wing | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Channel 4 / New on Channel 4: Films | 319 | ok | Bowie: The Final Act; 1000 Men and Me: The Bonnie Blue Story; Bob Trevino Likes It
-nuvio-collections.json | Streaming Services / Channel 4 / New on Channel 4: Series | 518 | ok | It Gets Worse; Pierre; Hit Point
-nuvio-collections.json | Streaming Services / Channel 4 / Best only on Channel 4: Films | 100 | ok | Radical; For Sama; Raiders of the Lost Ark | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Channel 4 / Best only on Channel 4: Series | 58 | ok | The World at War; The West Wing; Pride and Prejudice | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Channel 5 / Trending Originals | 48 | ok | Peppa Pig; Big Brother; Thomas & Friends
-nuvio-collections.json | Streaming Services / Channel 5 / Best Originals | 48 | ok | Michael Palin: Into Iraq; All Creatures Great & Small; World's Most Scenic Railway Journeys
-nuvio-collections.json | Streaming Services / Channel 5 / Only on Channel 5: Films | 36 | ok | Once Upon a Time in the West; Den of Thieves; A Fistful of Dollars | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Channel 5 / Only on Channel 5: Series | 20 | ok | Madam Secretary; Spartacus; Bull | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Channel 5 / New on Channel 5: Films | 135 | ok | Rocky's Cat-astrophe; Bloody Axe Wound; A Merry Royal Christmas
-nuvio-collections.json | Streaming Services / Channel 5 / New on Channel 5: Series | 159 | ok | Benidorm Is Murder; Cooper & Fry; The Forsytes
-nuvio-collections.json | Streaming Services / Channel 5 / Best only on Channel 5: Films | 10 | THIN | Once Upon a Time in the West; A Fistful of Dollars; The Naked Spur | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Channel 5 / Best only on Channel 5: Series | 11 | THIN | Tyler Perry's Sistas; Spartacus; Law & Order: Organized Crime | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Crunchyroll / Trending Originals | 9 | THIN | RWBY; Zom 100: Bucket List of the Dead; SAINT SEIYA: Knights of the Zodiac
-nuvio-collections.json | Streaming Services / Crunchyroll / Best Originals | 9 | THIN | Onyx Equinox; RWBY; Zom 100: Bucket List of the Dead
-nuvio-collections.json | Streaming Services / Crunchyroll / Only on Crunchyroll: Films | 99 | ok | Chainsaw Man - The Movie: Reze Arc; Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train; Dragon Ball Z: Battle of Gods | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Crunchyroll / Only on Crunchyroll: Series | 991 | ok | Kamen Rider; The Warrior Princess and the Barbaric King; Re:ZERO -Starting Life in Another World- | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Crunchyroll / New on Crunchyroll: Films | 163 | ok | Detective Conan: The Counterfeit Case of Ultra 30; Assassination Classroom the Movie: Our Time; That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea
-nuvio-collections.json | Streaming Services / Crunchyroll / New on Crunchyroll: Series | 1619 | ok | Dragon Ball Super: Beerus; The Vermilion Mask; Firefly Wedding
-nuvio-collections.json | Streaming Services / Crunchyroll / Best only on Crunchyroll: Films | 37 | ok | Attack on Titan: THE LAST ATTACK; Chainsaw Man - The Movie: Reze Arc; The Quintessential Quintuplets Movie | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Crunchyroll / Best only on Crunchyroll: Series | 375 | ok | Go for It, Nakamura-kun!!; Takopi's Original Sin; Berserk: The Golden Age Arc – Memorial Edition | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Shudder / Trending Originals | 12 | THIN | The Terror: Devil in Silver; Creepshow; The Boulet Brothers' Dragula
-nuvio-collections.json | Streaming Services / Shudder / Best Originals | 12 | THIN | Creepshow; The Dead Lands; Cursed Films
-nuvio-collections.json | Streaming Services / Shudder / Only on Shudder: Films | 383 | ok | The Cycle; V/H/S/MIXTAPE; The Texas Chain Saw Massacre | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Shudder / Only on Shudder: Series | 7 | THIN | Tales from the Crypt; The Boulet Brothers' Dragula; The Creep Tapes | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Shudder / New on Shudder: Films | 714 | ok | V/H/S/MIXTAPE; Infirmary; The Cycle
-nuvio-collections.json | Streaming Services / Shudder / New on Shudder: Series | 23 | ok | Hell Motel; The Creep Tapes; Horror's Greatest
-nuvio-collections.json | Streaming Services / Shudder / Best only on Shudder: Films | 145 | ok | One Cut of the Dead; The Ugly Stepsister; Don't Torture a Duckling | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Shudder / Best only on Shudder: Series | 1 | THIN | Tales from the Crypt | exclusion spot-check 1/1 clean
-nuvio-collections.json | Streaming Services / MUBI / Original Films | 16 | THIN | Rosebush Pruning; Fatherland; Teenage Sex and Death at Camp Miasma
-nuvio-collections.json | Streaming Services / MUBI / Only on MUBI: Films | 274 | ok | Rosebush Pruning; Challengers; Teenage Sex and Death at Camp Miasma | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / MUBI / New on MUBI: Films | 501 | ok | Teenage Sex and Death at Camp Miasma; Bouchra; Rosebush Pruning
-nuvio-collections.json | Streaming Services / MUBI / Best only on MUBI: Films | 121 | ok | The Apartment; The Handmaiden; Memento | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Discovery+ / Trending Originals | 23 | ok | Sherlock & Daughter; Richard Hammond's Workshop; The Yorkshire Auction House
-nuvio-collections.json | Streaming Services / Discovery+ / Best Originals | 23 | ok | Lucky!; Vinnie Jones in the Country; Fifth Gear: Recharged
-nuvio-collections.json | Streaming Services / Discovery+ / Only on Discovery+: Series | 280 | ok | Chopped; House Hunters International; Diners, Drive-Ins and Dives | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Discovery+ / New on Discovery+: Series | 578 | ok | OJ Unseen: Exploitation of Evil; Restaurant Impossible: Last Call; Big Girls Wanted: Escaping Pearadise
-nuvio-collections.json | Streaming Services / Discovery+ / Best only on Discovery+: Series | 44 | ok | Web of Lies; Undercover Billionaire; Street Outlaws | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / WOW / Trending Originals | 17 | THIN | Drag Race España; The Boulet Brothers' Dragula; Drag Race Down Under
-nuvio-collections.json | Streaming Services / WOW / Best Originals | 17 | THIN | Trixie & Katya Save the World; Drag Race France; Drag Race Philippines: Slaysian Royale
-nuvio-collections.json | Streaming Services / WOW / Only on WOW: Series | 19 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / WOW / New on WOW: Series | 26 | ok | Drag Race Philippines: Slaysian Royale; RuPaul's Drag Race Global All Stars; Drag Race España All Stars
-nuvio-collections.json | Streaming Services / WOW / Best only on WOW: Series | 4 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 4/4 clean
+nuvio-collections.json | Streaming Services / Netflix / Netflix - Trending originals | 1643 | ok | The Crown; MINDHUNTER; Lupin
+nuvio-collections.json | Streaming Services / Netflix / Netflix - Best originals | 319 | ok | Teach You a Lesson; When Life Gives You Tangerines; Arcane
+nuvio-collections.json | Streaming Services / Netflix / Netflix - Exclusive films | 1758 | ok | Animals; Dune: Part Two; Spirited Away | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Netflix / Netflix - Exclusive series | 1383 | ok | The Crown; Wakfu; MINDHUNTER | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Netflix / Netflix - New films | 3354 | ok | Surviving Hurricane Otis; The Storm; Animals
+nuvio-collections.json | Streaming Services / Netflix / Netflix - New series | 2546 | ok | Hollywood Arts; TYSON; The Trap
+nuvio-collections.json | Streaming Services / Netflix / Netflix - Best exclusive films | 479 | ok | Swapped; Spirited Away; Dilwale Dulhania Le Jayenge | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Netflix / Netflix - Best exclusive series | 404 | ok | Teach You a Lesson; Breaking Bad; When Life Gives You Tangerines | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Trending originals | 363 | ok | The Summer I Turned Pretty; Reacher; The Terminal List
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Best originals | 67 | ok | Off Campus; The Chosen; No One Will Miss Us
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Original films | 127 | ok | Verity; Masterplan; Project Hail Mary
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Exclusive films | 2872 | ok | Masterplan; Project Hail Mary; War of the Worlds | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Exclusive series | 436 | ok | The Summer I Turned Pretty; Reacher; The Terminal List | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - New films | 7443 | ok | Ali G: Who Iz I?; Masterplan; Love of Your Life
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - New series | 1185 | ok | Love in Disguise; Carrie; I Would Rather Die
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Best exclusive films | 453 | ok | Project Hail Mary; Schindler's List; Gabriel's Inferno | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Best exclusive series | 118 | ok | Off Campus; The Chosen; No One Will Miss Us | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Disney+ / Disney+ - Trending originals | 277 | ok | What We Do in the Shadows; VisionQuest; American Horror Story
+nuvio-collections.json | Streaming Services / Disney+ / Disney+ - Best originals | 69 | ok | X-Men '97; Love, Victor; Moving
+nuvio-collections.json | Streaming Services / Disney+ / Disney+ - Original films | 490 | ok | Spider-Man: Brand New Day; Coco; Toy Story 5
+nuvio-collections.json | Streaming Services / Disney+ / Disney+ - Exclusive films | 1065 | ok | Coco; The Nightmare Before Christmas; Toy Story 5 | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Disney+ / Disney+ - Exclusive series | 384 | ok | Grey's Anatomy; Malcolm in the Middle; VisionQuest | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Disney+ / Disney+ - New films | 1582 | ok | Oasis: Don't Look Back in Anger; LEGO Star Wars: The Mandalorian; Camp Rock 3
+nuvio-collections.json | Streaming Services / Disney+ / Disney+ - New series | 805 | ok | Phony; VisionQuest; Dragon Ball Super: Beerus
+nuvio-collections.json | Streaming Services / Disney+ / Disney+ - Best exclusive films | 631 | ok | Your Name.; A Silent Voice: The Movie; The Empire Strikes Back | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Disney+ / Disney+ - Best exclusive series | 159 | ok | X-Men '97; The Owl House; Gravity Falls | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Trending originals | 170 | ok | Slow Horses; Ted Lasso; Silo
+nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Best originals | 96 | ok | Dickinson; Severance; Ted Lasso
+nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Original films | 18 | THIN | Tenzing; F1; Killers of the Flower Moon
+nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Exclusive films | 94 | ok | Matchbox the Movie; Tenzing; F1 | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Exclusive series | 147 | ok | Ted Lasso; Silo; For All Mankind | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - New films | 121 | ok | Tenzing; Matchbox the Movie; The Last First: Winter K2
+nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - New series | 201 | ok | Brothers; Last Seen; Lucky
+nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Best exclusive films | 50 | ok | Selena Gomez: My Mind & Me; Tenzing; Billie Eilish: The World's a Little Blurry | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Best exclusive series | 96 | ok | Dickinson; Severance; Ted Lasso | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Trending originals | 377 | ok | Game of Thrones; The Sopranos; Sesame Street
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Best originals | 172 | ok | The Pitt; Chernobyl; The Sopranos
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Original films | 89 | ok | Gia; Mountainhead; Ricochet
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Exclusive films | 172 | ok | Backrooms; The Lord of the Rings: The Fellowship of the Ring; The Matrix | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Exclusive series | 233 | ok | Friends; Game of Thrones; Adventure Time | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - New films | 695 | ok | Band of Brothers: Legacy; Euphoria: A Look Back; Supergirl
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - New series | 512 | ok | The Pet Cemetery Murders: A Ghost Story; GET JIRO; Paolo
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Best exclusive films | 92 | ok | The Lord of the Rings: The Return of the King; The Lord of the Rings: The Fellowship of the Ring; The Lord of the Rings: The Two Towers | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Best exclusive series | 130 | ok | Regular Show: The Lost Tapes; Adventure Time: Fionna and Cake; Primal | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Hulu / Hulu - Trending originals | 189 | ok | The Handmaid's Tale; WWE Main Event; The Bear
+nuvio-collections.json | Streaming Services / Hulu / Hulu - Best originals | 92 | ok | Love, Victor; The Kardashians; Shōgun
+nuvio-collections.json | Streaming Services / NOW / NOW - Trending originals | 122 | ok | WAR; The Day of the Jackal; Strike Back
+nuvio-collections.json | Streaming Services / NOW / NOW - Best originals | 36 | ok | Brassic; The Day of the Jackal; Long Way Round
+nuvio-collections.json | Streaming Services / NOW / NOW - Original films | 27 | ok | Fuze; Lee; The Amazing Maurice
+nuvio-collections.json | Streaming Services / NOW / NOW - Exclusive films | 591 | ok | The Fix; Friday the 13th; One Last Shot | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / NOW / NOW - Exclusive series | 96 | ok | FROM; Crystal Lake; Stargate Atlantis | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / NOW / NOW - New films | 1332 | ok | One Last Shot; The Fix; The Odyssey: The Making of an Epic
+nuvio-collections.json | Streaming Services / NOW / NOW - New series | 271 | ok | Crystal Lake; WAR; Possession
+nuvio-collections.json | Streaming Services / NOW / NOW - Best exclusive films | 417 | ok | GoodFellas; The Shadow's Edge; Ennio | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / NOW / NOW - Best exclusive series | 57 | ok | Chernobyl; Heated Rivalry; Crystal Lake | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Trending originals | 79 | ok | MobLand; Tulsa King; Lioness
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Best originals | 46 | ok | Dutton Ranch; Avatar: Seven Havens; Among Us
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Exclusive films | 254 | ok | Avatar Aang: The Last Airbender; Top Gun: Maverick; The Godfather | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Exclusive series | 158 | ok | MobLand; CSI: Crime Scene Investigation; Star Trek: The Next Generation | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - New films | 478 | ok | Clash of the Thundermans; Avatar Aang: The Last Airbender; Black Box
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - New series | 327 | ok | Treasure Island; Avatar: Seven Havens; Eternally Yours
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Best exclusive films | 175 | ok | Avatar Aang: The Last Airbender; The Godfather; The Godfather Part II | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Best exclusive series | 96 | ok | Dutton Ranch; Avatar: Seven Havens; Among Us | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Trending originals | 964 | ok | Luther; Death in Paradise; Doctor Who
+nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Best originals | 203 | ok | Blue Planet II; I Am Not an Animal; Planet Earth III
+nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Original films | 234 | ok | The Iron Claw; Peaky Blinders: The Immortal Man; Aftersun
+nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Exclusive films | 167 | ok | Longlegs; The Departed; The Nice Guys | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Exclusive series | 223 | ok | Luther; Death in Paradise; Doctor Who | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - New films | 323 | ok | André Is an Idiot; Wild London; The Librarians
+nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - New series | 596 | ok | The Reluctant Vampire; The Split Up; Marble Hall Murders
+nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Best exclusive films | 90 | ok | The Departed; The Seventh Seal; Vertigo | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Best exclusive series | 69 | ok | Blue Planet II; Planet Earth III; Pokémon Horizons | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / ITVX / ITVX - Trending originals | 389 | ok | The Bill; Midsomer Murders; Agatha Christie's Poirot
+nuvio-collections.json | Streaming Services / ITVX / ITVX - Best originals | 69 | ok | The World at War; Doc Martin; Agatha Christie's Poirot
+nuvio-collections.json | Streaming Services / ITVX / ITVX - Exclusive films | 191 | ok | Coraline; Kill Bill: Vol. 2; Kill Bill: Vol. 1 | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / ITVX / ITVX - Exclusive series | 232 | ok | Baywatch; Midsomer Murders; Big Brother | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / ITVX / ITVX - New films | 419 | ok | My Sister's Bones; Dragonfly; The Golden Spurtle
+nuvio-collections.json | Streaming Services / ITVX / ITVX - New series | 623 | ok | Winter; The Blame; The Dark
+nuvio-collections.json | Streaming Services / ITVX / ITVX - Best exclusive films | 91 | ok | Casino; Kill Bill: Vol. 1; Coraline | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / ITVX / ITVX - Best exclusive series | 87 | ok | Doc Martin; Sherlock Holmes; Endeavour | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Trending originals | 237 | ok | Big Brother; Black Mirror; Shameless
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Best originals | 50 | ok | Taskmaster; Black Mirror; The Storyteller
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Original films | 231 | ok | Poor Things; Sacrifice; The Zone of Interest
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Exclusive films | 173 | ok | Knives Out; Raiders of the Lost Ark; Everything Everywhere All at Once | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Exclusive series | 178 | ok | Magnum P.I.; Ally McBeal; The West Wing | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - New films | 319 | ok | Bowie: The Final Act; 1000 Men and Me: The Bonnie Blue Story; Bob Trevino Likes It
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - New series | 518 | ok | It Gets Worse; Pierre; Hit Point
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Best exclusive films | 100 | ok | Radical; For Sama; Raiders of the Lost Ark | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Best exclusive series | 58 | ok | The World at War; The West Wing; Pride and Prejudice | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Trending originals | 48 | ok | Peppa Pig; Big Brother; Thomas & Friends
+nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Best originals | 48 | ok | Michael Palin: Into Iraq; All Creatures Great & Small; World's Most Scenic Railway Journeys
+nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Exclusive films | 36 | ok | Once Upon a Time in the West; Den of Thieves; A Fistful of Dollars | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Exclusive series | 20 | ok | Madam Secretary; Spartacus; Bull | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - New films | 135 | ok | Rocky's Cat-astrophe; Bloody Axe Wound; A Merry Royal Christmas
+nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - New series | 159 | ok | Benidorm Is Murder; Cooper & Fry; The Forsytes
+nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Best exclusive films | 10 | THIN | Once Upon a Time in the West; A Fistful of Dollars; The Naked Spur | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Best exclusive series | 11 | THIN | Tyler Perry's Sistas; Spartacus; Law & Order: Organized Crime | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Trending originals | 9 | THIN | RWBY; Zom 100: Bucket List of the Dead; SAINT SEIYA: Knights of the Zodiac
+nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Best originals | 9 | THIN | Onyx Equinox; RWBY; Zom 100: Bucket List of the Dead
+nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Exclusive films | 99 | ok | Chainsaw Man - The Movie: Reze Arc; Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train; Dragon Ball Z: Battle of Gods | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Exclusive series | 991 | ok | Kamen Rider; The Warrior Princess and the Barbaric King; Re:ZERO -Starting Life in Another World- | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - New films | 163 | ok | Detective Conan: The Counterfeit Case of Ultra 30; Assassination Classroom the Movie: Our Time; That Time I Got Reincarnated as a Slime the Movie: Tears of the Azure Sea
+nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - New series | 1619 | ok | Dragon Ball Super: Beerus; The Vermilion Mask; Firefly Wedding
+nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Best exclusive films | 37 | ok | Attack on Titan: THE LAST ATTACK; Chainsaw Man - The Movie: Reze Arc; The Quintessential Quintuplets Movie | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Crunchyroll / Crunchyroll - Best exclusive series | 375 | ok | Go for It, Nakamura-kun!!; Takopi's Original Sin; Berserk: The Golden Age Arc – Memorial Edition | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Shudder / Shudder - Trending originals | 12 | THIN | The Terror: Devil in Silver; Creepshow; The Boulet Brothers' Dragula
+nuvio-collections.json | Streaming Services / Shudder / Shudder - Best originals | 12 | THIN | Creepshow; The Dead Lands; Cursed Films
+nuvio-collections.json | Streaming Services / Shudder / Shudder - Exclusive films | 383 | ok | The Cycle; V/H/S/MIXTAPE; The Texas Chain Saw Massacre | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Shudder / Shudder - Exclusive series | 7 | THIN | Tales from the Crypt; The Boulet Brothers' Dragula; The Creep Tapes | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Shudder / Shudder - New films | 714 | ok | V/H/S/MIXTAPE; Infirmary; The Cycle
+nuvio-collections.json | Streaming Services / Shudder / Shudder - New series | 23 | ok | Hell Motel; The Creep Tapes; Horror's Greatest
+nuvio-collections.json | Streaming Services / Shudder / Shudder - Best exclusive films | 145 | ok | One Cut of the Dead; The Ugly Stepsister; Don't Torture a Duckling | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Shudder / Shudder - Best exclusive series | 1 | THIN | Tales from the Crypt | exclusion spot-check 1/1 clean
+nuvio-collections.json | Streaming Services / MUBI / MUBI - Original films | 16 | THIN | Rosebush Pruning; Fatherland; Teenage Sex and Death at Camp Miasma
+nuvio-collections.json | Streaming Services / MUBI / MUBI - Exclusive films | 274 | ok | Rosebush Pruning; Challengers; Teenage Sex and Death at Camp Miasma | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / MUBI / MUBI - New films | 501 | ok | Teenage Sex and Death at Camp Miasma; Bouchra; Rosebush Pruning
+nuvio-collections.json | Streaming Services / MUBI / MUBI - Best exclusive films | 121 | ok | The Apartment; The Handmaiden; Memento | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Discovery+ / Discovery+ - Trending originals | 23 | ok | Sherlock & Daughter; Richard Hammond's Workshop; The Yorkshire Auction House
+nuvio-collections.json | Streaming Services / Discovery+ / Discovery+ - Best originals | 23 | ok | Lucky!; Vinnie Jones in the Country; Fifth Gear: Recharged
+nuvio-collections.json | Streaming Services / Discovery+ / Discovery+ - Exclusive series | 280 | ok | Chopped; House Hunters International; Diners, Drive-Ins and Dives | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Discovery+ / Discovery+ - New series | 578 | ok | OJ Unseen: Exploitation of Evil; Restaurant Impossible: Last Call; Big Girls Wanted: Escaping Pearadise
+nuvio-collections.json | Streaming Services / Discovery+ / Discovery+ - Best exclusive series | 44 | ok | Web of Lies; Undercover Billionaire; Street Outlaws | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / WOW / WOW - Trending originals | 17 | THIN | Drag Race España; The Boulet Brothers' Dragula; Drag Race Down Under
+nuvio-collections.json | Streaming Services / WOW / WOW - Best originals | 17 | THIN | Trixie & Katya Save the World; Drag Race France; Drag Race Philippines: Slaysian Royale
+nuvio-collections.json | Streaming Services / WOW / WOW - Exclusive series | 19 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / WOW / WOW - New series | 26 | ok | Drag Race Philippines: Slaysian Royale; RuPaul's Drag Race Global All Stars; Drag Race España All Stars
+nuvio-collections.json | Streaming Services / WOW / WOW - Best exclusive series | 4 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 4/4 clean
 nuvio-collections.json | Movies / Start here / New films | 20001 | ok | Surviving Hurricane Otis; Ali G: Who Iz I?; Masterplan
 nuvio-collections.json | Movies / Start here / Trending films | 328 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
 nuvio-collections.json | Movies / Start here / Top rated films | 1926 | ok | The Shawshank Redemption; The Godfather; Project Hail Mary
@@ -296,7 +296,7 @@ nuvio-collections.json | Movies / World cinema / Italian | 2494 | ok | The Good,
 nuvio-collections.json | Movies / World cinema / German | 1208 | ok | All Quiet on the Western Front; Nosferatu; M
 nuvio-collections.json | Movies / World cinema / Nordic | 954 | ok | Kraken; The Storm; The Remarkable Life of Ibelin
 nuvio-collections.json | Movies / World cinema / Turkish | 484 | ok | Miracle in Cell No. 7; Chasing the Wind; Yan Yana
-nuvio-collections.json | Movies / World cinema / Latin American | 1762 | ok | Surviving Hurricane Otis; Don't Leave the Kids Alone; Crazy Magical Mexico
+nuvio-collections.json | Movies / World cinema / Latin American | 1764 | ok | The Awakening; Surviving Hurricane Otis; Don't Leave the Kids Alone
 nuvio-collections.json | Movies / World cinema / Arabic | 594 | ok | The Voice of Hind Rajab; Capernaum; Crazy Rich, Incredibly Broke
 nuvio-collections.json | Movies / World cinema / African | 244 | ok | Chappie; The Gods Must Be Crazy; David
 nuvio-collections.json | TV Shows / Start here / New series | 16333 | ok | YAGA; Phony; Love in Disguise
@@ -332,7 +332,7 @@ nuvio-collections.json | TV Shows / Drama networks / Showtime | 84 | ok | Shamel
 nuvio-collections.json | TV Shows / Drama networks / BBC | 618 | ok | Luther; Death in Paradise; Doctor Who
 nuvio-collections.json | TV Shows / Drama networks / Channel 4 | 141 | ok | Big Brother; Black Mirror; Shameless
 nuvio-collections.json | TV Shows / Drama networks / ITV | 221 | ok | The Bill; Midsomer Murders; Agatha Christie's Poirot
-nuvio-collections.json | TV Shows / Drama networks / tvN | 159 | ok | Chicago Typewriter; Love in Disguise; Hospital Playlist
+nuvio-collections.json | TV Shows / Drama networks / tvN | 159 | ok | Chicago Typewriter; Love in Disguise; Alchemy of Souls
 nuvio-collections.json | TV Shows / Drama networks / JTBC | 82 | ok | Strong Girl Bong-soon; Men on a Mission; King the Land
 nuvio-collections.json | TV Shows / Comedy, kids and factual networks / Comedy Central | 41 | ok | South Park; Futurama; Reno 911!
 nuvio-collections.json | TV Shows / Comedy, kids and factual networks / Adult Swim | 71 | ok | Rick and Morty; Robot Chicken; Lazarus

@@ -124,24 +124,24 @@ def tile_sources(title, region, providers, floor, nets, since, films, movies, se
     out = []
     if nets:  # DISCOVER, not NETWORK: Nuvio's NETWORK rows ignore every network but the first
         orig = dict(withNetworks=nets, voteCountGte=f["orig"], withoutGenres=NOISE_TV, releaseDateGte=since)
-        out.append(discover("Trending Originals", "tv", None, **orig))
+        out.append(discover(f"{title} - Trending originals", "tv", None, **orig))
         # All time: the best rated of the well known ones (the website can't sort by votes)
-        out.append(discover("Best Originals", "tv", "vote_average.desc",
+        out.append(discover(f"{title} - Best originals", "tv", "vote_average.desc",
                             **dict(orig, voteCountGte=BEST_ORIG_FLOOR.get(title, f["top_t"]))))
     if title == "Netflix":
         out += [addon(UKX, t, c) for t, c in NETFLIX_EXTRAS]
     if films:
-        out.append(discover("Original Films", "movie", None, withCompanies=films, voteCountGte=FILMS_FLOOR.get(title, f["films"])))
+        out.append(discover(f"{title} - Original films", "movie", None, withCompanies=films, voteCountGte=FILMS_FLOOR.get(title, f["films"])))
     if region != "GB":
         return out
     base = dict(withWatchProviders=providers, watchRegion=region)
     excl = dict(base, withoutWatchProviders=gb_exclusions(providers))
-    if movies: out.append(discover(f"Only on {title}: Films", "movie", None, voteCountGte=f["pop_m"], **excl))
-    if series: out.append(discover(f"Only on {title}: Series", "tv", None, voteCountGte=f["pop_t"], withoutGenres=NOISE_TV, **excl))
-    if movies: out.append(discover(f"New on {title}: Films", "movie", "primary_release_date.desc", voteCountGte=f["new_m"], **base))
-    if series: out.append(discover(f"New on {title}: Series", "tv", "first_air_date.desc", voteCountGte=f["new_t"], withoutGenres=NOISE_TV, **base))
-    if movies: out.append(discover(f"Best only on {title}: Films", "movie", "vote_average.desc", voteCountGte=f["top_m"], **excl))
-    if series: out.append(discover(f"Best only on {title}: Series", "tv", "vote_average.desc", voteCountGte=f["top_t"], withoutGenres=NOISE_TV, **excl))
+    if movies: out.append(discover(f"{title} - Exclusive films", "movie", None, voteCountGte=f["pop_m"], **excl))
+    if series: out.append(discover(f"{title} - Exclusive series", "tv", None, voteCountGte=f["pop_t"], withoutGenres=NOISE_TV, **excl))
+    if movies: out.append(discover(f"{title} - New films", "movie", "primary_release_date.desc", voteCountGte=f["new_m"], **base))
+    if series: out.append(discover(f"{title} - New series", "tv", "first_air_date.desc", voteCountGte=f["new_t"], withoutGenres=NOISE_TV, **base))
+    if movies: out.append(discover(f"{title} - Best exclusive films", "movie", "vote_average.desc", voteCountGte=f["top_m"], **excl))
+    if series: out.append(discover(f"{title} - Best exclusive series", "tv", "vote_average.desc", voteCountGte=f["top_t"], withoutGenres=NOISE_TV, **excl))
     return out
 
 def folder(folder_id, title, sources, cover=None, emoji=None, hide_title=False, logo=None):
@@ -371,8 +371,8 @@ HERO_TRIES = 30   # titles looked up per folder at most
 CERT_TIER = {**dict.fromkeys(["U", "PG", "12", "12A", "15", "G", "PG-13", "TV-Y", "TV-Y7", "TV-G", "TV-PG", "TV-14"], 0),
              **dict.fromkeys(["R", "TV-MA"], 1)}  # anything else (18, R18, NC-17) never; no rating at all is tier 2
 # The row a folder's hero comes from first, where the first row's best known title is a poor face for the folder
-HERO_ROW = {("Streaming Services", "Discovery+"): "Only on Discovery+: Series",  # its originals include dramas
-            ("Streaming Services", "Crunchyroll"): "Only on Crunchyroll: Series",
+HERO_ROW = {("Streaming Services", "Discovery+"): "Discovery+ - Exclusive series",  # its originals include dramas
+            ("Streaming Services", "Crunchyroll"): "Crunchyroll - Exclusive series",
             ("Movies", "Start here"): "Trending films", ("TV Shows", "Start here"): "Trending series",
             ("Anime", "Start here"): "Trending series",  # what's big now
             ("Movies", "Decades"): "1980s", ("TV Shows", "Decades"): "1980s",  # an older decade says "decades"

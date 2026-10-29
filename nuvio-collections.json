@@ -21,7 +21,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Netflix - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -34,7 +34,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Netflix - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -65,7 +65,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Netflix: Films",
+      "title": "Netflix - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -78,7 +78,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Netflix: Series",
+      "title": "Netflix - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -92,7 +92,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Netflix: Films",
+      "title": "Netflix - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -104,7 +104,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Netflix: Series",
+      "title": "Netflix - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -117,7 +117,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Netflix: Films",
+      "title": "Netflix - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -130,7 +130,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Netflix: Series",
+      "title": "Netflix - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -159,7 +159,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Prime Video - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -172,7 +172,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Prime Video - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -185,7 +185,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Original Films",
+      "title": "Prime Video - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -196,7 +196,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Prime Video: Films",
+      "title": "Prime Video - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -209,7 +209,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Prime Video: Series",
+      "title": "Prime Video - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -223,7 +223,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Prime Video: Films",
+      "title": "Prime Video - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -235,7 +235,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Prime Video: Series",
+      "title": "Prime Video - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -248,7 +248,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Prime Video: Films",
+      "title": "Prime Video - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -261,7 +261,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Prime Video: Series",
+      "title": "Prime Video - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -290,7 +290,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Disney+ - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -302,7 +302,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Disney+ - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -314,7 +314,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Original Films",
+      "title": "Disney+ - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -325,7 +325,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Disney+: Films",
+      "title": "Disney+ - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -338,7 +338,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Disney+: Series",
+      "title": "Disney+ - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -352,7 +352,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Disney+: Films",
+      "title": "Disney+ - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -364,7 +364,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Disney+: Series",
+      "title": "Disney+ - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -377,7 +377,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Disney+: Films",
+      "title": "Disney+ - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -390,7 +390,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Disney+: Series",
+      "title": "Disney+ - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -419,7 +419,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Apple TV+ - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -432,7 +432,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Apple TV+ - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -445,7 +445,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Original Films",
+      "title": "Apple TV+ - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -456,7 +456,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Apple TV+: Films",
+      "title": "Apple TV+ - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -469,7 +469,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Apple TV+: Series",
+      "title": "Apple TV+ - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -483,7 +483,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Apple TV+: Films",
+      "title": "Apple TV+ - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -495,7 +495,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Apple TV+: Series",
+      "title": "Apple TV+ - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -508,7 +508,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Apple TV+: Films",
+      "title": "Apple TV+ - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -521,7 +521,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Apple TV+: Series",
+      "title": "Apple TV+ - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -550,7 +550,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "HBO Max - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -562,7 +562,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "HBO Max - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -574,7 +574,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Original Films",
+      "title": "HBO Max - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -585,7 +585,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on HBO Max: Films",
+      "title": "HBO Max - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -598,7 +598,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on HBO Max: Series",
+      "title": "HBO Max - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -612,7 +612,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on HBO Max: Films",
+      "title": "HBO Max - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -624,7 +624,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on HBO Max: Series",
+      "title": "HBO Max - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -637,7 +637,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on HBO Max: Films",
+      "title": "HBO Max - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -650,7 +650,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on HBO Max: Series",
+      "title": "HBO Max - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -679,7 +679,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Hulu - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -692,7 +692,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Hulu - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -720,7 +720,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "NOW - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -732,7 +732,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "NOW - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -744,7 +744,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Original Films",
+      "title": "NOW - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -755,7 +755,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on NOW: Films",
+      "title": "NOW - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -768,7 +768,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on NOW: Series",
+      "title": "NOW - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -782,7 +782,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on NOW: Films",
+      "title": "NOW - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -794,7 +794,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on NOW: Series",
+      "title": "NOW - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -807,7 +807,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on NOW: Films",
+      "title": "NOW - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -820,7 +820,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on NOW: Series",
+      "title": "NOW - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -849,7 +849,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Paramount+ - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -862,7 +862,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Paramount+ - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -875,7 +875,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Paramount+: Films",
+      "title": "Paramount+ - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -888,7 +888,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Paramount+: Series",
+      "title": "Paramount+ - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -902,7 +902,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Paramount+: Films",
+      "title": "Paramount+ - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -914,7 +914,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Paramount+: Series",
+      "title": "Paramount+ - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -927,7 +927,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Paramount+: Films",
+      "title": "Paramount+ - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -940,7 +940,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Paramount+: Series",
+      "title": "Paramount+ - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -969,7 +969,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "BBC iPlayer - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -981,7 +981,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "BBC iPlayer - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -993,7 +993,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Original Films",
+      "title": "BBC iPlayer - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1004,7 +1004,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on BBC iPlayer: Films",
+      "title": "BBC iPlayer - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1017,7 +1017,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on BBC iPlayer: Series",
+      "title": "BBC iPlayer - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1031,7 +1031,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on BBC iPlayer: Films",
+      "title": "BBC iPlayer - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -1043,7 +1043,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on BBC iPlayer: Series",
+      "title": "BBC iPlayer - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -1056,7 +1056,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on BBC iPlayer: Films",
+      "title": "BBC iPlayer - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1069,7 +1069,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on BBC iPlayer: Series",
+      "title": "BBC iPlayer - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1098,7 +1098,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "ITVX - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1110,7 +1110,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "ITVX - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1122,7 +1122,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on ITVX: Films",
+      "title": "ITVX - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1135,7 +1135,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on ITVX: Series",
+      "title": "ITVX - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1149,7 +1149,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on ITVX: Films",
+      "title": "ITVX - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -1161,7 +1161,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on ITVX: Series",
+      "title": "ITVX - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -1174,7 +1174,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on ITVX: Films",
+      "title": "ITVX - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1187,7 +1187,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on ITVX: Series",
+      "title": "ITVX - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1216,7 +1216,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Channel 4 - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1228,7 +1228,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Channel 4 - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1240,7 +1240,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Original Films",
+      "title": "Channel 4 - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1251,7 +1251,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Channel 4: Films",
+      "title": "Channel 4 - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1264,7 +1264,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Channel 4: Series",
+      "title": "Channel 4 - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1278,7 +1278,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Channel 4: Films",
+      "title": "Channel 4 - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -1290,7 +1290,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Channel 4: Series",
+      "title": "Channel 4 - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -1303,7 +1303,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Channel 4: Films",
+      "title": "Channel 4 - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1316,7 +1316,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Channel 4: Series",
+      "title": "Channel 4 - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1345,7 +1345,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Channel 5 - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1357,7 +1357,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Channel 5 - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1369,7 +1369,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Channel 5: Films",
+      "title": "Channel 5 - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1382,7 +1382,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Channel 5: Series",
+      "title": "Channel 5 - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1396,7 +1396,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Channel 5: Films",
+      "title": "Channel 5 - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -1408,7 +1408,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Channel 5: Series",
+      "title": "Channel 5 - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -1421,7 +1421,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Channel 5: Films",
+      "title": "Channel 5 - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1434,7 +1434,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Channel 5: Series",
+      "title": "Channel 5 - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1463,7 +1463,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Crunchyroll - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1476,7 +1476,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Crunchyroll - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1489,7 +1489,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Crunchyroll: Films",
+      "title": "Crunchyroll - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1502,7 +1502,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Crunchyroll: Series",
+      "title": "Crunchyroll - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1516,7 +1516,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Crunchyroll: Films",
+      "title": "Crunchyroll - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -1528,7 +1528,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Crunchyroll: Series",
+      "title": "Crunchyroll - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -1541,7 +1541,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Crunchyroll: Films",
+      "title": "Crunchyroll - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1554,7 +1554,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Crunchyroll: Series",
+      "title": "Crunchyroll - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1583,7 +1583,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Shudder - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1596,7 +1596,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Shudder - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1609,7 +1609,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Shudder: Films",
+      "title": "Shudder - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1622,7 +1622,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Shudder: Series",
+      "title": "Shudder - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1636,7 +1636,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Shudder: Films",
+      "title": "Shudder - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -1648,7 +1648,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Shudder: Series",
+      "title": "Shudder - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -1661,7 +1661,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Shudder: Films",
+      "title": "Shudder - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1674,7 +1674,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Shudder: Series",
+      "title": "Shudder - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1703,7 +1703,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Original Films",
+      "title": "MUBI - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1714,7 +1714,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on MUBI: Films",
+      "title": "MUBI - Exclusive films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1727,7 +1727,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on MUBI: Films",
+      "title": "MUBI - New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
@@ -1739,7 +1739,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on MUBI: Films",
+      "title": "MUBI - Best exclusive films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1767,7 +1767,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Discovery+ - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1779,7 +1779,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "Discovery+ - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1791,7 +1791,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on Discovery+: Series",
+      "title": "Discovery+ - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1805,7 +1805,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on Discovery+: Series",
+      "title": "Discovery+ - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -1818,7 +1818,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on Discovery+: Series",
+      "title": "Discovery+ - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1847,7 +1847,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "WOW - Trending originals",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1859,7 +1859,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best Originals",
+      "title": "WOW - Best originals",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
@@ -1871,7 +1871,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Only on WOW: Series",
+      "title": "WOW - Exclusive series",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
       "filters": {
@@ -1885,7 +1885,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "New on WOW: Series",
+      "title": "WOW - New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
@@ -1898,7 +1898,7 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Best only on WOW: Series",
+      "title": "WOW - Best exclusive series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {

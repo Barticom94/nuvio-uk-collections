@@ -4,8 +4,9 @@ Collections for [Nuvio](https://github.com/NuvioMedia/NuvioTV), built for UK vie
 Nuvio → Settings → Collections → Import → From URL. Importing adds new collections and replaces ones with the same id.
 
 - `nuvio-collections.json`, for every profile:
-  - **Streaming Services**: 17 tiles. Each leads with the service's trending and best rated originals and its own
-    films, then "Only on" rows that leave out titles also on the other UK services, then New and "Best only on" rows.
+  - **Streaming Services**: 17 tiles. Each row is named "<service> - <row>". Each tile leads with the service's trending and
+    best rated originals and its own films, then Exclusive rows that leave out titles also on the other UK services,
+    then New and Best exclusive rows.
     Hulu has no UK service, so its tile only has its originals. The Netflix tile's Top 10 and Most Popular rows
     come from the UK Extras add-on.
   - **Movies**: Start here (new, trending and top rated films, British films and the critics' picks), Genres, More
