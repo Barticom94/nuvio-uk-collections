@@ -115,20 +115,31 @@ TV_GENRES = [
     ("Supernatural", None, "6152"), ("Horror", None, "315058"), ("Anthology", None, "9706"),
     ("Animation", "16", None), ("Family", "10751", None), ("Kids", "10762", None), ("Documentary", "99", None),
     ("Reality", "10764", None), ("War and politics", "10768", None), ("Western", "37", None, 20)]
-# Film series (TMDB collection ids, checked 29 Oct), in their original order. The MCU has no TMDB collection, so its
-# row is its TMDB keyword (180547), newest first.
+# Film series (TMDB collection ids, checked 29 Oct) and their UK Streaming catalogues (uks.franchise.<id>, one each, as
+# rows of one catalogue collapse into one). The rows come from UK Streaming; the TMDB sources only pick the hero. The
+# MCU has no TMDB collection, so its hero source is its TMDB keyword (180547).
 FRANCHISES = [
-    ("Star Wars", 10), ("Harry Potter", 1241), ("The Lord of the Rings", 119), ("James Bond", 645),
-    ("Mission: Impossible", 87359), ("Jurassic Park", 328), ("The Dark Knight trilogy", 263), ("Fast & Furious", 9485),
-    ("John Wick", 404609), ("Bourne", 31562), ("Kingsman", 391860), ("The Hunger Games", 131635), ("The Matrix", 2344),
-    ("Avatar", 87096), ("Pirates of the Caribbean", 295), ("Indiana Jones", 84), ("Back to the Future", 264),
-    ("The Godfather", 230), ("Toy Story", 10194), ("Shrek", 2150), ("Despicable Me", 86066),
-    ("How to Train Your Dragon", 89137), ("Paddington", 488924), ("Wallace & Gromit", 529)]
+    ("Star Wars", 10, "star-wars"), ("Harry Potter", 1241, "harry-potter"),
+    ("The Lord of the Rings", 119, "lord-of-the-rings"), ("James Bond", 645, "james-bond"),
+    ("Mission: Impossible", 87359, "mission-impossible"), ("Jurassic Park", 328, "jurassic-park"),
+    ("The Dark Knight trilogy", 263, "dark-knight"), ("Fast & Furious", 9485, "fast-and-furious"),
+    ("John Wick", 404609, "john-wick"), ("Bourne", 31562, "bourne"), ("Kingsman", 391860, "kingsman"),
+    ("The Hunger Games", 131635, "hunger-games"), ("The Matrix", 2344, "matrix"), ("Avatar", 87096, "avatar"),
+    ("Pirates of the Caribbean", 295, "pirates-of-the-caribbean"), ("Indiana Jones", 84, "indiana-jones"),
+    ("Back to the Future", 264, "back-to-the-future"), ("The Godfather", 230, "godfather"),
+    ("Toy Story", 10194, "toy-story"), ("Shrek", 2150, "shrek"), ("Despicable Me", 86066, "despicable-me"),
+    ("How to Train Your Dragon", 89137, "how-to-train-your-dragon"), ("Paddington", 488924, "paddington"),
+    ("Wallace & Gromit", 529, "wallace-and-gromit")]
 NO_FILLER = "99|10402|10770"  # documentaries, concert films and TV films: out of the broad Top rated film rows
 
 FILMS_FLOOR = {"NOW": 20, "MUBI": 20}  # Sky and MUBI make few films; at 50 votes these rows drop under 20 titles
 # Few originals with many votes: at the tier's top rated floor Best Originals drops under 5 titles
 BEST_ORIG_FLOOR = {"Channel 5": 10, "Crunchyroll": 10, "Shudder": 10, "Discovery+": 3, "WOW": 3}
+# Best Originals left out where it repeats Best exclusive series: of its first 20 titles, this many were in Best
+# exclusive series' first 40 (TMDB live, 29 Oct 2026): Netflix 18, Prime Video 17, Disney+ 15, Apple TV+ 18. Kept: NOW
+# 11, Paramount+ 10, ITVX 9, HBO Max 7, Channel 4 7, BBC iPlayer 4; Channel 5, Crunchyroll, Shudder, Discovery+, WOW 0.
+# Out at 15 or more (75 percent). Hulu has no exclusive rows and MUBI no originals rows, so both keep theirs.
+ORIG_REPEATS = {"Netflix", "Prime Video", "Disney+", "Apple TV+"}
 GB_STORES = "2|10|35|130|192"  # Apple TV Store, Amazon Video, Rakuten TV, Sky Store, YouTube (rent and buy)
 
 
@@ -159,8 +170,9 @@ def tile_sources(title, region, providers, floor, nets, since, films, movies, se
         orig = dict(withNetworks=nets, voteCountGte=f["orig"], withoutGenres=NOISE_TV, releaseDateGte=since)
         out.append(discover(f"{title} - Trending originals", "tv", None, **orig))
         # All time: the best rated of the well known ones (the website can't sort by votes)
-        out.append(discover(f"{title} - Best originals", "tv", "vote_average.desc",
-                            **dict(orig, voteCountGte=BEST_ORIG_FLOOR.get(title, f["top_t"]))))
+        if title not in ORIG_REPEATS:
+            out.append(discover(f"{title} - Best originals", "tv", "vote_average.desc",
+                                **dict(orig, voteCountGte=BEST_ORIG_FLOOR.get(title, f["top_t"]))))
     if title == "Netflix":
         out += [addon(UKX, t, c) for t, c in NETFLIX_EXTRAS]
     if films:
@@ -260,9 +272,9 @@ def movies():
         ("Genres", a_to_z([film(t, "popularity.desc", voteCountGte=100, withGenres=g, withKeywords=k)
                            for t, g, k in MOVIE_GENRES])),
         ("Decades", decades(m, 1950, 1000, withoutKeywords=MOVIE_SAFE)),
-        ("Collections", [film("Marvel Cinematic Universe", "primary_release_date.desc", voteCountGte=200,
-                              withKeywords="180547", withoutKeywords=f"{MOVIE_SAFE}|{SHORT_FILM}"),
-                         *(film_series(t, i) for t, i in FRANCHISES)]),
+        ("Collections", [addon(UKX, m, "uks.franchise." + c) for c in ["mcu"] + [c for _, _, c in FRANCHISES]],
+         [film("Marvel Cinematic Universe", "primary_release_date.desc", voteCountGte=200, withKeywords="180547",
+               withoutKeywords=f"{MOVIE_SAFE}|{SHORT_FILM}"), *(film_series(t, i) for t, i, _ in FRANCHISES)]),
     ])
 
 def tv_shows():

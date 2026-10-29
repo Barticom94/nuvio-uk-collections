@@ -6,14 +6,15 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
 - `nuvio-collections.json`, for every profile:
   - **Streaming Services**: 17 tiles. Each row is named "<service> - <row>". Each tile leads with the service's trending and
     best rated originals and its own films, then Exclusive rows that leave out titles also on the other UK services,
-    then New and Best exclusive rows.
+    then New and Best exclusive rows. Netflix, Prime Video, Disney+ and Apple TV+ have no Best originals row: there
+    it repeated Best exclusive series (15 to 18 of its first 20 titles were in that row's first 40 on 29 Oct).
     Hulu has no UK service, so its tile only has its originals. The Netflix tile's Top 10 and Most Popular rows
     come from the UK Extras add-on.
   - **Movies**: New and Trending (new, trending and family films), Top Rated (all time, the past year, the
     past five years, animated, family, documentaries), Genres (TMDB's film genres but TV Movie, each followed by its
     sub-genres: superhero, romantic comedy, sports, psychological thriller, heist, space, musical), Decades (1950s to
     2020s) and Collections (the MCU and 24 film series, from Star Wars and James Bond to Paddington and Wallace &
-    Gromit).
+    Gromit, from the UK Streaming add-on: see below).
   - **TV Shows**: New and Trending (new and trending series, trending documentaries), Top Rated (all time,
     new, miniseries, crime, comedies, animated, documentaries), Genres (TMDB's TV genres but News, Talk and
     Soap, with period, medical, legal and teen drama, sitcom, police procedural, true crime, murder mystery,
@@ -35,13 +36,20 @@ opens, so each folder holds 3 to 25 rows (Hulu has its 2).
 
 Every row of Movies, TV Shows and Anime is written out in `build/build_uk.py` (TMDB genre, keyword and collection ids,
 checked 29 Oct). Rows sorted by rating all have a vote floor. TV Shows leaves out TMDB's anime keyword, as anime has
-its own collection. Every Movies row leaves out TMDB's pornography, porn industry, softcore, unsimulated sex, erotic
-movie and bdsm keywords, and the MCU row its short films and specials.
+its own collection. Every Movies TMDB row leaves out TMDB's pornography, porn industry, softcore, unsimulated sex,
+erotic movie and bdsm keywords.
 
 Every TMDB row runs on Nuvio's own TMDB access, so it needs no catalogue add-on. Availability comes from TMDB's
 watch-provider data (sourced from JustWatch). Anime is Japanese-language animation, and every Anime row leaves out
 TMDB's hentai, ecchi, erotica, harem, nudity, fan-service and sexual violence keywords. Without UK Extras installed, the Netflix
 page's Top 10 and Most Popular rows stay as loading placeholders.
+
+Movies' Collections rows are add-on rows: the household's UK Streaming add-on, which answers to UK Extras' id
+(`com.barticom94.ukextras`), has one movie catalogue per film series, `uks.franchise.mcu` to
+`uks.franchise.wallace-and-gromit` (`FRANCHISES` in `build/build_uk.py`), named as the rows are. Each series needs its
+own catalogue id, as rows of one catalogue collapse into one. The UK Extras add-on on GitHub Pages doesn't have them,
+so on a profile with that install (or neither) these rows stay as loading placeholders. The folder's hero still comes
+from TMDB: the series' TMDB collections (and the MCU keyword, short films left out) pick it.
 
 Anime Decades uses the Decade catalogues that AIOMetadata adds when you import its Anime Essentials design
 (Catalogs → Collections → Featured): `aio-metadata`, type `anime`, `mal.80sDecade` to `mal.20sDecade`. Without
@@ -76,7 +84,9 @@ Collections a box set and a reel. The glyphs are drawn there too, so no icon set
 services' logos are their names in white, drawn with Pillow.
 
 `check.py` reads the files with the same rules as Nuvio's importer, calls every TMDB row, checks add-on rows against
-their add-on's manifest (`--manifest ID=PATH` for one not yet published), checks that no other file reuses a link A
+their add-on's manifest (`--manifest ID=PATH` for one not yet published; UK Extras' rows are checked against its
+GitHub Pages manifest, so the Collections rows need `--manifest com.barticom94.ukextras=` UK Streaming's manifest file
+or URL), checks that no other file reuses a link A
 collection id, and writes the result counts to
 `build/report.txt`. For pages of rows it checks that no two rows in a folder share Nuvio's row key (rows that do
 collapse into one), the 3 to 25 rows, the All tab and that every folder has its backdrop, logo and tile, and that every

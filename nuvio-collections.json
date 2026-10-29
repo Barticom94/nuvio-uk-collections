@@ -32,19 +32,6 @@
       }
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Netflix - Best originals",
-      "mediaType": "tv",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "withNetworks": "213",
-       "voteCountGte": 300,
-       "withoutGenres": "10763|10767|10766",
-       "releaseDateGte": "2012-01-01"
-      }
-     },
-     {
       "provider": "addon",
       "addonId": "com.barticom94.ukextras",
       "type": "series",
@@ -172,19 +159,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Prime Video - Best originals",
-      "mediaType": "tv",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "withNetworks": "1024",
-       "voteCountGte": 300,
-       "withoutGenres": "10763|10767|10766",
-       "releaseDateGte": "2012-01-01"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Prime Video - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
@@ -302,18 +276,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Disney+ - Best originals",
-      "mediaType": "tv",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "withNetworks": "2739|88",
-       "voteCountGte": 300,
-       "withoutGenres": "10763|10767|10766"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Disney+ - Original films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
@@ -425,19 +387,6 @@
       "filters": {
        "withNetworks": "2552",
        "voteCountGte": 10,
-       "withoutGenres": "10763|10767|10766",
-       "releaseDateGte": "2012-01-01"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Apple TV+ - Best originals",
-      "mediaType": "tv",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "withNetworks": "2552",
-       "voteCountGte": 80,
        "withoutGenres": "10763|10767|10766",
        "releaseDateGte": "2012-01-01"
       }
@@ -2513,208 +2462,154 @@
     "hideTitle": true,
     "sources": [
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Marvel Cinematic Universe",
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713|263548",
-       "voteCountGte": 200,
-       "withKeywords": "180547"
-      }
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.mcu"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Star Wars",
-      "tmdbId": 10,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.star-wars"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Harry Potter",
-      "tmdbId": 1241,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.harry-potter"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Lord of the Rings",
-      "tmdbId": 119,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.lord-of-the-rings"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "James Bond",
-      "tmdbId": 645,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.james-bond"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Mission: Impossible",
-      "tmdbId": 87359,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.mission-impossible"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Jurassic Park",
-      "tmdbId": 328,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.jurassic-park"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Dark Knight trilogy",
-      "tmdbId": 263,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.dark-knight"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Fast & Furious",
-      "tmdbId": 9485,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.fast-and-furious"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "John Wick",
-      "tmdbId": 404609,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.john-wick"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Bourne",
-      "tmdbId": 31562,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.bourne"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Kingsman",
-      "tmdbId": 391860,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.kingsman"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Hunger Games",
-      "tmdbId": 131635,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.hunger-games"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Matrix",
-      "tmdbId": 2344,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.matrix"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Avatar",
-      "tmdbId": 87096,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.avatar"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Pirates of the Caribbean",
-      "tmdbId": 295,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.pirates-of-the-caribbean"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Indiana Jones",
-      "tmdbId": 84,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.indiana-jones"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Back to the Future",
-      "tmdbId": 264,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.back-to-the-future"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Godfather",
-      "tmdbId": 230,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.godfather"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Toy Story",
-      "tmdbId": 10194,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.toy-story"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Shrek",
-      "tmdbId": 2150,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.shrek"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Despicable Me",
-      "tmdbId": 86066,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.despicable-me"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "How to Train Your Dragon",
-      "tmdbId": 89137,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.how-to-train-your-dragon"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Paddington",
-      "tmdbId": 488924,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.paddington"
      },
      {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Wallace & Gromit",
-      "tmdbId": 529,
-      "mediaType": "movie",
-      "sortBy": "original"
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.franchise.wallace-and-gromit"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
