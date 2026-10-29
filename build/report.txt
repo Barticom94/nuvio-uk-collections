@@ -4,6 +4,83 @@ Checked 2026-10-29 against TMDB live. Rows: 338 TMDB, thin (<20): 20, failures: 
 nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-shows | addon com.barticom94.ukextras ukx.netflix-top10-shows  | catalogue checked
 nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-films | addon com.barticom94.ukextras ukx.netflix-top10-films  | catalogue checked
 nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-popular | addon com.barticom94.ukextras ukx.netflix-popular  | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Action | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Adventure | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Avant Garde | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Award Winning | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Boys Love | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Comedy | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Drama | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Fantasy | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Girls Love | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Gourmet | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Horror | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Mystery | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Romance | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Sci-Fi | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Slice of Life | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Sports | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Supernatural | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Suspense | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Josei | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Kids | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Seinen | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Shoujo | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Shounen | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Adult Cast | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Anthropomorphic | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres CGDCT | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Childcare | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Combat Sports | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Crossdressing | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Delinquents | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Detective | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Educational | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Gag Humor | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Gore | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres High Stakes Game | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Historical | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Idols (Female) | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Idols (Male) | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Isekai | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Iyashikei | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Love Polygon | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Love Status Quo | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Mahou Shoujo | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Martial Arts | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Mecha | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Medical | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Military | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Music | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Mythology | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Organized Crime | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Otaku Culture | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Parody | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Performing Arts | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Pets | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Psychological | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Racing | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Reincarnation | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Samurai | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres School | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Showbiz | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Space | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Strategy Game | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Super Power | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Survival | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Team Sports | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Time Travel | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Urban Fantasy | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Vampire | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Video Game | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Villainess | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Visual Arts | catalogue checked
+nuvio-collections.json | Anime / By Genre / mal.genres | addon aio-metadata mal.genres Workplace | catalogue checked
+nuvio-collections.json | Anime / By Decade / mal.20sDecade | addon aio-metadata mal.20sDecade  | catalogue checked
+nuvio-collections.json | Anime / By Decade / mal.10sDecade | addon aio-metadata mal.10sDecade  | catalogue checked
+nuvio-collections.json | Anime / By Decade / mal.00sDecade | addon aio-metadata mal.00sDecade  | catalogue checked
+nuvio-collections.json | Anime / By Decade / mal.90sDecade | addon aio-metadata mal.90sDecade  | catalogue checked
+nuvio-collections.json | Anime / By Decade / mal.80sDecade | addon aio-metadata mal.80sDecade  | catalogue checked
 nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free News | catalogue checked
 nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Entertainment | catalogue checked
 nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Movies | catalogue checked

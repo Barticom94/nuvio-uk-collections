@@ -63,10 +63,10 @@ AIOM = "aio-metadata"
 # AIOMetadata's catalogue dialog writes displayType and the manifest id becomes "<id>_anime": set "_anime" then.
 AIOM_ID_SUFFIX = ""
 AIOM_PACK = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/public/featured/anime-essentials.json"
-# Off until MAL safe mode (sfw) is on in EVERY AIOMetadata config a profile uses. With it off, AIOMetadata doesn't
-# ask Jikan to filter, so the genre and decade tabs (School among them) list Rx hentai. Both of Adam's configs had
-# sfw false on 29 Oct. Turn this on only once both are confirmed on, then rebuild and run check.py.
-MAL_FOLDERS = False
+# On by Adam's call (29 Oct), before MAL safe mode (sfw) is confirmed on. With sfw off in the AIOMetadata config a
+# profile uses, AIOMetadata doesn't ask Jikan to filter, so the genre and decade tabs (School among them) can list Rx
+# hentai. Both of Adam's configs had sfw false on 28 Oct. Set False and rebuild to take the tabs out again.
+MAL_FOLDERS = True
 # Hentai, Erotica and Ecchi are MAL's adult genres. Harem, Reverse Harem and Magical Sex Shift go too: link A reaches
 # family profiles, and Jikan's sfw filter only removes Rx titles, not R+ fan service.
 MAL_LEFT_OUT = {"Hentai", "Erotica", "Ecchi", "Harem", "Reverse Harem", "Magical Sex Shift"}

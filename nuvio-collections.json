@@ -4261,6 +4261,570 @@
     "heroBackdropUrl": null,
     "heroVideoUrl": null,
     "titleLogoUrl": null
+   },
+   {
+    "id": "3ffe2269-460c-5c9c-8924-6974086cba04",
+    "title": "By Genre",
+    "coverImageUrl": null,
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": "🎭",
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Action"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Adventure"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Avant Garde"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Award Winning"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Boys Love"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Comedy"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Drama"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Fantasy"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Girls Love"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Gourmet"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Horror"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Mystery"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Romance"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Sci-Fi"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Slice of Life"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Sports"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Supernatural"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Suspense"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Josei"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Kids"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Seinen"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Shoujo"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Shounen"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Adult Cast"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Anthropomorphic"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "CGDCT"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Childcare"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Combat Sports"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Crossdressing"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Delinquents"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Detective"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Educational"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Gag Humor"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Gore"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "High Stakes Game"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Historical"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Idols (Female)"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Idols (Male)"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Isekai"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Iyashikei"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Love Polygon"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Love Status Quo"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Mahou Shoujo"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Martial Arts"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Mecha"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Medical"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Military"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Music"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Mythology"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Organized Crime"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Otaku Culture"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Parody"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Performing Arts"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Pets"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Psychological"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Racing"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Reincarnation"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Samurai"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "School"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Showbiz"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Space"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Strategy Game"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Super Power"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Survival"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Team Sports"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Time Travel"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Urban Fantasy"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Vampire"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Video Game"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Villainess"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Visual Arts"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.genres",
+      "genre": "Workplace"
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
+   },
+   {
+    "id": "335abd58-5e64-5a53-afdc-35c7229659c3",
+    "title": "By Decade",
+    "coverImageUrl": null,
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": "📅",
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.20sDecade"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.10sDecade"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.00sDecade"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.90sDecade"
+     },
+     {
+      "provider": "addon",
+      "addonId": "aio-metadata",
+      "type": "anime",
+      "catalogId": "mal.80sDecade"
+     }
+    ],
+    "heroBackdropUrl": null,
+    "heroVideoUrl": null,
+    "titleLogoUrl": null
    }
   ]
  }

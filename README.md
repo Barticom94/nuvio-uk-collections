@@ -31,9 +31,10 @@ and Free channels show "Addon not found".
 
 Anime By Genre and By Decade use the MAL catalogues that AIOMetadata adds when you import its Anime Essentials design
 (Catalogs → Collections → Featured): the Genre and Decade catalogues (`aio-metadata`, type `anime`, `mal.genres` and
-`mal.80sDecade` to `mal.20sDecade`). They are switched off (`MAL_FOLDERS = False` in `build/build_uk.py`) until MAL
-safe mode (sfw) is on in every AIOMetadata config a profile uses: AIOMetadata only hides MAL's adult titles with it
-on. When they go in, MAL's adult genres plus Harem, Reverse Harem and Magical Sex Shift stay out.
+`mal.80sDecade` to `mal.20sDecade`). AIOMetadata only hides MAL's adult (Rx) titles when MAL
+safe mode (sfw) is on, so turn it on in every AIOMetadata config a profile uses; with it off, ordinary tabs such as
+Romance can list hentai. MAL's adult genres plus Harem, Reverse Harem and Magical Sex Shift stay out either way.
+`MAL_FOLDERS = False` in `build/build_uk.py` takes both folders out.
 
 A folder only shows "Addon not found" when no installed add-on has the id `aio-metadata`. With AIOMetadata installed
 but the Essentials catalogues missing, the tabs still load, with no paging (the first 25 titles only). Each tab reads
