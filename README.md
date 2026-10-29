@@ -11,11 +11,14 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
   - **Movies**: New (the newest films on a UK service or store), Trending, Top rated, By Genre, By Decade,
     Collections (film series), Moods, Directors, Studios, World Cinema and Critics' picks.
   - **TV Shows**: New, Trending, Top rated, By Genre, By Decade and Networks.
-  - **Anime**: New, Trending and Top rated (series and films). By Genre and By Decade are built but held back (below).
-- Live TV, one collection in three versions with the same id, so a profile keeps whichever it imported last:
-  - `nuvio-live-free.json`: Free channels, from the UK Extras add-on.
-  - `nuvio-live.json`: Sport (UK Sport add-on), Live channels (TvVoo) and Free channels.
-  - `nuvio-live-adam.json`: the same plus F1 Replays (MediaFusion).
+  - **Anime**: New, Trending and Top rated (series and films), By Genre and By Decade (below).
+  - **Live TV**: one folder per section of Sky's guide, in Sky's order: Entertainment, Films, Sport, News,
+    Documentaries, Kids, Music and Lifestyle. Each is one catalogue of the UK Extras add-on: its free channels
+    (Samsung TV Plus, Pluto TV and Plex) with what's on now and next. Our household add-on answers to the same id and
+    lists its own channels first. Live TV keeps the id of the old Live TV files, so importing this file replaces a
+    profile's old copy.
+- F1 Replays (MediaFusion) is a separate collection for one profile and isn't in this repo; the build writes it when
+  given a path (below). It has its own id, so importing it adds a collection next to these.
 - `covers/` holds the landscape tile artwork for the UK services.
 
 Every folder opens as a grid with one tab per source. Nuvio loads every tab of a folder when it opens, so the big ones
@@ -27,7 +30,7 @@ Where a franchise has several film series, its tab holds the first one (Harry Po
 
 Every TMDB row runs on Nuvio's own TMDB access, so it needs no catalogue add-on. Availability comes from TMDB's
 watch-provider data (sourced from JustWatch). Without UK Extras installed, the Netflix Top 10 and Most Popular rows
-and Free channels show "Addon not found".
+and every Live TV folder show "Addon not found".
 
 Anime By Genre and By Decade use the MAL catalogues that AIOMetadata adds when you import its Anime Essentials design
 (Catalogs → Collections → Featured): the Genre and Decade catalogues (`aio-metadata`, type `anime`, `mal.genres` and
@@ -43,12 +46,13 @@ but the Essentials catalogues missing, the tabs still load, with no paging (the 
 ## Rebuild
 
 ```sh
-python build/build_uk.py
-TMDB_API_KEY=... python build/check.py nuvio-collections.json nuvio-live-free.json nuvio-live.json nuvio-live-adam.json
+python build/build_uk.py [F1_FILE]
+TMDB_API_KEY=... python build/check.py nuvio-collections.json [F1_FILE]
 ```
 
 `check.py` reads the files with the same rules as Nuvio's importer, calls every TMDB row, checks add-on rows against
-their add-on's manifest (`--manifest ID=PATH` for one not yet published) and writes the result counts to
+their add-on's manifest (`--manifest ID=PATH` for one not yet published), checks that Live TV has every section in
+Sky's order under its fixed id and that no other file reuses a link A collection id, and writes the result counts to
 `build/report.txt`. The Trending rows use fixed date floors set at build time, so rebuild every month or two.
 Nuvio keeps its own copy of a collection at import and doesn't refresh it from the URL, so a rebuild only reaches a
 profile after you import the file again there. Trending and New series go by first air date, so a new season of an

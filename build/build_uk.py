@@ -1,16 +1,15 @@
 """Builds the Nuvio UK collections (import format as in mali-king/nuvio-collections).
 
-  python build/build_uk.py   writes nuvio-collections.json (link A, every profile: Streaming Services,
-                             Movies, TV Shows, Anime) and three Live TV files with one collection id, so a
-                             profile imports exactly one: nuvio-live-free.json (no live add-ons),
-                             nuvio-live.json (TvVoo and UK Sport) and nuvio-live-adam.json (plus F1 Replays)
+  python build/build_uk.py [F1_FILE]   writes nuvio-collections.json (link A, every profile: Streaming Services,
+                                       Movies, TV Shows, Anime, Live TV); with F1_FILE, also the F1 Replays
+                                       collection there (MediaFusion, Adam's profile only, so not in this repo)
 
 Movies and TV Shows reuse mali-king's pack at its v2 tag; Anime's genre and decade tabs come from
 AIOMetadata's Anime Essentials pack at v3.8.3 and stay out until MAL_FOLDERS is on (see there).
 Both packs are fetched, so the build needs network.
 Check the output with build/check.py before publishing.
 """
-import json, os, re, urllib.request, uuid
+import json, os, re, sys, urllib.request, uuid
 from datetime import date, timedelta
 
 NS = uuid.UUID('6f1c2a4e-0b7d-4c1e-9a55-3d2f7e8b9c10')
@@ -49,10 +48,10 @@ SERVICES = [
     ("WOW",         "GB", "546",                    "regional", "2806",                              None,         None,             False, True,  own("wow-presents-plus")),
 ]
 
-UKX = "com.barticom94.ukextras"    # UK Extras add-on (GitHub Pages), every profile
-UKS = "com.barticom94.uksport"     # UK Sport add-on (Worker), live-TV profiles only
-TVVOO = "org.stremio.vavoo.clean"  # third-party live-TV add-on, live-TV profiles only
-MEDIAFUSION = "stremio.addons.mediafusion|elfhostedtrb"  # Adam's profile only (F1 Replays)
+# UK Extras' id, every profile: the public GitHub Pages install (free channels) or the household's UK TV Worker,
+# which serves the same catalogues under the same id plus its own channels in each Live TV section
+UKX = "com.barticom94.ukextras"
+MEDIAFUSION = "stremio.addons.mediafusion|elfhostedtrb"  # Adam's profile only (F1 Replays, its own file)
 NETFLIX_EXTRAS = [("series", "ukx.netflix-top10-shows"), ("movie", "ukx.netflix-top10-films"), ("movie", "ukx.netflix-popular")]
 
 # AIOMetadata's configured manifest id is its package.json name (getManifest.ts: id = buildInfo.name; the
@@ -240,30 +239,30 @@ def anime(pack):
                  ("By Decade", "📅", [mal(d) for d in reversed(decades)])]  # newest first, as in Movies and TV Shows
     return grid_collection("anime", "Anime", spec)
 
-# Live TV folders. An add-on source has no title in Nuvio, so each tab reads "<catalogue name> · <genre>".
-SPORT = ("Sport", "⚽", [addon(UKS, "tv", "uks.sport")])
-LIVE_CHANNELS = ("Live channels", "📺", [addon(TVVOO, "tv", "vavoo_tv_uk", g) for g in ("News", "Kids", "Movies", "Documentary", None)])
-FREE_CHANNELS = ("Free channels", "📡", [addon(UKX, "tv", "ukx.free", g) for g in
-                                         ("News", "Entertainment", "Movies", "Kids", "Sport", "Documentary", "Music", "Lifestyle", None)])
-F1_REPLAYS = ("F1 Replays", "🏁", [addon(MEDIAFUSION, "series", "formula_racing")])
+# Live TV: one folder per section of Sky's guide, in Sky's order, each one catalogue (so one paged grid). The Worker
+# lists its channels then the section's free ones; the Pages install lists the free ones only.
+LIVE_SECTIONS = [("Entertainment", "📺"), ("Films", "🎬"), ("Sport", "⚽"), ("News", "📰"),
+                 ("Documentaries", "🦁"), ("Kids", "🧸"), ("Music", "🎵"), ("Lifestyle", "🏡")]
 
-def live_tv(*spec):
-    # One id in all three files (the old Live id), so importing another file replaces the profile's copy.
-    return grid_collection("live", "Live TV", spec)
+def live_tv():
+    # Same id and folder ids as the old Live TV files, so importing link A replaces a profile's copy of those.
+    return grid_collection("live", "Live TV", [(t, e, [addon(UKX, "tv", "uks." + t.lower())]) for t, e in LIVE_SECTIONS])
+
+def f1_replays():
+    # Its own id: importing it next to link A adds a collection and replaces none.
+    return grid_collection("f1-replays", "F1 Replays", [("F1 Replays", "🏁", [addon(MEDIAFUSION, "series", "formula_racing")])])
 
 
 def write(name, data):
-    path = os.path.join(ROOT, name)
+    path = os.path.join(ROOT, name)  # an absolute name stays as it is
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         json.dump(data, f, indent=1, ensure_ascii=False)
         f.write("\n")
     rows = sum(len(fo["sources"]) for c in data for fo in c["folders"])
-    print(f"{name}: {len(data)} collections, {sum(len(c['folders']) for c in data)} folders, {rows} rows, "
+    print(f"{os.path.basename(name)}: {len(data)} collections, {sum(len(c['folders']) for c in data)} folders, {rows} rows, "
           f"{os.path.getsize(path)} bytes")
 
 if __name__ == "__main__":
     mk = {c["title"]: c for c in fetch(MK_TAG + "nuvio-collections.json")}
-    write("nuvio-collections.json", [streaming_services(), movies(mk), tv_shows(mk), anime(fetch(AIOM_PACK))])
-    write("nuvio-live-free.json", [live_tv(FREE_CHANNELS)])
-    write("nuvio-live.json", [live_tv(SPORT, LIVE_CHANNELS, FREE_CHANNELS)])
-    write("nuvio-live-adam.json", [live_tv(SPORT, LIVE_CHANNELS, FREE_CHANNELS, F1_REPLAYS)])
+    write("nuvio-collections.json", [streaming_services(), movies(mk), tv_shows(mk), anime(fetch(AIOM_PACK)), live_tv()])
+    if len(sys.argv) > 1: write(sys.argv[1], [f1_replays()])

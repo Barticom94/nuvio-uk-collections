@@ -19,19 +19,18 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 THIN = 20
 SPOT = 5  # titles per exclusion row checked against GB watch providers
 UKX = "com.barticom94.ukextras"
-UKS = "com.barticom94.uksport"
-TVVOO = "org.stremio.vavoo.clean"
 MEDIAFUSION = "stremio.addons.mediafusion|elfhostedtrb"
 AIOM = "aio-metadata"
 # Every file here is public. "Adult Cast" (a MAL theme) and Adult Swim are not adult content.
 ADULT = re.compile(r"hentai|erotica|ecchi|sukebei|xxx|porn|nsfw|\badult(?![ -]swim| cast)|after hours|knaben|hent:", re.I)
 LINK_A_BANNED = re.compile(r"vavoo|tvvoo|mediafusion|uksport|uk-sport", re.I)
-LINK_A_TITLES = ["Streaming Services", "Movies", "TV Shows", "Anime"]
-LIVE_TITLE = "Live TV"  # one collection id and title across the Live TV files, so a profile holds one
-ALLOWED_ADDONS = {"nuvio-collections.json": {UKX, AIOM}, "nuvio-live-free.json": {UKX},
-                  "nuvio-live.json": {UKX, UKS, TVVOO}, "nuvio-live-adam.json": {UKX, UKS, TVVOO, MEDIAFUSION}}
-MANIFESTS = {UKX: "https://barticom94.github.io/uk-extras/manifest.json",
-             UKS: "https://uk-sport.adamharley94.workers.dev/manifest.json"}
+LINK_A_TITLES = ["Streaming Services", "Movies", "TV Shows", "Anime", "Live TV"]
+# Live TV lives in link A only, under the old Live TV files' id, so importing link A replaces a profile's old copy
+LIVE_TITLE, LIVE_ID = "Live TV", "7c32c454-b145-5bbb-b89f-4cbc36cf6767"
+LIVE_SECTIONS = ["uks.entertainment", "uks.films", "uks.sport", "uks.news", "uks.documentaries", "uks.kids",
+                 "uks.music", "uks.lifestyle"]  # Sky's guide order, as in the add-on's manifest
+ALLOWED_ADDONS = {"nuvio-collections.json": {UKX, AIOM}, "nuvio-f1-replays.json": {MEDIAFUSION}}  # F1: Adam's file, kept out of the repo
+MANIFESTS = {UKX: "https://barticom94.github.io/uk-extras/manifest.json"}
 AIOM_TYPES = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/addon/static/catalog-types.json"
 MAL_GENRES = "https://aiometadata.elfhosted.com/api/mal/discover/reference"  # Jikan's list, which the manifest uses
 MAL_LEFT_OUT = {"Hentai", "Erotica", "Ecchi", "Harem", "Reverse Harem", "Magical Sex Shift"}  # as in build_uk.py
@@ -205,6 +204,14 @@ def parse(text):
         out[cid] = col  # associateBy: last value wins, first position kept (same as a Python dict)
     return list(out.values())
 
+def live_problems(cols):
+    """Link A's Live TV: one collection with LIVE_ID, then one UK Extras tv catalogue per folder in LIVE_SECTIONS order."""
+    live = [c for c in cols if c["title"] == LIVE_TITLE]
+    if len(live) != 1 or live[0]["id"] != LIVE_ID: return [f"needs one {LIVE_TITLE!r} collection with id {LIVE_ID}"]
+    rows = [[(s.get("addonId"), s.get("type"), s.get("catalogId")) for s in f["sources"]] for f in live[0]["folders"]]
+    if rows != [[(UKX, "tv", c)] for c in LIVE_SECTIONS]: return [f"{LIVE_TITLE} folders are {rows}"]
+    return []
+
 def selftest():
     good = '[{"id":"c","title":"C","folders":[{"id":"f","title":"F","sources":[{"addonId":"a","type":"tv","catalogId":"x"}]}]}]'
     assert validate(good)[0] and parse(good)[0]["folders"][0]["sources"][0]["provider"] == "addon"
@@ -223,6 +230,12 @@ def selftest():
     mal = {"provider": "addon", "addonId": AIOM, "type": "anime", "catalogId": "mal.genres_anime", "genre": "Action"}
     assert addon_problem(cats, mal) is None and addon_problem(cats, dict(mal, genre="Hentai"))
     assert addon_problem(cats, dict(mal, genre="Actoin")) and addon_problem(cats, dict(mal, type="series"))
+    live = {"id": LIVE_ID, "title": LIVE_TITLE, "folders": [{"sources": [{"addonId": UKX, "type": "tv", "catalogId": c}]}
+                                                            for c in LIVE_SECTIONS]}
+    assert live_problems([live]) == []
+    assert live_problems([dict(live, id="x")]) and live_problems([live, live]) and live_problems([])
+    assert live_problems([dict(live, folders=live["folders"][::-1])]), "Sky order"
+    assert live_problems([dict(live, folders=live["folders"][:7])]), "a section missing"
     print("selftest ok")
 
 
@@ -385,7 +398,8 @@ def main(argv):
     only = argv[argv.index("--only") + 1] if "--only" in argv else None
     tmdb = Tmdb(load_key(argv))
     today = date.today().isoformat()
-    fails, warns, report, jobs, covers, live_ids = [], [], [], [], set(), set()
+    fails, warns, report, jobs, covers = [], [], [], [], set()
+    link_a_ids, other_cols = set(), []
     cats = addon_catalogues(argv, warns)
 
     for path in files:
@@ -416,8 +430,10 @@ def main(argv):
             if [c["title"] for c in cols] != LINK_A_TITLES: fails.append(f"{name}: collections are {[c['title'] for c in cols]}")
             for s in strings(raw):
                 if LINK_A_BANNED.search(s): fails.append(f"{name}: banned text {s!r}")
-        if name.startswith("nuvio-live"):
-            live_ids |= {(c["id"], c["title"]) for c in cols}
+            fails += [f"{name}: {p}" for p in live_problems(cols)]
+            link_a_ids |= {c["id"] for c in cols}
+        else:
+            other_cols += [(name, c) for c in cols]
         for c in cols:
             if only and c["title"] != only and not any(f["title"] == only for f in c["folders"]): continue
             for f in c["folders"]:
@@ -448,8 +464,9 @@ def main(argv):
                 spot.append((title, bool(gb & own), sorted(gb & banned)))
         return name, where, total, items, spot, s["sourceType"] in ("DISCOVER", "COMPANY", "NETWORK")
 
-    if live_ids and (len(live_ids) != 1 or next(iter(live_ids))[1] != LIVE_TITLE):
-        fails.append(f"Live TV files must share one collection id and the title {LIVE_TITLE!r}: {sorted(live_ids)}")
+    for name, c in other_cols:  # importing another file next to link A must add, not replace
+        if c["id"] in link_a_ids | {LIVE_ID} or c["title"] == LIVE_TITLE:
+            fails.append(f"{name}: {c['title']} reuses a link A collection id or the title {LIVE_TITLE!r}")
     print(f"calling TMDB for {len(jobs)} rows")
     results = []
     with cf.ThreadPoolExecutor(8) as ex:

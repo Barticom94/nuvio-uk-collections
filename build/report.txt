@@ -81,46 +81,15 @@ nuvio-collections.json | Anime / By Decade / mal.10sDecade | addon aio-metadata 
 nuvio-collections.json | Anime / By Decade / mal.00sDecade | addon aio-metadata mal.00sDecade  | catalogue checked
 nuvio-collections.json | Anime / By Decade / mal.90sDecade | addon aio-metadata mal.90sDecade  | catalogue checked
 nuvio-collections.json | Anime / By Decade / mal.80sDecade | addon aio-metadata mal.80sDecade  | catalogue checked
-nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free News | catalogue checked
-nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Entertainment | catalogue checked
-nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Movies | catalogue checked
-nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Kids | catalogue checked
-nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Sport | catalogue checked
-nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Documentary | catalogue checked
-nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Music | catalogue checked
-nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Lifestyle | catalogue checked
-nuvio-live-free.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free  | catalogue checked
-nuvio-live.json | Live TV / Sport / uks.sport | addon com.barticom94.uksport uks.sport  | catalogue checked
-nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk News | not checked here
-nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Kids | not checked here
-nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Movies | not checked here
-nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Documentary | not checked here
-nuvio-live.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk  | not checked here
-nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free News | catalogue checked
-nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Entertainment | catalogue checked
-nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Movies | catalogue checked
-nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Kids | catalogue checked
-nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Sport | catalogue checked
-nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Documentary | catalogue checked
-nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Music | catalogue checked
-nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Lifestyle | catalogue checked
-nuvio-live.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free  | catalogue checked
-nuvio-live-adam.json | Live TV / Sport / uks.sport | addon com.barticom94.uksport uks.sport  | catalogue checked
-nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk News | not checked here
-nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Kids | not checked here
-nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Movies | not checked here
-nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk Documentary | not checked here
-nuvio-live-adam.json | Live TV / Live channels / vavoo_tv_uk | addon org.stremio.vavoo.clean vavoo_tv_uk  | not checked here
-nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free News | catalogue checked
-nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Entertainment | catalogue checked
-nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Movies | catalogue checked
-nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Kids | catalogue checked
-nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Sport | catalogue checked
-nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Documentary | catalogue checked
-nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Music | catalogue checked
-nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free Lifestyle | catalogue checked
-nuvio-live-adam.json | Live TV / Free channels / ukx.free | addon com.barticom94.ukextras ukx.free  | catalogue checked
-nuvio-live-adam.json | Live TV / F1 Replays / formula_racing | addon stremio.addons.mediafusion|elfhostedtrb formula_racing  | not checked here
+nuvio-collections.json | Live TV / Entertainment / uks.entertainment | addon com.barticom94.ukextras uks.entertainment  | catalogue checked
+nuvio-collections.json | Live TV / Films / uks.films | addon com.barticom94.ukextras uks.films  | catalogue checked
+nuvio-collections.json | Live TV / Sport / uks.sport | addon com.barticom94.ukextras uks.sport  | catalogue checked
+nuvio-collections.json | Live TV / News / uks.news | addon com.barticom94.ukextras uks.news  | catalogue checked
+nuvio-collections.json | Live TV / Documentaries / uks.documentaries | addon com.barticom94.ukextras uks.documentaries  | catalogue checked
+nuvio-collections.json | Live TV / Kids / uks.kids | addon com.barticom94.ukextras uks.kids  | catalogue checked
+nuvio-collections.json | Live TV / Music / uks.music | addon com.barticom94.ukextras uks.music  | catalogue checked
+nuvio-collections.json | Live TV / Lifestyle / uks.lifestyle | addon com.barticom94.ukextras uks.lifestyle  | catalogue checked
+nuvio-f1-replays.json | F1 Replays / F1 Replays / formula_racing | addon stremio.addons.mediafusion|elfhostedtrb formula_racing  | not checked here
 nuvio-collections.json | Streaming Services / Netflix / Biggest Originals | 1643 | ok | Stranger Things; Money Heist; Squid Game
 nuvio-collections.json | Streaming Services / Netflix / Trending Originals | 1643 | ok | The Crown; MINDHUNTER; Lupin
 nuvio-collections.json | Streaming Services / Netflix / Only on Netflix: Films | 1756 | ok | Animals; Dune: Part Two; Spirited Away | exclusion spot-check 5/5 clean
@@ -249,7 +218,7 @@ nuvio-collections.json | Streaming Services / WOW / Only on WOW: Series | 19 | T
 nuvio-collections.json | Streaming Services / WOW / New on WOW: Series | 26 | ok | Drag Race Philippines: Slaysian Royale; RuPaul's Drag Race Global All Stars; Drag Race España All Stars
 nuvio-collections.json | Streaming Services / WOW / Best only on WOW: Series | 4 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 4/4 clean
 nuvio-collections.json | Movies / New / New films | 20001 | ok | Surviving Hurricane Otis; Ali G: Who Iz I?; Masterplan
-nuvio-collections.json | Movies / Trending / Trending films | 325 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
+nuvio-collections.json | Movies / Trending / Trending films | 328 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
 nuvio-collections.json | Movies / Top rated / Top rated films | 1926 | ok | The Shawshank Redemption; The Godfather; Project Hail Mary
 nuvio-collections.json | Movies / By Genre / Action | 4585 | ok | Hope; Spider-Man: Brand New Day; The Odyssey
 nuvio-collections.json | Movies / By Genre / Adventure | 2996 | ok | Spider-Man: Brand New Day; The Odyssey; Matchbox the Movie
@@ -260,13 +229,13 @@ nuvio-collections.json | Movies / By Genre / Crime | 3378 | ok | Animals; The Sh
 nuvio-collections.json | Movies / By Genre / Horror | 3632 | ok | Clayface; Insidious: Out of the Further; Buddy
 nuvio-collections.json | Movies / By Genre / Sci-Fi | 2349 | ok | Hope; Spider-Man: Brand New Day; Clayface
 nuvio-collections.json | Movies / By Genre / Fantasy | 2242 | ok | The Odyssey; Buddy; Pinocchio: Unstrung
-nuvio-collections.json | Movies / By Genre / Romance | 3817 | ok | Practical Magic 2; Love of Your Life; Corpse Bride
-nuvio-collections.json | Movies / By Genre / Mystery | 1944 | ok | Hope; Pinocchio: Unstrung; Verity
-nuvio-collections.json | Movies / By Genre / Animation | 1956 | ok | Forgotten Island; The Nightmare Before Christmas; Coco
-nuvio-collections.json | Movies / By Genre / Family | 2215 | ok | The Dog Stars; Forgotten Island; The Nightmare Before Christmas
+nuvio-collections.json | Movies / By Genre / Romance | 3818 | ok | Practical Magic 2; Love of Your Life; Corpse Bride
+nuvio-collections.json | Movies / By Genre / Mystery | 1944 | ok | Hope; Verity; Pinocchio: Unstrung
+nuvio-collections.json | Movies / By Genre / Animation | 1957 | ok | Wildwood; Forgotten Island; Coco
+nuvio-collections.json | Movies / By Genre / Family | 2215 | ok | The Dog Stars; Forgotten Island; Coco
 nuvio-collections.json | Movies / By Genre / Kids | 1095 | ok | Forgotten Island; The Nightmare Before Christmas; Coco
 nuvio-collections.json | Movies / By Genre / Documentary | 712 | ok | Jackass: Best and Last; NAZA; The Remarkable Life of Ibelin
-nuvio-collections.json | Movies / By Genre / History | 1115 | ok | Tenzing; Oppenheimer; The Uprising
+nuvio-collections.json | Movies / By Genre / History | 1115 | ok | Oppenheimer; Tenzing; The Uprising
 nuvio-collections.json | Movies / By Genre / War | 759 | ok | LA BOLA NEGRA; Oppenheimer; Fury
 nuvio-collections.json | Movies / By Genre / Western | 403 | ok | Django Unchained; No Country for Old Men; The Good, the Bad and the Ugly
 nuvio-collections.json | Movies / By Genre / Music | 726 | ok | Coco; Trolls World Tour; Tuner
@@ -316,7 +285,7 @@ nuvio-collections.json | Movies / Moods / Heists | 252 | ok | Inception; Die Har
 nuvio-collections.json | Movies / Moods / True Stories | 1013 | ok | Primetime; Tenzing; Oppenheimer
 nuvio-collections.json | Movies / Moods / Superheroes | 385 | ok | Spider-Man: Brand New Day; Avengers: Endgame; Avengers: Infinity War
 nuvio-collections.json | Movies / Moods / Space | 225 | ok | Project Hail Mary; Interstellar; Avengers: Endgame
-nuvio-collections.json | Movies / Moods / Time Travel | 259 | ok | The End of Oak Street; Interstellar; Avengers: Endgame
+nuvio-collections.json | Movies / Moods / Time Travel | 259 | ok | The End of Oak Street; Avengers: Endgame; Interstellar
 nuvio-collections.json | Movies / Moods / Dystopia | 421 | ok | The Dog Stars; Interstellar; Resident Evil: Welcome to Raccoon City
 nuvio-collections.json | Movies / Moods / Spies | 197 | ok | Inception; Hoppers; North by Northwest
 nuvio-collections.json | Movies / Moods / Cyberpunk & AI | 187 | ok | Interstellar; The Matrix; Avengers: Age of Ultron
@@ -351,7 +320,7 @@ nuvio-collections.json | Movies / Directors / Quentin Tarantino | 16 | ok | Four
 nuvio-collections.json | Movies / Directors / Martin Scorsese | 66 | ok | Mean Streets; Casino; The Departed
 nuvio-collections.json | Movies / Directors / Steven Spielberg | 45 | ok | War of the Worlds; Raiders of the Lost Ark; Indiana Jones and the Temple of Doom
 nuvio-collections.json | Movies / Directors / David Fincher | 18 | ok | Se7en; The Game; Zodiac
-nuvio-collections.json | Movies / Directors / Stanley Kubrick | 16 | ok | A Clockwork Orange; The Killing; Paths of Glory
+nuvio-collections.json | Movies / Directors / Stanley Kubrick | 16 | ok | The Killing; A Clockwork Orange; Paths of Glory
 nuvio-collections.json | Movies / Directors / Ridley Scott | 40 | ok | Blade Runner; Gladiator; Alien
 nuvio-collections.json | Movies / Directors / James Cameron | 22 | ok | The Terminator; Terminator 2: Judgment Day; Titanic
 nuvio-collections.json | Movies / Directors / Bong Joon Ho | 19 | ok | The Host; Barking Dogs Never Bite; Mother
@@ -364,7 +333,7 @@ nuvio-collections.json | Movies / Directors / Paul Thomas Anderson | 23 | ok | M
 nuvio-collections.json | Movies / Directors / Jordan Peele | 3 | ok | Get Out; Us; Nope
 nuvio-collections.json | Movies / Directors / Alfred Hitchcock | 64 | ok | Rebecca; North by Northwest; The 39 Steps
 nuvio-collections.json | Movies / Directors / Akira Kurosawa | 32 | ok | Seven Samurai; The Hidden Fortress; Rashomon
-nuvio-collections.json | Movies / Directors / Wong Kar-wai | 25 | ok | 2046; In the Mood for Love; My Blueberry Nights
+nuvio-collections.json | Movies / Directors / Wong Kar-wai | 25 | ok | In the Mood for Love; 2046; My Blueberry Nights
 nuvio-collections.json | Movies / Studios / Marvel Studios | 82 | ok | Spider-Man: Brand New Day; Avengers: Endgame; Avengers: Infinity War
 nuvio-collections.json | Movies / Studios / Lucasfilm | 57 | ok | The Mandalorian and Grogu; Star Wars; Raiders of the Lost Ark
 nuvio-collections.json | Movies / Studios / Pixar | 107 | ok | Coco; Toy Story 5; Hoppers
@@ -396,12 +365,12 @@ nuvio-collections.json | Movies / World Cinema / Chinese | 1246 | ok | The Shado
 nuvio-collections.json | Movies / World Cinema / Turkish | 484 | ok | Miracle in Cell No. 7; Two Worlds One Wish; Yan Yana
 nuvio-collections.json | Movies / World Cinema / Spanish | 1119 | ok | Tad and The Magic Lamp; LA BOLA NEGRA; Drawn Together
 nuvio-collections.json | Movies / World Cinema / Latin American | 1762 | ok | Surviving Hurricane Otis; Don't Leave the Kids Alone; Crazy Magical Mexico
-nuvio-collections.json | Movies / World Cinema / French | 4427 | ok | Léon: The Professional; Marsupilami; Dracula
+nuvio-collections.json | Movies / World Cinema / French | 4428 | ok | Léon: The Professional; Marsupilami; Dracula
 nuvio-collections.json | Movies / World Cinema / Italian | 2494 | ok | The Good, the Bad and the Ugly; Life Is Beautiful; Once Upon a Time in the West
 nuvio-collections.json | Movies / World Cinema / German | 1207 | ok | All Quiet on the Western Front; M; Nosferatu
 nuvio-collections.json | Movies / World Cinema / Nordic | 954 | ok | Kraken; The Storm; Sentimental Value
 nuvio-collections.json | Movies / World Cinema / British | 2179 | ok | Fall 2: Deadpoint; The Odyssey; Pinocchio: Unstrung
-nuvio-collections.json | Movies / World Cinema / Thai | 343 | ok | The Debt Collector; Ong-Bak; My Dearest Assassin
+nuvio-collections.json | Movies / World Cinema / Thai | 343 | ok | The Debt Collector; My Dearest Assassin; Ong-Bak
 nuvio-collections.json | Movies / World Cinema / Filipino | 270 | ok | Sugar Baby; Suki; Wonderful Nightmare
 nuvio-collections.json | Movies / World Cinema / Arabic | 594 | ok | The Voice of Hind Rajab; Capernaum; Crazy Rich, Incredibly Broke
 nuvio-collections.json | Movies / World Cinema / African | 243 | ok | Chappie; The Gods Must Be Crazy; David
