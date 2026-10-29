@@ -1,7 +1,6 @@
-Checked 2026-10-29 against TMDB live. Rows: 275 TMDB, thin (<20): 14, failures: 0, warnings: 2
+Checked 2026-10-29 against TMDB live. Rows: 269 TMDB, thin (<20): 14, failures: 0, warnings: 1
 
 WARN nuvio-collections.json: Streaming Services/Hulu: 2 rows, not 3 to 25
-WARN 20 of our images aren't on GitHub yet (the files here are images), such as https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/anime-decades.png
 
 nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-shows | addon com.barticom94.ukextras ukx.netflix-top10-shows  | catalogue checked
 nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-films | addon com.barticom94.ukextras ukx.netflix-top10-films  | catalogue checked
@@ -140,13 +139,10 @@ nuvio-collections.json | Streaming Services / WOW / WOW - New series | 26 | ok |
 nuvio-collections.json | Streaming Services / WOW / WOW - Best exclusive series | 4 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 4/4 clean
 nuvio-collections.json | Movies / New and Trending / New films | 20001 | ok | Surviving Hurricane Otis; Ali G: Who Iz I?; Masterplan
 nuvio-collections.json | Movies / New and Trending / Trending films | 327 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
-nuvio-collections.json | Movies / New and Trending / Trending British films | 79 | ok | Fall 2: Deadpoint; The Odyssey; Pinocchio: Unstrung
-nuvio-collections.json | Movies / New and Trending / New British films | 3525 | ok | The Cycle; Sense and Sensibility; Oasis: Don't Look Back in Anger
 nuvio-collections.json | Movies / New and Trending / Trending family films | 52 | ok | Forgotten Island; Toy Story 5; Moana
 nuvio-collections.json | Movies / Top Rated / Top rated films | 1912 | ok | The Shawshank Redemption; The Godfather; Project Hail Mary
 nuvio-collections.json | Movies / Top Rated / Top rated of the past year | 108 | ok | Avatar Aang: The Last Airbender; Swapped; Facing El Chapo
 nuvio-collections.json | Movies / Top Rated / Top rated of the past five years | 262 | ok | Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Project Hail Mary
-nuvio-collections.json | Movies / Top Rated / Top rated British films | 463 | ok | Inception; The Pianist; Hacksaw Ridge
 nuvio-collections.json | Movies / Top Rated / Top rated animated films | 268 | ok | Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Spirited Away
 nuvio-collections.json | Movies / Top Rated / Top rated family films | 147 | ok | It's a Wonderful Life; Wonder; Hachi: A Dog's Tale
 nuvio-collections.json | Movies / Top Rated / Top rated documentaries | 111 | ok | David Attenborough: A Life on Our Planet; Selena Gomez: My Mind & Me; Stop Making Sense
@@ -210,12 +206,9 @@ nuvio-collections.json | Movies / Collections / Paddington | 4 | ok | Paddington
 nuvio-collections.json | Movies / Collections / Wallace & Gromit | 4 | ok | A Grand Day Out; The Wrong Trousers; A Close Shave
 nuvio-collections.json | TV Shows / New and Trending / New series | 16333 | ok | YAGA; Phony; Love in Disguise
 nuvio-collections.json | TV Shows / New and Trending / Trending series | 864 | ok | Love Between Lines; VisionQuest; MobLand
-nuvio-collections.json | TV Shows / New and Trending / Trending British series | 154 | ok | MobLand; This City Is Ours; Below
-nuvio-collections.json | TV Shows / New and Trending / New British series | 1705 | ok | Below; WAR; Kill Jackie
 nuvio-collections.json | TV Shows / New and Trending / Trending documentaries | 146 | ok | TYSON; Number One on the Call Sheet; Attack on London: Hunting the 7/7 Bombers
 nuvio-collections.json | TV Shows / Top Rated / Top rated series | 324 | ok | Breaking Bad; Avatar: The Last Airbender; Arcane
 nuvio-collections.json | TV Shows / Top Rated / Top rated new series | 62 | ok | Teach You a Lesson; Dutton Ranch; Off Campus
-nuvio-collections.json | TV Shows / Top Rated / Top rated British series | 189 | ok | I Am Not an Animal; MobLand; Heartstopper
 nuvio-collections.json | TV Shows / Top Rated / Top rated miniseries | 107 | ok | Chernobyl; Band of Brothers; The Glory
 nuvio-collections.json | TV Shows / Top Rated / Top rated crime series | 213 | ok | Breaking Bad; Better Call Saul; The Sopranos
 nuvio-collections.json | TV Shows / Top Rated / Top rated comedies | 114 | ok | Teach You a Lesson; Wizards of Waverly Place; Guardian: The Lonely and Great God

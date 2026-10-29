@@ -1963,33 +1963,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending British films",
-      "mediaType": "movie",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 20,
-       "releaseDateGte": "2025-10-29",
-       "withOriginCountry": "GB"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "New British films",
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 25,
-       "withWatchProviders": "8|1796|9|2100|337|350|2243|1899|1825|39|591|531|2303|2304|582|1853|38|41|2300|598|103|2311|333|283|1968|99|204|11|201|524|584|546|2|10|35|130|192",
-       "watchRegion": "GB",
-       "withOriginCountry": "GB"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Trending family films",
       "mediaType": "movie",
       "sortBy": "popularity.desc",
@@ -2051,19 +2024,6 @@
        "voteCountGte": 2000,
        "releaseDateGte": "2021-10-30",
        "withoutGenres": "99|10402|10770"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Top rated British films",
-      "mediaType": "movie",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "withoutKeywords": "445|18321|155477|282903|190370|158713",
-       "voteCountGte": 1000,
-       "withoutGenres": "99|10402|10770",
-       "withOriginCountry": "GB"
       }
      },
      {
@@ -2810,33 +2770,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending British series",
-      "mediaType": "tv",
-      "sortBy": "popularity.desc",
-      "filters": {
-       "voteCountGte": 10,
-       "releaseDateGte": "2024-10-29",
-       "withoutGenres": "10763|10767|10766|10764",
-       "withoutKeywords": "210024",
-       "withOriginCountry": "GB"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "New British series",
-      "mediaType": "tv",
-      "sortBy": "first_air_date.desc",
-      "filters": {
-       "voteCountGte": 15,
-       "withoutGenres": "10763|10767|10766|10764",
-       "withoutKeywords": "210024",
-       "withOriginCountry": "GB"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Trending documentaries",
       "mediaType": "tv",
       "sortBy": "popularity.desc",
@@ -2886,19 +2819,6 @@
        "releaseDateGte": "2024-10-29",
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Top rated British series",
-      "mediaType": "tv",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "voteCountGte": 200,
-       "withoutGenres": "10763|10767|10766|10764|99",
-       "withoutKeywords": "210024",
-       "withOriginCountry": "GB"
       }
      },
      {

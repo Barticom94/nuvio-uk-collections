@@ -9,13 +9,13 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
     then New and Best exclusive rows.
     Hulu has no UK service, so its tile only has its originals. The Netflix tile's Top 10 and Most Popular rows
     come from the UK Extras add-on.
-  - **Movies**: New and Trending (new, trending, British and family films), Top Rated (all time, the past year, the
-    past five years, British, animated, family, documentaries), Genres (TMDB's film genres but TV Movie, each followed by its
+  - **Movies**: New and Trending (new, trending and family films), Top Rated (all time, the past year, the
+    past five years, animated, family, documentaries), Genres (TMDB's film genres but TV Movie, each followed by its
     sub-genres: superhero, romantic comedy, sports, psychological thriller, heist, space, musical), Decades (1950s to
     2020s) and Collections (the MCU and 24 film series, from Star Wars and James Bond to Paddington and Wallace &
     Gromit).
-  - **TV Shows**: New and Trending (new, trending and British series, trending documentaries), Top Rated (all time,
-    new, British, miniseries, crime, comedies, animated, documentaries), Genres (TMDB's TV genres but News, Talk and
+  - **TV Shows**: New and Trending (new and trending series, trending documentaries), Top Rated (all time,
+    new, miniseries, crime, comedies, animated, documentaries), Genres (TMDB's TV genres but News, Talk and
     Soap, with period, medical, legal and teen drama, sitcom, police procedural, true crime, murder mystery,
     superhero, supernatural, horror and anthology) and Decades (1960s to 2020s).
   - **Anime**: New and Trending (new and trending series and films), Top Rated (all time and new, series and films),

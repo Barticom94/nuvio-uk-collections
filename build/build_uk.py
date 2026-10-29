@@ -237,13 +237,10 @@ def movies():
     def film(title, sort, **f): return discover(title, m, sort, **{"withoutKeywords": MOVIE_SAFE, **f})
     # out on a UK service or store
     digital = dict(withWatchProviders="|".join(dict.fromkeys(gb_pool() + GB_STORES.split("|"))), watchRegion="GB")
-    gb = dict(withOriginCountry="GB")
     return modern_collection("movies", "Movies", [
         ("New and Trending", [
             film("New films", "primary_release_date.desc", voteCountGte=25, **digital),
             film("Trending films", "popularity.desc", voteCountGte=20, releaseDateGte=since(180)),
-            film("Trending British films", "popularity.desc", voteCountGte=20, releaseDateGte=since(365), **gb),
-            film("New British films", "primary_release_date.desc", voteCountGte=25, **digital, **gb),
             film("Trending family films", "popularity.desc", voteCountGte=20, withGenres="10751",
                  releaseDateGte=since(365))]),
         ("Top Rated", [
@@ -252,7 +249,6 @@ def movies():
                  withoutGenres=NO_FILLER),
             film("Top rated of the past five years", "vote_average.desc", voteCountGte=2000,
                  releaseDateGte=since(5 * 365), withoutGenres=NO_FILLER),
-            film("Top rated British films", "vote_average.desc", voteCountGte=1000, withoutGenres=NO_FILLER, **gb),
             film("Top rated animated films", "vote_average.desc", voteCountGte=2000, withGenres="16"),
             film("Top rated family films", "vote_average.desc", voteCountGte=2000, withGenres="10751",
                  withoutGenres="16"),
@@ -269,21 +265,16 @@ def tv_shows():
     t = "tv"
     na = dict(withoutGenres=NOISE_TV, withoutKeywords="210024")  # keyword 210024 (anime): anime is in Anime
     def but(*genres): return dict(na, withoutGenres="|".join((NOISE_TV,) + genres))
-    brit = dict(but("10764"), withOriginCountry="GB")  # no reality
     return modern_collection("tv-shows", "TV Shows", [
         ("New and Trending", [
             discover("New series", t, "first_air_date.desc", voteCountGte=10, **na),
             discover("Trending series", t, "popularity.desc", voteCountGte=20, releaseDateGte=since(730), **na),
-            discover("Trending British series", t, "popularity.desc", voteCountGte=10, releaseDateGte=since(730), **brit),
-            discover("New British series", t, "first_air_date.desc", voteCountGte=15, **brit),
             discover("Trending documentaries", t, "popularity.desc", voteCountGte=10, withGenres="99",
                      releaseDateGte=since(730), **na)]),
         ("Top Rated", [
             # 1500 votes keeps new hype shows off the top
             discover("Top rated series", t, "vote_average.desc", voteCountGte=1500, **na),
             discover("Top rated new series", t, "vote_average.desc", voteCountGte=300, releaseDateGte=since(730), **na),
-            discover("Top rated British series", t, "vote_average.desc", voteCountGte=200,
-                     **dict(brit, **but("10764", "99"))),
             discover("Top rated miniseries", t, "vote_average.desc", voteCountGte=300, withKeywords="11162", **but("99")),
             discover("Top rated crime series", t, "vote_average.desc", voteCountGte=500, withGenres="80", **na),
             discover("Top rated comedies", t, "vote_average.desc", voteCountGte=1000, withGenres="35", **but("16")),
