@@ -1,9 +1,8 @@
 """Builds the Nuvio UK collections (import format as in mali-king/nuvio-collections).
 
-  python build/build_uk.py [--key-json PATH] [F1_FILE]
+  python build/build_uk.py [--key-json PATH]
       writes nuvio-collections.json (link A, every profile: Streaming Services, Movies, TV Shows, Anime, Live TV)
-      and the art it points at (build/art.py); with F1_FILE, also the F1 Replays collection there (MediaFusion,
-      Adam's profile only; the repo copy is nuvio-f1-replays.json)
+      and the art it points at (build/art.py)
 
 The first four collections follow the home layout (Modern on Adam's TVs): each folder opens as a page of rows under
 a hero, so every folder gets a TMDB backdrop for the hero (picked here, so the build needs the TMDB key the same way
@@ -60,7 +59,6 @@ SERVICES = [
 # UK Extras' id, every profile: the public GitHub Pages install (free channels) or the household's UK TV Worker,
 # which serves the same catalogues under the same id plus its own channels in each Live TV section
 UKX = "com.barticom94.ukextras"
-MEDIAFUSION = "stremio.addons.mediafusion|elfhostedtrb"  # Adam's profile only (F1 Replays, its own file)
 NETFLIX_EXTRAS = [("series", "ukx.netflix-top10-shows"), ("movie", "ukx.netflix-top10-films"), ("movie", "ukx.netflix-popular")]
 
 # AIOMetadata's configured manifest id is its package.json name (getManifest.ts: id = buildInfo.name; the
@@ -446,10 +444,6 @@ def live_tv():
     # The old Live TV files' id (and Sport's folder id), so importing link A replaces a profile's old copy.
     return grid_collection("live", "Live TV", [(t, e, [addon(UKX, "tv", "uks." + t.lower())]) for t, e in LIVE_SECTIONS])
 
-def f1_replays():
-    # Its own id: importing it next to link A adds a collection and replaces none.
-    return grid_collection("f1-replays", "F1 Replays", [("F1 Replays", "🏁", [addon(MEDIAFUSION, "series", "formula_racing")])])
-
 
 def write(name, data):
     path = os.path.join(ROOT, name)  # an absolute name stays as it is
@@ -463,10 +457,8 @@ def write(name, data):
 if __name__ == "__main__":
     args = sys.argv[1:]
     tmdb = check.Tmdb(check.load_key(args))
-    f1 = [a for i, a in enumerate(args) if not a.startswith("--") and (i == 0 or args[i - 1] != "--key-json")]
     mk = {c["title"]: c for c in fetch(MK_TAG + "nuvio-collections.json")}
     cols = [streaming_services(), movies(mk), tv_shows(mk), anime(fetch(AIOM_PACK)), live_tv()]
     heroes(cols, tmdb)
     write("nuvio-collections.json", cols)
     art.render(cols)
-    if f1: write(f1[0], [f1_replays()])

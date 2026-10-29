@@ -25,7 +25,6 @@ OWN_REPO = "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/"
 THIN = 20
 SPOT = 5  # titles per exclusion row checked against GB watch providers
 UKX = "com.barticom94.ukextras"
-MEDIAFUSION = "stremio.addons.mediafusion|elfhostedtrb"
 AIOM = "aio-metadata"
 # Every file here is public. "Adult Cast" (a MAL theme) and Adult Swim are not adult content.
 ADULT = re.compile(r"hentai|erotica|ecchi|sukebei|xxx|porn|nsfw|\badult(?![ -]swim| cast)|after hours|knaben|hent:", re.I)
@@ -35,7 +34,7 @@ LINK_A_TITLES = ["Streaming Services", "Movies", "TV Shows", "Anime", "Live TV"]
 LIVE_TITLE, LIVE_ID = "Live TV", "7c32c454-b145-5bbb-b89f-4cbc36cf6767"
 LIVE_SECTIONS = ["uks.entertainment", "uks.films", "uks.sport", "uks.news", "uks.documentaries", "uks.kids",
                  "uks.music", "uks.lifestyle"]  # Sky's guide order, as in the add-on's manifest
-ALLOWED_ADDONS = {"nuvio-collections.json": {UKX, AIOM}, "nuvio-f1-replays.json": {MEDIAFUSION}}  # F1: Adam's profile only
+ALLOWED_ADDONS = {"nuvio-collections.json": {UKX, AIOM}}
 MANIFESTS = {UKX: "https://barticom94.github.io/uk-extras/manifest.json"}
 AIOM_TYPES = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/addon/static/catalog-types.json"
 MAL_GENRES = "https://aiometadata.elfhosted.com/api/mal/discover/reference"  # Jikan's list, which the manifest uses
