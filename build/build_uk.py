@@ -245,7 +245,7 @@ LIVE_SECTIONS = [("Entertainment", "📺"), ("Films", "🎬"), ("Sport", "⚽"),
                  ("Documentaries", "🦁"), ("Kids", "🧸"), ("Music", "🎵"), ("Lifestyle", "🏡")]
 
 def live_tv():
-    # Same id and folder ids as the old Live TV files, so importing link A replaces a profile's copy of those.
+    # The old Live TV files' id (and Sport's folder id), so importing link A replaces a profile's old copy.
     return grid_collection("live", "Live TV", [(t, e, [addon(UKX, "tv", "uks." + t.lower())]) for t, e in LIVE_SECTIONS])
 
 def f1_replays():
