@@ -16,18 +16,15 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
     Drama networks and Comedy, kids and factual networks.
   - **Anime**: Start here (new, trending and top rated series and films), Genres, Themes (isekai, shonen, mecha,
     sports, school, slice of life, iyashikei, psychological, magical girl) and Decades (below).
-  - **Live TV**: one folder per section of Sky's guide, in Sky's order: Entertainment, Films, Sport, News,
-    Documentaries, Kids, Music and Lifestyle. Each is one catalogue of the UK Extras add-on: its free channels
-    (Samsung TV Plus, Pluto TV and Plex) with what's on now and next. Our household add-on answers to the same id and
-    lists its own channels first. Live TV keeps the id of the old Live TV files, so importing this file replaces a
-    profile's old copy.
+  - Live TV moved out of Nuvio to TiviMate on 29 Oct (Nuvio has no guide grid). UK Extras' channel catalogues stay
+    in the add-on for that.
 - `covers/` holds the landscape tiles for the UK services, `covers/tiles/` our tiles for every other folder and
   `covers/logos/` the title logos.
 
 Streaming Services, Movies, TV Shows and Anime follow the home layout ("Follow home"). On the Modern home, focusing a
 folder's tile shows its hero: a backdrop from one of its titles under the folder's title logo. Opening it gives a page
 of rows under the same kind of hero, one row per source, with no tabs and no All row. Every row loads when the page
-opens, so each folder holds 4 to 15 rows (Hulu has its 2). Live TV opens as a grid, one channel list per folder.
+opens, so each folder holds 4 to 15 rows (Hulu has its 2).
 
 The browse folders in Movies and TV Shows take one row per entry from
 [mali-king/nuvio-collections](https://github.com/mali-king/nuvio-collections) (v2), without the US and Indian entries.
@@ -35,8 +32,8 @@ Where a franchise has several film series, its row holds the first one (Harry Po
 
 Every TMDB row runs on Nuvio's own TMDB access, so it needs no catalogue add-on. Availability comes from TMDB's
 watch-provider data (sourced from JustWatch). Anime is Japanese-language animation, and every Anime row leaves out
-TMDB's hentai, ecchi, erotica, harem, nudity and fan-service keywords. Without UK Extras installed, every Live TV
-folder shows "Addon not found" and the Netflix page's Top 10 and Most Popular rows stay as loading placeholders.
+TMDB's hentai, ecchi, erotica, harem, nudity and fan-service keywords. Without UK Extras installed, the Netflix
+page's Top 10 and Most Popular rows stay as loading placeholders.
 
 Anime Decades uses the Decade catalogues that AIOMetadata adds when you import its Anime Essentials design
 (Catalogs → Collections → Featured): `aio-metadata`, type `anime`, `mal.80sDecade` to `mal.20sDecade`. Without
@@ -63,8 +60,8 @@ out a poor fit). It then renders the tiles and logos with `build/art.py` (Pillow
 isn't committed.
 
 `check.py` reads the files with the same rules as Nuvio's importer, calls every TMDB row, checks add-on rows against
-their add-on's manifest (`--manifest ID=PATH` for one not yet published), checks that Live TV has every section in
-Sky's order under its fixed id and that no other file reuses a link A collection id, and writes the result counts to
+their add-on's manifest (`--manifest ID=PATH` for one not yet published), checks that no other file reuses a link A
+collection id, and writes the result counts to
 `build/report.txt`. For pages of rows it checks that no two rows in a folder share Nuvio's row key (rows that do
 collapse into one), the 4 to 15 rows, the All tab and that every folder has its backdrop, logo and tile, and that every
 image loads. It also fails any TMDB row whose sort the nuvio.tv website would swap on upload: the website keeps only

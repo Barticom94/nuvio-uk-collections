@@ -29,11 +29,7 @@ AIOM = "aio-metadata"
 # Every file here is public. "Adult Cast" (a MAL theme) and Adult Swim are not adult content.
 ADULT = re.compile(r"hentai|erotica|ecchi|sukebei|xxx|porn|nsfw|\badult(?![ -]swim| cast)|after hours|knaben|hent:", re.I)
 LINK_A_BANNED = re.compile(r"vavoo|tvvoo|mediafusion|uksport|uk-sport", re.I)
-LINK_A_TITLES = ["Streaming Services", "Movies", "TV Shows", "Anime", "Live TV"]
-# Live TV lives in link A only, under the old Live TV files' id, so importing link A replaces a profile's old copy
-LIVE_TITLE, LIVE_ID = "Live TV", "7c32c454-b145-5bbb-b89f-4cbc36cf6767"
-LIVE_SECTIONS = ["uks.entertainment", "uks.films", "uks.sport", "uks.news", "uks.documentaries", "uks.kids",
-                 "uks.music", "uks.lifestyle"]  # Sky's guide order, as in the add-on's manifest
+LINK_A_TITLES = ["Streaming Services", "Movies", "TV Shows", "Anime"]  # live TV moved to TiviMate (29 Oct)
 ALLOWED_ADDONS = {"nuvio-collections.json": {UKX, AIOM}}
 MANIFESTS = {UKX: "https://barticom94.github.io/uk-extras/manifest.json"}
 AIOM_TYPES = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/addon/static/catalog-types.json"
@@ -276,14 +272,6 @@ def site_sort_problem(s):
     if sort in SITE_SORTS and not (t in ("LIST", "COLLECTION") and sort == "popularity.desc"): return None
     return f"sort {sort or 'missing'}, which the nuvio.tv website replaces"
 
-def live_problems(cols):
-    """Link A's Live TV: one collection with LIVE_ID, then one UK Extras tv catalogue per folder in LIVE_SECTIONS order."""
-    live = [c for c in cols if c["title"] == LIVE_TITLE]
-    if len(live) != 1 or live[0]["id"] != LIVE_ID: return [f"needs one {LIVE_TITLE!r} collection with id {LIVE_ID}"]
-    rows = [[(s.get("addonId"), s.get("type"), s.get("catalogId")) for s in f["sources"]] for f in live[0]["folders"]]
-    if rows != [[(UKX, "tv", c)] for c in LIVE_SECTIONS]: return [f"{LIVE_TITLE} folders are {rows}"]
-    return []
-
 def selftest():
     good = '[{"id":"c","title":"C","folders":[{"id":"f","title":"F","sources":[{"addonId":"a","type":"tv","catalogId":"x"}]}]}]'
     assert validate(good)[0] and parse(good)[0]["folders"][0]["sources"][0]["provider"] == "addon"
@@ -306,12 +294,6 @@ def selftest():
     assert site_sort_problem(tmdb) is None and site_sort_problem(dict(tmdb, sortBy=None))
     assert site_sort_problem(dict(tmdb, sortBy="vote_count.desc"))
     assert site_sort_problem(dict(tmdb, tmdbSourceType="COLLECTION")) and not site_sort_problem(dict(tmdb, tmdbSourceType="COLLECTION", sortBy="original"))
-    live = {"id": LIVE_ID, "title": LIVE_TITLE, "folders": [{"sources": [{"addonId": UKX, "type": "tv", "catalogId": c}]}
-                                                            for c in LIVE_SECTIONS]}
-    assert live_problems([live]) == []
-    assert live_problems([dict(live, id="x")]) and live_problems([live, live]) and live_problems([])
-    assert live_problems([dict(live, folders=live["folders"][::-1])]), "Sky order"
-    assert live_problems([dict(live, folders=live["folders"][:7])]), "a section missing"
     # Row identity: the filters' hash as the JVM computes it (checked with Java 17 on 29 Oct, same field order)
     assert _jhash("abc") == 96354
     flt = {"withGenres": "16", "releaseDateGte": "2024-01-01", "voteAverageGte": 7.7, "voteCountGte": 20,
@@ -549,7 +531,6 @@ def main(argv):
             if [c["title"] for c in cols] != LINK_A_TITLES: fails.append(f"{name}: collections are {[c['title'] for c in cols]}")
             for s in strings(raw):
                 if LINK_A_BANNED.search(s): fails.append(f"{name}: banned text {s!r}")
-            fails += [f"{name}: {p}" for p in live_problems(cols)]
             link_a_ids |= {c["id"] for c in cols}
         else:
             other_cols += [(name, c) for c in cols]
@@ -584,8 +565,8 @@ def main(argv):
         return name, where, total, items, spot, s["sourceType"] in ("DISCOVER", "COMPANY", "NETWORK")
 
     for name, c in other_cols:  # importing another file next to link A must add, not replace
-        if c["id"] in link_a_ids | {LIVE_ID} or c["title"] == LIVE_TITLE:
-            fails.append(f"{name}: {c['title']} reuses a link A collection id or the title {LIVE_TITLE!r}")
+        if c["id"] in link_a_ids:
+            fails.append(f"{name}: {c['title']} reuses a link A collection id")
     print(f"calling TMDB for {len(jobs)} rows")
     results = []
     with cf.ThreadPoolExecutor(8) as ex:

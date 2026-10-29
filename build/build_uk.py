@@ -1,12 +1,12 @@
 """Builds the Nuvio UK collections (import format as in mali-king/nuvio-collections).
 
   python build/build_uk.py [--key-json PATH]
-      writes nuvio-collections.json (link A, every profile: Streaming Services, Movies, TV Shows, Anime, Live TV)
+      writes nuvio-collections.json (link A, every profile: Streaming Services, Movies, TV Shows, Anime)
       and the art it points at (build/art.py)
 
 The first four collections follow the home layout (Modern on Adam's TVs): each folder opens as a page of rows under
 a hero, so every folder gets a TMDB backdrop for the hero (picked here, so the build needs the TMDB key the same way
-check.py does), our title logo and, outside Streaming Services, our tile. Live TV stays a grid.
+check.py does), our title logo and, outside Streaming Services, our tile.
 Movies and TV Shows reuse mali-king's pack at its v2 tag; Anime's decade rows come from AIOMetadata's Anime
 Essentials pack at v3.8.3 and stay out unless MAL_FOLDERS is on (see there).
 Both packs are fetched, so the build needs network.
@@ -57,7 +57,7 @@ SERVICES = [
 ]
 
 # UK Extras' id, every profile: the public GitHub Pages install (free channels) or the household's UK TV Worker,
-# which serves the same catalogues under the same id plus its own channels in each Live TV section
+# which serves the same catalogues under the same id
 UKX = "com.barticom94.ukextras"
 NETFLIX_EXTRAS = [("series", "ukx.netflix-top10-shows"), ("movie", "ukx.netflix-top10-films"), ("movie", "ukx.netflix-popular")]
 
@@ -435,15 +435,6 @@ def heroes(cols, tmdb):
             f["heroBackdropUrl"] = "https://image.tmdb.org/t/p/w1280" + path
             print(f"  hero {c['title']} / {f['title']}: {name} ({cert or 'no rating'})")
 
-# Live TV: one folder per section of Sky's guide, in Sky's order, each one catalogue (so one paged grid). The Worker
-# lists its channels then the section's free ones; the Pages install lists the free ones only.
-LIVE_SECTIONS = [("Entertainment", "📺"), ("Films", "🎬"), ("Sport", "⚽"), ("News", "📰"),
-                 ("Documentaries", "🦁"), ("Kids", "🧸"), ("Music", "🎵"), ("Lifestyle", "🏡")]
-
-def live_tv():
-    # The old Live TV files' id (and Sport's folder id), so importing link A replaces a profile's old copy.
-    return grid_collection("live", "Live TV", [(t, e, [addon(UKX, "tv", "uks." + t.lower())]) for t, e in LIVE_SECTIONS])
-
 
 def write(name, data):
     path = os.path.join(ROOT, name)  # an absolute name stays as it is
@@ -458,7 +449,7 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     tmdb = check.Tmdb(check.load_key(args))
     mk = {c["title"]: c for c in fetch(MK_TAG + "nuvio-collections.json")}
-    cols = [streaming_services(), movies(mk), tv_shows(mk), anime(fetch(AIOM_PACK)), live_tv()]
+    cols = [streaming_services(), movies(mk), tv_shows(mk), anime(fetch(AIOM_PACK))]
     heroes(cols, tmdb)
     write("nuvio-collections.json", cols)
     art.render(cols)
