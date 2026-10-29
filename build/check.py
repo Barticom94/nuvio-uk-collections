@@ -43,6 +43,9 @@ MAL_LEFT_OUT = {"Hentai", "Erotica", "Ecchi", "Harem", "Reverse Harem", "Magical
 VALID_SHAPES = {"POSTER", "LANDSCAPE", "SQUARE", "poster", "wide", "square"}
 SHAPES = {"POSTER", "LANDSCAPE", "SQUARE"}  # what we write: the importer's other spellings are legacy
 ROWS_MIN, ROWS_MAX = 4, 15  # a page of rows loads every row at once and rebuilds after each one arrives
+# The nuvio.tv website's import (its function U) keeps only these sorts and swaps any other, or none, for its own
+# default (newest first on series), so every TMDB row has to name one; lists and collections never popularity.desc
+SITE_SORTS = {"original", "popularity.desc", "vote_average.desc", "primary_release_date.desc", "first_air_date.desc"}
 ROWS_WARN_ONLY = {"Streaming Services"}  # each tile holds its service's own rows (Hulu has 2)
 TMDB_TYPES = {"LIST", "COLLECTION", "COMPANY", "NETWORK", "DISCOVER", "PERSON", "DIRECTOR"}
 TRAKT_SORTS = {"rank", "added", "title", "released", "runtime", "popularity", "percentage", "votes"}
@@ -267,6 +270,13 @@ def layout_problems(cols):
                 if missing: fails.append(f"{where}: no {', '.join(missing)}")
     return fails, warns
 
+def site_sort_problem(s):
+    """None when the nuvio.tv website keeps this raw source's sort as it is, else what's wrong."""
+    if not isinstance(s, dict) or s.get("provider") != "tmdb": return None
+    sort, t = str(s.get("sortBy") or "").strip(), str(s.get("tmdbSourceType") or "").upper()
+    if sort in SITE_SORTS and not (t in ("LIST", "COLLECTION") and sort == "popularity.desc"): return None
+    return f"sort {sort or 'missing'}, which the nuvio.tv website replaces"
+
 def live_problems(cols):
     """Link A's Live TV: one collection with LIVE_ID, then one UK Extras tv catalogue per folder in LIVE_SECTIONS order."""
     live = [c for c in cols if c["title"] == LIVE_TITLE]
@@ -293,6 +303,10 @@ def selftest():
     mal = {"provider": "addon", "addonId": AIOM, "type": "anime", "catalogId": "mal.genres_anime", "genre": "Action"}
     assert addon_problem(cats, mal) is None and addon_problem(cats, dict(mal, genre="Hentai"))
     assert addon_problem(cats, dict(mal, genre="Actoin")) and addon_problem(cats, dict(mal, type="series"))
+    tmdb = {"provider": "tmdb", "tmdbSourceType": "DISCOVER", "sortBy": "popularity.desc"}
+    assert site_sort_problem(tmdb) is None and site_sort_problem(dict(tmdb, sortBy=None))
+    assert site_sort_problem(dict(tmdb, sortBy="vote_count.desc"))
+    assert site_sort_problem(dict(tmdb, tmdbSourceType="COLLECTION")) and not site_sort_problem(dict(tmdb, tmdbSourceType="COLLECTION", sortBy="original"))
     live = {"id": LIVE_ID, "title": LIVE_TITLE, "folders": [{"sources": [{"addonId": UKX, "type": "tv", "catalogId": c}]}
                                                             for c in LIVE_SECTIONS]}
     assert live_problems([live]) == []
@@ -520,6 +534,11 @@ def main(argv):
         lf, lw = layout_problems(cols)
         fails += [f"{name}: {x}" for x in lf]
         warns += [f"{name}: {x}" for x in lw]
+        for c in raw if isinstance(raw, list) else []:
+            for f in c.get("folders") or []:
+                for s in f.get("sources") or []:
+                    problem = site_sort_problem(s)
+                    if problem: fails.append(f"{name}: {c.get('title')} / {f.get('title')} / {s.get('title')}: {problem}")
         for s in strings(raw):
             if "—" in s or "–" in s: fails.append(f"{name}: dash in {s!r}")
             if ADULT.search(s): fails.append(f"{name}: adult text {s!r}")

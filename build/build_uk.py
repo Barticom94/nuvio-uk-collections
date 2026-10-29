@@ -96,12 +96,17 @@ FRANCHISE_TAB = {"Wizarding World": "Harry Potter", "Middle-earth": "The Lord of
                  "Alien & Predator": "Alien", "Rocky & Creed": "Rocky", "The Conjuring Universe": "The Conjuring"}
 
 FILMS_FLOOR = {"NOW": 20, "MUBI": 20}  # Sky and MUBI make few films; at 50 votes these rows drop under 20 titles
+# Few originals with many votes: at the tier's top rated floor Best Originals drops under 5 titles
+BEST_ORIG_FLOOR = {"Channel 5": 10, "Crunchyroll": 10, "Shudder": 10, "Discovery+": 3, "WOW": 3}
+# The nuvio.tv website, where the household imports these files, keeps only these sorts and swaps any other (or a
+# missing one) for its own default, newest first on series, so every TMDB row names one; check.py fails any other
+SITE_SORTS = ("original", "popularity.desc", "vote_average.desc", "primary_release_date.desc", "first_air_date.desc")
 GB_STORES = "2|10|35|130|192"  # Apple TV Store, Amazon Video, Rakuten TV, Sky Store, YouTube (rent and buy)
 
 
 def discover(title, media, sort, **filters):
     s = {"provider": "tmdb", "tmdbSourceType": "DISCOVER", "title": title, "mediaType": media}
-    if sort: s["sortBy"] = sort
+    s["sortBy"] = sort or "popularity.desc"  # Nuvio's default, written out for the website
     s["filters"] = {k: v for k, v in filters.items() if v is not None}
     return s
 
@@ -121,8 +126,10 @@ def tile_sources(title, region, providers, floor, nets, since, films, movies, se
     out = []
     if nets:  # DISCOVER, not NETWORK: Nuvio's NETWORK rows ignore every network but the first
         orig = dict(withNetworks=nets, voteCountGte=f["orig"], withoutGenres=NOISE_TV, releaseDateGte=since)
-        out.append(discover("Biggest Originals", "tv", "vote_count.desc", **orig))
         out.append(discover("Trending Originals", "tv", None, **orig))
+        # All time: the best rated of the well known ones (the website can't sort by votes)
+        out.append(discover("Best Originals", "tv", "vote_average.desc",
+                            **dict(orig, voteCountGte=BEST_ORIG_FLOOR.get(title, f["top_t"]))))
     if title == "Netflix":
         out += [addon(UKX, t, c) for t, c in NETFLIX_EXTRAS]
     if films:
@@ -172,6 +179,19 @@ def fetch(url):
 # Nuvio only takes fixed release floors, so Trending is set at build time: rebuild every month or two.
 def since(days): return (date.today() - timedelta(days=days)).isoformat()
 
+def site_sort(s):
+    """A pack row with a sort the website keeps. Most voted (the decades) becomes best rated above a vote floor, since
+    popularity there follows the season (horror in October); a director's films go newest first, since Nuvio leaves
+    credits unsorted on popularity; oldest first (the franchises) becomes most popular."""
+    sort, t = s.get("sortBy"), s["tmdbSourceType"]
+    if t in ("LIST", "COLLECTION"): return dict(s, sortBy=sort if sort in SITE_SORTS[2:] else "original")
+    if sort in SITE_SORTS: return s
+    if sort == "vote_count.desc" and t in ("PERSON", "DIRECTOR"): return dict(s, sortBy="primary_release_date.desc")
+    if sort == "vote_count.desc" and t == "DISCOVER":
+        floor = 1000 if s["mediaType"] == "movie" else 100
+        return dict(s, sortBy="vote_average.desc", filters={"voteCountGte": floor, **s.get("filters", {})})
+    return dict(s, sortBy="popularity.desc")
+
 def pack_tabs(mk, title, media, drop=frozenset()):
     """One source (one tab) per mali-king pack entry: the entry's first `media` row, named after the entry.
     Entries with identical rows share a tab (TMDB's TV genres pair up, such as Action and Adventure)."""
@@ -184,6 +204,7 @@ def pack_tabs(mk, title, media, drop=frozenset()):
         if s is None:
             skipped.append(name)
             continue
+        s = site_sort(s)
         key = json.dumps({k: v for k, v in s.items() if k != "title"}, sort_keys=True)
         if key in seen:
             seen[key]["title"] += " & " + name
@@ -221,7 +242,7 @@ def split(tabs, groups):
 def movies(mk):
     m = "movie"
     gb_digital = "|".join(dict.fromkeys(gb_pool() + GB_STORES.split("|")))  # on a UK service or store = out digitally
-    picks = pack_tabs(mk, "Critics' Picks", m)
+    picks = pack_tabs(mk, "Critics' Picks", m, {"Hidden Gems"})  # least voted first, which the website can't keep
     for t in picks: t["title"] = t["title"][:1] + t["title"][1:].lower()  # sentence case like the rows above them
     world = dict(split(pack_tabs(mk, "World Cinema", m), [
         ("British", ["British"]),  # in Start here: to a UK household British films aren't world cinema
@@ -284,13 +305,12 @@ def tv_shows(mk):
                         discover("Trending series", t, None, voteCountGte=20, releaseDateGte=since(730), **no_anime),
                         # 1500 votes keeps new hype shows off the top
                         discover("Top rated series", t, "vote_average.desc", voteCountGte=1500, **no_anime),
-                        # Two more so the page isn't three rows: British shows (no reality, 10764), and the most voted
-                        # series of all time
+                        # One more so the page isn't three rows: British shows (no reality, 10764)
                         discover("Trending British series", t, None, voteCountGte=10, withOriginCountry="GB",
-                                 withoutGenres=NOISE_TV + "|10764", releaseDateGte=since(730)),
-                        discover("Fan favourites", t, "vote_count.desc", **no_anime)]),
+                                 withoutGenres=NOISE_TV + "|10764", releaseDateGte=since(730))]),
         ("Genres", pack_tabs(mk, "Genres", t)),
-        ("Decades", pack_tabs(mk, "Decades", t)),
+        # Best rated (see site_sort), and anime would top the older decades
+        ("Decades", [dict(s, filters={**s["filters"], "withoutKeywords": "210024"}) for s in pack_tabs(mk, "Decades", t)]),
         *split(pack_tabs(mk, "Networks", t, MK_DROP_FOLDERS["Networks"]), [
             ("Drama networks", ["HBO", "FX", "AMC", "Showtime", "BBC", "Channel 4", "ITV", "tvN", "JTBC"]),
             ("Comedy, kids and factual networks", ["Comedy Central", "Adult Swim", "Cartoon Network", "Nickelodeon",

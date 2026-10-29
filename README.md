@@ -4,15 +4,15 @@ Collections for [Nuvio](https://github.com/NuvioMedia/NuvioTV), built for UK vie
 Nuvio → Settings → Collections → Import → From URL. Importing adds new collections and replaces ones with the same id.
 
 - `nuvio-collections.json`, for every profile:
-  - **Streaming Services**: 17 tiles. Each leads with the service's biggest and trending originals and its own films,
-    then "Only on" rows that leave out titles also on the other UK services, then New and "Best only on" rows.
+  - **Streaming Services**: 17 tiles. Each leads with the service's trending and best rated originals and its own
+    films, then "Only on" rows that leave out titles also on the other UK services, then New and "Best only on" rows.
     Hulu has no UK service, so its tile only has its originals. The Netflix tile's Top 10 and Most Popular rows
     come from the UK Extras add-on.
   - **Movies**: Start here (new, trending and top rated films, British films and the critics' picks), Genres, More
     genres, Decades, four franchise folders (superhero and fantasy, sci-fi and horror, action and crime, family),
     three mood folders (crime and suspense; action, sci-fi and monsters; comedy, feel-good and true stories),
     Directors, World directors, Hollywood, animation and indie studios, Asian cinema and World cinema.
-  - **TV Shows**: Start here (new, trending, top rated, trending British series and fan favourites), Genres, Decades,
+  - **TV Shows**: Start here (new, trending and top rated series and trending British series), Genres, Decades,
     Drama networks and Comedy, kids and factual networks.
   - **Anime**: Start here (new, trending and top rated series and films), Genres, Themes (isekai, shonen, mecha,
     sports, school, slice of life, iyashikei, psychological, magical girl) and Decades (below).
@@ -69,7 +69,10 @@ their add-on's manifest (`--manifest ID=PATH` for one not yet published), checks
 Sky's order under its fixed id and that no other file reuses a link A collection id, and writes the result counts to
 `build/report.txt`. For pages of rows it checks that no two rows in a folder share Nuvio's row key (rows that do
 collapse into one), the 4 to 15 rows, the All tab and that every folder has its backdrop, logo and tile, and that every
-image loads. The Trending rows use fixed date floors set at build time, so rebuild every month or two.
+image loads. It also fails any TMDB row whose sort the nuvio.tv website would swap on upload: the website keeps only
+popularity, rating, newest first and (for lists and collections) the original order, and puts newest first on any
+series row with another sort or none, so every row names one of those. The Trending rows use fixed date floors set
+at build time, so rebuild every month or two.
 Nuvio keeps its own copy of a collection at import and doesn't refresh it from the URL, so a rebuild only reaches a
 profile after you import the file again there. Trending and New series go by first air date, so a new season of an
 older show won't appear in them.

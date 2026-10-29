@@ -21,9 +21,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "213",
        "voteCountGte": 20,
@@ -34,11 +34,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "213",
-       "voteCountGte": 20,
+       "voteCountGte": 300,
        "withoutGenres": "10763|10767|10766",
        "releaseDateGte": "2012-01-01"
       }
@@ -66,6 +67,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Netflix: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withWatchProviders": "8|1796",
@@ -78,6 +80,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Netflix: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withoutGenres": "10763|10767|10766",
@@ -156,9 +159,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "1024",
        "voteCountGte": 20,
@@ -169,11 +172,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "1024",
-       "voteCountGte": 20,
+       "voteCountGte": 300,
        "withoutGenres": "10763|10767|10766",
        "releaseDateGte": "2012-01-01"
       }
@@ -183,6 +187,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Original Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "withCompanies": "20580|210099",
        "voteCountGte": 50
@@ -193,6 +198,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Prime Video: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withWatchProviders": "9|2100",
@@ -205,6 +211,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Prime Video: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withoutGenres": "10763|10767|10766",
@@ -283,9 +290,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "2739|88",
        "voteCountGte": 20,
@@ -295,11 +302,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "2739|88",
-       "voteCountGte": 20,
+       "voteCountGte": 300,
        "withoutGenres": "10763|10767|10766"
       }
      },
@@ -308,6 +316,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Original Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "withCompanies": "2|3|420|1|6125",
        "voteCountGte": 50
@@ -318,6 +327,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Disney+: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 100,
        "withWatchProviders": "337",
@@ -330,6 +340,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Disney+: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 50,
        "withoutGenres": "10763|10767|10766",
@@ -391,7 +402,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lOr9NKxh4vMweufMOUDJjJhCRHW.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/disney-plus.png"
    },
@@ -408,9 +419,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "2552",
        "voteCountGte": 10,
@@ -421,11 +432,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "2552",
-       "voteCountGte": 10,
+       "voteCountGte": 80,
        "withoutGenres": "10763|10767|10766",
        "releaseDateGte": "2012-01-01"
       }
@@ -435,6 +447,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Original Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "withCompanies": "194232",
        "voteCountGte": 50
@@ -445,6 +458,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Apple TV+: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "350|2243",
@@ -457,6 +471,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Apple TV+: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -535,9 +550,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "49|3186|6783|8304",
        "voteCountGte": 10,
@@ -547,11 +562,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "49|3186|6783|8304",
-       "voteCountGte": 10,
+       "voteCountGte": 80,
        "withoutGenres": "10763|10767|10766"
       }
      },
@@ -560,6 +576,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Original Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "withCompanies": "7429",
        "voteCountGte": 50
@@ -570,6 +587,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on HBO Max: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "1899|1825",
@@ -582,6 +600,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on HBO Max: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -643,7 +662,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/hbo-max.png"
    },
@@ -660,9 +679,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "453",
        "voteCountGte": 10,
@@ -673,17 +692,18 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "453",
-       "voteCountGte": 10,
+       "voteCountGte": 80,
        "withoutGenres": "10763|10767|10766",
        "releaseDateGte": "2012-01-01"
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/1yhQGQH7pfKdIY2xJSYNdp8ReD6.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/sokTOq0zAmPS7wCR4qd4Kca35x7.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/hulu.png"
    },
@@ -700,9 +720,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "1063|214|5237|5213|4148|3653|7524",
        "voteCountGte": 10,
@@ -712,11 +732,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "1063|214|5237|5213|4148|3653|7524",
-       "voteCountGte": 10,
+       "voteCountGte": 80,
        "withoutGenres": "10763|10767|10766"
       }
      },
@@ -725,6 +746,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Original Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "withCompanies": "135346|181068|17685|117455",
        "voteCountGte": 20
@@ -735,6 +757,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on NOW: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "39|591",
@@ -747,6 +770,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on NOW: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -825,9 +849,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "4330|6631",
        "voteCountGte": 10,
@@ -838,11 +862,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "4330|6631",
-       "voteCountGte": 10,
+       "voteCountGte": 80,
        "withoutGenres": "10763|10767|10766",
        "releaseDateGte": "2012-01-01"
       }
@@ -852,6 +877,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Paramount+: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "531|2303|2304|582|1853",
@@ -864,6 +890,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Paramount+: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -925,7 +952,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/zW0v2YT74C6tRafzqqBkfSqLAN0.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/paramount-plus.png"
    },
@@ -942,9 +969,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "4|332|3|1155|9599|100",
        "voteCountGte": 10,
@@ -954,11 +981,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "4|332|3|1155|9599|100",
-       "voteCountGte": 10,
+       "voteCountGte": 80,
        "withoutGenres": "10763|10767|10766"
       }
      },
@@ -967,6 +995,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Original Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "withCompanies": "288",
        "voteCountGte": 50
@@ -977,6 +1006,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on BBC iPlayer: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "38",
@@ -989,6 +1019,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on BBC iPlayer: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -1050,7 +1081,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8rvLEmdI4gLrMO1rLqbNdnNcPFE.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/vcFW09U4834DyFOeRZpsx9x1D3S.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/bbc-iplayer.png"
    },
@@ -1067,9 +1098,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "9|5871|149|590|261|1159",
        "voteCountGte": 10,
@@ -1079,11 +1110,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "9|5871|149|590|261|1159",
-       "voteCountGte": 10,
+       "voteCountGte": 80,
        "withoutGenres": "10763|10767|10766"
       }
      },
@@ -1092,6 +1124,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on ITVX: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "41|2300|598",
@@ -1104,6 +1137,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on ITVX: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -1165,7 +1199,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lHSLW9lihnuRMs1yYarmMJX4phK.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/1wgqpYNtQDn7TDkyQ2jsIAqxorW.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/itvx.png"
    },
@@ -1182,9 +1216,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "26|136|1988",
        "voteCountGte": 10,
@@ -1194,11 +1228,12 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "26|136|1988",
-       "voteCountGte": 10,
+       "voteCountGte": 80,
        "withoutGenres": "10763|10767|10766"
       }
      },
@@ -1207,6 +1242,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Original Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "withCompanies": "6705",
        "voteCountGte": 50
@@ -1217,6 +1253,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Channel 4: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "103|2311",
@@ -1229,6 +1266,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Channel 4: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -1290,7 +1328,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/nfWhNM5VVd9a5bEGobs83TWTuLM.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/erljE3cOZ4eyISQunUYmKZ0q7cu.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/channel-4.png"
    },
@@ -1307,9 +1345,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "99",
        "voteCountGte": 10,
@@ -1319,8 +1357,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "99",
        "voteCountGte": 10,
@@ -1332,6 +1371,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Channel 5: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "333",
@@ -1344,6 +1384,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Channel 5: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -1422,9 +1463,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "1112",
        "voteCountGte": 10,
@@ -1435,8 +1476,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "1112",
        "voteCountGte": 10,
@@ -1449,6 +1491,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Crunchyroll: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "283|1968",
@@ -1461,6 +1504,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Crunchyroll: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -1539,9 +1583,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "2949",
        "voteCountGte": 10,
@@ -1552,8 +1596,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "2949",
        "voteCountGte": 10,
@@ -1566,6 +1611,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Shudder: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "99|204",
@@ -1578,6 +1624,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Shudder: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766",
@@ -1658,6 +1705,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Original Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "withCompanies": "204957|15838",
        "voteCountGte": 20
@@ -1668,6 +1716,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on MUBI: Films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 30,
        "withWatchProviders": "11|201",
@@ -1718,9 +1767,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "4883",
        "voteCountGte": 3,
@@ -1730,8 +1779,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "4883",
        "voteCountGte": 3,
@@ -1743,6 +1793,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on Discovery+: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 5,
        "withoutGenres": "10763|10767|10766",
@@ -1796,9 +1847,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Biggest Originals",
+      "title": "Trending Originals",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withNetworks": "2806",
        "voteCountGte": 3,
@@ -1808,8 +1859,9 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Trending Originals",
+      "title": "Best Originals",
       "mediaType": "tv",
+      "sortBy": "vote_average.desc",
       "filters": {
        "withNetworks": "2806",
        "voteCountGte": 3,
@@ -1821,6 +1873,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Only on WOW: Series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 5,
        "withoutGenres": "10763|10767|10766",
@@ -1899,6 +1952,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Trending films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "releaseDateGte": "2026-05-02"
@@ -1924,7 +1978,8 @@
        "voteCountGte": 100,
        "withOriginCountry": "GB",
        "withOriginalLanguage": "en"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -1947,18 +2002,6 @@
        "voteCountGte": 4000,
        "releaseDateGte": "2010-01-01",
        "withoutGenres": "99|10402|10770"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Hidden gems",
-      "mediaType": "movie",
-      "sortBy": "vote_count.asc",
-      "filters": {
-       "voteCountGte": 400,
-       "voteAverageGte": 7.7,
-       "withoutGenres": "99|10402|10770|16"
       }
      },
      {
@@ -2017,7 +2060,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "28"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2027,7 +2071,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "12"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2037,7 +2082,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "35"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2047,7 +2093,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "18"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2057,7 +2104,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "53"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2067,7 +2115,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "80"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2077,7 +2126,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "27"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2087,7 +2137,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "878"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2097,7 +2148,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "14"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2107,7 +2159,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "10749"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2117,7 +2170,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "9648"
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
@@ -2142,7 +2196,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "16"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2152,7 +2207,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "10751"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2162,7 +2218,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "10751,16"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2172,7 +2229,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "99"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2182,7 +2240,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "36"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2192,7 +2251,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "10752"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2202,7 +2262,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "37"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2212,7 +2273,8 @@
       "filters": {
        "voteCountGte": 100,
        "withGenres": "10402"
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/g7CHF8gTLGooTbP4GznIGwaqAGL.jpg",
@@ -2234,8 +2296,9 @@
       "tmdbSourceType": "DISCOVER",
       "title": "2020s",
       "mediaType": "movie",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 1000,
        "releaseDateGte": "2020-01-01",
        "releaseDateLte": "2029-12-31"
       }
@@ -2245,8 +2308,9 @@
       "tmdbSourceType": "DISCOVER",
       "title": "2010s",
       "mediaType": "movie",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 1000,
        "releaseDateGte": "2010-01-01",
        "releaseDateLte": "2019-12-31"
       }
@@ -2256,8 +2320,9 @@
       "tmdbSourceType": "DISCOVER",
       "title": "2000s",
       "mediaType": "movie",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 1000,
        "releaseDateGte": "2000-01-01",
        "releaseDateLte": "2009-12-31"
       }
@@ -2267,8 +2332,9 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1990s",
       "mediaType": "movie",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 1000,
        "releaseDateGte": "1990-01-01",
        "releaseDateLte": "1999-12-31"
       }
@@ -2278,8 +2344,9 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1980s",
       "mediaType": "movie",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 1000,
        "releaseDateGte": "1980-01-01",
        "releaseDateLte": "1989-12-31"
       }
@@ -2289,8 +2356,9 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1970s",
       "mediaType": "movie",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 1000,
        "releaseDateGte": "1970-01-01",
        "releaseDateLte": "1979-12-31"
       }
@@ -2300,8 +2368,9 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1960s",
       "mediaType": "movie",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 1000,
        "releaseDateGte": "1960-01-01",
        "releaseDateLte": "1969-12-31"
       }
@@ -2311,8 +2380,9 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1950s",
       "mediaType": "movie",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 1000,
        "releaseDateGte": "1950-01-01",
        "releaseDateLte": "1959-12-31"
       }
@@ -2337,7 +2407,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Marvel Cinematic Universe",
       "mediaType": "movie",
-      "sortBy": "primary_release_date.asc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withKeywords": "180547",
        "voteCountGte": 200
@@ -2359,42 +2429,48 @@
       "tmdbSourceType": "COLLECTION",
       "title": "Spider-Man",
       "tmdbId": 556,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "X-Men",
       "tmdbId": 748,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Harry Potter",
       "tmdbId": 1241,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "The Lord of the Rings",
       "tmdbId": 119,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Pirates of the Caribbean",
       "tmdbId": 295,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "The Hunger Games",
       "tmdbId": 131635,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/nNmJRkg8wWnRmzQDe2FwKbPIsJV.jpg",
@@ -2416,42 +2492,47 @@
       "tmdbSourceType": "COLLECTION",
       "title": "Star Wars",
       "tmdbId": 10,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Dune",
       "tmdbId": 726871,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Avatar",
       "tmdbId": 87096,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "The Matrix",
       "tmdbId": 2344,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Jurassic Park",
       "tmdbId": 328,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
       "title": "MonsterVerse",
       "mediaType": "movie",
-      "sortBy": "primary_release_date.asc",
+      "sortBy": "popularity.desc",
       "filters": {
        "withKeywords": "380322"
       }
@@ -2461,42 +2542,48 @@
       "tmdbSourceType": "COLLECTION",
       "title": "Alien",
       "tmdbId": 8091,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "The Terminator",
       "tmdbId": 528,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Planet of the Apes",
       "tmdbId": 173710,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Back to the Future",
       "tmdbId": 264,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Mad Max",
       "tmdbId": 8945,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "The Conjuring",
       "tmdbId": 313086,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg",
@@ -2518,56 +2605,64 @@
       "tmdbSourceType": "COLLECTION",
       "title": "James Bond",
       "tmdbId": 645,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Mission: Impossible",
       "tmdbId": 87359,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Fast & Furious",
       "tmdbId": 9485,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "John Wick",
       "tmdbId": 404609,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Bourne",
       "tmdbId": 31562,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Indiana Jones",
       "tmdbId": 84,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Rocky",
       "tmdbId": 1575,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "The Godfather",
       "tmdbId": 230,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/klJMCIblHLFwCuGjKz7tyOpekIC.jpg",
@@ -2589,35 +2684,40 @@
       "tmdbSourceType": "COLLECTION",
       "title": "Toy Story",
       "tmdbId": 10194,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Shrek",
       "tmdbId": 2150,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Despicable Me",
       "tmdbId": 86066,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "How to Train Your Dragon",
       "tmdbId": 89137,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
       "title": "Kung Fu Panda",
       "tmdbId": 77816,
-      "mediaType": "movie"
+      "mediaType": "movie",
+      "sortBy": "original"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
@@ -2642,7 +2742,8 @@
       "filters": {
        "withKeywords": "362567|326438|10854|157171",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2652,7 +2753,8 @@
       "filters": {
        "withKeywords": "10051|15363|191845",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2662,7 +2764,8 @@
       "filters": {
        "withKeywords": "470",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2672,7 +2775,8 @@
       "filters": {
        "withKeywords": "10714",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2682,7 +2786,8 @@
       "filters": {
        "withKeywords": "12570|207046|703",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2692,7 +2797,8 @@
       "filters": {
        "withKeywords": "9748",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2702,7 +2808,8 @@
       "filters": {
        "withKeywords": "10391|3149",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2712,7 +2819,8 @@
       "filters": {
        "withKeywords": "33519|222517|214780",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2722,7 +2830,8 @@
       "filters": {
        "withKeywords": "209817|10410",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2732,7 +2841,8 @@
       "filters": {
        "withKeywords": "207268|9807",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2742,7 +2852,8 @@
       "filters": {
        "withKeywords": "10349",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4HWAQu28e2yaWrtupFPGFkdNU7V.jpg",
@@ -2767,7 +2878,8 @@
       "filters": {
        "withKeywords": "9715",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2777,7 +2889,8 @@
       "filters": {
        "withKeywords": "779|780|184656",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2787,7 +2900,8 @@
       "filters": {
        "withKeywords": "9882|161176|3801",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2797,7 +2911,8 @@
       "filters": {
        "withKeywords": "4379",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2807,7 +2922,8 @@
       "filters": {
        "withKeywords": "4565|4458",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2817,7 +2933,8 @@
       "filters": {
        "withKeywords": "12190|310",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2827,7 +2944,8 @@
       "filters": {
        "withKeywords": "237451",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2837,7 +2955,8 @@
       "filters": {
        "withKeywords": "41645",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2847,7 +2966,8 @@
       "filters": {
        "withKeywords": "10617|5096",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2857,7 +2977,8 @@
       "filters": {
        "withKeywords": "12377",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2867,7 +2988,8 @@
       "filters": {
        "withKeywords": "161791|1299|11100",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2877,7 +2999,8 @@
       "filters": {
        "withKeywords": "3133",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg",
@@ -2902,7 +3025,8 @@
       "filters": {
        "withKeywords": "9672",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2912,7 +3036,8 @@
       "filters": {
        "withKeywords": "10683",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2922,7 +3047,8 @@
       "filters": {
        "withKeywords": "6075|209476|13042|6496",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2932,7 +3058,8 @@
       "filters": {
        "withKeywords": "7312",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2942,7 +3069,8 @@
       "filters": {
        "withKeywords": "4344",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2952,7 +3080,8 @@
       "filters": {
        "withKeywords": "383896|275276",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2962,7 +3091,8 @@
       "filters": {
        "withKeywords": "207317",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2972,7 +3102,8 @@
       "filters": {
        "withKeywords": "10123",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2982,7 +3113,8 @@
       "filters": {
        "withKeywords": "8201",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -2992,7 +3124,8 @@
       "filters": {
        "withKeywords": "9716",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3002,7 +3135,8 @@
       "filters": {
        "withKeywords": "221355|9902",
        "voteCountGte": 100
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/sCzcYW9h55WcesOqA12cgEr9Exw.jpg",
@@ -3025,7 +3159,7 @@
       "title": "Christopher Nolan",
       "tmdbId": 525,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3033,7 +3167,7 @@
       "title": "Denis Villeneuve",
       "tmdbId": 137427,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3041,7 +3175,7 @@
       "title": "Quentin Tarantino",
       "tmdbId": 138,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3049,7 +3183,7 @@
       "title": "Martin Scorsese",
       "tmdbId": 1032,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3057,7 +3191,7 @@
       "title": "Steven Spielberg",
       "tmdbId": 488,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3065,7 +3199,7 @@
       "title": "David Fincher",
       "tmdbId": 7467,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3073,7 +3207,7 @@
       "title": "Stanley Kubrick",
       "tmdbId": 240,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3081,7 +3215,7 @@
       "title": "Ridley Scott",
       "tmdbId": 578,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3089,7 +3223,7 @@
       "title": "James Cameron",
       "tmdbId": 2710,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3097,7 +3231,7 @@
       "title": "Wes Anderson",
       "tmdbId": 5655,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3105,7 +3239,7 @@
       "title": "Greta Gerwig",
       "tmdbId": 45400,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3113,7 +3247,7 @@
       "title": "Paul Thomas Anderson",
       "tmdbId": 4762,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3121,7 +3255,7 @@
       "title": "Jordan Peele",
       "tmdbId": 291263,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3129,7 +3263,7 @@
       "title": "Alfred Hitchcock",
       "tmdbId": 2636,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
@@ -3152,7 +3286,7 @@
       "title": "Bong Joon Ho",
       "tmdbId": 21684,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3160,7 +3294,7 @@
       "title": "Park Chan-wook",
       "tmdbId": 10099,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3168,7 +3302,7 @@
       "title": "Hayao Miyazaki",
       "tmdbId": 608,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3176,7 +3310,7 @@
       "title": "Guillermo del Toro",
       "tmdbId": 10828,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3184,7 +3318,7 @@
       "title": "Akira Kurosawa",
       "tmdbId": 5026,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      },
      {
       "provider": "tmdb",
@@ -3192,7 +3326,7 @@
       "title": "Wong Kar-wai",
       "tmdbId": 12453,
       "mediaType": "movie",
-      "sortBy": "vote_count.desc"
+      "sortBy": "primary_release_date.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
@@ -3217,7 +3351,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3227,7 +3362,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3237,7 +3373,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3247,7 +3384,8 @@
       "filters": {
        "withCompanies": "9993|184898|128064",
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3257,7 +3395,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3267,7 +3406,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3277,7 +3417,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3287,7 +3428,8 @@
       "filters": {
        "withCompanies": "127928|25",
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3297,7 +3439,8 @@
       "filters": {
        "withCompanies": "5|2251",
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3307,7 +3450,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3317,7 +3461,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3327,7 +3472,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/Ar7QuJ7sJEiC0oP3I8fKBKIQD9u.jpg",
@@ -3352,7 +3498,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3362,7 +3509,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3372,7 +3520,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3382,7 +3531,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3392,7 +3542,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3402,7 +3553,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3412,7 +3564,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/jJKZaTBNenlFclQyjrnvzkRmvWE.jpg",
@@ -3437,7 +3590,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3447,7 +3601,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3457,7 +3612,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3467,7 +3623,8 @@
       "filters": {
        "withCompanies": "127929|43",
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3477,7 +3634,8 @@
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
@@ -3502,7 +3660,8 @@
       "filters": {
        "voteCountGte": 100,
        "withOriginalLanguage": "ko"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3513,7 +3672,8 @@
        "voteCountGte": 30,
        "withOriginalLanguage": "ja",
        "withoutGenres": "16"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3524,7 +3684,8 @@
        "voteCountGte": 100,
        "withOriginalLanguage": "ja",
        "withGenres": "16"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3534,7 +3695,8 @@
       "filters": {
        "voteCountGte": 30,
        "withOriginalLanguage": "zh|cn"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3544,7 +3706,8 @@
       "filters": {
        "voteCountGte": 10,
        "withOriginalLanguage": "th"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3554,7 +3717,8 @@
       "filters": {
        "voteCountGte": 10,
        "withOriginalLanguage": "tl"
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/qvZ91FwMq6O47VViAr8vZNQz3WI.jpg",
@@ -3579,7 +3743,8 @@
       "filters": {
        "voteCountGte": 30,
        "withOriginalLanguage": "fr"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3590,7 +3755,8 @@
        "voteCountGte": 30,
        "withOriginalLanguage": "es",
        "withOriginCountry": "ES"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3600,7 +3766,8 @@
       "filters": {
        "voteCountGte": 30,
        "withOriginalLanguage": "it"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3610,7 +3777,8 @@
       "filters": {
        "voteCountGte": 30,
        "withOriginalLanguage": "de"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3620,7 +3788,8 @@
       "filters": {
        "voteCountGte": 30,
        "withOriginalLanguage": "sv|da|no|fi|is"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3630,7 +3799,8 @@
       "filters": {
        "voteCountGte": 30,
        "withOriginalLanguage": "tr"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3640,7 +3810,8 @@
       "filters": {
        "voteCountGte": 30,
        "withOriginCountry": "MX|AR|CO|CL|BR|PE"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3650,7 +3821,8 @@
       "filters": {
        "voteCountGte": 10,
        "withOriginalLanguage": "ar"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3660,7 +3832,8 @@
       "filters": {
        "voteCountGte": 10,
        "withOriginCountry": "NG|KE|ZA|GH|SN|ET|TZ|UG|CM|CI"
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/q6OGlZ1KMEb14AC8KbPCxyNOal6.jpg",
@@ -3705,6 +3878,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Trending series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "releaseDateGte": "2024-10-29",
@@ -3729,22 +3903,12 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Trending British series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 10,
        "withOriginCountry": "GB",
        "withoutGenres": "10763|10767|10766|10764",
        "releaseDateGte": "2024-10-29"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Fan favourites",
-      "mediaType": "tv",
-      "sortBy": "vote_count.desc",
-      "filters": {
-       "withoutGenres": "10763|10767|10766",
-       "withoutKeywords": "210024"
       }
      }
     ],
@@ -3771,7 +3935,8 @@
        "voteCountGte": 50,
        "withGenres": "10759",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3782,7 +3947,8 @@
        "voteCountGte": 50,
        "withGenres": "35",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3793,7 +3959,8 @@
        "voteCountGte": 50,
        "withGenres": "18",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3804,7 +3971,8 @@
        "voteCountGte": 50,
        "withGenres": "80|9648",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3815,7 +3983,8 @@
        "voteCountGte": 50,
        "withGenres": "80",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3826,7 +3995,8 @@
        "voteCountGte": 50,
        "withGenres": "10765",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3837,7 +4007,8 @@
        "voteCountGte": 50,
        "withGenres": "9648",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3848,7 +4019,8 @@
        "voteCountGte": 50,
        "withGenres": "16",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3859,7 +4031,8 @@
        "voteCountGte": 50,
        "withGenres": "10751",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3870,7 +4043,8 @@
        "voteCountGte": 50,
        "withGenres": "10762",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3881,7 +4055,8 @@
        "voteCountGte": 50,
        "withGenres": "99",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3892,7 +4067,8 @@
        "voteCountGte": 50,
        "withGenres": "10768",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3903,7 +4079,8 @@
        "voteCountGte": 50,
        "withGenres": "37",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -3914,7 +4091,8 @@
        "voteCountGte": 50,
        "withGenres": "10764",
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/A4NwkQXTXElE5iAsne5RpvS8R2Z.jpg",
@@ -3936,11 +4114,13 @@
       "tmdbSourceType": "DISCOVER",
       "title": "2020s",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 100,
        "releaseDateGte": "2020-01-01",
        "releaseDateLte": "2029-12-31",
-       "withoutGenres": "10763|10767|10766"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      },
      {
@@ -3948,11 +4128,13 @@
       "tmdbSourceType": "DISCOVER",
       "title": "2010s",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 100,
        "releaseDateGte": "2010-01-01",
        "releaseDateLte": "2019-12-31",
-       "withoutGenres": "10763|10767|10766"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      },
      {
@@ -3960,11 +4142,13 @@
       "tmdbSourceType": "DISCOVER",
       "title": "2000s",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 100,
        "releaseDateGte": "2000-01-01",
        "releaseDateLte": "2009-12-31",
-       "withoutGenres": "10763|10767|10766"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      },
      {
@@ -3972,11 +4156,13 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1990s",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 100,
        "releaseDateGte": "1990-01-01",
        "releaseDateLte": "1999-12-31",
-       "withoutGenres": "10763|10767|10766"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      },
      {
@@ -3984,11 +4170,13 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1980s",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 100,
        "releaseDateGte": "1980-01-01",
        "releaseDateLte": "1989-12-31",
-       "withoutGenres": "10763|10767|10766"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      },
      {
@@ -3996,11 +4184,13 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1970s",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 100,
        "releaseDateGte": "1970-01-01",
        "releaseDateLte": "1979-12-31",
-       "withoutGenres": "10763|10767|10766"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      },
      {
@@ -4008,11 +4198,13 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1960s",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 100,
        "releaseDateGte": "1960-01-01",
        "releaseDateLte": "1969-12-31",
-       "withoutGenres": "10763|10767|10766"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      },
      {
@@ -4020,15 +4212,17 @@
       "tmdbSourceType": "DISCOVER",
       "title": "1950s",
       "mediaType": "tv",
-      "sortBy": "vote_count.desc",
+      "sortBy": "vote_average.desc",
       "filters": {
+       "voteCountGte": 100,
        "releaseDateGte": "1950-01-01",
        "releaseDateLte": "1959-12-31",
-       "withoutGenres": "10763|10767|10766"
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/jIArNHIekrCSVgdMbKPAXpPY03Y.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/tMRdEsMg9MyXAkcufK9YJEeIaNW.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
    },
@@ -4051,7 +4245,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4062,7 +4257,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4073,7 +4269,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4084,7 +4281,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4095,7 +4293,8 @@
        "withNetworks": "4|332|3",
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4106,7 +4305,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4117,7 +4317,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4128,7 +4329,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4139,7 +4341,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
@@ -4165,7 +4368,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4176,7 +4380,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4187,7 +4392,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4198,7 +4404,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4209,7 +4416,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4220,7 +4428,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4231,7 +4440,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      },
      {
       "provider": "tmdb",
@@ -4242,7 +4452,8 @@
       "filters": {
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
-      }
+      },
+      "sortBy": "popularity.desc"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
@@ -4301,6 +4512,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Trending series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 10,
        "releaseDateGte": "2024-10-29",
@@ -4314,6 +4526,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Trending films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 10,
        "releaseDateGte": "2024-10-29",
@@ -4368,6 +4581,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Action and adventure series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,10759",
@@ -4381,6 +4595,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Comedy series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,35",
@@ -4394,6 +4609,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Drama series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,18",
@@ -4406,6 +4622,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Romance series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
@@ -4419,6 +4636,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Mystery series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,9648",
@@ -4431,6 +4649,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Kids series",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,10762",
@@ -4443,6 +4662,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Action films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,28",
@@ -4455,6 +4675,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Fantasy films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,14",
@@ -4467,6 +4688,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Family films",
       "mediaType": "movie",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16,10751",
@@ -4494,6 +4716,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Isekai",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
@@ -4507,6 +4730,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Shonen",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
@@ -4520,6 +4744,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Mecha",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
@@ -4533,6 +4758,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Sports",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
@@ -4546,6 +4772,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "School",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
@@ -4559,6 +4786,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Slice of life",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
@@ -4572,6 +4800,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Iyashikei (healing)",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
@@ -4585,6 +4814,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Psychological",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
@@ -4598,6 +4828,7 @@
       "tmdbSourceType": "DISCOVER",
       "title": "Magical girl",
       "mediaType": "tv",
+      "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
        "withGenres": "16",
