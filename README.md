@@ -21,8 +21,8 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
     (Samsung TV Plus, Pluto TV and Plex) with what's on now and next. Our household add-on answers to the same id and
     lists its own channels first. Live TV keeps the id of the old Live TV files, so importing this file replaces a
     profile's old copy.
-- F1 Replays (MediaFusion) is a separate collection for one profile and isn't in this repo; the build writes it when
-  given a path (below). It has its own id, so importing it adds a collection next to these.
+- `nuvio-f1-replays.json` is F1 Replays (MediaFusion), a separate collection for one profile; the build writes it when
+  given that path (below). It has its own id, so importing it adds a collection next to these.
 - `covers/` holds the landscape tiles for the UK services, `covers/tiles/` our tiles for every other folder and
   `covers/logos/` the title logos.
 

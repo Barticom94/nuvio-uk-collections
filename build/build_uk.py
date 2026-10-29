@@ -3,7 +3,7 @@
   python build/build_uk.py [--key-json PATH] [F1_FILE]
       writes nuvio-collections.json (link A, every profile: Streaming Services, Movies, TV Shows, Anime, Live TV)
       and the art it points at (build/art.py); with F1_FILE, also the F1 Replays collection there (MediaFusion,
-      Adam's profile only, so not in this repo)
+      Adam's profile only; the repo copy is nuvio-f1-replays.json)
 
 The first four collections follow the home layout (Modern on Adam's TVs): each folder opens as a page of rows under
 a hero, so every folder gets a TMDB backdrop for the hero (picked here, so the build needs the TMDB key the same way
