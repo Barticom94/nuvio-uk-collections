@@ -1,3 +1,5 @@
 *.webp binary
+*.png binary
+*.ttf binary
 *.json text eol=lf
 *.py text eol=lf

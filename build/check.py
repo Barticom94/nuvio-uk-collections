@@ -7,15 +7,21 @@ The TMDB v3 key comes from TMDB_API_KEY, or with --key-json from the tmdbApiKey 
 Add-on rows are checked against their add-on's manifest (catalogue id, type and genre option); --manifest points
 one at a local build before it is published. AIOMetadata's manifest needs a config, so its MAL rows are checked
 against its catalogue list at v3.8.3 and the live MAL genre list on ElfHosted instead.
+Collections that open as pages of rows (ROWS, FOLLOW_LAYOUT) must keep every row's Nuvio key distinct, hold 4 to 15
+rows per folder and, for FOLLOW_LAYOUT, have the All tab off and a hero backdrop, title logo and tile on every folder.
+Every tile, logo and backdrop must load as an image; our own art that isn't on GitHub yet (a branch not pushed) only
+warns when the file in this checkout is an image.
 Writes build/report.txt (result counts per row) and exits 1 on any failure.
 
 Parser rules mirror NuvioTV dev (d14832e, 28 Oct 2026): CollectionsDataStore.validateCollectionsJson and
-parseCollections (Gson into Kotlin classes), TmdbCollectionSourceResolver.resolveDiscover for the requests.
+parseCollections (Gson into Kotlin classes), TmdbCollectionSourceResolver.resolveDiscover for the requests, and
+CatalogRow.stableKey with TmdbCollectionSourceResolver's key() for row identity.
 """
-import concurrent.futures as cf, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
+import concurrent.futures as cf, json, os, re, struct, sys, time, urllib.error, urllib.parse, urllib.request
 from datetime import date
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+OWN_REPO = "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/"
 THIN = 20
 SPOT = 5  # titles per exclusion row checked against GB watch providers
 UKX = "com.barticom94.ukextras"
@@ -33,8 +39,11 @@ ALLOWED_ADDONS = {"nuvio-collections.json": {UKX, AIOM}, "nuvio-f1-replays.json"
 MANIFESTS = {UKX: "https://barticom94.github.io/uk-extras/manifest.json"}
 AIOM_TYPES = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/addon/static/catalog-types.json"
 MAL_GENRES = "https://aiometadata.elfhosted.com/api/mal/discover/reference"  # Jikan's list, which the manifest uses
-MAL_LEFT_OUT = {"Hentai", "Erotica", "Ecchi", "Harem", "Reverse Harem", "Magical Sex Shift"}  # as in build_uk.py
+MAL_LEFT_OUT = {"Hentai", "Erotica", "Ecchi", "Harem", "Reverse Harem", "Magical Sex Shift"}  # never a MAL row
 VALID_SHAPES = {"POSTER", "LANDSCAPE", "SQUARE", "poster", "wide", "square"}
+SHAPES = {"POSTER", "LANDSCAPE", "SQUARE"}  # what we write: the importer's other spellings are legacy
+ROWS_MIN, ROWS_MAX = 4, 15  # a page of rows loads every row at once and rebuilds after each one arrives
+ROWS_WARN_ONLY = {"Streaming Services"}  # each tile holds its service's own rows (Hulu has 2)
 TMDB_TYPES = {"LIST", "COLLECTION", "COMPANY", "NETWORK", "DISCOVER", "PERSON", "DIRECTOR"}
 TRAKT_SORTS = {"rank", "added", "title", "released", "runtime", "popularity", "percentage", "votes"}
 
@@ -194,7 +203,8 @@ def parse(text):
                                     "genre": _str(s.get("genre"))})
             shape = (_str(f.get("tileShape")) or "").lower()
             folders.append({"id": fid, "title": ftitle, "coverImageUrl": _str(f.get("coverImageUrl")),
-                            "coverEmoji": _str(f.get("coverEmoji")),
+                            "heroBackdropUrl": _str(f.get("heroBackdropUrl")), "titleLogoUrl": _str(f.get("titleLogoUrl")),
+                            "coverEmoji": _str(f.get("coverEmoji")), "tileShapeRaw": f.get("tileShape"),
                             "tileShape": {"landscape": "LANDSCAPE", "square": "SQUARE"}.get(shape, "POSTER"),
                             "hideTitle": _bool(f.get("hideTitle"), False), "sources": sources, "dropped": dropped})
         view = (_str(c.get("viewMode")) or "").lower()
@@ -203,6 +213,59 @@ def parse(text):
                "showAllTab": _bool(c.get("showAllTab"), False), "folders": folders}
         out[cid] = col  # associateBy: last value wins, first position kept (same as a Python dict)
     return list(out.values())
+
+# TmdbCollectionFilters' fields in declaration order, which its data-class hashCode follows
+FILTER_ORDER = ["withGenres", "withoutGenres", "releaseDateGte", "releaseDateLte", "voteAverageGte", "voteAverageLte",
+                "voteCountGte", "withOriginalLanguage", "withOriginCountry", "withKeywords", "withoutKeywords",
+                "withCompanies", "withoutCompanies", "withNetworks", "year", "watchRegion", "withWatchProviders",
+                "withoutWatchProviders"]
+
+def _jhash(v):
+    """The JVM hashCode of a String, Int or Double, as an unsigned 32-bit number."""
+    if isinstance(v, float):
+        bits = struct.unpack(">Q", struct.pack(">d", v))[0]
+        return (bits ^ (bits >> 32)) & 0xFFFFFFFF
+    if isinstance(v, int): return v & 0xFFFFFFFF
+    h, units = 0, v.encode("utf-16-be")
+    for i in range(0, len(units), 2): h = (31 * h + int.from_bytes(units[i:i + 2], "big")) & 0xFFFFFFFF
+    return h
+
+def row_key(s):
+    """The key a source's row gets in a page of rows (CatalogRow.stableKey: add-on id, base URL, type, catalogue id).
+    Rows with the same key collapse into one, every copy showing the last one's titles. The base URL is left out: one
+    add-on id has one. A genre is not part of it, so an add-on catalogue can only be one row per folder. A TMDB row's
+    catalogue id is the resolver's key(): source type, TMDB id, media, sort and, for DISCOVER, the filters' hashCode."""
+    if s["provider"] == "addon": return f"{s['addonId']}|{s['type'].strip().lower()}|{s['catalogId']}"
+    if s["provider"] == "trakt": return f"trakt|trakt_list_{s['traktListId']}_{s['mediaType'].lower()}_{s['sortBy']}_{s['sortHow']}"
+    media = "tv" if s["mediaType"] == "TV" or s["sourceType"] == "NETWORK" else "movie"  # NETWORK rows are always TV
+    key = f"tmdb_{s['sourceType'].lower()}" + (f"_{s['tmdbId']}" if s["tmdbId"] is not None else "")
+    key += f"_{media}_{s['sortBy'].replace('.', '_')}"
+    if s["sourceType"] == "DISCOVER":
+        h = 0
+        for k in FILTER_ORDER: h = (31 * h + (_jhash(s["filters"][k]) if k in s["filters"] else 0)) & 0xFFFFFFFF
+        key += f"_{h:x}"
+    return f"tmdb|{'series' if media == 'tv' else 'movie'}|{key}"
+
+def layout_problems(cols):
+    """(failures, warnings) for the folder rules that depend on how a collection opens."""
+    fails, warns = [], []
+    for c in cols:
+        if c["viewMode"] == "FOLLOW_LAYOUT" and c["showAllTab"]:
+            fails.append(f"{c['title']}: FOLLOW_LAYOUT with showAllTab on (an All row, and its Load more pages every row)")
+        for f in c["folders"]:
+            where = f"{c['title']}/{f['title']}"
+            if f["tileShapeRaw"] not in SHAPES: fails.append(f"{where}: tileShape {f['tileShapeRaw']!r} is not POSTER, LANDSCAPE or SQUARE")
+            if c["viewMode"] == "TABBED_GRID": continue
+            keys = [row_key(s) for s in f["sources"]]
+            dupes = sorted({k for k in keys if keys.count(k) > 1})
+            if dupes: fails.append(f"{where}: rows that collapse into one: {dupes}")
+            n = len(f["sources"])
+            if not ROWS_MIN <= n <= ROWS_MAX:
+                (warns if c["title"] in ROWS_WARN_ONLY else fails).append(f"{where}: {n} rows, not {ROWS_MIN} to {ROWS_MAX}")
+            if c["viewMode"] == "FOLLOW_LAYOUT":
+                missing = [k for k in ("heroBackdropUrl", "titleLogoUrl", "coverImageUrl") if not f[k]]
+                if missing: fails.append(f"{where}: no {', '.join(missing)}")
+    return fails, warns
 
 def live_problems(cols):
     """Link A's Live TV: one collection with LIVE_ID, then one UK Extras tv catalogue per folder in LIVE_SECTIONS order."""
@@ -236,6 +299,26 @@ def selftest():
     assert live_problems([dict(live, id="x")]) and live_problems([live, live]) and live_problems([])
     assert live_problems([dict(live, folders=live["folders"][::-1])]), "Sky order"
     assert live_problems([dict(live, folders=live["folders"][:7])]), "a section missing"
+    # Row identity: the filters' hash as the JVM computes it (checked with Java 17 on 29 Oct, same field order)
+    assert _jhash("abc") == 96354
+    flt = {"withGenres": "16", "releaseDateGte": "2024-01-01", "voteAverageGte": 7.7, "voteCountGte": 20,
+           "withOriginalLanguage": "ja", "withoutKeywords": "198385|195669"}
+    src = {"provider": "tmdb", "sourceType": "DISCOVER", "tmdbId": None, "mediaType": "TV", "sortBy": "popularity.desc", "filters": flt}
+    assert row_key(src) == "tmdb|series|tmdb_discover_tv_popularity_desc_af13e955", row_key(src)
+    def page(view, srcs, all_tab=False, shape="LANDSCAPE", hero="x"):
+        return parse(json.dumps([{"id": "c", "title": "C", "viewMode": view, "showAllTab": all_tab, "folders": [
+            {"id": "f", "title": "F", "tileShape": shape, "coverImageUrl": "x", "heroBackdropUrl": hero,
+             "titleLogoUrl": "x", "sources": srcs}]}]))
+    def tm(title, **f): return {"provider": "tmdb", "tmdbSourceType": "DISCOVER", "title": title, "mediaType": "tv", "filters": f}
+    four = [tm(str(i), voteCountGte=i) for i in range(4)]
+    assert layout_problems(page("FOLLOW_LAYOUT", four)) == ([], [])
+    assert layout_problems(page("FOLLOW_LAYOUT", four[:3] + [tm("new title", voteCountGte=0)]))[0], "only the title differs"
+    assert layout_problems(page("FOLLOW_LAYOUT", four, all_tab=True))[0]
+    assert layout_problems(page("FOLLOW_LAYOUT", four, hero=None))[0]
+    assert layout_problems(page("ROWS", four[:3]))[0] and not layout_problems(page("TABBED_GRID", four[:3]))[0]
+    assert layout_problems(page("TABBED_GRID", four, shape="wide"))[0]
+    mal = [{"addonId": AIOM, "type": "anime", "catalogId": "mal.genres", "genre": g} for g in ("Action", "Drama", "Comedy", "Sports")]
+    assert layout_problems(page("FOLLOW_LAYOUT", mal))[0], "genres of one catalogue are one row"
     print("selftest ok")
 
 
@@ -311,27 +394,32 @@ def discover_request(src, today):
               "first_air_date.gte": f.get("releaseDateGte"), "first_air_date_year": f.get("year")})
     return "discover/tv", p
 
-def resolve(tmdb, src, today):
-    """Returns (total, first items as (tmdb_id, title)), like Nuvio's first page."""
+def resolve_raw(tmdb, src, today):
+    """Returns (total, TMDB's result objects for Nuvio's first page)."""
     t = src["sourceType"]
     if t in ("DISCOVER", "COMPANY", "NETWORK"):
         d = tmdb.get(*discover_request(src, today))
         if d is None: return 0, []
-        return d.get("total_results", 0), [(r["id"], r.get("title") or r.get("name")) for r in d.get("results", [])]
+        return d.get("total_results", 0), d.get("results", [])
     if t == "COLLECTION":
         d = tmdb.get(f"collection/{src['tmdbId']}", {"language": "en-GB"}) or {}
         parts = d.get("parts") or []
-        return len(parts), [(r["id"], r.get("title")) for r in parts]
+        return len(parts), parts
     if t == "LIST":
         d = tmdb.get(f"list/{src['tmdbId']}", {"language": "en-GB"}) or {}
         items = d.get("items") or []
-        return d.get("item_count", len(items)), [(r["id"], r.get("title") or r.get("name")) for r in items]
+        return d.get("item_count", len(items)), items
     d = tmdb.get(f"person/{src['tmdbId']}/combined_credits", {"language": "en-GB"}) or {}
     want = "movie" if src["mediaType"] == "MOVIE" else "tv"
     items = d.get("crew") if t == "DIRECTOR" else d.get("cast")
     items = [r for r in items or [] if r.get("media_type") == want and (t != "DIRECTOR" or (r.get("job") or "").lower() == "director")]
     items = list({r["id"]: r for r in items}.values())
-    return len(items), [(r["id"], r.get("title") or r.get("name")) for r in items]
+    return len(items), items
+
+def resolve(tmdb, src, today):
+    """Returns (total, first items as (tmdb_id, title)), like Nuvio's first page."""
+    total, items = resolve_raw(tmdb, src, today)
+    return total, [(r["id"], r.get("title") or r.get("name")) for r in items]
 
 def gb_providers(tmdb, media, tid):
     d = tmdb.get(f"{'tv' if media == 'TV' else 'movie'}/{tid}/watch/providers") or {}
@@ -355,6 +443,16 @@ def head_ok(url):
             return r.status == 200 and r.headers.get("Content-Type", "").startswith("image/")
     except Exception:
         return False
+
+def local_image(url):
+    """Our own art at a URL GitHub doesn't serve yet: True when the file in this checkout is a PNG or WebP."""
+    if not url.startswith(OWN_REPO): return False
+    path = os.path.join(os.path.dirname(HERE), *url[len(OWN_REPO):].split("/")[1:])  # drop the branch
+    try:
+        with open(path, "rb") as f: head = f.read(12)
+    except OSError:
+        return False
+    return head.startswith(b"\x89PNG") or (head[:4] == b"RIFF" and head[8:12] == b"WEBP")
 
 def get_json(src):
     if not src.startswith("https://"):
@@ -398,7 +496,7 @@ def main(argv):
     only = argv[argv.index("--only") + 1] if "--only" in argv else None
     tmdb = Tmdb(load_key(argv))
     today = date.today().isoformat()
-    fails, warns, report, jobs, covers = [], [], [], [], set()
+    fails, warns, report, jobs, images = [], [], [], [], set()
     link_a_ids, other_cols = set(), []
     cats = addon_catalogues(argv, warns)
 
@@ -418,7 +516,10 @@ def main(argv):
             for f in c["folders"]:
                 if f["dropped"]: fails.append(f"{name}: {c['title']}/{f['title']}: {f['dropped']} source(s) dropped on import")
                 if not f["sources"]: fails.append(f"{name}: {c['title']}/{f['title']}: no sources")
-                if f["coverImageUrl"]: covers.add(f["coverImageUrl"])
+                images |= {f[k] for k in ("coverImageUrl", "heroBackdropUrl", "titleLogoUrl") if f[k]}
+        lf, lw = layout_problems(cols)
+        fails += [f"{name}: {x}" for x in lf]
+        warns += [f"{name}: {x}" for x in lw]
         for s in strings(raw):
             if "—" in s or "–" in s: fails.append(f"{name}: dash in {s!r}")
             if ADULT.search(s): fails.append(f"{name}: adult text {s!r}")
@@ -483,11 +584,15 @@ def main(argv):
             if not has_own: warns.append(f"{where}: {title} has none of the tile's providers in GB")
         if spot: line += f" | exclusion spot-check {sum(not h for _, _, h in spot)}/{len(spot)} clean"
         report.append(line)
-    if covers:
+    if images:
         with cf.ThreadPoolExecutor(8) as ex:
-            bad = [u for u, ok in zip(sorted(covers), ex.map(head_ok, sorted(covers))) if not ok]
-        print(f"covers: {len(covers) - len(bad)}/{len(covers)} load as images")
-        fails += [f"cover not loading: {u}" for u in bad]
+            bad = [u for u, ok in zip(sorted(images), ex.map(head_ok, sorted(images))) if not ok]
+        unpublished = [u for u in bad if local_image(u)]
+        print(f"images (tiles, logos, backdrops): {len(images) - len(bad)}/{len(images)} load, "
+              f"{len(unpublished)} more only in this checkout")
+        fails += [f"image not loading: {u}" for u in bad if u not in unpublished]
+        if unpublished: warns.append(f"{len(unpublished)} of our images aren't on GitHub yet (the files here are images), "
+                                     f"such as {unpublished[0]}")
 
     head = [f"Checked {date.today()} against TMDB live. Rows: {len(results)} TMDB, thin (<{THIN}): {thin}, "
             f"failures: {len(fails)}, warnings: {len(warns)}", ""]

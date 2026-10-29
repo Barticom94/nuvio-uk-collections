@@ -5,8 +5,8 @@
   "backdropImageUrl": null,
   "pinToTop": false,
   "focusGlowEnabled": true,
-  "viewMode": "ROWS",
-  "showAllTab": true,
+  "viewMode": "FOLLOW_LAYOUT",
+  "showAllTab": false,
   "folders": [
    {
     "id": "3a37f678-00cd-5fb3-a157-91be159064ff",
@@ -139,9 +139,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/9P4IIMYY3HifqeruZq0ZZ9g7YUi.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/netflix.png"
    },
    {
     "id": "4d061759-fd0f-54b1-98e0-492132941b7d",
@@ -266,9 +266,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/achmETPRJZc9QVXsMPgHwYEyNar.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/prime-video.png"
    },
    {
     "id": "cf6d754a-154b-54b8-8d71-65cb27a009fc",
@@ -391,9 +391,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lOr9NKxh4vMweufMOUDJjJhCRHW.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/disney-plus.png"
    },
    {
     "id": "efe9dc4d-b0f6-54e0-bb22-c1b9ecdc152e",
@@ -518,9 +518,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/apple-tv-plus.png"
    },
    {
     "id": "c34ea148-40ed-5e01-8567-00c86e36cea6",
@@ -643,9 +643,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/900tHlUYUkp7Ol04XFSoAaEIXcT.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/hbo-max.png"
    },
    {
     "id": "ababf52a-759a-58c2-a303-49121dd3f8e1",
@@ -683,9 +683,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/1yhQGQH7pfKdIY2xJSYNdp8ReD6.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/hulu.png"
    },
    {
     "id": "f9597ee0-14af-5840-bcde-93708fbabceb",
@@ -808,9 +808,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/enVrO8TRkdT8dmYXTfI4sEjR5Kp.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/now.png"
    },
    {
     "id": "8d74f476-f4a4-54bb-b22c-6f56b448faa7",
@@ -925,9 +925,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/zW0v2YT74C6tRafzqqBkfSqLAN0.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/paramount-plus.png"
    },
    {
     "id": "3b050abb-89c0-5d50-9e8b-18b3d9cd28ca",
@@ -1050,9 +1050,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8rvLEmdI4gLrMO1rLqbNdnNcPFE.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/bbc-iplayer.png"
    },
    {
     "id": "35bae5da-809a-5e3b-ad44-c37be7a27713",
@@ -1165,9 +1165,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lHSLW9lihnuRMs1yYarmMJX4phK.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/itvx.png"
    },
    {
     "id": "5d3773db-85ec-5197-bad3-ea905533da7b",
@@ -1290,9 +1290,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/nfWhNM5VVd9a5bEGobs83TWTuLM.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/channel-4.png"
    },
    {
     "id": "9dea9683-8fd6-509c-95e3-a2aa0dba3e4b",
@@ -1405,9 +1405,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/r9QAxAW2KGQaVnEOxXKJuZ6RSJe.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/channel-5.png"
    },
    {
     "id": "c47631a6-b994-531f-98b8-790fb7fb16ad",
@@ -1522,9 +1522,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lA3MKdT3QOrYGe5dg7Uzuceu8zZ.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/crunchyroll.png"
    },
    {
     "id": "2aa90d76-3a59-5406-a729-f7ff34416209",
@@ -1639,9 +1639,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/a7cv3UnvDpXCXWjgCrVCMOa0BD5.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/shudder.png"
    },
    {
     "id": "42a8bae0-c134-564e-95dd-4d014a93f953",
@@ -1701,9 +1701,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/n36zycrAqHn2uzx65IeAdnsZcMj.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/mubi.png"
    },
    {
     "id": "07b6c3de-12d4-55d2-938b-a459d78ff3c4",
@@ -1779,9 +1779,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/yyOMIYaHB1xDSULKvT0djOwP4qc.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/discovery-plus.png"
    },
    {
     "id": "4510f241-7f16-53c8-b3ec-8a61c5124589",
@@ -1857,9 +1857,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/jNV9cnBRukyzUdBb1kw1UXY2l9R.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/wow.png"
    }
   ]
  },
@@ -1869,16 +1869,16 @@
   "backdropImageUrl": null,
   "pinToTop": false,
   "focusGlowEnabled": true,
-  "viewMode": "TABBED_GRID",
+  "viewMode": "FOLLOW_LAYOUT",
   "showAllTab": false,
   "folders": [
    {
-    "id": "a41bc7ec-9fe6-5d32-85f7-5991964052cd",
-    "title": "New",
-    "coverImageUrl": null,
+    "id": "59b971f3-1990-5925-a067-80c96b3f1247",
+    "title": "Start here",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-start-here.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🆕",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -1893,22 +1893,7 @@
        "withWatchProviders": "8|1796|9|2100|337|350|2243|1899|1825|39|591|531|2303|2304|582|1853|38|41|2300|598|103|2311|333|283|1968|99|204|11|201|524|584|546|2|10|35|130|192",
        "watchRegion": "GB"
       }
-     }
-    ],
-    "heroBackdropUrl": null,
-    "heroVideoUrl": null,
-    "titleLogoUrl": null
-   },
-   {
-    "id": "e7abf6e3-66d7-57fb-96b4-505f1611f147",
-    "title": "Trending",
-    "coverImageUrl": null,
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": "🔥",
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
+     },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
@@ -1918,22 +1903,7 @@
        "voteCountGte": 20,
        "releaseDateGte": "2026-05-02"
       }
-     }
-    ],
-    "heroBackdropUrl": null,
-    "heroVideoUrl": null,
-    "titleLogoUrl": null
-   },
-   {
-    "id": "8d40c49c-80e8-582e-9e1d-72c7105efdaf",
-    "title": "Top rated",
-    "coverImageUrl": null,
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": "⭐",
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
+     },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
@@ -1944,19 +1914,87 @@
        "voteCountGte": 3000,
        "withoutGenres": "99|10402|10770"
       }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "All-Time Greats",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 12000,
+       "withoutGenres": "99|10402|10770"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Modern Classics",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 4000,
+       "releaseDateGte": "2010-01-01",
+       "withoutGenres": "99|10402|10770"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Hidden Gems",
+      "mediaType": "movie",
+      "sortBy": "vote_count.asc",
+      "filters": {
+       "voteCountGte": 400,
+       "voteAverageGte": 7.7,
+       "withoutGenres": "99|10402|10770|16"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Best of This Year",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "voteCountGte": 250,
+       "releaseDateGte": "2026-01-01"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Documentaries",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "withGenres": "99",
+       "voteCountGte": 400
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Animated Masterpieces",
+      "mediaType": "movie",
+      "sortBy": "vote_average.desc",
+      "filters": {
+       "withGenres": "16",
+       "voteCountGte": 2000
+      }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/start-here.png"
    },
    {
-    "id": "51e5de22-fad3-581d-8da5-d95730b72a06",
-    "title": "By Genre",
-    "coverImageUrl": null,
+    "id": "658125c0-2e01-5a85-aa60-77e7fb6ea78b",
+    "title": "Genres",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-genres.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🎭",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -2069,7 +2107,22 @@
        "voteCountGte": 100,
        "withGenres": "9648"
       }
-     },
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/genres.png"
+   },
+   {
+    "id": "c18bade3-247e-517f-8a9a-50874aeec9f1",
+    "title": "More genres",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-more-genres.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
@@ -2151,17 +2204,17 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/g7CHF8gTLGooTbP4GznIGwaqAGL.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/more-genres.png"
    },
    {
-    "id": "dbf403b3-6405-59b6-ba44-6244b86d6d51",
-    "title": "By Decade",
-    "coverImageUrl": null,
+    "id": "4208875e-dfce-5d91-ac2b-9d9f78b28ebc",
+    "title": "Decades",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-decades.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "📅",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -2254,17 +2307,17 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
    },
    {
-    "id": "2cbd7abb-37a7-5f71-995b-1305060063ec",
-    "title": "Collections",
-    "coverImageUrl": null,
+    "id": "f18aaf95-b80d-5a54-91d3-76c20de2300a",
+    "title": "Superhero and fantasy franchises",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-superhero-and-fantasy-franchises.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🎞️",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -2281,9 +2334,27 @@
      },
      {
       "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "DC Universe",
+      "mediaType": "movie",
+      "sortBy": "primary_release_date.desc",
+      "filters": {
+       "withKeywords": "229266|312528",
+       "voteCountGte": 200
+      }
+     },
+     {
+      "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "Star Wars",
-      "tmdbId": 10,
+      "title": "Spider-Man",
+      "tmdbId": 556,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "X-Men",
+      "tmdbId": 748,
       "mediaType": "movie"
      },
      {
@@ -2302,15 +2373,135 @@
      },
      {
       "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Pirates of the Caribbean",
+      "tmdbId": 295,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "The Hunger Games",
+      "tmdbId": 131635,
+      "mediaType": "movie"
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/86IbFy98QjRIqg6WanKYb9tXNbJ.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/superhero-and-fantasy-franchises.png"
+   },
+   {
+    "id": "f5a39e4b-5401-59b1-9a22-cc897acfa5b2",
+    "title": "Sci-fi and horror franchises",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-sci-fi-and-horror-franchises.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Star Wars",
+      "tmdbId": 10,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Dune",
+      "tmdbId": 726871,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Avatar",
+      "tmdbId": 87096,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "The Matrix",
+      "tmdbId": 2344,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Jurassic Park",
+      "tmdbId": 328,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "DC Universe",
+      "title": "MonsterVerse",
       "mediaType": "movie",
-      "sortBy": "primary_release_date.desc",
+      "sortBy": "primary_release_date.asc",
       "filters": {
-       "withKeywords": "229266|312528",
-       "voteCountGte": 200
+       "withKeywords": "380322"
       }
      },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Alien",
+      "tmdbId": 8091,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "The Terminator",
+      "tmdbId": 528,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Planet of the Apes",
+      "tmdbId": 173710,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Back to the Future",
+      "tmdbId": 264,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "Mad Max",
+      "tmdbId": 8945,
+      "mediaType": "movie"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COLLECTION",
+      "title": "The Conjuring",
+      "tmdbId": 313086,
+      "mediaType": "movie"
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/zqkmTXzjkAgXmEWLRsY4UpTWCeo.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/sci-fi-and-horror-franchises.png"
+   },
+   {
+    "id": "40f28221-2d7f-5ee3-b83d-052eb9c50ab6",
+    "title": "Action and crime franchises",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-action-and-crime-franchises.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
@@ -2342,74 +2533,8 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "Jurassic Park",
-      "tmdbId": 328,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Spider-Man",
-      "tmdbId": 556,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "X-Men",
-      "tmdbId": 748,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "MonsterVerse",
-      "mediaType": "movie",
-      "sortBy": "primary_release_date.asc",
-      "filters": {
-       "withKeywords": "380322"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Dune",
-      "tmdbId": 726871,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Avatar",
-      "tmdbId": 87096,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Matrix",
-      "tmdbId": 2344,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Alien",
-      "tmdbId": 8091,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Pirates of the Caribbean",
-      "tmdbId": 295,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Hunger Games",
-      "tmdbId": 131635,
+      "title": "Bourne",
+      "tmdbId": 31562,
       "mediaType": "movie"
      },
      {
@@ -2422,27 +2547,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "The Godfather",
-      "tmdbId": 230,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Back to the Future",
-      "tmdbId": 264,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Planet of the Apes",
-      "tmdbId": 173710,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
       "title": "Rocky",
       "tmdbId": 1575,
       "mediaType": "movie"
@@ -2450,24 +2554,25 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
-      "title": "Mad Max",
-      "tmdbId": 8945,
+      "title": "The Godfather",
+      "tmdbId": 230,
       "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Terminator",
-      "tmdbId": 528,
-      "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "Bourne",
-      "tmdbId": 31562,
-      "mediaType": "movie"
-     },
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/klJMCIblHLFwCuGjKz7tyOpekIC.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/action-and-crime-franchises.png"
+   },
+   {
+    "id": "348c036f-f644-5469-81e7-b76b4cb3e175",
+    "title": "Family franchises",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-family-franchises.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
      {
       "provider": "tmdb",
       "tmdbSourceType": "COLLECTION",
@@ -2502,26 +2607,19 @@
       "title": "Kung Fu Panda",
       "tmdbId": 77816,
       "mediaType": "movie"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COLLECTION",
-      "title": "The Conjuring",
-      "tmdbId": 313086,
-      "mediaType": "movie"
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/family-franchises.png"
    },
    {
-    "id": "a85eeb21-ceda-51c6-8d3d-3b643abf7be4",
-    "title": "Moods",
-    "coverImageUrl": null,
+    "id": "ea4c6d1c-f980-526b-afa6-2e4e505d86f2",
+    "title": "Crime and suspense",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-crime-and-suspense.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🌗",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -2548,70 +2646,10 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "True Stories",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "9672",
-       "voteCountGte": 100
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Superheroes",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "9715",
-       "voteCountGte": 100
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Space",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "9882|161176|3801",
-       "voteCountGte": 100
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Time Travel",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "4379",
-       "voteCountGte": 100
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Dystopia",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "4565|4458",
-       "voteCountGte": 100
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Spies",
       "mediaType": "movie",
       "filters": {
        "withKeywords": "470",
-       "voteCountGte": 100
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Cyberpunk & AI",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "12190|310",
        "voteCountGte": 100
       }
      },
@@ -2632,16 +2670,6 @@
       "mediaType": "movie",
       "filters": {
        "withKeywords": "12570|207046|703",
-       "voteCountGte": 100
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Survival",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "10349",
        "voteCountGte": 100
       }
      },
@@ -2688,10 +2716,125 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
+      "title": "Neo-Noir",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "207268|9807",
+       "voteCountGte": 100
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Survival",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "10349",
+       "voteCountGte": 100
+      }
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/7Wev9JMo6R5XAfz2KDvXb7oPMmy.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/crime-and-suspense.png"
+   },
+   {
+    "id": "5e385f7b-1889-5bff-a0a4-e67c34ad0624",
+    "title": "Action, sci-fi and monsters",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-action-sci-fi-and-monsters.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Superheroes",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "9715",
+       "voteCountGte": 100
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
       "title": "Martial Arts",
       "mediaType": "movie",
       "filters": {
        "withKeywords": "779|780|184656",
+       "voteCountGte": 100
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Space",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "9882|161176|3801",
+       "voteCountGte": 100
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Time Travel",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "4379",
+       "voteCountGte": 100
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Dystopia",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "4565|4458",
+       "voteCountGte": 100
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Cyberpunk & AI",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "12190|310",
+       "voteCountGte": 100
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Isekai",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "237451",
+       "voteCountGte": 100
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Video Game Adaptations",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "41645",
+       "voteCountGte": 100
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Disaster",
+      "mediaType": "movie",
+      "filters": {
+       "withKeywords": "10617|5096",
        "voteCountGte": 100
       }
      },
@@ -2724,14 +2867,29 @@
        "withKeywords": "3133",
        "voteCountGte": 100
       }
-     },
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/action-sci-fi-and-monsters.png"
+   },
+   {
+    "id": "5f8af476-84f3-5b78-9fd3-a03c54e96d01",
+    "title": "Feel-good and true stories",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-feel-good-and-true-stories.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Disaster",
+      "title": "True Stories",
       "mediaType": "movie",
       "filters": {
-       "withKeywords": "10617|5096",
+       "withKeywords": "9672",
        "voteCountGte": 100
       }
      },
@@ -2818,26 +2976,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Neo-Noir",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "207268|9807",
-       "voteCountGte": 100
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Video Game Adaptations",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "41645",
-       "voteCountGte": 100
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Stand-Up Comedy",
       "mediaType": "movie",
       "filters": {
@@ -2854,29 +2992,19 @@
        "withKeywords": "221355|9902",
        "voteCountGte": 100
       }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Isekai",
-      "mediaType": "movie",
-      "filters": {
-       "withKeywords": "237451",
-       "voteCountGte": 100
-      }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/sCzcYW9h55WcesOqA12cgEr9Exw.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/feel-good-and-true-stories.png"
    },
    {
     "id": "01e2b671-4975-5e04-bf2a-fb1b59809d9f",
     "title": "Directors",
-    "coverImageUrl": null,
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-directors.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🎬",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -2955,38 +3083,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DIRECTOR",
-      "title": "Bong Joon Ho",
-      "tmdbId": 21684,
-      "mediaType": "movie",
-      "sortBy": "vote_count.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Park Chan-wook",
-      "tmdbId": 10099,
-      "mediaType": "movie",
-      "sortBy": "vote_count.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Hayao Miyazaki",
-      "tmdbId": 608,
-      "mediaType": "movie",
-      "sortBy": "vote_count.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
-      "title": "Guillermo del Toro",
-      "tmdbId": 10828,
-      "mediaType": "movie",
-      "sortBy": "vote_count.desc"
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DIRECTOR",
       "title": "Wes Anderson",
       "tmdbId": 5655,
       "mediaType": "movie",
@@ -3023,6 +3119,53 @@
       "tmdbId": 2636,
       "mediaType": "movie",
       "sortBy": "vote_count.desc"
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/directors.png"
+   },
+   {
+    "id": "c214fee9-3c03-5955-a494-c9c2fa2b565d",
+    "title": "World directors",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-world-directors.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DIRECTOR",
+      "title": "Bong Joon Ho",
+      "tmdbId": 21684,
+      "mediaType": "movie",
+      "sortBy": "vote_count.desc"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DIRECTOR",
+      "title": "Park Chan-wook",
+      "tmdbId": 10099,
+      "mediaType": "movie",
+      "sortBy": "vote_count.desc"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DIRECTOR",
+      "title": "Hayao Miyazaki",
+      "tmdbId": 608,
+      "mediaType": "movie",
+      "sortBy": "vote_count.desc"
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DIRECTOR",
+      "title": "Guillermo del Toro",
+      "tmdbId": 10828,
+      "mediaType": "movie",
+      "sortBy": "vote_count.desc"
      },
      {
       "provider": "tmdb",
@@ -3041,17 +3184,17 @@
       "sortBy": "vote_count.desc"
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/world-directors.png"
    },
    {
-    "id": "431cb838-a68c-50f8-bb21-f80c88a9b359",
-    "title": "Studios",
-    "coverImageUrl": null,
+    "id": "c25e3e4f-a42d-552b-8c18-140202e75224",
+    "title": "Hollywood studios",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-hollywood-studios.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🏛️",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -3078,58 +3221,8 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COMPANY",
-      "title": "Pixar",
-      "tmdbId": 3,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Walt Disney Animation",
-      "tmdbId": 6125,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
       "title": "Walt Disney Pictures",
       "tmdbId": 2,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "DreamWorks Animation",
-      "tmdbId": 521,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Illumination",
-      "tmdbId": 6704,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Studio Ghibli",
-      "tmdbId": 10342,
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30
@@ -3208,6 +3301,126 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COMPANY",
+      "title": "Amblin",
+      "tmdbId": 56,
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COMPANY",
+      "title": "Lionsgate",
+      "tmdbId": 1632,
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30
+      }
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/mDfJG3LC3Dqb67AZ52x3Z0jU0uB.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/hollywood-studios.png"
+   },
+   {
+    "id": "2eb14249-c541-5277-9f16-2c0650eedbed",
+    "title": "Animation studios",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-animation-studios.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COMPANY",
+      "title": "Pixar",
+      "tmdbId": 3,
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COMPANY",
+      "title": "Walt Disney Animation",
+      "tmdbId": 6125,
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COMPANY",
+      "title": "DreamWorks Animation",
+      "tmdbId": 521,
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COMPANY",
+      "title": "Illumination",
+      "tmdbId": 6704,
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COMPANY",
+      "title": "Studio Ghibli",
+      "tmdbId": 10342,
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COMPANY",
+      "title": "LAIKA",
+      "tmdbId": 11537,
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COMPANY",
+      "title": "Aardman",
+      "tmdbId": 297,
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 30
+      }
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/jJKZaTBNenlFclQyjrnvzkRmvWE.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/animation-studios.png"
+   },
+   {
+    "id": "c924b3ef-371f-5cdc-bf8e-6706ba5b55ad",
+    "title": "Indie and world studios",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-indie-and-world-studios.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "COMPANY",
       "title": "A24",
       "tmdbId": 41077,
       "mediaType": "movie",
@@ -3248,46 +3461,6 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "COMPANY",
-      "title": "Amblin",
-      "tmdbId": 56,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Lionsgate",
-      "tmdbId": 1632,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "LAIKA",
-      "tmdbId": 11537,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
-      "title": "Aardman",
-      "tmdbId": 297,
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "COMPANY",
       "title": "Toho",
       "tmdbId": 882,
       "mediaType": "movie",
@@ -3296,17 +3469,17 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/indie-and-world-studios.png"
    },
    {
-    "id": "795da8cf-8115-5787-9115-d831c29b46ab",
-    "title": "World Cinema",
-    "coverImageUrl": null,
+    "id": "340edb3e-4160-5f8f-a4ca-618b82b25e9b",
+    "title": "Asian cinema",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-asian-cinema.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🌍",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -3323,23 +3496,23 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Anime",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 100,
-       "withOriginalLanguage": "ja",
-       "withGenres": "16"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
       "title": "Japanese",
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30,
        "withOriginalLanguage": "ja",
        "withoutGenres": "16"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Anime",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 100,
+       "withOriginalLanguage": "ja",
+       "withGenres": "16"
       }
      },
      {
@@ -3355,11 +3528,57 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Turkish",
+      "title": "Thai",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 10,
+       "withOriginalLanguage": "th"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Filipino",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 10,
+       "withOriginalLanguage": "tl"
+      }
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/55vkNtb83bSwbdWrQTVZTGLBcLx.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/asian-cinema.png"
+   },
+   {
+    "id": "48eb304e-0aa6-5fcb-a6dd-c53bc142d219",
+    "title": "World cinema",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-world-cinema.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "British",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 100,
+       "withOriginCountry": "GB",
+       "withOriginalLanguage": "en"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "French",
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 30,
-       "withOriginalLanguage": "tr"
+       "withOriginalLanguage": "fr"
       }
      },
      {
@@ -3371,26 +3590,6 @@
        "voteCountGte": 30,
        "withOriginalLanguage": "es",
        "withOriginCountry": "ES"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Latin American",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginCountry": "MX|AR|CO|CL|BR|PE"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "French",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 30,
-       "withOriginalLanguage": "fr"
       }
      },
      {
@@ -3426,32 +3625,21 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "British",
+      "title": "Turkish",
       "mediaType": "movie",
       "filters": {
-       "voteCountGte": 100,
-       "withOriginCountry": "GB",
-       "withOriginalLanguage": "en"
+       "voteCountGte": 30,
+       "withOriginalLanguage": "tr"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Thai",
+      "title": "Latin American",
       "mediaType": "movie",
       "filters": {
-       "voteCountGte": 10,
-       "withOriginalLanguage": "th"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Filipino",
-      "mediaType": "movie",
-      "filters": {
-       "voteCountGte": 10,
-       "withOriginalLanguage": "tl"
+       "voteCountGte": 30,
+       "withOriginCountry": "MX|AR|CO|CL|BR|PE"
       }
      },
      {
@@ -3475,92 +3663,9 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/bfh9Z3Ghz4FOJAfLOAhmc3ccnHU.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
-   },
-   {
-    "id": "4a942863-5385-5aa0-bc70-d8c026e42bc4",
-    "title": "Critics' picks",
-    "coverImageUrl": null,
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": "🏆",
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "All-Time Greats",
-      "mediaType": "movie",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "voteCountGte": 12000,
-       "withoutGenres": "99|10402|10770"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Modern Classics",
-      "mediaType": "movie",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "voteCountGte": 4000,
-       "releaseDateGte": "2010-01-01",
-       "withoutGenres": "99|10402|10770"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Hidden Gems",
-      "mediaType": "movie",
-      "sortBy": "vote_count.asc",
-      "filters": {
-       "voteCountGte": 400,
-       "voteAverageGte": 7.7,
-       "withoutGenres": "99|10402|10770|16"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Best of This Year",
-      "mediaType": "movie",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "voteCountGte": 250,
-       "releaseDateGte": "2026-01-01"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Documentaries",
-      "mediaType": "movie",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "withGenres": "99",
-       "voteCountGte": 400
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "DISCOVER",
-      "title": "Animated Masterpieces",
-      "mediaType": "movie",
-      "sortBy": "vote_average.desc",
-      "filters": {
-       "withGenres": "16",
-       "voteCountGte": 2000
-      }
-     }
-    ],
-    "heroBackdropUrl": null,
-    "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/world-cinema.png"
    }
   ]
  },
@@ -3570,16 +3675,16 @@
   "backdropImageUrl": null,
   "pinToTop": false,
   "focusGlowEnabled": true,
-  "viewMode": "TABBED_GRID",
+  "viewMode": "FOLLOW_LAYOUT",
   "showAllTab": false,
   "folders": [
    {
-    "id": "a0d33fdb-07c1-5489-b79e-4d0e5a33d4ee",
-    "title": "New",
-    "coverImageUrl": null,
+    "id": "2a42a6f2-78b3-5984-9931-d71ec430b527",
+    "title": "Start here",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-start-here.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🆕",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -3593,22 +3698,7 @@
        "voteCountGte": 10,
        "withoutGenres": "10763|10767|10766"
       }
-     }
-    ],
-    "heroBackdropUrl": null,
-    "heroVideoUrl": null,
-    "titleLogoUrl": null
-   },
-   {
-    "id": "0d41a828-6a6a-5f10-abba-bb95c0048ece",
-    "title": "Trending",
-    "coverImageUrl": null,
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": "🔥",
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
+     },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
@@ -3619,22 +3709,7 @@
        "withoutGenres": "10763|10767|10766",
        "releaseDateGte": "2024-10-29"
       }
-     }
-    ],
-    "heroBackdropUrl": null,
-    "heroVideoUrl": null,
-    "titleLogoUrl": null
-   },
-   {
-    "id": "c1a5c34a-76ba-56d1-b099-e87b45d84c12",
-    "title": "Top rated",
-    "coverImageUrl": null,
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": "⭐",
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
+     },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
@@ -3646,19 +3721,42 @@
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
       }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Trending British series",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 10,
+       "withOriginCountry": "GB",
+       "withoutGenres": "10763|10767|10766|10764",
+       "releaseDateGte": "2024-10-29"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Fan favourites",
+      "mediaType": "tv",
+      "sortBy": "vote_count.desc",
+      "filters": {
+       "withoutGenres": "10763|10767|10766",
+       "withoutKeywords": "210024"
+      }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/start-here.png"
    },
    {
-    "id": "df865fe5-07f2-5a1e-97e8-8b649e3a5ac6",
-    "title": "By Genre",
-    "coverImageUrl": null,
+    "id": "c9d869f8-9ce1-5178-9b5b-cc7256f79074",
+    "title": "Genres",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-genres.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🎭",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -3817,17 +3915,17 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lH22EnM0ofC7GsVGU8dAA2RXV1c.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/genres.png"
    },
    {
-    "id": "8464aa3d-5094-5c1c-b018-71161497263c",
-    "title": "By Decade",
-    "coverImageUrl": null,
+    "id": "a15086fd-9ee2-571e-a7d2-da21090486bb",
+    "title": "Decades",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-decades.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "📅",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -3928,17 +4026,17 @@
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
    },
    {
-    "id": "e6307752-c336-5cca-8c1e-106e8ec7ae3a",
-    "title": "Networks",
-    "coverImageUrl": null,
+    "id": "c08fe475-3200-5103-afd1-f1c651bfb7e6",
+    "title": "Drama networks",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-drama-networks.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "📡",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -4022,6 +4120,54 @@
      {
       "provider": "tmdb",
       "tmdbSourceType": "NETWORK",
+      "title": "tvN",
+      "tmdbId": 866,
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "JTBC",
+      "tmdbId": 885,
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766"
+      }
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/lY2DhbA7Hy44fAKddr06UrXWWaQ.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/drama-networks.png"
+   },
+   {
+    "id": "677c7b25-e3d4-5476-9780-8590cd57ca67",
+    "title": "Comedy, kids and factual networks",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/tv-shows-comedy-kids-and-factual-networks.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
+      "title": "Comedy Central",
+      "tmdbId": 47,
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withoutGenres": "10763|10767|10766"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "NETWORK",
       "title": "Adult Swim",
       "tmdbId": 80,
       "mediaType": "tv",
@@ -4095,44 +4241,11 @@
        "voteCountGte": 20,
        "withoutGenres": "10763|10767|10766"
       }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "Comedy Central",
-      "tmdbId": 47,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "tvN",
-      "tmdbId": 866,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      }
-     },
-     {
-      "provider": "tmdb",
-      "tmdbSourceType": "NETWORK",
-      "title": "JTBC",
-      "tmdbId": 885,
-      "mediaType": "tv",
-      "filters": {
-       "voteCountGte": 20,
-       "withoutGenres": "10763|10767|10766"
-      }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/comedy-kids-and-factual-networks.png"
    }
   ]
  },
@@ -4142,652 +4255,367 @@
   "backdropImageUrl": null,
   "pinToTop": false,
   "focusGlowEnabled": true,
-  "viewMode": "TABBED_GRID",
+  "viewMode": "FOLLOW_LAYOUT",
   "showAllTab": false,
   "folders": [
    {
-    "id": "da64092f-32a8-5c31-b242-8d526b27c143",
-    "title": "New",
-    "coverImageUrl": null,
+    "id": "5014f66b-7332-58c5-bd3d-6881256a84bd",
+    "title": "Start here",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/anime-start-here.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🆕",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Series",
+      "title": "New series",
       "mediaType": "tv",
       "sortBy": "first_air_date.desc",
       "filters": {
        "voteCountGte": 5,
        "withGenres": "16",
-       "withOriginalLanguage": "ja"
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Films",
+      "title": "New films",
       "mediaType": "movie",
       "sortBy": "primary_release_date.desc",
       "filters": {
        "voteCountGte": 10,
        "withGenres": "16",
-       "withOriginalLanguage": "ja"
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
       }
-     }
-    ],
-    "heroBackdropUrl": null,
-    "heroVideoUrl": null,
-    "titleLogoUrl": null
-   },
-   {
-    "id": "0bc8d866-9301-5fd1-ae9d-bd563fd12448",
-    "title": "Trending",
-    "coverImageUrl": null,
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": "🔥",
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
+     },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Series",
+      "title": "Trending series",
       "mediaType": "tv",
       "filters": {
        "voteCountGte": 10,
        "releaseDateGte": "2024-10-29",
        "withGenres": "16",
-       "withOriginalLanguage": "ja"
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Films",
+      "title": "Trending films",
       "mediaType": "movie",
       "filters": {
        "voteCountGte": 10,
        "releaseDateGte": "2024-10-29",
        "withGenres": "16",
-       "withOriginalLanguage": "ja"
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
       }
-     }
-    ],
-    "heroBackdropUrl": null,
-    "heroVideoUrl": null,
-    "titleLogoUrl": null
-   },
-   {
-    "id": "c6cfdf1f-2328-58a7-9ded-bfc045d870fd",
-    "title": "Top rated",
-    "coverImageUrl": null,
-    "focusGifUrl": null,
-    "focusGifEnabled": false,
-    "coverEmoji": "⭐",
-    "tileShape": "LANDSCAPE",
-    "hideTitle": false,
-    "sources": [
+     },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Series",
+      "title": "Top rated series",
       "mediaType": "tv",
       "sortBy": "vote_average.desc",
       "filters": {
        "voteCountGte": 500,
        "withGenres": "16",
-       "withOriginalLanguage": "ja"
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
       }
      },
      {
       "provider": "tmdb",
       "tmdbSourceType": "DISCOVER",
-      "title": "Films",
+      "title": "Top rated films",
       "mediaType": "movie",
       "sortBy": "vote_average.desc",
       "filters": {
        "voteCountGte": 500,
        "withGenres": "16",
-       "withOriginalLanguage": "ja"
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
       }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/blSthAPRbEOJBowdxppeQqNPRh9.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/start-here.png"
    },
    {
-    "id": "3ffe2269-460c-5c9c-8924-6974086cba04",
-    "title": "By Genre",
-    "coverImageUrl": null,
+    "id": "4cfd228f-bc57-5776-ad33-a0ecf40a7686",
+    "title": "Genres",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/anime-genres.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "🎭",
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
      {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Action"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Adventure"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Avant Garde"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Award Winning"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Boys Love"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Comedy"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Drama"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Fantasy"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Girls Love"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Gourmet"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Horror"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Mystery"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Romance"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Sci-Fi"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Slice of Life"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Sports"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Supernatural"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Suspense"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Josei"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Kids"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Seinen"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Shoujo"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Shounen"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Adult Cast"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Anthropomorphic"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "CGDCT"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Childcare"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Combat Sports"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Crossdressing"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Delinquents"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Detective"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Educational"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Gag Humor"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Gore"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "High Stakes Game"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Historical"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Idols (Female)"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Idols (Male)"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Isekai"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Iyashikei"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Love Polygon"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Love Status Quo"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Mahou Shoujo"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Martial Arts"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Mecha"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Medical"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Military"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Music"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Mythology"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Organized Crime"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Otaku Culture"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Parody"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Performing Arts"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Pets"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Psychological"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Racing"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Reincarnation"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Samurai"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "School"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Showbiz"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Space"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Strategy Game"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Super Power"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Survival"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Team Sports"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Time Travel"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Urban Fantasy"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Vampire"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Video Game"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Villainess"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Visual Arts"
-     },
-     {
-      "provider": "addon",
-      "addonId": "aio-metadata",
-      "type": "anime",
-      "catalogId": "mal.genres",
-      "genre": "Workplace"
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Action and adventure",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,10759",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutGenres": "10762"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Comedy",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,35",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withoutGenres": "10762"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Drama",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,18",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Romance",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "9840"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Mystery",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,9648",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Kids",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,10762",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Action films",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,28",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Fantasy films",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,14",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Family films",
+      "mediaType": "movie",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16,10751",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
+      }
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/z0YhJvomqedHF85bplUJEotkN5l.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/genres.png"
    },
    {
-    "id": "335abd58-5e64-5a53-afdc-35c7229659c3",
-    "title": "By Decade",
-    "coverImageUrl": null,
+    "id": "d4ffc126-2613-57e7-b056-1cff62f1396e",
+    "title": "Themes",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/anime-themes.webp",
     "focusGifUrl": null,
     "focusGifEnabled": false,
-    "coverEmoji": "📅",
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": false,
+    "sources": [
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Isekai",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "237451"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Shounen",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "207826"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Mecha",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "10046|10891"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Sports",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "6075|1480|5605|6496|13042"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "School",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "6270|10873|190116"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Slice of life",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "9914"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Iyashikei (healing)",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "291483"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Psychological",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "272553|12565"
+      }
+     },
+     {
+      "provider": "tmdb",
+      "tmdbSourceType": "DISCOVER",
+      "title": "Magical girl",
+      "mediaType": "tv",
+      "filters": {
+       "voteCountGte": 20,
+       "withGenres": "16",
+       "withOriginalLanguage": "ja",
+       "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895",
+       "withKeywords": "292887|358020|382274"
+      }
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/wJi7fRmHw0wRMldUY28sSzXpp4G.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/themes.png"
+   },
+   {
+    "id": "a1879669-80cd-5db6-bd46-bc8b2be4a6b8",
+    "title": "Decades",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/anime-decades.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
     "tileShape": "LANDSCAPE",
     "hideTitle": false,
     "sources": [
@@ -4822,9 +4650,9 @@
       "catalogId": "mal.80sDecade"
      }
     ],
-    "heroBackdropUrl": null,
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/v38qp4bySLTXYu3MF8r5GD51FN3.jpg",
     "heroVideoUrl": null,
-    "titleLogoUrl": null
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/decades.png"
    }
   ]
  },

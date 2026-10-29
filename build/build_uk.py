@@ -1,16 +1,22 @@
 """Builds the Nuvio UK collections (import format as in mali-king/nuvio-collections).
 
-  python build/build_uk.py [F1_FILE]   writes nuvio-collections.json (link A, every profile: Streaming Services,
-                                       Movies, TV Shows, Anime, Live TV); with F1_FILE, also the F1 Replays
-                                       collection there (MediaFusion, Adam's profile only, so not in this repo)
+  python build/build_uk.py [--key-json PATH] [F1_FILE]
+      writes nuvio-collections.json (link A, every profile: Streaming Services, Movies, TV Shows, Anime, Live TV)
+      and the art it points at (build/art.py); with F1_FILE, also the F1 Replays collection there (MediaFusion,
+      Adam's profile only, so not in this repo)
 
-Movies and TV Shows reuse mali-king's pack at its v2 tag; Anime's genre and decade tabs come from
-AIOMetadata's Anime Essentials pack at v3.8.3 and stay out until MAL_FOLDERS is on (see there).
+The first four collections follow the home layout (Modern on Adam's TVs): each folder opens as a page of rows under
+a hero, so every folder gets a TMDB backdrop for the hero (picked here, so the build needs the TMDB key the same way
+check.py does), our title logo and, outside Streaming Services, our tile. Live TV stays a grid.
+Movies and TV Shows reuse mali-king's pack at its v2 tag; Anime's decade rows come from AIOMetadata's Anime
+Essentials pack at v3.8.3 and stay out unless MAL_FOLDERS is on (see there).
 Both packs are fetched, so the build needs network.
 Check the output with build/check.py before publishing.
 """
 import json, os, re, sys, urllib.request, uuid
 from datetime import date, timedelta
+
+import art, check
 
 NS = uuid.UUID('6f1c2a4e-0b7d-4c1e-9a55-3d2f7e8b9c10')
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,6 +30,9 @@ MK_TAG = "https://raw.githubusercontent.com/mali-king/nuvio-collections/v2/"
 MK = MK_TAG + "covers/streaming-services/{}.webp"
 COVER_BASE = os.environ.get("NUVIO_COVER_BASE", "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/")
 def own(slug): return COVER_BASE + slug + ".webp"
+def slug(text): return re.sub(r"[^a-z0-9]+", "-", text.lower().replace("&", " and ").replace("+", " plus ").replace("'", "")).strip("-")
+def tile_url(collection_slug, title): return f"{COVER_BASE}tiles/{collection_slug}-{slug(title)}.webp"
+def logo_url(title): return f"{COVER_BASE}logos/{slug(title)}.png"  # one per name: Start here looks the same everywhere
 
 # title, watch region, watch-provider ids (main service | its Amazon/Apple channels), floor tier,
 # originals networks (pipe list, DISCOVER rows), originals since (streamers only), Original Films companies,
@@ -63,12 +72,15 @@ AIOM = "aio-metadata"
 AIOM_ID_SUFFIX = ""
 AIOM_PACK = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/public/featured/anime-essentials.json"
 # On by Adam's call (29 Oct), before MAL safe mode (sfw) is confirmed on. With sfw off in the AIOMetadata config a
-# profile uses, AIOMetadata doesn't ask Jikan to filter, so the genre and decade tabs (School among them) can list Rx
-# hentai. Both of Adam's configs had sfw false on 28 Oct. Set False and rebuild to take the tabs out again.
+# profile uses, AIOMetadata doesn't ask Jikan to filter, so the decade rows can list Rx hentai. Both of Adam's
+# configs had sfw false on 28 Oct. Set False and rebuild to take the Decades folder out again.
+# The MAL genre catalogue can't come back as rows: its genres share one catalogue id, so in a page of rows they
+# collapse into one (Nuvio keys a row by add-on, type and catalogue, not genre). Anime's genres are TMDB rows instead.
 MAL_FOLDERS = True
-# Hentai, Erotica and Ecchi are MAL's adult genres. Harem, Reverse Harem and Magical Sex Shift go too: link A reaches
-# family profiles, and Jikan's sfw filter only removes Rx titles, not R+ fan service.
-MAL_LEFT_OUT = {"Hentai", "Erotica", "Ecchi", "Harem", "Reverse Harem", "Magical Sex Shift"}
+# Anime keywords left out of every Anime row (TMDB keyword ids): hentai, hentai adaptation, ecchi, etchi, erotica,
+# harem, reverse harem, nudity, sexual content, panty shot. TMDB's adult flag only covers outright porn, and link A
+# reaches family profiles.
+ANIME_SAFE = "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895"
 
 # mali-king v2 pack: entries left out of link A (US and Indian content)
 MK_DROP_FOLDERS = {
@@ -125,12 +137,13 @@ def tile_sources(title, region, providers, floor, nets, since, films, movies, se
     if series: out.append(discover(f"Best only on {title}: Series", "tv", "vote_average.desc", voteCountGte=f["top_t"], withoutGenres=NOISE_TV, **excl))
     return out
 
-def folder(folder_id, title, sources, cover=None, emoji=None, hide_title=False):
+def folder(folder_id, title, sources, cover=None, emoji=None, hide_title=False, logo=None):
+    # heroBackdropUrl is set by heroes(); heroVideoUrl stays off (it would play on focus)
     return {
         "id": folder_id, "title": title, "coverImageUrl": cover,
         "focusGifUrl": None, "focusGifEnabled": False, "coverEmoji": emoji,
         "tileShape": "LANDSCAPE", "hideTitle": hide_title, "sources": sources,
-        "heroBackdropUrl": None, "heroVideoUrl": None, "titleLogoUrl": None,
+        "heroBackdropUrl": None, "heroVideoUrl": None, "titleLogoUrl": logo,
     }
 
 def collection(slug, title, folders, pin=False, view="ROWS", all_tab=True):
@@ -139,12 +152,16 @@ def collection(slug, title, folders, pin=False, view="ROWS", all_tab=True):
 
 def fid(slug, title): return str(uuid.uuid5(NS, f"folder:{slug}:{title}"))
 
+# FOLLOW_LAYOUT ("Follow home") opens a folder as a page of rows under a hero, one row per source. The All tab is
+# off: with it on, Nuvio adds an All row and its "Load more" pages every row.
+MODERN = dict(view="FOLLOW_LAYOUT", all_tab=False)
+
 
 def streaming_services():
-    folders = [folder(str(uuid.uuid5(NS, "folder:" + s[0])), s[0], tile_sources(*s[:9]), cover=s[9], hide_title=True)
-               for s in SERVICES]
+    folders = [folder(str(uuid.uuid5(NS, "folder:" + s[0])), s[0], tile_sources(*s[:9]), cover=s[9], hide_title=True,
+                      logo=logo_url(s[0])) for s in SERVICES]
     # Not pinned: Nuvio puts pinned collections above every other home row, and this one sits third.
-    return collection("streaming-services-uk", "Streaming Services", folders)
+    return collection("streaming-services-uk", "Streaming Services", folders, **MODERN)
 
 def fetch(url):
     with urllib.request.urlopen(url, timeout=60) as r:
@@ -181,63 +198,199 @@ def grid_collection(slug, title, spec):
                for t, c, s in spec]
     return collection(slug, title, folders, view="TABBED_GRID", all_tab=False)
 
+def modern_collection(slug_, title, spec):
+    """spec: (folder title, sources[, hero sources]). Every folder gets our tile and title logo; hero sources stand
+    in for rows heroes() can't read (add-on rows) when picking the folder's backdrop."""
+    folders = []
+    for t, sources, *hint in spec:
+        f = folder(fid(slug_, t), t, sources, cover=tile_url(slug_, t), logo=logo_url(t))
+        if hint: f["_hero"] = hint[0]
+        folders.append(f)
+    return collection(slug_, title, folders, **MODERN)
+
+def split(tabs, groups):
+    """groups: (folder title, tab titles). Every tab of a pack folder lands in exactly one of our folders, so a pack
+    change shows up here instead of a tab going missing."""
+    by = {t["title"]: t for t in tabs}
+    names = [n for _, ns in groups for n in ns]
+    assert sorted(names) == sorted(by), f"pack changed: {sorted(set(by) ^ set(names))}"
+    return [(title, [by[n] for n in ns]) for title, ns in groups]
+
 def movies(mk):
     m = "movie"
     gb_digital = "|".join(dict.fromkeys(gb_pool() + GB_STORES.split("|")))  # on a UK service or store = out digitally
-    return grid_collection("movies", "Movies", [
-        ("New", "🆕", [discover("New films", m, "primary_release_date.desc", voteCountGte=25,
-                                withWatchProviders=gb_digital, watchRegion="GB")]),
-        ("Trending", "🔥", [discover("Trending films", m, None, voteCountGte=20, releaseDateGte=since(180))]),
-        # No documentaries, concert films or TV films, as in the pack's Critics' Picks
-        ("Top rated", "⭐", [discover("Top rated films", m, "vote_average.desc", voteCountGte=3000, withoutGenres="99|10402|10770")]),
-        ("By Genre", "🎭", pack_tabs(mk, "Genres", m)),
-        ("By Decade", "📅", pack_tabs(mk, "Decades", m)),
-        ("Collections", "🎞️", pack_tabs(mk, "Franchises & Universes", m)),
-        ("Moods", "🌗", pack_tabs(mk, "Moods & Themes", m)),
-        ("Directors", "🎬", pack_tabs(mk, "Directors", m, MK_DROP_FOLDERS["Directors"])),
-        ("Studios", "🏛️", pack_tabs(mk, "Studios", m, MK_DROP_FOLDERS["Studios"])),
-        ("World Cinema", "🌍", pack_tabs(mk, "World Cinema", m)),
-        ("Critics' picks", "🏆", pack_tabs(mk, "Critics' Picks", m)),
+    trending = discover("Trending films", m, None, voteCountGte=20, releaseDateGte=since(180))
+    return modern_collection("movies", "Movies", [
+        ("Start here", [discover("New films", m, "primary_release_date.desc", voteCountGte=25,
+                                 withWatchProviders=gb_digital, watchRegion="GB"),
+                        trending,
+                        # No documentaries, concert films or TV films, as in the pack's Critics' Picks
+                        discover("Top rated films", m, "vote_average.desc", voteCountGte=3000, withoutGenres="99|10402|10770"),
+                        *pack_tabs(mk, "Critics' Picks", m)], [trending]),  # the hero from what's big now
+        *split(pack_tabs(mk, "Genres", m), [
+            ("Genres", ["Action", "Adventure", "Comedy", "Drama", "Thriller", "Crime", "Horror", "Sci-Fi", "Fantasy",
+                        "Romance", "Mystery"]),
+            ("More genres", ["Animation", "Family", "Kids", "Documentary", "History", "War", "Western", "Music"])]),
+        ("Decades", pack_tabs(mk, "Decades", m)),
+        *split(pack_tabs(mk, "Franchises & Universes", m), [
+            ("Superhero and fantasy franchises", ["Marvel Cinematic Universe", "DC Universe", "Spider-Man", "X-Men",
+                                                  "Harry Potter", "The Lord of the Rings", "Pirates of the Caribbean",
+                                                  "The Hunger Games"]),
+            ("Sci-fi and horror franchises", ["Star Wars", "Dune", "Avatar", "The Matrix", "Jurassic Park", "MonsterVerse",
+                                              "Alien", "The Terminator", "Planet of the Apes", "Back to the Future",
+                                              "Mad Max", "The Conjuring"]),
+            ("Action and crime franchises", ["James Bond", "Mission: Impossible", "Fast & Furious", "John Wick", "Bourne",
+                                             "Indiana Jones", "Rocky", "The Godfather"]),
+            ("Family franchises", ["Toy Story", "Shrek", "Despicable Me", "How to Train Your Dragon", "Kung Fu Panda"])]),
+        *split(pack_tabs(mk, "Moods & Themes", m), [
+            ("Crime and suspense", ["Mind-Benders", "Heists", "Spies", "Serial Killers", "Whodunits", "Revenge",
+                                    "Mafia & Gangsters", "Courtroom", "Political Thrillers", "Neo-Noir", "Survival"]),
+            ("Action, sci-fi and monsters", ["Superheroes", "Martial Arts", "Space", "Time Travel", "Dystopia",
+                                             "Cyberpunk & AI", "Isekai", "Video Game Adaptations", "Disaster", "Zombies",
+                                             "Monsters & Kaiju", "Vampires"]),
+            ("Feel-good and true stories", ["True Stories", "Coming of Age", "Sports", "Road Trips", "Musicals",
+                                            "Feel-Good", "Christmas", "Dark Comedy", "Satire", "Stand-Up Comedy",
+                                            "Nature & Wildlife"])]),
+        *split(pack_tabs(mk, "Directors", m, MK_DROP_FOLDERS["Directors"]), [
+            ("Directors", ["Christopher Nolan", "Denis Villeneuve", "Quentin Tarantino", "Martin Scorsese",
+                           "Steven Spielberg", "David Fincher", "Stanley Kubrick", "Ridley Scott", "James Cameron",
+                           "Wes Anderson", "Greta Gerwig", "Paul Thomas Anderson", "Jordan Peele", "Alfred Hitchcock"]),
+            ("World directors", ["Bong Joon Ho", "Park Chan-wook", "Hayao Miyazaki", "Guillermo del Toro",
+                                 "Akira Kurosawa", "Wong Kar-wai"])]),
+        *split(pack_tabs(mk, "Studios", m, MK_DROP_FOLDERS["Studios"]), [
+            ("Hollywood studios", ["Marvel Studios", "Lucasfilm", "Walt Disney Pictures", "DC", "Warner Bros.",
+                                   "Universal", "Paramount", "20th Century", "Sony Pictures", "Legendary", "Amblin",
+                                   "Lionsgate"]),
+            ("Animation studios", ["Pixar", "Walt Disney Animation", "DreamWorks Animation", "Illumination",
+                                   "Studio Ghibli", "LAIKA", "Aardman"]),
+            ("Indie and world studios", ["A24", "NEON", "Blumhouse", "Searchlight", "Toho"])]),
+        *split(pack_tabs(mk, "World Cinema", m), [
+            ("Asian cinema", ["Korean", "Japanese", "Anime", "Chinese", "Thai", "Filipino"]),
+            ("World cinema", ["British", "French", "Spanish", "Italian", "German", "Nordic", "Turkish",
+                              "Latin American", "Arabic", "African"])]),
     ])
 
 def tv_shows(mk):
     t = "tv"
-    return grid_collection("tv-shows", "TV Shows", [
-        ("New", "🆕", [discover("New series", t, "first_air_date.desc", voteCountGte=10, withoutGenres=NOISE_TV)]),
-        ("Trending", "🔥", [discover("Trending series", t, None, voteCountGte=20, withoutGenres=NOISE_TV, releaseDateGte=since(730))]),
-        # 1500 votes keeps new hype shows off the top; keyword 210024 (anime) leaves anime to the Anime collection
-        ("Top rated", "⭐", [discover("Top rated series", t, "vote_average.desc", voteCountGte=1500, withoutGenres=NOISE_TV,
-                                      withoutKeywords="210024")]),
-        ("By Genre", "🎭", pack_tabs(mk, "Genres", t)),
-        ("By Decade", "📅", pack_tabs(mk, "Decades", t)),
-        ("Networks", "📡", pack_tabs(mk, "Networks", t, MK_DROP_FOLDERS["Networks"])),
+    trending = discover("Trending series", t, None, voteCountGte=20, withoutGenres=NOISE_TV, releaseDateGte=since(730))
+    return modern_collection("tv-shows", "TV Shows", [
+        ("Start here", [discover("New series", t, "first_air_date.desc", voteCountGte=10, withoutGenres=NOISE_TV),
+                        trending,
+                        # 1500 votes keeps new hype shows off the top; keyword 210024 (anime) leaves anime to the Anime collection
+                        discover("Top rated series", t, "vote_average.desc", voteCountGte=1500, withoutGenres=NOISE_TV,
+                                 withoutKeywords="210024"),
+                        # Two more so the page isn't three rows: British shows (no reality, 10764), and the most voted
+                        # series of all time
+                        discover("Trending British series", t, None, voteCountGte=10, withOriginCountry="GB",
+                                 withoutGenres=NOISE_TV + "|10764", releaseDateGte=since(730)),
+                        discover("Fan favourites", t, "vote_count.desc", withoutGenres=NOISE_TV, withoutKeywords="210024")],
+         [trending]),
+        ("Genres", pack_tabs(mk, "Genres", t)),
+        ("Decades", pack_tabs(mk, "Decades", t)),
+        *split(pack_tabs(mk, "Networks", t, MK_DROP_FOLDERS["Networks"]), [
+            ("Drama networks", ["HBO", "FX", "AMC", "Showtime", "BBC", "Channel 4", "ITV", "tvN", "JTBC"]),
+            ("Comedy, kids and factual networks", ["Comedy Central", "Adult Swim", "Cartoon Network", "Nickelodeon",
+                                                   "Disney Channel", "National Geographic", "Discovery", "History"])]),
     ])
 
 def anime(pack):
-    """New, Trending and Top rated run on Nuvio's own TMDB access (Japanese-language animation). By Genre and
-    By Decade use the MAL catalogues AIOMetadata adds when the Anime Essentials pack is imported."""
+    """Japanese-language animation on Nuvio's own TMDB access, ANIME_SAFE left out of every row. Decades uses the MAL
+    catalogues AIOMetadata adds when the Anime Essentials pack is imported (one catalogue id per decade)."""
     widgets = {w["title"]: w["dataSource"]["payload"]["items"] for w in pack["widgets"] if w["type"] == "collection.row"}
-    def order(item):  # the pack numbers its cards: 1 to 21 genres, 22 to 73 themes, 74 to 78 demographics
-        n = int(re.search(r"/(\d+)-[^/]*$", item["imageURL"]).group(1))
-        return (0 if n < 22 else 2 if n < 74 else 1, n)
-    genres = [i["dataSources"][0]["payload"]["genre"] for i in sorted(widgets["Anime by Genre"], key=order)]
-    assert MAL_LEFT_OUT <= set(genres) and len(genres) == 78, "Anime Essentials pack changed"
     decades = [i["dataSources"][0]["payload"]["aiometadata"]["catalog"]["id"] for i in widgets["Anime by Decade"]]
     assert decades == ["mal.80sDecade", "mal.90sDecade", "mal.00sDecade", "mal.10sDecade", "mal.20sDecade"], decades
-    a = dict(withGenres="16", withOriginalLanguage="ja")
-    def mal(catalog_id, genre=None): return addon(AIOM, "anime", catalog_id + AIOM_ID_SUFFIX, genre)
+    a = dict(withOriginalLanguage="ja", withoutKeywords=ANIME_SAFE)
+    def row(title, media, genres="", **f):  # 20 votes keeps one-season obscurities out of the genre and theme rows
+        return discover(title, media, None, voteCountGte=20, withGenres="16" + genres, **a, **f)
+    def theme(title, keywords): return row(title, "tv", withKeywords=keywords)
+    trending = discover("Trending series", "tv", None, voteCountGte=10, releaseDateGte=since(730), withGenres="16", **a)
     spec = [
-        ("New", "🆕", [discover("Series", "tv", "first_air_date.desc", voteCountGte=5, **a),
-                       discover("Films", "movie", "primary_release_date.desc", voteCountGte=10, **a)]),
-        ("Trending", "🔥", [discover("Series", "tv", None, voteCountGte=10, releaseDateGte=since(730), **a),
-                            discover("Films", "movie", None, voteCountGte=10, releaseDateGte=since(730), **a)]),
-        ("Top rated", "⭐", [discover("Series", "tv", "vote_average.desc", voteCountGte=500, **a),
-                             discover("Films", "movie", "vote_average.desc", voteCountGte=500, **a)]),
+        ("Start here", [discover("New series", "tv", "first_air_date.desc", voteCountGte=5, withGenres="16", **a),
+                        discover("New films", "movie", "primary_release_date.desc", voteCountGte=10, withGenres="16", **a),
+                        trending,
+                        discover("Trending films", "movie", None, voteCountGte=10, releaseDateGte=since(730), withGenres="16", **a),
+                        discover("Top rated series", "tv", "vote_average.desc", voteCountGte=500, withGenres="16", **a),
+                        discover("Top rated films", "movie", "vote_average.desc", voteCountGte=500, withGenres="16", **a)],
+         [trending]),
+        # TMDB's TV genres: 10759 Action & Adventure, 35 Comedy, 18 Drama, 9648 Mystery, 10762 Kids. Romance is only a
+        # film genre, so the series row uses its keyword (9840). Kids (10762) stays out of the broad rows, where
+        # long-running children's shows would top them.
+        ("Genres", [row("Action and adventure", "tv", ",10759", withoutGenres="10762"),
+                    row("Comedy", "tv", ",35", withoutGenres="10762"),
+                    row("Drama", "tv", ",18"),
+                    row("Romance", "tv", withKeywords="9840"),
+                    row("Mystery", "tv", ",9648"),
+                    row("Kids", "tv", ",10762"),
+                    row("Action films", "movie", ",28"),
+                    row("Fantasy films", "movie", ",14"),
+                    row("Family films", "movie", ",10751")]),
+        # TMDB keyword ids, checked 29 Oct: isekai 237451, shounen 207826, mecha 10046 and giant robot 10891; sports
+        # 6075, baseball 1480, volleyball 5605, basketball 6496, football 13042; high school 6270, school 10873,
+        # school life 190116; slice of life 9914; iyashikei 291483; psychological 272553 and psychological thriller
+        # 12565; magical girl 292887, magical girls 358020, magical girl ensemble 382274
+        ("Themes", [theme("Isekai", "237451"), theme("Shounen", "207826"), theme("Mecha", "10046|10891"),
+                    theme("Sports", "6075|1480|5605|6496|13042"), theme("School", "6270|10873|190116"),
+                    theme("Slice of life", "9914"), theme("Iyashikei (healing)", "291483"),
+                    theme("Psychological", "272553|12565"), theme("Magical girl", "292887|358020|382274")]),
     ]
     if MAL_FOLDERS:
-        spec += [("By Genre", "🎭", [mal("mal.genres", g) for g in genres if g not in MAL_LEFT_OUT]),
-                 ("By Decade", "📅", [mal(d) for d in reversed(decades)])]  # newest first, as in Movies and TV Shows
-    return grid_collection("anime", "Anime", spec)
+        # newest first, as in Movies and TV Shows; the hero comes from TMDB's best loved anime before 2000
+        spec.append(("Decades", [addon(AIOM, "anime", d + AIOM_ID_SUFFIX) for d in reversed(decades)],
+                     [discover("", "tv", "vote_count.desc", withGenres="16", releaseDateLte="1999-12-31", **a)]))
+    return modern_collection("anime", "Anime", spec)
+
+
+# Hero backdrops: per folder, the first family-safe title (by rating) among each row's best known few (most votes on
+# the row's first page: steadier than TMDB's daily popularity), with a backdrop that has no text on it (our logo goes
+# over it), never one used twice in a collection.
+HERO_DEPTH = 5    # best known titles tried per row
+HERO_TRIES = 30   # titles looked up per folder at most
+# The UK rating, else the US one. A folder's rows already show these titles' posters, so the hero only has to keep
+# 18s out and horror out where it can; R and TV-MA (often 18 here) only when the most known titles have nothing else.
+CERT_TIER = {**dict.fromkeys(["U", "PG", "12", "12A", "15", "G", "PG-13", "TV-Y", "TV-Y7", "TV-G", "TV-PG", "TV-14"], 0),
+             **dict.fromkeys(["R", "TV-MA"], 1)}  # anything else (18, R18, NC-17) never; no rating at all is tier 2
+
+def hero_pick(tmdb, sources, used, today):
+    best, tried = None, 0
+    for s in sources:
+        p = check._source(s)
+        if p is None or p["provider"] != "tmdb": continue
+        media = "tv" if p["mediaType"] == "TV" or p["sourceType"] == "NETWORK" else "movie"
+        _, items = check.resolve_raw(tmdb, p, today)
+        items = sorted((r for r in items[:20] if r.get("backdrop_path") and not r.get("adult")),
+                       key=lambda r: -(r.get("vote_count") or 0))[:HERO_DEPTH]
+        for r in items:
+            if (media, r["id"]) in used or tried >= HERO_TRIES: continue
+            tried += 1
+            d = tmdb.get(f"{media}/{r['id']}", {"append_to_response": "release_dates,content_ratings,images",
+                                                 "include_image_language": "null"}) or {}
+            ratings = {x["iso_3166_1"]: x.get("rating") for x in (d.get("content_ratings") or {}).get("results", [])}
+            for x in (d.get("release_dates") or {}).get("results", []):
+                ratings[x["iso_3166_1"]] = next((y["certification"] for y in x["release_dates"] if y["certification"]), None)
+            cert = ratings.get("GB") or ratings.get("US")
+            tier = CERT_TIER.get(cert, 2 if cert is None else None)
+            if tier is None or d.get("adult"): continue
+            if any(g["id"] == 27 for g in d.get("genres", [])): tier += 0.5  # horror only when the folder has nothing else
+            plain = sorted((b for b in (d.get("images") or {}).get("backdrops", []) if b.get("width", 0) >= 1280),
+                           key=lambda b: -(b.get("vote_average") or 0))
+            if not plain: continue
+            if best is None or tier < best[0]:
+                best = (tier, (media, r["id"]), plain[0]["file_path"], d.get("title") or d.get("name"), cert)
+            if tier == 0: return best
+    return best
+
+def heroes(cols, tmdb):
+    today = date.today().isoformat()
+    for c in cols:
+        if c["viewMode"] != "FOLLOW_LAYOUT": continue
+        used = set()
+        for f in c["folders"]:
+            pick = hero_pick(tmdb, f.pop("_hero", []) + f["sources"], used, today)
+            if pick is None: raise SystemExit(f"no hero backdrop for {c['title']} / {f['title']}")
+            _, key, path, name, cert = pick
+            used.add(key)
+            f["heroBackdropUrl"] = "https://image.tmdb.org/t/p/w1280" + path
+            print(f"  hero {c['title']} / {f['title']}: {name} ({cert or 'no rating'})")
 
 # Live TV: one folder per section of Sky's guide, in Sky's order, each one catalogue (so one paged grid). The Worker
 # lists its channels then the section's free ones; the Pages install lists the free ones only.
@@ -263,6 +416,12 @@ def write(name, data):
           f"{os.path.getsize(path)} bytes")
 
 if __name__ == "__main__":
+    args = sys.argv[1:]
+    tmdb = check.Tmdb(check.load_key(args))
+    f1 = [a for i, a in enumerate(args) if not a.startswith("--") and (i == 0 or args[i - 1] != "--key-json")]
     mk = {c["title"]: c for c in fetch(MK_TAG + "nuvio-collections.json")}
-    write("nuvio-collections.json", [streaming_services(), movies(mk), tv_shows(mk), anime(fetch(AIOM_PACK)), live_tv()])
-    if len(sys.argv) > 1: write(sys.argv[1], [f1_replays()])
+    cols = [streaming_services(), movies(mk), tv_shows(mk), anime(fetch(AIOM_PACK)), live_tv()]
+    heroes(cols, tmdb)
+    write("nuvio-collections.json", cols)
+    art.render(cols)
+    if f1: write(f1[0], [f1_replays()])
