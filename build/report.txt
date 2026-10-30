@@ -1,7 +1,6 @@
-Checked 2026-10-30 against TMDB live. Rows: 240 TMDB, thin (<20): 14, failures: 0, warnings: 2
+Checked 2026-10-30 against TMDB live. Rows: 240 TMDB, thin (<20): 14, failures: 0, warnings: 1
 
 WARN nuvio-collections.json: Streaming Services/Hulu: 2 rows, not 3 to 25
-WARN 2 of our images aren't on GitHub yet (the files here are images), such as https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-showcase.png
 
 nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-shows | addon com.barticom94.ukextras ukx.netflix-top10-shows  | catalogue checked
 nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-films | addon com.barticom94.ukextras ukx.netflix-top10-films  | catalogue checked
