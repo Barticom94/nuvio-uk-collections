@@ -1,4 +1,4 @@
-Checked 2026-10-29 against TMDB live. Rows: 240 TMDB, thin (<20): 14, failures: 0, warnings: 1
+Checked 2026-10-30 against TMDB live. Rows: 240 TMDB, thin (<20): 14, failures: 0, warnings: 1
 
 WARN nuvio-collections.json: Streaming Services/Hulu: 2 rows, not 3 to 25
 
@@ -66,7 +66,7 @@ nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - New films 
 nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - New series | 201 | ok | Brothers; Last Seen; Lucky
 nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Best exclusive films | 50 | ok | Selena Gomez: My Mind & Me; Tenzing; Billie Eilish: The World's a Little Blurry | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Best exclusive series | 96 | ok | Dickinson; Severance; Ted Lasso | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Trending originals | 378 | ok | Game of Thrones; The Sopranos; Sesame Street
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Trending originals | 377 | ok | Game of Thrones; The Sopranos; Sesame Street
 nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Best originals | 172 | ok | The Pitt; Chernobyl; The Sopranos
 nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Original films | 89 | ok | Gia; Mountainhead; Ricochet
 nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Exclusive films | 172 | ok | Backrooms; The Lord of the Rings: The Fellowship of the Ring; The Matrix | exclusion spot-check 5/5 clean
