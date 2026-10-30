@@ -2328,7 +2328,7 @@
       }
      }
     ],
-    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/9FE5eD92WfVCiivM9Pq9GVSrlWk.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-genres.png"
    },
@@ -2615,6 +2615,45 @@
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
     "heroVideoUrl": null,
     "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-collections.png"
+   },
+   {
+    "id": "5e3a10f9-b39d-5982-a45d-39587318da5b",
+    "title": "Showcase",
+    "coverImageUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/tiles/movies-showcase.webp",
+    "focusGifUrl": null,
+    "focusGifEnabled": false,
+    "coverEmoji": null,
+    "tileShape": "LANDSCAPE",
+    "hideTitle": true,
+    "sources": [
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.showcase.imax-cameras"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.showcase.imax-at-home"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.showcase.hdr"
+     },
+     {
+      "provider": "addon",
+      "addonId": "com.barticom94.ukextras",
+      "type": "movie",
+      "catalogId": "uks.showcase.restorations"
+     }
+    ],
+    "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/jYEW5xZkZk2WTrdbMGAPFuBqbDc.jpg",
+    "heroVideoUrl": null,
+    "titleLogoUrl": "https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-showcase.png"
    }
   ]
  },

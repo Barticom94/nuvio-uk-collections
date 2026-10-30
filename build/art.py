@@ -11,8 +11,8 @@ build_uk.py runs it after writing the file. Two kinds of art, all our own:
   test-card bars), Anime is manga pop (bright skies, ink outlines, halftone, speed lines). Each card has its own
   motif: New and Trending rises (a film strip arrow, a transmitter's signal with an on-air flame, a flame), Top Rated
   a star (in a laurel, on a CRT set, a rosette), Genres a mosaic of genre glyphs (tiles, a video wall, manga panels),
-  Decades the decades (a film strip, a TV set per decade, a timeline) and Collections a box set and a reel. The
-  glyphs are drawn here too.
+  Decades the decades (a film strip, a TV set per decade, a timeline), Collections a box set and a reel, and
+  Showcase an IMAX-shaped screen whose sun blooms past its frame. The glyphs are drawn here too.
 - Streaming Services' title logos: the service name in white with a soft shadow (Pillow); its tiles are the services'
   covers.
 Logos sit on a transparent canvas with the aspect of the hero's logo slot (ModernHomeHero: 100dp high, up to 220dp
@@ -187,7 +187,8 @@ DEFS = """
 
 MOVIE_HUES = {"New and Trending": ("#b3203a", "#5e0d1e", "#23060c"), "Top Rated": ("#9c1838", "#4f0a22", "#1c040e"),
               "Genres": ("#bd1f45", "#5f0c22", "#22050c"), "Decades": ("#93173a", "#4d0a1f", "#1d040b"),
-              "Collections": ("#a01f4a", "#520d29", "#1f0511")}  # crimson to burgundy, hues 340 to 355
+              "Collections": ("#a01f4a", "#520d29", "#1f0511"), "Showcase": ("#a81c3c", "#560b20", "#20040b")}
+# crimson to burgundy, hues 340 to 355
 
 def movies_bg(card, spot=(700, 250)):
     hi, mid, deep = MOVIE_HUES[card]
@@ -361,6 +362,41 @@ def movies_collections():
   <rect x="{x0}" y="{y0}" width="{x1 - x0}" height="{y1 - y0}" rx="6" fill="#2a0710" {edge}/>
   <rect x="{x0 + wall}" y="{y0 + wall}" width="{x1 - x0 - 2 * wall}" height="{y1 - y0 - 2 * wall}" fill="#12030a"/>
   {"".join(spines)}
+</g>"""
+
+def movies_showcase():
+    """An IMAX-shaped screen (1.43:1) in a brass frame, a desert sunrise on it: the sun and its anamorphic flare bloom
+    past the frame, as HDR highlights do."""
+    x0, y0, w, h, bow = 516, 44, 386, 270, 16
+    x1, y1, sx, sy = x0 + w, y0 + h, x0 + w * .64, y0 + h * .62
+    screen = f"M{x0} {y0}Q{x0 + w / 2} {y0 - bow} {x1} {y0}L{x1} {y1}Q{x0 + w / 2} {y1 + bow} {x0} {y1}Z"
+    dunes = [(f"M{x0 - 5} {y0 + h * .70}C{x0 + 90} {y0 + h * .58} {x0 + 170} {y0 + h * .74} {x1 + 5} {y0 + h * .64}"
+              f"L{x1 + 5} {y1 + 20}L{x0 - 5} {y1 + 20}Z", "#7c2430"),
+             (f"M{x0 - 5} {y0 + h * .84}C{x0 + 120} {y0 + h * .70} {x0 + 210} {y0 + h * .90} {x1 + 5} {y0 + h * .78}"
+              f"L{x1 + 5} {y1 + 20}L{x0 - 5} {y1 + 20}Z", "#3a0b16"),
+             (f"M{x0 - 5} {y0 + h * .95}C{x0 + 80} {y0 + h * .86} {x0 + 150} {y0 + h * .97} {x1 + 5} {y0 + h * .92}"
+              f"L{x1 + 5} {y1 + 20}L{x0 - 5} {y1 + 20}Z", "#1c050b")]
+    return f"""
+<defs><clipPath id="screen"><path d="{screen}"/></clipPath>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d0731"/><stop offset=".38" stop-color="#7a1d3e"/>
+  <stop offset=".62" stop-color="#ff9a4a"/><stop offset=".72" stop-color="#ffd98f"/></linearGradient>
+<radialGradient id="halo"><stop offset="0" stop-color="#fffbe8"/><stop offset=".3" stop-color="#ffe6a6" stop-opacity=".85"/>
+  <stop offset="1" stop-color="#ffb35c" stop-opacity="0"/></radialGradient>
+<linearGradient id="flare" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffe2b0" stop-opacity="0"/>
+  <stop offset=".5" stop-color="#fff8e4"/><stop offset="1" stop-color="#ffe2b0" stop-opacity="0"/></linearGradient></defs>
+<circle cx="{sx:.0f}" cy="{sy:.0f}" r="250" fill="#ffb86b" opacity=".2" filter="url(#blur24)"/>
+<g transform="rotate(-3 {x0 + w / 2:.0f} {y0 + h / 2:.0f})">
+<g filter="url(#drop)"><path d="{screen}" fill="#12030a" stroke="url(#gold)" stroke-width="22" stroke-linejoin="round"/></g>
+<g clip-path="url(#screen)">
+  <rect x="{x0 - 5}" y="{y0 - 15}" width="{w + 10}" height="{h + 30}" fill="url(#sky)"/>
+  <circle cx="{sx:.0f}" cy="{sy:.0f}" r="96" fill="url(#halo)"/>
+  <circle cx="{sx:.0f}" cy="{sy:.0f}" r="25" fill="#fffdf4"/>
+  {"".join(f'<path d="{d}" fill="{c}"/>' for d, c in dunes)}
+</g>
+<path d="{screen}" fill="none" stroke="#8a5512" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="{sx:.0f}" cy="{sy:.0f}" r="58" fill="#fff4cf" opacity=".55" filter="url(#blur24)"/>
+<ellipse cx="{sx:.0f}" cy="{sy:.0f}" rx="230" ry="4" fill="url(#flare)" opacity=".9"/>
+<ellipse cx="{sx:.0f}" cy="{sy:.0f}" rx="120" ry="10" fill="url(#flare)" opacity=".35" filter="url(#glow)"/>
 </g>"""
 
 def crt(cx, cy, sw, sh, content, tilt=0, cid="scr"):
@@ -572,6 +608,7 @@ MOTIFS = {
     ("movies", "Genres"): (movies_genres, {"spot": (720, 230)}),
     ("movies", "Decades"): (movies_decades, {"spot": (560, 230)}),
     ("movies", "Collections"): (movies_collections, {"spot": (760, 220)}),
+    ("movies", "Showcase"): (movies_showcase, {"spot": (720, 200)}),
     ("tv", "New and Trending"): (tv_trending, {"glow": (680, 262)}),
     ("tv", "Top Rated"): (tv_top, {"glow": (680, 262)}),
     ("tv", "Genres"): (tv_genres, {"glow": (700, 230)}),

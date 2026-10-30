@@ -51,6 +51,13 @@ own catalogue id, as rows of one catalogue collapse into one. The UK Extras add-
 so on a profile with that install (or neither) these rows stay as loading placeholders. The folder's hero still comes
 from TMDB: the series' TMDB collections (and the MCU keyword, short films left out) pick it.
 
+Movies' Showcase rows are add-on rows too, from the same add-on (3.4.0): films picked for the TV's picture, newest
+first, `uks.showcase.imax-cameras` (Shot with IMAX cameras), `uks.showcase.imax-at-home` (IMAX picture at home),
+`uks.showcase.hdr` (Dolby Vision and HDR showpieces) and `uks.showcase.restorations` (4K restorations of classics)
+(`SHOWCASE` in `build/build_uk.py`). The films, their sources and the rules are in UK Streaming's `showcase.mjs`. A
+film joins its row on the day it's out at home. Without UK Streaming 3.4.0 these rows stay as loading placeholders.
+The hero comes from Dune's TMDB collection.
+
 Anime Decades rows come from UK Streaming's weekly anime lists: MAL's titles ranked by members, one hidden
 catalogue per decade, type `anime`, `ukx.anime-2020s` to `ukx.anime-1980s` (`ANIME_DECADES` in `build/build_uk.py`).
 On a profile whose add-on doesn't list them, its five rows stay as loading placeholders. `MAL_FOLDERS = False` in

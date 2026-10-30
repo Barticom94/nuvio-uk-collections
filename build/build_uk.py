@@ -7,9 +7,9 @@
 The first four collections follow the home layout (Modern on Adam's TVs): each folder opens as a page of rows under
 a hero, so every folder gets a TMDB backdrop for the hero (picked here, so the build needs the TMDB key the same way
 check.py does), our title logo and, outside Streaming Services, our tile.
-Movies, TV Shows and Anime are the same cards (New and Trending, Top Rated, Genres, Decades, and Collections in
-Movies), every row written out here. Anime's decade rows come from UK Streaming's weekly anime lists and stay out
-unless MAL_FOLDERS is on (see there). Ten service covers are mali-king's (nuvio-collections, v2 tag).
+Movies, TV Shows and Anime are the same cards (New and Trending, Top Rated, Genres, Decades, and Collections and
+Showcase in Movies), every row written out here. Anime's decade rows come from UK Streaming's weekly anime lists and
+stay out unless MAL_FOLDERS is on (see there). Ten service covers are mali-king's (nuvio-collections, v2 tag).
 Check the output with build/check.py before publishing.
 """
 import json, os, re, sys, uuid
@@ -121,6 +121,9 @@ FRANCHISES = [
     ("Toy Story", 10194, "toy-story"), ("Shrek", 2150, "shrek"), ("Despicable Me", 86066, "despicable-me"),
     ("How to Train Your Dragon", 89137, "how-to-train-your-dragon"), ("Paddington", 488924, "paddington"),
     ("Wallace & Gromit", 529, "wallace-and-gromit")]
+# Showcase: films picked for the TV's picture, newest first, one UK Streaming catalogue each (uks.showcase.<slug>;
+# E:/UK Sport/showcase.mjs has the films, their sources and the row titles). The hero comes from Dune's collection.
+SHOWCASE = ["imax-cameras", "imax-at-home", "hdr", "restorations"]
 NO_FILLER = "99|10402|10770"  # documentaries, concert films and TV films: out of the broad Top rated film rows
 
 FILMS_FLOOR = {"NOW": 20, "MUBI": 20}  # Sky and MUBI make few films; at 50 votes these rows drop under 20 titles
@@ -262,6 +265,7 @@ def movies():
         ("Collections", [addon(UKX, m, "uks.franchise." + c) for c in ["mcu"] + [c for _, _, c in FRANCHISES]],
          [film("Marvel Cinematic Universe", "primary_release_date.desc", voteCountGte=200, withKeywords="180547",
                withoutKeywords=f"{MOVIE_SAFE}|{SHORT_FILM}"), *(film_series(t, i) for t, i, _ in FRANCHISES)]),
+        ("Showcase", [addon(UKX, m, "uks.showcase." + c) for c in SHOWCASE], [film_series("Dune", 726871)]),
     ])
 
 def tv_shows():

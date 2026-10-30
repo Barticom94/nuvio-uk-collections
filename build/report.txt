@@ -1,6 +1,7 @@
-Checked 2026-10-30 against TMDB live. Rows: 240 TMDB, thin (<20): 14, failures: 0, warnings: 1
+Checked 2026-10-30 against TMDB live. Rows: 240 TMDB, thin (<20): 14, failures: 0, warnings: 2
 
 WARN nuvio-collections.json: Streaming Services/Hulu: 2 rows, not 3 to 25
+WARN 2 of our images aren't on GitHub yet (the files here are images), such as https://raw.githubusercontent.com/Barticom94/nuvio-uk-collections/main/covers/logos/movies-showcase.png
 
 nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-shows | addon com.barticom94.ukextras ukx.netflix-top10-shows  | catalogue checked
 nuvio-collections.json | Streaming Services / Netflix / ukx.netflix-top10-films | addon com.barticom94.ukextras ukx.netflix-top10-films  | catalogue checked
@@ -30,6 +31,10 @@ nuvio-collections.json | Movies / Collections / uks.franchise.despicable-me | ad
 nuvio-collections.json | Movies / Collections / uks.franchise.how-to-train-your-dragon | addon com.barticom94.ukextras uks.franchise.how-to-train-your-dragon  | catalogue checked
 nuvio-collections.json | Movies / Collections / uks.franchise.paddington | addon com.barticom94.ukextras uks.franchise.paddington  | catalogue checked
 nuvio-collections.json | Movies / Collections / uks.franchise.wallace-and-gromit | addon com.barticom94.ukextras uks.franchise.wallace-and-gromit  | catalogue checked
+nuvio-collections.json | Movies / Showcase / uks.showcase.imax-cameras | addon com.barticom94.ukextras uks.showcase.imax-cameras  | catalogue checked
+nuvio-collections.json | Movies / Showcase / uks.showcase.imax-at-home | addon com.barticom94.ukextras uks.showcase.imax-at-home  | catalogue checked
+nuvio-collections.json | Movies / Showcase / uks.showcase.hdr | addon com.barticom94.ukextras uks.showcase.hdr  | catalogue checked
+nuvio-collections.json | Movies / Showcase / uks.showcase.restorations | addon com.barticom94.ukextras uks.showcase.restorations  | catalogue checked
 nuvio-collections.json | Anime / Decades / ukx.anime-2020s | addon com.barticom94.ukextras ukx.anime-2020s  | catalogue checked
 nuvio-collections.json | Anime / Decades / ukx.anime-2010s | addon com.barticom94.ukextras ukx.anime-2010s  | catalogue checked
 nuvio-collections.json | Anime / Decades / ukx.anime-2000s | addon com.barticom94.ukextras ukx.anime-2000s  | catalogue checked
@@ -43,12 +48,12 @@ nuvio-collections.json | Streaming Services / Netflix / Netflix - New series | 2
 nuvio-collections.json | Streaming Services / Netflix / Netflix - Best exclusive films | 479 | ok | Swapped; Spirited Away; Dilwale Dulhania Le Jayenge | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Netflix / Netflix - Best exclusive series | 404 | ok | Teach You a Lesson; Breaking Bad; When Life Gives You Tangerines | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Trending originals | 363 | ok | The Summer I Turned Pretty; Reacher; The Terminal List
-nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Original films | 127 | ok | Verity; Masterplan; Project Hail Mary
-nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Exclusive films | 2872 | ok | Masterplan; Project Hail Mary; War of the Worlds | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Original films | 128 | ok | Verity; Masterplan; Ali G: Who Iz I?
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Exclusive films | 2874 | ok | Masterplan; War of the Worlds; Project Hail Mary | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Exclusive series | 436 | ok | The Summer I Turned Pretty; Reacher; The Terminal List | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Prime Video / Prime Video - New films | 7443 | ok | Ali G: Who Iz I?; Masterplan; Love of Your Life
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - New films | 7446 | ok | Ali G: Who Iz I?; Masterplan; Love of Your Life
 nuvio-collections.json | Streaming Services / Prime Video / Prime Video - New series | 1188 | ok | Love in Disguise; Carrie; I Would Rather Die
-nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Best exclusive films | 453 | ok | Project Hail Mary; Schindler's List; Gabriel's Inferno | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Best exclusive films | 454 | ok | Project Hail Mary; Schindler's List; Gabriel's Inferno | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Prime Video / Prime Video - Best exclusive series | 118 | ok | Off Campus; The Chosen; No One Will Miss Us | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Disney+ / Disney+ - Trending originals | 277 | ok | What We Do in the Shadows; VisionQuest; American Horror Story
 nuvio-collections.json | Streaming Services / Disney+ / Disney+ - Original films | 490 | ok | Spider-Man: Brand New Day; Coco; Toy Story 5
@@ -87,13 +92,13 @@ nuvio-collections.json | Streaming Services / NOW / NOW - New series | 271 | ok 
 nuvio-collections.json | Streaming Services / NOW / NOW - Best exclusive films | 417 | ok | GoodFellas; The Shadow's Edge; Ennio | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / NOW / NOW - Best exclusive series | 57 | ok | Chernobyl; Heated Rivalry; Crystal Lake | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Trending originals | 79 | ok | MobLand; Tulsa King; Lioness
-nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Best originals | 46 | ok | Dutton Ranch; Avatar: Seven Havens; Among Us
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Best originals | 46 | ok | Dutton Ranch; Among Us; Avatar: Seven Havens
 nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Exclusive films | 254 | ok | Avatar Aang: The Last Airbender; Top Gun: Maverick; The Godfather | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Exclusive series | 158 | ok | MobLand; CSI: Crime Scene Investigation; Star Trek: The Next Generation | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - New films | 478 | ok | Clash of the Thundermans; Avatar Aang: The Last Airbender; Black Box
 nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - New series | 327 | ok | Treasure Island; Avatar: Seven Havens; Eternally Yours
 nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Best exclusive films | 175 | ok | Avatar Aang: The Last Airbender; The Godfather; The Godfather Part II | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Best exclusive series | 96 | ok | Dutton Ranch; Avatar: Seven Havens; Among Us | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Paramount+ / Paramount+ - Best exclusive series | 96 | ok | Dutton Ranch; Among Us; Avatar: Seven Havens | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Trending originals | 964 | ok | Luther; Death in Paradise; Doctor Who
 nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Best originals | 203 | ok | Blue Planet II; I Am Not an Animal; Planet Earth III
 nuvio-collections.json | Streaming Services / BBC iPlayer / BBC iPlayer - Original films | 234 | ok | The Iron Claw; Peaky Blinders: The Immortal Man; Aftersun
@@ -122,7 +127,7 @@ nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Best exclu
 nuvio-collections.json | Streaming Services / Channel 4 / Channel 4 - Best exclusive series | 58 | ok | The World at War; The West Wing; Pride and Prejudice | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Trending originals | 48 | ok | Peppa Pig; Big Brother; Thomas & Friends
 nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Best originals | 48 | ok | Michael Palin: Into Iraq; All Creatures Great & Small; World's Most Scenic Railway Journeys
-nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Exclusive films | 36 | ok | Once Upon a Time in the West; Den of Thieves; A Fistful of Dollars | exclusion spot-check 5/5 clean
+nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Exclusive films | 36 | ok | Once Upon a Time in the West; A Fistful of Dollars; Den of Thieves | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - Exclusive series | 20 | ok | Madam Secretary; Spartacus; Bull | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - New films | 135 | ok | Rocky's Cat-astrophe; Bloody Axe Wound; A Merry Royal Christmas
 nuvio-collections.json | Streaming Services / Channel 5 / Channel 5 - New series | 159 | ok | Benidorm Is Murder; Cooper & Fry; The Forsytes
@@ -159,23 +164,23 @@ nuvio-collections.json | Streaming Services / WOW / WOW - Exclusive series | 19 
 nuvio-collections.json | Streaming Services / WOW / WOW - New series | 26 | ok | Drag Race Philippines: Slaysian Royale; RuPaul's Drag Race Global All Stars; Drag Race España All Stars
 nuvio-collections.json | Streaming Services / WOW / WOW - Best exclusive series | 4 | THIN | RuPaul's Drag Race; RuPaul's Drag Race All Stars; RuPaul's Drag Race: Untucked | exclusion spot-check 4/4 clean
 nuvio-collections.json | Movies / New and Trending / New films | 20001 | ok | Surviving Hurricane Otis; Ali G: Who Iz I?; Masterplan
-nuvio-collections.json | Movies / New and Trending / Trending films | 327 | ok | Hope; Spider-Man: Brand New Day; Fall 2: Deadpoint
+nuvio-collections.json | Movies / New and Trending / Trending films | 327 | ok | Wildwood; Hope; Spider-Man: Brand New Day
 nuvio-collections.json | Movies / New and Trending / Trending family films | 52 | ok | Forgotten Island; Toy Story 5; Moana
 nuvio-collections.json | Movies / Top Rated / Top rated films | 1912 | ok | The Shawshank Redemption; The Godfather; Project Hail Mary
-nuvio-collections.json | Movies / Top Rated / Top rated of the past year | 108 | ok | Avatar Aang: The Last Airbender; Swapped; Facing El Chapo
+nuvio-collections.json | Movies / Top Rated / Top rated of the past year | 109 | ok | Avatar Aang: The Last Airbender; Swapped; Facing El Chapo
 nuvio-collections.json | Movies / Top Rated / Top rated of the past five years | 262 | ok | Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Project Hail Mary
 nuvio-collections.json | Movies / Top Rated / Top rated animated films | 268 | ok | Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle; Spirited Away
 nuvio-collections.json | Movies / Top Rated / Top rated family films | 147 | ok | It's a Wonderful Life; Wonder; Hachi: A Dog's Tale
 nuvio-collections.json | Movies / Top Rated / Top rated documentaries | 111 | ok | David Attenborough: A Life on Our Planet; Selena Gomez: My Mind & Me; Stop Making Sense
-nuvio-collections.json | Movies / Genres / Action | 4584 | ok | Hope; Spider-Man: Brand New Day; The Odyssey
-nuvio-collections.json | Movies / Genres / Adventure | 2993 | ok | Spider-Man: Brand New Day; The Odyssey; Wildwood
+nuvio-collections.json | Movies / Genres / Action | 4584 | ok | The Dark Knight; Hope; Spider-Man: Brand New Day
+nuvio-collections.json | Movies / Genres / Adventure | 2993 | ok | Wildwood; Spider-Man: Brand New Day; The Odyssey
 nuvio-collections.json | Movies / Genres / Animation | 1957 | ok | Wildwood; Forgotten Island; Coco
 nuvio-collections.json | Movies / Genres / Comedy | 8421 | ok | Buddy; Matchbox the Movie; Forgotten Island
-nuvio-collections.json | Movies / Genres / Crime | 3359 | ok | Animals; The Shawshank Redemption; Inception
+nuvio-collections.json | Movies / Genres / Crime | 3358 | ok | The Dark Knight; Animals; The Shawshank Redemption
 nuvio-collections.json | Movies / Genres / Documentary | 704 | ok | Jackass: Best and Last; The Remarkable Life of Ibelin; NAZA
-nuvio-collections.json | Movies / Genres / Drama | 10387 | ok | Animals; Digger; Interstellar
+nuvio-collections.json | Movies / Genres / Drama | 10385 | ok | Animals; Digger; Interstellar
 nuvio-collections.json | Movies / Genres / Family | 2214 | ok | Forgotten Island; Coco; The Nightmare Before Christmas
-nuvio-collections.json | Movies / Genres / Fantasy | 2238 | ok | The Odyssey; Buddy; Pinocchio: Unstrung
+nuvio-collections.json | Movies / Genres / Fantasy | 2237 | ok | Wildwood; The Odyssey; Buddy
 nuvio-collections.json | Movies / Genres / Heist | 180 | ok | Inception; Die Hard; The Bad Guys 2
 nuvio-collections.json | Movies / Genres / History | 1111 | ok | Oppenheimer; Tenzing; The Uprising
 nuvio-collections.json | Movies / Genres / Horror | 3611 | ok | Clayface; Buddy; Insidious: Out of the Further
@@ -188,8 +193,8 @@ nuvio-collections.json | Movies / Genres / Romantic comedy | 1951 | ok | Practic
 nuvio-collections.json | Movies / Genres / Sci-fi | 2348 | ok | Hope; Spider-Man: Brand New Day; Clayface
 nuvio-collections.json | Movies / Genres / Space | 186 | ok | Project Hail Mary; Avengers: Endgame; Interstellar
 nuvio-collections.json | Movies / Genres / Sports | 377 | ok | F1; GOAT; Challengers
-nuvio-collections.json | Movies / Genres / Superhero | 384 | ok | Spider-Man: Brand New Day; Avengers: Endgame; Avengers: Infinity War
-nuvio-collections.json | Movies / Genres / Thriller | 5551 | ok | Fall 2: Deadpoint; Clayface; Verity
+nuvio-collections.json | Movies / Genres / Superhero | 384 | ok | The Dark Knight; Spider-Man: Brand New Day; Avengers: Endgame
+nuvio-collections.json | Movies / Genres / Thriller | 5551 | ok | The Dark Knight; Fall 2: Deadpoint; Clayface
 nuvio-collections.json | Movies / Genres / War | 758 | ok | LA BOLA NEGRA; Oppenheimer; Fury
 nuvio-collections.json | Movies / Genres / Western | 403 | ok | No Country for Old Men; Django Unchained; The Good, the Bad and the Ugly
 nuvio-collections.json | Movies / Decades / 2020s | 749 | ok | Avatar Aang: The Last Airbender; Swapped; Demon Slayer: Kimetsu no Yaiba Infinity Castle
@@ -200,7 +205,7 @@ nuvio-collections.json | Movies / Decades / 1980s | 302 | ok | Grave of the Fire
 nuvio-collections.json | Movies / Decades / 1970s | 124 | ok | The Godfather; The Godfather Part II; One Flew Over the Cuckoo's Nest
 nuvio-collections.json | Movies / Decades / 1960s | 72 | ok | Harakiri; The Good, the Bad and the Ugly; Psycho
 nuvio-collections.json | Movies / Decades / 1950s | 53 | ok | 12 Angry Men; Seven Samurai; Rear Window
-nuvio-collections.json | TV Shows / New and Trending / New series | 16333 | ok | YAGA; Phony; Love in Disguise
+nuvio-collections.json | TV Shows / New and Trending / New series | 16332 | ok | YAGA; Phony; Love in Disguise
 nuvio-collections.json | TV Shows / New and Trending / Trending series | 863 | ok | Love Between Lines; VisionQuest; MobLand
 nuvio-collections.json | TV Shows / New and Trending / Trending documentaries | 146 | ok | TYSON; Number One on the Call Sheet; Attack on London: Hunting the 7/7 Bombers
 nuvio-collections.json | TV Shows / Top Rated / Top rated series | 324 | ok | Breaking Bad; Avatar: The Last Airbender; Arcane
@@ -214,18 +219,18 @@ nuvio-collections.json | TV Shows / Genres / Action and adventure | 1115 | ok | 
 nuvio-collections.json | TV Shows / Genres / Animation | 710 | ok | Family Guy; The Simpsons; Wakfu
 nuvio-collections.json | TV Shows / Genres / Anthology | 104 | ok | American Horror Story; Fargo; Black Mirror
 nuvio-collections.json | TV Shows / Genres / Comedy | 1923 | ok | Family Guy; The Simpsons; Friends
-nuvio-collections.json | TV Shows / Genres / Crime | 1215 | ok | Law & Order: Special Victims Unit; Criminal Minds; Person of Interest
+nuvio-collections.json | TV Shows / Genres / Crime | 1215 | ok | Law & Order: Special Victims Unit; Criminal Minds; The Mentalist
 nuvio-collections.json | TV Shows / Genres / Documentary | 347 | ok | Mayday; NOVA; Ancient Aliens
 nuvio-collections.json | TV Shows / Genres / Drama | 3526 | ok | Grey's Anatomy; Law & Order: Special Victims Unit; Criminal Minds
-nuvio-collections.json | TV Shows / Genres / Family | 503 | ok | Moesha; Teen Titans Go!; Jeopardy!
-nuvio-collections.json | TV Shows / Genres / Horror | 111 | ok | Supernatural; American Horror Story; FROM
+nuvio-collections.json | TV Shows / Genres / Family | 502 | ok | Moesha; Teen Titans Go!; Jeopardy!
+nuvio-collections.json | TV Shows / Genres / Horror | 112 | ok | Supernatural; FROM; American Horror Story
 nuvio-collections.json | TV Shows / Genres / Kids | 403 | ok | PAW Patrol; Miraculous: Tales of Ladybug & Cat Noir; Peppa Pig
 nuvio-collections.json | TV Shows / Genres / Legal drama | 53 | ok | Law & Order: Special Victims Unit; Ally McBeal; Law & Order
 nuvio-collections.json | TV Shows / Genres / Medical drama | 80 | ok | Grey's Anatomy; House; Chicago Med
 nuvio-collections.json | TV Shows / Genres / Murder mystery | 69 | ok | Death in Paradise; Agatha Christie's Poirot; Riverdale
 nuvio-collections.json | TV Shows / Genres / Mystery | 954 | ok | Law & Order: Special Victims Unit; Criminal Minds; Supernatural
 nuvio-collections.json | TV Shows / Genres / Period drama | 208 | ok | The Crown; Vikings; Agatha Christie's Poirot
-nuvio-collections.json | TV Shows / Genres / Police procedural | 55 | ok | Law & Order: Special Victims Unit; Criminal Minds; MINDHUNTER
+nuvio-collections.json | TV Shows / Genres / Police procedural | 55 | ok | Law & Order: Special Victims Unit; Criminal Minds; The Mentalist
 nuvio-collections.json | TV Shows / Genres / Reality | 192 | ok | Running Man; Raw; Jeopardy!
 nuvio-collections.json | TV Shows / Genres / Sci-fi and fantasy | 1283 | ok | Supernatural; Person of Interest; Medium
 nuvio-collections.json | TV Shows / Genres / Sitcom | 386 | ok | Family Guy; The Simpsons; Friends
@@ -266,7 +271,7 @@ nuvio-collections.json | Anime / Genres / Martial arts | 54 | ok | Dragon Ball S
 nuvio-collections.json | Anime / Genres / Mecha | 97 | ok | Code Geass: Lelouch of the Rebellion; Mobile Suit Gundam SEED; Aquarion
 nuvio-collections.json | Anime / Genres / Mystery | 180 | ok | The Apothecary Diaries; Detective Conan; Re:ZERO -Starting Life in Another World-
 nuvio-collections.json | Anime / Genres / Psychological | 99 | ok | Tokyo Ghoul; Classroom of the Elite; Death Note
-nuvio-collections.json | Anime / Genres / Romance | 330 | ok | Chihayafuru; Monogatari; Sailor Moon
+nuvio-collections.json | Anime / Genres / Romance | 331 | ok | Chihayafuru; Monogatari; Sailor Moon
 nuvio-collections.json | Anime / Genres / Romance films | 107 | ok | Your Name.; Chainsaw Man - The Movie: Reze Arc; A Silent Voice: The Movie
 nuvio-collections.json | Anime / Genres / Romantic comedy | 200 | ok | Monogatari; Sailor Moon; Urusei Yatsura
 nuvio-collections.json | Anime / Genres / Samurai | 32 | ok | Lupin the 3rd; Rurouni Kenshin; Rurouni Kenshin
