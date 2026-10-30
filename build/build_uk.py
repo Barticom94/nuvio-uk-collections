@@ -8,12 +8,11 @@ The first four collections follow the home layout (Modern on Adam's TVs): each f
 a hero, so every folder gets a TMDB backdrop for the hero (picked here, so the build needs the TMDB key the same way
 check.py does), our title logo and, outside Streaming Services, our tile.
 Movies, TV Shows and Anime are the same cards (New and Trending, Top Rated, Genres, Decades, and Collections in
-Movies), every row written out here. Anime's decade rows come from AIOMetadata's Anime Essentials pack at v3.8.3
-(fetched, so the build needs network) and stay out unless MAL_FOLDERS is on (see there). Ten service covers are
-mali-king's (nuvio-collections, v2 tag).
+Movies), every row written out here. Anime's decade rows come from UK Streaming's weekly anime lists and stay out
+unless MAL_FOLDERS is on (see there). Ten service covers are mali-king's (nuvio-collections, v2 tag).
 Check the output with build/check.py before publishing.
 """
-import json, os, re, sys, urllib.request, uuid
+import json, os, re, sys, uuid
 from datetime import date, timedelta
 
 import art, check
@@ -62,19 +61,11 @@ SERVICES = [
 # which serves the same catalogues under the same id
 UKX = "com.barticom94.ukextras"
 NETFLIX_EXTRAS = [("series", "ukx.netflix-top10-shows"), ("movie", "ukx.netflix-top10-films"), ("movie", "ukx.netflix-popular")]
+# Anime's Decades rows, newest first: UK Streaming's hidden decade catalogues (type anime), MAL's titles by members,
+# rebuilt weekly. One id per decade, as rows of one catalogue collapse into one.
+ANIME_DECADES = ["ukx.anime-2020s", "ukx.anime-2010s", "ukx.anime-2000s", "ukx.anime-1990s", "ukx.anime-1980s"]
 
-# AIOMetadata's configured manifest id is its package.json name (getManifest.ts: id = buildInfo.name; the
-# configure app's FALLBACK_ADDON_ID and Nuvio's own tests use the same). The bare /manifest.json says
-# com.aio.metadata, but that is the unconfigured stub nobody installs.
-AIOM = "aio-metadata"
-# A pack import adds these catalogues without a displayType, so the manifest ids stay unsuffixed. Editing one in
-# AIOMetadata's catalogue dialog writes displayType and the manifest id becomes "<id>_anime": set "_anime" then.
-AIOM_ID_SUFFIX = ""
-AIOM_PACK = "https://raw.githubusercontent.com/cedya77/aiometadata/v3.8.3/public/featured/anime-essentials.json"
-# On by Adam's call (29 Oct). MAL safe mode (sfw) decides what these rows can list: with it off, Rx hentai can turn
-# up; with it on, AIOMetadata's MAL source drops Rx and R+. The family config has sfw on (29 Oct export; on the live
-# install, no hentai or erotica in the first 75 of any decade), Adam's adult config has it off. Set False and
-# rebuild to take the Decades folder out again.
+# On by Adam's call (29 Oct). Set False and rebuild to take the Decades folder out again.
 # The MAL genre catalogue can't come back as rows: its genres share one catalogue id, so in a page of rows they
 # collapse into one (Nuvio keys a row by add-on, type and catalogue, not genre). Anime's genres are TMDB rows instead.
 MAL_FOLDERS = True
@@ -215,10 +206,6 @@ def streaming_services():
     # Not pinned: Nuvio puts pinned collections above every other home row, and this one sits third.
     return collection("streaming-services-uk", "Streaming Services", folders, **MODERN)
 
-def fetch(url):
-    with urllib.request.urlopen(url, timeout=60) as r:
-        return json.load(r)
-
 # Nuvio only takes fixed release floors, so Trending is set at build time: rebuild every month or two.
 def since(days): return (date.today() - timedelta(days=days)).isoformat()
 
@@ -303,12 +290,9 @@ def tv_shows():
         ("Decades", decades(t, 1960, 300, older=(1970, 100), **na)),
     ])
 
-def anime(pack):
-    """Japanese-language animation on Nuvio's own TMDB access, ANIME_SAFE left out of every row. Decades uses the MAL
-    catalogues AIOMetadata adds when the Anime Essentials pack is imported (one catalogue id per decade)."""
-    widgets = {w["title"]: w["dataSource"]["payload"]["items"] for w in pack["widgets"] if w["type"] == "collection.row"}
-    mal = [i["dataSources"][0]["payload"]["aiometadata"]["catalog"]["id"] for i in widgets["Anime by Decade"]]
-    assert mal == ["mal.80sDecade", "mal.90sDecade", "mal.00sDecade", "mal.10sDecade", "mal.20sDecade"], mal
+def anime():
+    """Japanese-language animation on Nuvio's own TMDB access, ANIME_SAFE left out of every row. Decades uses UK
+    Streaming's MAL decade lists (ANIME_DECADES)."""
     a = dict(withOriginalLanguage="ja", withoutKeywords=ANIME_SAFE)
     def row(title, media, genres="", sort="popularity.desc", floor=20, **f):
         # 20 votes keeps one-season obscurities out of the genre rows
@@ -347,7 +331,7 @@ def anime(pack):
     ]
     if MAL_FOLDERS:
         # newest first, as in Movies and TV Shows; the hero comes from TMDB's best loved anime before 2000
-        spec.append(("Decades", [addon(AIOM, "anime", d + AIOM_ID_SUFFIX) for d in reversed(mal)],
+        spec.append(("Decades", [addon(UKX, "anime", c) for c in ANIME_DECADES],
                      [best("", "tv", 300, releaseDateLte="1999-12-31")]))
     return modern_collection("anime", "Anime", spec)
 
@@ -435,7 +419,7 @@ def write(name, data):
 if __name__ == "__main__":
     args = sys.argv[1:]
     tmdb = check.Tmdb(check.load_key(args))
-    cols = [streaming_services(), movies(), tv_shows(), anime(fetch(AIOM_PACK))]
+    cols = [streaming_services(), movies(), tv_shows(), anime()]
     heroes(cols, tmdb)
     write("nuvio-collections.json", cols)
     art.render(cols)

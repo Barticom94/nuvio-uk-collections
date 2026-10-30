@@ -1906,7 +1906,7 @@
       "filters": {
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 20,
-       "releaseDateGte": "2026-05-02"
+       "releaseDateGte": "2026-05-03"
       }
      },
      {
@@ -1919,7 +1919,7 @@
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 20,
        "withGenres": "10751",
-       "releaseDateGte": "2025-10-29"
+       "releaseDateGte": "2025-10-30"
       }
      }
     ],
@@ -1958,7 +1958,7 @@
       "filters": {
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 500,
-       "releaseDateGte": "2025-10-29",
+       "releaseDateGte": "2025-10-30",
        "withoutGenres": "99|10402|10770"
       }
      },
@@ -1971,7 +1971,7 @@
       "filters": {
        "withoutKeywords": "445|18321|155477|282903|190370|158713",
        "voteCountGte": 2000,
-       "releaseDateGte": "2021-10-30",
+       "releaseDateGte": "2021-10-31",
        "withoutGenres": "99|10402|10770"
       }
      },
@@ -2657,7 +2657,7 @@
       "sortBy": "popularity.desc",
       "filters": {
        "voteCountGte": 20,
-       "releaseDateGte": "2024-10-29",
+       "releaseDateGte": "2024-10-30",
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
       }
@@ -2671,7 +2671,7 @@
       "filters": {
        "voteCountGte": 10,
        "withGenres": "99",
-       "releaseDateGte": "2024-10-29",
+       "releaseDateGte": "2024-10-30",
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
       }
@@ -2711,7 +2711,7 @@
       "sortBy": "vote_average.desc",
       "filters": {
        "voteCountGte": 300,
-       "releaseDateGte": "2024-10-29",
+       "releaseDateGte": "2024-10-30",
        "withoutGenres": "10763|10767|10766",
        "withoutKeywords": "210024"
       }
@@ -3297,7 +3297,7 @@
        "withGenres": "16",
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "releaseDateGte": "2024-10-29"
+       "releaseDateGte": "2024-10-30"
       }
      },
      {
@@ -3311,7 +3311,7 @@
        "withGenres": "16",
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "releaseDateGte": "2024-10-29"
+       "releaseDateGte": "2024-10-30"
       }
      }
     ],
@@ -3366,7 +3366,7 @@
        "withGenres": "16",
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "releaseDateGte": "2024-10-29"
+       "releaseDateGte": "2024-10-30"
       }
      },
      {
@@ -3380,7 +3380,7 @@
        "withGenres": "16",
        "withOriginalLanguage": "ja",
        "withoutKeywords": "198385|384581|195669|285672|325693|9194|238374|281741|329280|356895|256466|302868|170827|155477|332173|345266|366001|570|739|11512",
-       "releaseDateGte": "2023-10-30"
+       "releaseDateGte": "2023-10-31"
       }
      }
     ],
@@ -3756,33 +3756,33 @@
     "sources": [
      {
       "provider": "addon",
-      "addonId": "aio-metadata",
+      "addonId": "com.barticom94.ukextras",
       "type": "anime",
-      "catalogId": "mal.20sDecade"
+      "catalogId": "ukx.anime-2020s"
      },
      {
       "provider": "addon",
-      "addonId": "aio-metadata",
+      "addonId": "com.barticom94.ukextras",
       "type": "anime",
-      "catalogId": "mal.10sDecade"
+      "catalogId": "ukx.anime-2010s"
      },
      {
       "provider": "addon",
-      "addonId": "aio-metadata",
+      "addonId": "com.barticom94.ukextras",
       "type": "anime",
-      "catalogId": "mal.00sDecade"
+      "catalogId": "ukx.anime-2000s"
      },
      {
       "provider": "addon",
-      "addonId": "aio-metadata",
+      "addonId": "com.barticom94.ukextras",
       "type": "anime",
-      "catalogId": "mal.90sDecade"
+      "catalogId": "ukx.anime-1990s"
      },
      {
       "provider": "addon",
-      "addonId": "aio-metadata",
+      "addonId": "com.barticom94.ukextras",
       "type": "anime",
-      "catalogId": "mal.80sDecade"
+      "catalogId": "ukx.anime-1980s"
      }
     ],
     "heroBackdropUrl": "https://image.tmdb.org/t/p/w1280/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",

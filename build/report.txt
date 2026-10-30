@@ -30,11 +30,11 @@ nuvio-collections.json | Movies / Collections / uks.franchise.despicable-me | ad
 nuvio-collections.json | Movies / Collections / uks.franchise.how-to-train-your-dragon | addon com.barticom94.ukextras uks.franchise.how-to-train-your-dragon  | catalogue checked
 nuvio-collections.json | Movies / Collections / uks.franchise.paddington | addon com.barticom94.ukextras uks.franchise.paddington  | catalogue checked
 nuvio-collections.json | Movies / Collections / uks.franchise.wallace-and-gromit | addon com.barticom94.ukextras uks.franchise.wallace-and-gromit  | catalogue checked
-nuvio-collections.json | Anime / Decades / mal.20sDecade | addon aio-metadata mal.20sDecade  | catalogue checked
-nuvio-collections.json | Anime / Decades / mal.10sDecade | addon aio-metadata mal.10sDecade  | catalogue checked
-nuvio-collections.json | Anime / Decades / mal.00sDecade | addon aio-metadata mal.00sDecade  | catalogue checked
-nuvio-collections.json | Anime / Decades / mal.90sDecade | addon aio-metadata mal.90sDecade  | catalogue checked
-nuvio-collections.json | Anime / Decades / mal.80sDecade | addon aio-metadata mal.80sDecade  | catalogue checked
+nuvio-collections.json | Anime / Decades / ukx.anime-2020s | addon com.barticom94.ukextras ukx.anime-2020s  | catalogue checked
+nuvio-collections.json | Anime / Decades / ukx.anime-2010s | addon com.barticom94.ukextras ukx.anime-2010s  | catalogue checked
+nuvio-collections.json | Anime / Decades / ukx.anime-2000s | addon com.barticom94.ukextras ukx.anime-2000s  | catalogue checked
+nuvio-collections.json | Anime / Decades / ukx.anime-1990s | addon com.barticom94.ukextras ukx.anime-1990s  | catalogue checked
+nuvio-collections.json | Anime / Decades / ukx.anime-1980s | addon com.barticom94.ukextras ukx.anime-1980s  | catalogue checked
 nuvio-collections.json | Streaming Services / Netflix / Netflix - Trending originals | 1643 | ok | The Crown; MINDHUNTER; Lupin
 nuvio-collections.json | Streaming Services / Netflix / Netflix - Exclusive films | 1758 | ok | Animals; Dune: Part Two; Spirited Away | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Netflix / Netflix - Exclusive series | 1383 | ok | The Crown; Wakfu; MINDHUNTER | exclusion spot-check 5/5 clean
@@ -66,7 +66,7 @@ nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - New films 
 nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - New series | 201 | ok | Brothers; Last Seen; Lucky
 nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Best exclusive films | 50 | ok | Selena Gomez: My Mind & Me; Tenzing; Billie Eilish: The World's a Little Blurry | exclusion spot-check 5/5 clean
 nuvio-collections.json | Streaming Services / Apple TV+ / Apple TV+ - Best exclusive series | 96 | ok | Dickinson; Severance; Ted Lasso | exclusion spot-check 5/5 clean
-nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Trending originals | 377 | ok | Game of Thrones; The Sopranos; Sesame Street
+nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Trending originals | 378 | ok | Game of Thrones; The Sopranos; Sesame Street
 nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Best originals | 172 | ok | The Pitt; Chernobyl; The Sopranos
 nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Original films | 89 | ok | Gia; Mountainhead; Ricochet
 nuvio-collections.json | Streaming Services / HBO Max / HBO Max - Exclusive films | 172 | ok | Backrooms; The Lord of the Rings: The Fellowship of the Ring; The Matrix | exclusion spot-check 5/5 clean
@@ -201,7 +201,7 @@ nuvio-collections.json | Movies / Decades / 1970s | 124 | ok | The Godfather; Th
 nuvio-collections.json | Movies / Decades / 1960s | 72 | ok | Harakiri; The Good, the Bad and the Ugly; Psycho
 nuvio-collections.json | Movies / Decades / 1950s | 53 | ok | 12 Angry Men; Seven Samurai; Rear Window
 nuvio-collections.json | TV Shows / New and Trending / New series | 16333 | ok | YAGA; Phony; Love in Disguise
-nuvio-collections.json | TV Shows / New and Trending / Trending series | 864 | ok | Love Between Lines; VisionQuest; MobLand
+nuvio-collections.json | TV Shows / New and Trending / Trending series | 863 | ok | Love Between Lines; VisionQuest; MobLand
 nuvio-collections.json | TV Shows / New and Trending / Trending documentaries | 146 | ok | TYSON; Number One on the Call Sheet; Attack on London: Hunting the 7/7 Bombers
 nuvio-collections.json | TV Shows / Top Rated / Top rated series | 324 | ok | Breaking Bad; Avatar: The Last Airbender; Arcane
 nuvio-collections.json | TV Shows / Top Rated / Top rated new series | 62 | ok | Teach You a Lesson; Dutton Ranch; Off Campus

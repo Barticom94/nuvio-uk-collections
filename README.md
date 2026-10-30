@@ -51,11 +51,10 @@ own catalogue id, as rows of one catalogue collapse into one. The UK Extras add-
 so on a profile with that install (or neither) these rows stay as loading placeholders. The folder's hero still comes
 from TMDB: the series' TMDB collections (and the MCU keyword, short films left out) pick it.
 
-Anime Decades uses the Decade catalogues that AIOMetadata adds when you import its Anime Essentials design
-(Catalogs → Collections → Featured): `aio-metadata`, type `anime`, `mal.80sDecade` to `mal.20sDecade`. Without
-AIOMetadata, its five rows stay as loading placeholders; with AIOMetadata but not the Essentials catalogues, they load
-the first 25 titles only. AIOMetadata only hides MAL's adult (Rx) titles when MAL safe mode (sfw) is on, so turn it
-on in every AIOMetadata config a profile uses. `MAL_FOLDERS = False` in `build/build_uk.py` takes the folder out.
+Anime Decades rows come from UK Streaming's weekly anime lists: MAL's titles ranked by members, one hidden
+catalogue per decade, type `anime`, `ukx.anime-2020s` to `ukx.anime-1980s` (`ANIME_DECADES` in `build/build_uk.py`).
+On a profile whose add-on doesn't list them, its five rows stay as loading placeholders. `MAL_FOLDERS = False` in
+`build/build_uk.py` takes the folder out.
 MAL's genre catalogue can't be used for rows (its genres share one catalogue id, and a page of rows shows them as one
 row), so Anime's genres are TMDB rows.
 
@@ -85,8 +84,8 @@ services' logos are their names in white, drawn with Pillow.
 
 `check.py` reads the files with the same rules as Nuvio's importer, calls every TMDB row, checks add-on rows against
 their add-on's manifest (`--manifest ID=PATH` for one not yet published; UK Extras' rows are checked against its
-GitHub Pages manifest, so the Collections rows need `--manifest com.barticom94.ukextras=` UK Streaming's manifest file
-or URL), checks that no other file reuses a link A
+GitHub Pages manifest, so the Collections and Anime Decades rows need `--manifest com.barticom94.ukextras=` UK
+Streaming's manifest file or URL), checks that no other file reuses a link A
 collection id, and writes the result counts to
 `build/report.txt`. For pages of rows it checks that no two rows in a folder share Nuvio's row key (rows that do
 collapse into one), the 3 to 25 rows, the All tab and that every folder has its backdrop, logo and tile, and that every
@@ -97,9 +96,6 @@ at build time, so rebuild every month or two.
 Nuvio keeps its own copy of a collection at import and doesn't refresh it from the URL, so a rebuild only reaches a
 profile after you import the file again there. Trending and New series go by first air date, so a new season of an
 older show won't appear in them.
-
-If AIOMetadata ever lists the MAL catalogues as `mal.80sDecade_anime` and so on (it does once a catalogue is edited
-there), set `AIOM_ID_SUFFIX = "_anime"` in `build/build_uk.py` and rebuild.
 
 The tiles and logos are set in [Outfit](https://github.com/Outfitio/Outfit-Fonts) (`build/fonts/Outfit.ttf`), which
 is under the SIL Open Font License 1.1 (`build/fonts/OFL.txt`). Ten service covers are reused from
