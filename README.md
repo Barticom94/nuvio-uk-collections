@@ -22,8 +22,8 @@ Nuvio → Settings → Collections → Import → From URL. Importing adds new c
   - **Anime**: New and Trending (new and trending series and films), Top Rated (all time and new, series and films),
     Genres (TMDB genre rows for series, with isekai, martial arts, mecha, samurai, sports, romantic comedy, slice of
     life, psychological, dark fantasy, supernatural, horror and magical girl, then film genres) and Decades (below).
-  - Live TV moved out of Nuvio to TiviMate on 29 Oct (Nuvio has no guide grid). UK Extras' channel catalogues stay
-    in the add-on for that.
+  - Live TV moved out of Nuvio to TiviMate on 29 Oct (Nuvio has no guide grid), with its own add-on; the household's
+    UK Streaming add-on no longer has channel catalogues.
 - `covers/` holds the landscape tiles for the UK services, `covers/tiles/` our illustrated tiles for the cards of
   Movies, TV Shows and Anime, and `covers/logos/` the title logos (one per service, one per card). The art of the
   cards before 29 Oct (Start Here, Themes, Moods, Directors, Studios, Networks and the rest) stays for profiles that
